@@ -2,7 +2,7 @@
 using System.Web.Script.Serialization;
 using System.Web.Security;
 
-namespace MVCSupport.Extensions
+namespace FGS.Pump.MVC.Support.Extensions
 {
     public static class HttpResponseBaseExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 
-namespace Template.Extensions
+namespace FGS.Pump.Extensions
 {
     //Borrowed from http://stackoverflow.com/questions/11345854/implementing-iequalitycomparert-for-comparing-arbitrary-properties-of-any-clas
 

@@ -1,6 +1,6 @@
 using System;
 
-namespace MVCSupport.Extensions
+namespace FGS.Pump.MVC.Support.Extensions
 {
     public class UserData  
     {

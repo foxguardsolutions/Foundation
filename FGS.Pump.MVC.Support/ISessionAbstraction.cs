@@ -1,4 +1,4 @@
-﻿namespace MVCSupport
+﻿namespace FGS.Pump.MVC.Support
 {
     public interface ISessionAbstraction
     {

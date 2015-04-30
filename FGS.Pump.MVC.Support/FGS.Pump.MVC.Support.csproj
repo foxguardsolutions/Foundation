@@ -7,8 +7,8 @@
     <ProjectGuid>{3CC70D3E-B091-4202-B92A-9F1271D0D3AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVCSupport</RootNamespace>
-    <AssemblyName>MVCSupport</AssemblyName>
+    <RootNamespace>FGS.Pump.MVC.Support</RootNamespace>
+    <AssemblyName>FGS.Pump.MVC.Support</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

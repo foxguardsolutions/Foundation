@@ -7,8 +7,8 @@
     <ProjectGuid>{8AD7FF34-0120-48BD-BFF9-76564FAA37A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Template.Extensions</RootNamespace>
-    <AssemblyName>Template.Extensions</AssemblyName>
+    <RootNamespace>FGS.Pump.Extensions</RootNamespace>
+    <AssemblyName>FGS.Pump.Extensions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

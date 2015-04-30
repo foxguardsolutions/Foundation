@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MVCSupport
+namespace FGS.Pump.MVC.Support
 {
     public interface IURLBuilder
     {

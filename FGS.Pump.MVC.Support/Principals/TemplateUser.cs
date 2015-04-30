@@ -1,8 +1,8 @@
 ﻿using System.Security.Principal;
 
-using MVCSupport.Extensions;
+using FGS.Pump.MVC.Support.Extensions;
 
-namespace MVCSupport.Principals
+namespace FGS.Pump.MVC.Support.Principals
 {
     public class TemplateUser : GenericPrincipal
     {

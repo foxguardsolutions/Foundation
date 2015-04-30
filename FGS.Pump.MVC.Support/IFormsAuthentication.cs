@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Security;
 
-namespace MVCSupport
+namespace FGS.Pump.MVC.Support
 {
     public interface IFormsAuthentication
     {

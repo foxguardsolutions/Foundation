@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Dynamic;
 
-namespace MVCSupport.Extensions
+namespace FGS.Pump.MVC.Support.Extensions
 {
     public static class ExpandoExtensions
     {

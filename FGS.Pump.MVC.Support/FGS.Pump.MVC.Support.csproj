@@ -75,7 +75,7 @@
     <Compile Include="IFileOperations.cs" />
     <Compile Include="IFormsAuthentication.cs" />
     <Compile Include="IURLBuilder.cs" />
-    <Compile Include="Principals\TemplateUser.cs" />
+    <Compile Include="Principals\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ISessionAbstraction.cs" />
   </ItemGroup>

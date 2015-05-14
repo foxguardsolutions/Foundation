@@ -44,6 +44,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyComparer.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj">
+      <Project>{0df57f68-08b7-45d8-85b1-9880e976c8d1}</Project>
+      <Name>FGS.Pump.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

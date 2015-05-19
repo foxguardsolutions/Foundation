@@ -10,7 +10,5 @@ namespace FGS.Pump.MVC.Support.Extensions
         {
             userID = Guid.Empty;
         }
-
-        
     }
 }

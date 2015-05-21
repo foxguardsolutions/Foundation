@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace FGS.Pump.Extensions
 {
-    //Stolen wholesale from http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer
+    // Stolen wholesale from http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer
     public static class Compare
     {
         public static IEnumerable<T> DistinctBy<T, TIdentity>(this IEnumerable<T> source, Func<T, TIdentity> identitySelector)

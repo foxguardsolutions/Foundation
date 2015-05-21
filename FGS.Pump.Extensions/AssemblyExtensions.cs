@@ -15,6 +15,5 @@ namespace FGS.Pump.Extensions
 
             return attribute != null ? attribute.InformationalVersion : assembly.GetName().Version.ToString();
         }
-
     }
 }

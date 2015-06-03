@@ -81,6 +81,8 @@
     <Compile Include="Principals\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ISessionAbstraction.cs" />
+    <Compile Include="Startup\CompositeRouteRegistrar.cs" />
+    <Compile Include="Startup\IRouteRegistrar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -96,6 +96,7 @@
     <Compile Include="ISessionAbstraction.cs" />
     <Compile Include="Startup\CompositeRouteRegistrar.cs" />
     <Compile Include="Startup\IRouteRegistrar.cs" />
+    <Compile Include="Startup\IWebApiConfigurator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

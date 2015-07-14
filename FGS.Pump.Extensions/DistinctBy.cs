@@ -3,38 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace FGS.Pump.Extensions
-{
-    // Stolen wholesale from http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer
-    public static class Compare
+{    
+    public static class EnumerableExtensions
     {
+        public static IEnumerable<T> EmptyIfNull<T>(this IEnumerable<T> source)
+        {
+            return source ?? Enumerable.Empty<T>();
+        }
+
+        /// <remarks>Stolen wholesale from http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer </remarks>
         public static IEnumerable<T> DistinctBy<T, TIdentity>(this IEnumerable<T> source, Func<T, TIdentity> identitySelector)
         {
             return source.Distinct(By(identitySelector));
         }
 
-        public static IEqualityComparer<TSource> By<TSource, TIdentity>(Func<TSource, TIdentity> identitySelector)
+        /// <remarks>Stolen wholesale from http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer </remarks>
+        private static IEqualityComparer<TSource> By<TSource, TIdentity>(Func<TSource, TIdentity> identitySelector)
         {
-            return new DelegateComparer<TSource, TIdentity>(identitySelector);
-        }
-
-        private class DelegateComparer<T, TIdentity> : IEqualityComparer<T>
-        {
-            private readonly Func<T, TIdentity> identitySelector;
-
-            public DelegateComparer(Func<T, TIdentity> identitySelector)
-            {
-                this.identitySelector = identitySelector;
-            }
-
-            public bool Equals(T x, T y)
-            {
-                return Equals(identitySelector(x), identitySelector(y));
-            }
-
-            public int GetHashCode(T obj)
-            {
-                return identitySelector(obj).GetHashCode();
-            }
+            return new DelegateEqualityComparer<TSource, TIdentity>(identitySelector);
         }
     }
 }

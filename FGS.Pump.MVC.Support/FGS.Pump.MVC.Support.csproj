@@ -87,6 +87,7 @@
   <ItemGroup>
     <Compile Include="Extensions\HttpResponseBaseExtensions.cs" />
     <Compile Include="Extensions\ExpandoExtensions.cs" />
+    <Compile Include="Extensions\ModelStateExtensions.cs" />
     <Compile Include="Extensions\UserData.cs" />
     <Compile Include="IFileOperations.cs" />
     <Compile Include="IFormsAuthentication.cs" />

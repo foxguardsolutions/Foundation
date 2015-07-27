@@ -35,6 +35,12 @@ namespace FGS.Pump.MVC.Support
         public abstract bool FileExists(string path);
 
         public abstract Stream StreamFile(string path);
+
+        protected string GetFullFileSavePath(HttpPostedFileBase uploadedFile)
+        {
+            var absolutePath = Path.Combine(_fileOpsSettings.FileRepo, uploadedFile.FileName);
+            return absolutePath;
+        }
     }
 
     public class InvalidFileNameException : Exception

@@ -1,7 +1,8 @@
 using System;
 using System.IO;
 using System.Web;
-using FGS.Pump.Settings.FileOpsSettings;
+
+using FGS.Pump.Settings.Config.FileOpsSettings;
 
 namespace FGS.Pump.MVC.Support
 {

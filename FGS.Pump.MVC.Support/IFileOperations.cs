@@ -15,7 +15,7 @@ namespace FGS.Pump.MVC.Support
             _fileOpsSettings = fileOpsSettings;
         }
 
-        public abstract string SaveUploadedFile(HttpPostedFileBase uploadedFile);
+        public abstract string SaveUploadedFile(string httpFileName, Stream inputStream);
 
         public  bool FileWasPosted(HttpPostedFileBase file)
         {
@@ -36,9 +36,9 @@ namespace FGS.Pump.MVC.Support
 
         public abstract Stream StreamFile(string path);
 
-        protected string GetFullFileSavePath(HttpPostedFileBase uploadedFile)
+        protected string GetFullFileSavePath(string filename)
         {
-            var absolutePath = Path.Combine(_fileOpsSettings.FileRepo, uploadedFile.FileName);
+            var absolutePath = Path.Combine(_fileOpsSettings.FileRepo, filename);
             return absolutePath;
         }
     }

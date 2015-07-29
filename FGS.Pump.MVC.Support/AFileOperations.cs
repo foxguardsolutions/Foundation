@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using System.Web;
 
@@ -17,7 +16,7 @@ namespace FGS.Pump.MVC.Support
 
         public abstract string SaveUploadedFile(string httpFileName, Stream inputStream);
 
-        public  bool FileWasPosted(HttpPostedFileBase file)
+        public virtual bool FileWasPosted(HttpPostedFileBase file)
         {
             return file != null && file.ContentLength > 0;
         }
@@ -40,14 +39,6 @@ namespace FGS.Pump.MVC.Support
         {
             var absolutePath = Path.Combine(_fileOpsSettings.FileRepo, filename);
             return absolutePath;
-        }
-    }
-
-    public class InvalidFileNameException : Exception
-    {
-        public InvalidFileNameException(string message) : base(message)
-        {
-            
         }
     }
 }

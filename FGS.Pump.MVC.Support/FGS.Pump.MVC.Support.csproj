@@ -85,11 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AFileOperations.cs" />
     <Compile Include="Extensions\HttpResponseBaseExtensions.cs" />
     <Compile Include="Extensions\ExpandoExtensions.cs" />
     <Compile Include="Extensions\ModelStateExtensions.cs" />
     <Compile Include="Extensions\UserData.cs" />
-    <Compile Include="IFileOperations.cs" />
+    <Compile Include="InvalidFileNameException.cs" />
     <Compile Include="IFormsAuthentication.cs" />
     <Compile Include="IURLBuilder.cs" />
     <Compile Include="Principals\User.cs" />

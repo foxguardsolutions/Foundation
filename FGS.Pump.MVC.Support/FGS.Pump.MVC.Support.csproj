@@ -85,11 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileOperations.cs" />
     <Compile Include="Extensions\HttpResponseBaseExtensions.cs" />
     <Compile Include="Extensions\ExpandoExtensions.cs" />
     <Compile Include="Extensions\ModelStateExtensions.cs" />
     <Compile Include="Extensions\UserData.cs" />
-    <Compile Include="IFileOperations.cs" />
+    <Compile Include="InvalidFileNameException.cs" />
     <Compile Include="IFormsAuthentication.cs" />
     <Compile Include="IURLBuilder.cs" />
     <Compile Include="Principals\User.cs" />
@@ -106,6 +107,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Backend\FGS.Pump.Settings\FGS.Pump.Settings.csproj">
+      <Project>{A5DB2324-A290-4190-A96C-B9C0BF544247}</Project>
+      <Name>FGS.Pump.Settings</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj">
       <Project>{0df57f68-08b7-45d8-85b1-9880e976c8d1}</Project>
       <Name>FGS.Pump.Logging</Name>

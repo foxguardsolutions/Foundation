@@ -5,11 +5,11 @@ using FGS.Pump.Settings.Config.FileOpsSettings;
 
 namespace FGS.Pump.MVC.Support
 {
-    public abstract class AFileOperations
+    public abstract class FileOperations
     {
         protected IFileOpsSettings _fileOpsSettings;
 
-        protected AFileOperations(IFileOpsSettings fileOpsSettings)
+        protected FileOperations(IFileOpsSettings fileOpsSettings)
         {
             _fileOpsSettings = fileOpsSettings;
         }

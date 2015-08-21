@@ -21,7 +21,7 @@ namespace FGS.Pump.MVC.Support.Extensions
 
         public static bool HasAttr(ExpandoObject expando, string key)
         {
-            return ((IDictionary<string, Object>)expando).ContainsKey(key);
+            return ((IDictionary<string, object>)expando).ContainsKey(key);
         }
     }
 }

@@ -10,6 +10,6 @@ namespace FGS.Pump.MVC.Support.Principals
         {
         }
 
-        public UserData data { get; set; }
+        public UserData Data { get; set; }
     }
 }

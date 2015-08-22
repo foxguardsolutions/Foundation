@@ -7,11 +7,11 @@ namespace FGS.Pump.MVC.Support
 {
     public abstract class FileOperations
     {
-        protected IFileOpsSettings _fileOpsSettings;
+        protected IFileOpsSettings FileOpsSettings { get; private set; }
 
         protected FileOperations(IFileOpsSettings fileOpsSettings)
         {
-            _fileOpsSettings = fileOpsSettings;
+            FileOpsSettings = fileOpsSettings;
         }
 
         public abstract string SaveUploadedFile(string httpFileName, Stream inputStream);
@@ -26,7 +26,7 @@ namespace FGS.Pump.MVC.Support
         public string GetFullPathToRepoFile(string filename)
         {
             var rawFileName = Path.GetFileName(filename);
-            if (rawFileName != null) return Path.Combine(_fileOpsSettings.FileRepo, rawFileName);
+            if (rawFileName != null) return Path.Combine(FileOpsSettings.FileRepo, rawFileName);
             throw new InvalidFileNameException(
                 string.Format("The filename \"{0}\" could not be parsed by the filesystem.", filename));
         }
@@ -37,7 +37,7 @@ namespace FGS.Pump.MVC.Support
 
         protected string GetFullFileSavePath(string filename)
         {
-            var absolutePath = Path.Combine(_fileOpsSettings.FileRepo, filename);
+            var absolutePath = Path.Combine(FileOpsSettings.FileRepo, filename);
             return absolutePath;
         }
     }

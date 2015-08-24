@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace FGS.Pump.Extensions
-{    
+{
     public static class EnumerableExtensions
     {
         public static IEnumerable<T> EmptyIfNull<T>(this IEnumerable<T> source)

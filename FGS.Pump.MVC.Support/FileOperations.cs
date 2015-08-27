@@ -7,7 +7,7 @@ namespace FGS.Pump.MVC.Support
 {
     public abstract class FileOperations
     {
-        protected IFileOpsSettings FileOpsSettings { get; private set; }
+        protected IFileOpsSettings FileOpsSettings { get; }
 
         protected FileOperations(IFileOpsSettings fileOpsSettings)
         {

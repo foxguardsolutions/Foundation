@@ -27,8 +27,7 @@ namespace FGS.Pump.MVC.Support
         {
             var rawFileName = Path.GetFileName(filename);
             if (rawFileName != null) return Path.Combine(FileOpsSettings.FileRepo, rawFileName);
-            throw new InvalidFileNameException(
-                string.Format("The filename \"{0}\" could not be parsed by the filesystem.", filename));
+            throw new InvalidFileNameException($"The filename \"{filename}\" could not be parsed by the filesystem.");
         }
 
         public abstract bool FileExists(string path);

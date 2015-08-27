@@ -13,7 +13,7 @@ namespace FGS.Pump.Extensions
         {
             var attribute = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>();
 
-            return attribute != null ? attribute.InformationalVersion : assembly.GetName().Version.ToString();
+            return attribute?.InformationalVersion ?? assembly.GetName().Version.ToString();
         }
     }
 }

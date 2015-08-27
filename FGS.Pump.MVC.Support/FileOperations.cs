@@ -18,7 +18,7 @@ namespace FGS.Pump.MVC.Support
 
         public virtual bool FileWasPosted(HttpPostedFileBase file)
         {
-            return file != null && file.ContentLength > 0;
+            return file?.ContentLength != null && file.ContentLength > 0;
         }
 
         public abstract bool Delete(string path);

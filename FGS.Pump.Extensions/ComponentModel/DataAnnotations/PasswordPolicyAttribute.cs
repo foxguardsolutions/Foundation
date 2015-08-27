@@ -6,7 +6,7 @@ namespace FGS.Pump.Extensions.ComponentModel.DataAnnotations
     {
         public PasswordPolicyAttribute(int length = 12) : base(length)
         {
-            ErrorMessage = string.Format("Password must be at least {0} characters long", length);
+            ErrorMessage = $"Password must be at least {length} characters long";
         }
     }
 }

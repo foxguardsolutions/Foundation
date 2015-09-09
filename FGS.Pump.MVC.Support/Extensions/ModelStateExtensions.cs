@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 
-namespace FGS.Pump.Extensions
+namespace FGS.Pump.MVC.Support.Extensions
 {
     public static class ModelStateExtensions
     {

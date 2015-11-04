@@ -54,6 +54,7 @@
     <Compile Include="ComponentModel\DataAnnotations\SafeEmailAddressAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafePhoneNumberAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafeUrlAttribute.cs" />
+    <Compile Include="DateTimeOffsetExtensions.cs" />
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
     <Compile Include="IClock.cs" />

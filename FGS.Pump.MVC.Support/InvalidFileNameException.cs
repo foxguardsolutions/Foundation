@@ -10,15 +10,18 @@ namespace FGS.Pump.MVC.Support
         {
         }
 
-        public InvalidFileNameException(string message) : base(message)
+        public InvalidFileNameException(string message)
+            : base(message)
         {
         }
 
-        public InvalidFileNameException(string message, Exception innerException) : base(message, innerException)
+        public InvalidFileNameException(string message, Exception innerException)
+            : base(message, innerException)
         {
         }
 
-        protected InvalidFileNameException(SerializationInfo info, StreamingContext context) : base(info, context)
+        protected InvalidFileNameException(SerializationInfo info, StreamingContext context)
+            : base(info, context)
         {
         }
     }

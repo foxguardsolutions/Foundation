@@ -6,7 +6,8 @@ namespace FGS.Pump.MVC.Support.Principals
 {
     public class User : GenericPrincipal
     {
-        public User(IIdentity identity, string[] roles) : base(identity, roles)
+        public User(IIdentity identity, string[] roles)
+            : base(identity, roles)
         {
         }
 

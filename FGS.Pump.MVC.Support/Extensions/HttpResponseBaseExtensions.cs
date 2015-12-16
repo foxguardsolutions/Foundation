@@ -16,8 +16,14 @@ namespace FGS.Pump.MVC.Support.Extensions
             JavaScriptSerializer js = new JavaScriptSerializer();
             string jsonUserData = js.Serialize(userData);
 
-            var newTicket = new FormsAuthenticationTicket(ticket.Version, ticket.Name, ticket.IssueDate, ticket.Expiration,
-                ticket.IsPersistent, jsonUserData, ticket.CookiePath);
+            var newTicket = new FormsAuthenticationTicket(
+                ticket.Version,
+                ticket.Name,
+                ticket.IssueDate,
+                ticket.Expiration,
+                ticket.IsPersistent,
+                jsonUserData,
+                ticket.CookiePath);
             var encTicket = FormsAuthentication.Encrypt(newTicket);
 
             /// Use existing cookie. Could create new one but would have to copy settings over...

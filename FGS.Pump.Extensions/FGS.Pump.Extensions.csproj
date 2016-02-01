@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyExtensions.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MustBeTrueAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\PasswordPolicyAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafeEmailAddressAttribute.cs" />

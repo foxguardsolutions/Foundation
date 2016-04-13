@@ -84,8 +84,9 @@
     <Compile Include="Lifetime\FuncOwnedExtensions.cs" />
     <Compile Include="Lifetime\OnDispose.cs" />
     <Compile Include="Lifetime\Owned.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IHistoricalReactiveProcessor.cs" />    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyComparer.cs" />
+    <Compile Include="HistoricalReactiveProcessor.cs" />
     <Compile Include="SystemClock.cs" />
   </ItemGroup>
   <ItemGroup>

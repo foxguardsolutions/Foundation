@@ -12,14 +12,6 @@ namespace FGS.Pump.Extensions.Tests
     [TestFixture]
     public class StringExtensionTests : BaseUnitTest
     {
-        private char[] a;
-
-        [SetUp]
-        public void SetUp()
-        {
-            a = new[] { 'a' };
-        }
-
         [Test]
         public void TrimLeadingWhitespaceAndChars_RemovesLeadingCharacters()
         {
@@ -33,7 +25,7 @@ namespace FGS.Pump.Extensions.Tests
         }
 
         [Test]
-        [TestCaseSource(nameof(CreateWhitespace))]
+        [TestCaseSource(nameof(WhitespaceCharacters))]
         public void TrimLeadingWhitespaceAndChars_RemovesWhitespace(char whitespaceCharacter)
         {
             var baseString = Fixture.Create<string>();
@@ -74,7 +66,7 @@ namespace FGS.Pump.Extensions.Tests
             characters.ToList().ForEach(c => Assert.AreNotSame(c, stringToTest.Last()));
         }
 
-        public static IEnumerable<char> CreateWhitespace()
+        public static IEnumerable<char> WhitespaceCharacters()
         {
             yield return ' ';
             yield return '\u0004'; //// line feed

@@ -75,6 +75,7 @@
     <Compile Include="ComponentModel\DataAnnotations\SafeEmailAddressAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafePhoneNumberAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafeUrlAttribute.cs" />
+    <Compile Include="ComponentModel\DataAnnotations\StringCleanupAttribute.cs" />
     <Compile Include="DateTimeOffsetExtensions.cs" />
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="PropertyComparer.cs" />
     <Compile Include="HistoricalReactiveProcessor.cs" />
     <Compile Include="SystemClock.cs" />
+    <Compile Include="StringExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj">

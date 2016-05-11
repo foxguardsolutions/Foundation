@@ -70,6 +70,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComponentModel\DataAnnotations\CveListAttribute.cs" />
+    <Compile Include="ComponentModel\DataAnnotations\MicrosoftSecurityBulletinAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MustBeTrueAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\PasswordPolicyAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafeEmailAddressAttribute.cs" />
@@ -85,7 +87,8 @@
     <Compile Include="Lifetime\FuncOwnedExtensions.cs" />
     <Compile Include="Lifetime\OnDispose.cs" />
     <Compile Include="Lifetime\Owned.cs" />
-    <Compile Include="IHistoricalReactiveProcessor.cs" />    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IHistoricalReactiveProcessor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyComparer.cs" />
     <Compile Include="HistoricalReactiveProcessor.cs" />
     <Compile Include="SystemClock.cs" />

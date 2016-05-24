@@ -81,6 +81,7 @@
     <Compile Include="DateTimeOffsetExtensions.cs" />
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
+    <Compile Include="EnumExtensions.cs" />
     <Compile Include="FileInfoBaseExtensions.cs" />
     <Compile Include="IClock.cs" />
     <Compile Include="Lifetime\Disposable.cs" />

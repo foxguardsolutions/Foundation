@@ -84,6 +84,7 @@
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="FileInfoBaseExtensions.cs" />
     <Compile Include="IClock.cs" />
+    <Compile Include="IWebClient.cs" />
     <Compile Include="Lifetime\Disposable.cs" />
     <Compile Include="Lifetime\FuncOwnedExtensions.cs" />
     <Compile Include="Lifetime\OnDispose.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="HistoricalReactiveProcessor.cs" />
     <Compile Include="SystemClock.cs" />
     <Compile Include="StringExtension.cs" />
+    <Compile Include="WebClientAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj">

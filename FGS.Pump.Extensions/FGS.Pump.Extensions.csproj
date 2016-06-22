@@ -163,8 +163,10 @@
     <Compile Include="DI\BindingRootExtensions.cs" />
     <Compile Include="DI\IOverridableHttpScopeNinjectModule.cs" />
     <Compile Include="DI\KernelExtensions.cs" />
+    <Compile Include="DI\Mvc\MvcBindingExtensions.cs" />
     <Compile Include="DI\OwnedLifetimeModule.cs" />
     <Compile Include="DI\Scope.cs" />
+    <Compile Include="DI\WebApi\WebApiBindingExtensions.cs" />
     <Compile Include="DI\WellKnownMemberInjectionHeuristic.cs" />
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="FileInfoBaseExtensions.cs" />
@@ -202,6 +204,7 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

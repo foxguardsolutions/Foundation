@@ -19,5 +19,10 @@ namespace FGS.Pump.Extensions
             var timeOfDay = TimeSpan.FromSeconds(Math.Round(dateTimeOffset.TimeOfDay.TotalSeconds));
             return new DateTimeOffset(dateTimeOffset.Year, dateTimeOffset.Month, dateTimeOffset.Day, timeOfDay.Hours, timeOfDay.Minutes, timeOfDay.Seconds, dateTimeOffset.Offset);
         }
+
+        public static DateTimeOffset FloorToSecond(this DateTimeOffset dateTimeOffset)
+        {
+            return new DateTimeOffset(dateTimeOffset.Year, dateTimeOffset.Month, dateTimeOffset.Day, dateTimeOffset.Hour, dateTimeOffset.Minute, dateTimeOffset.Second, dateTimeOffset.Offset);
+        }
     }
 }

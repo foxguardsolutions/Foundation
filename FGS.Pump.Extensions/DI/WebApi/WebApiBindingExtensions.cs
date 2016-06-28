@@ -14,7 +14,7 @@ namespace FGS.Pump.Extensions.DI.WebApi
                     {
                         const string ScopeParameterName = BindingExtensions.InParentScopeScopeParameterName;
                         var parentContext = context.Request.ParentContext;
-                        return BindingExtensions.GetOrAddNamedScope(parentContext, ScopeParameterName);
+                        return BindingExtensions.GetOrAddNamedScope(parentContext ?? context, ScopeParameterName);
                     });
         }
 

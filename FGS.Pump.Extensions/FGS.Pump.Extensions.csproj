@@ -159,6 +159,7 @@
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
     <Compile Include="DI\AsyncAwareAttributeBasedInterceptionPlanningStrategy.cs" />
+    <Compile Include="DI\NonRacingAsyncInterceptor.cs" />
     <Compile Include="DI\AttributeBasedInterceptionPlanningStrategy.cs" />
     <Compile Include="DI\BindingRootExtensions.cs" />
     <Compile Include="DI\IOverridableHttpScopeNinjectModule.cs" />

@@ -13,7 +13,7 @@ namespace FGS.Pump.Extensions.DI
         : AttributeBasedInterceptionPlanningStrategyBase<TAttribute>
         where TAttribute : Attribute
         where TSyncInterceptor : IInterceptor
-        where TAsyncInterceptor : AsyncInterceptor
+        where TAsyncInterceptor : NonRacingAsyncInterceptor
     {
         public AsyncAwareAttributeBasedInterceptionPlanningStrategy(IAdviceFactory adviceFactory, IAdviceRegistry adviceRegistry)
             : base(adviceFactory, adviceRegistry)

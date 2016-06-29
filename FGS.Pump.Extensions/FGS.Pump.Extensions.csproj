@@ -166,6 +166,9 @@
     <Compile Include="DI\Mvc\MvcBindingExtensions.cs" />
     <Compile Include="DI\OwnedLifetimeModule.cs" />
     <Compile Include="DI\Scope.cs" />
+    <Compile Include="DI\WebApi\ApiActionFilterDecoraptor.cs" />
+    <Compile Include="DI\WebApi\ApiAuthorizationFilterDecoraptor.cs" />
+    <Compile Include="DI\WebApi\DecoraptedApiFilterBindingWithSyntaxAdapter.cs" />
     <Compile Include="DI\WebApi\WebApiBindingExtensions.cs" />
     <Compile Include="DI\WellKnownMemberInjectionHeuristic.cs" />
     <Compile Include="EnumExtensions.cs" />

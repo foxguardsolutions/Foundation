@@ -67,7 +67,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionFilterOverrideWrapper.cs" />
+    <Compile Include="ActionFilterWrapper.cs" />
+    <Compile Include="AuthenticationFilterOverrideWrapper.cs" />
+    <Compile Include="AuthenticationFilterWrapper.cs" />
+    <Compile Include="AuthorizationFilterOverrideWrapper.cs" />
+    <Compile Include="AuthorizationFilterWrapper.cs" />
+    <Compile Include="ContainerBuilderExtensions.cs" />
+    <Compile Include="CustomAutofacOverrideFilter.cs" />
+    <Compile Include="CustomAutofacWebApiFilterProvider.cs" />
+    <Compile Include="CustomWebApiFilterMetadata.cs" />
+    <Compile Include="ExceptionFilterOverrideWrapper.cs" />
+    <Compile Include="ExceptionFilterWrapper.cs" />
+    <Compile Include="HttpActionDescriptorExtensions.cs" />
+    <Compile Include="ICustomAutofacActionFilter.cs" />
+    <Compile Include="ICustomAutofacAuthenticationFilter.cs" />
+    <Compile Include="ICustomAutofacAuthorizationFilter.cs" />
+    <Compile Include="ICustomAutofacExceptionFilter.cs" />
+    <Compile Include="IFilterWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationBuilderExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

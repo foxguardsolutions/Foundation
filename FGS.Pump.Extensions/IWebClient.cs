@@ -9,5 +9,7 @@ namespace FGS.Pump.Extensions
     {
         Task<Stream> OpenReadTaskAsync(Uri address);
         byte[] UploadValues(string address, string method, NameValueCollection data);
+
+        Task<string> DownloadStringAsync(Uri address);
     }
 }

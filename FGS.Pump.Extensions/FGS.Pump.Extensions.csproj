@@ -175,6 +175,7 @@
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="FileInfoBaseExtensions.cs" />
     <Compile Include="IClock.cs" />
+    <Compile Include="Int64Extensions.cs" />
     <Compile Include="IWebClient.cs" />
     <Compile Include="Lifetime\Disposable.cs" />
     <Compile Include="Lifetime\FuncOwnedExtensions.cs" />

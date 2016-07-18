@@ -147,6 +147,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComponentModel\DataAnnotations\CveAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\CveListAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MicrosoftSecurityBulletinAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MustBeTrueAttribute.cs" />

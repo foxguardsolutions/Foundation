@@ -110,7 +110,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Backend\FGS.Pump.Settings\FGS.Pump.Settings.csproj">

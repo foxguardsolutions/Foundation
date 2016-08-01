@@ -16,11 +16,6 @@ namespace FGS.Pump.MVC.Support
 
         public abstract string SaveUploadedFile(string httpFileName, Stream inputStream);
 
-        public virtual bool FileWasPosted(HttpPostedFileBase file)
-        {
-            return file?.ContentLength != null && file.ContentLength > 0;
-        }
-
         public abstract bool Delete(string path);
 
         public string GetFullPathToRepoFile(string filename)

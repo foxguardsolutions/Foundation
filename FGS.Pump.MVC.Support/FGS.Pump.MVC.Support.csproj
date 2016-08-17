@@ -47,6 +47,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -116,6 +117,10 @@
     <ProjectReference Include="..\Backend\FGS.Pump.Settings\FGS.Pump.Settings.csproj">
       <Project>{A5DB2324-A290-4190-A96C-B9C0BF544247}</Project>
       <Name>FGS.Pump.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj">
+      <Project>{8AD7FF34-0120-48BD-BFF9-76564FAA37A9}</Project>
+      <Name>FGS.Pump.Extensions</Name>
     </ProjectReference>
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj">
       <Project>{0df57f68-08b7-45d8-85b1-9880e976c8d1}</Project>

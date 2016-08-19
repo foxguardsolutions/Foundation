@@ -68,14 +68,14 @@ namespace FGS.Pump.Extensions.DI.Interception
                     return invocation.ReturnValue as Task<TResult>;
                 }).Unwrap()
                 .ContinueWith(t =>
-                {
-                    var invocationReturnValue = invocation.ReturnValue;
-                    invocation.ReturnValue = t.Result;
-                    AfterInvoke(invocation);
-                    AfterInvoke(invocation, t);
-                    invocation.ReturnValue = invocationReturnValue;
-                    return t.Result;
-                });
+                    {
+                        var invocationReturnValue = invocation.ReturnValue;
+                        invocation.ReturnValue = t.Result;
+                        AfterInvoke(invocation);
+                        AfterInvoke(invocation, t);
+                        invocation.ReturnValue = invocationReturnValue;
+                        return t.Result;
+                    });
             invocation.ReturnValue = resultTask;
             resultTask.Wait();
         }

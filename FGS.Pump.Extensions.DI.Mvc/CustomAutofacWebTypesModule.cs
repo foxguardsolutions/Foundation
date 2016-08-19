@@ -12,9 +12,9 @@ namespace FGS.Pump.Extensions.DI.Mvc
     /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Mvc/blob/e26ce3fe9ccc639f1349bcd8aee8e6e4ee066346/src/Autofac.Integration.Mvc/AutofacWebTypesModule.cs </remarks>
     public class CustomAutofacWebTypesModule : Module, IOverridableHttpScopeAutofacModule
     {
-        private AutofacScope _httpScope = AutofacScope.PerRequest;
+        private Scope _httpScope = Scope.PerRequest;
 
-        public void SetHttpScope(AutofacScope scope)
+        public void SetHttpScope(Scope scope)
         {
             _httpScope = scope;
         }
@@ -38,34 +38,34 @@ namespace FGS.Pump.Extensions.DI.Mvc
         [SuppressMessage("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity", Justification = "The complexity is in the registration lambdas. They're not actually hard to maintain.")]
         protected override void Load(ContainerBuilder builder)
         {
-            DI.ContainerBuilderExtensions.In(builder.Register(c => new HttpContextWrapper(HttpContext.Current)).As<HttpContextBase>(), _httpScope);
+            builder.Register(c => new HttpContextWrapper(HttpContext.Current)).As<HttpContextBase>().In(_httpScope);
 
             // HttpContext properties
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpContextBase>().Request).As<HttpRequestBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpContextBase>().Request).As<HttpRequestBase>().In(_httpScope);
 
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpContextBase>().Response).As<HttpResponseBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpContextBase>().Response).As<HttpResponseBase>().In(_httpScope);
 
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpContextBase>().Server).As<HttpServerUtilityBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpContextBase>().Server).As<HttpServerUtilityBase>().In(_httpScope);
 
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpContextBase>().Session).As<HttpSessionStateBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpContextBase>().Session).As<HttpSessionStateBase>().In(_httpScope);
 
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpContextBase>().Application).As<HttpApplicationStateBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpContextBase>().Application).As<HttpApplicationStateBase>().In(_httpScope);
 
             // HttpRequest properties
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpRequestBase>().Browser).As<HttpBrowserCapabilitiesBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpRequestBase>().Browser).As<HttpBrowserCapabilitiesBase>().In(_httpScope);
 
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpRequestBase>().Files).As<HttpFileCollectionBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpRequestBase>().Files).As<HttpFileCollectionBase>().In(_httpScope);
 
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpRequestBase>().RequestContext).As<RequestContext>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpRequestBase>().RequestContext).As<RequestContext>().In(_httpScope);
 
             // HttpResponse properties
-            DI.ContainerBuilderExtensions.In(builder.Register(c => c.Resolve<HttpResponseBase>().Cache).As<HttpCachePolicyBase>(), _httpScope);
+            builder.Register(c => c.Resolve<HttpResponseBase>().Cache).As<HttpCachePolicyBase>().In(_httpScope);
 
             // HostingEnvironment properties
-            DI.ContainerBuilderExtensions.In(builder.Register(c => HostingEnvironment.VirtualPathProvider).As<VirtualPathProvider>(), _httpScope);
+            builder.Register(c => HostingEnvironment.VirtualPathProvider).As<VirtualPathProvider>().In(_httpScope);
 
             // MVC types
-            DI.ContainerBuilderExtensions.In(builder.Register(c => new UrlHelper(c.Resolve<RequestContext>())).As<UrlHelper>(), _httpScope);
+            builder.Register(c => new UrlHelper(c.Resolve<RequestContext>())).As<UrlHelper>().In(_httpScope);
 
             builder.Register(c => System.Web.Routing.RouteTable.Routes)
                 .AsSelf()

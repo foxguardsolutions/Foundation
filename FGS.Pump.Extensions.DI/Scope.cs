@@ -2,8 +2,8 @@ namespace FGS.Pump.Extensions.DI
 {
     public enum Scope
     {
-        Transient,
-        Parent,
+        PerDependency,
+        PerLifetimeScope,
         PerRequest,
         Singleton
     }

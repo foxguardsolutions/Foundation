@@ -54,11 +54,13 @@
     <Compile Include="ContainerBuilderExtensions.cs" />
     <Compile Include="RegistrationBuilderExtensions.cs" />
     <Compile Include="IOverridableHttpScopeAutofacModule.cs" />
+    <Compile Include="FuncOwnedExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResolvedNamedPropertyParameter.cs" />
-    <Compile Include="AutofacScope.cs" />
+    <Compile Include="Scope.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -68,7 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj">
-      <Project>{8AD7FF34-0120-48BD-BFF9-76564FAA37A9}</Project>
+      <Project>{8ad7ff34-0120-48bd-bff9-76564faa37a9}</Project>
       <Name>FGS.Pump.Extensions</Name>
     </ProjectReference>
   </ItemGroup>

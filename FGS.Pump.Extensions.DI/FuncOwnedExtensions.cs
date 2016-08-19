@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace FGS.Pump.Extensions.Lifetime
+using Autofac.Features.OwnedInstances;
+
+namespace FGS.Pump.Extensions.DI
 {
     /// <remarks>Taken and modified from: https://github.com/foxguardsolutions/psa/blob/4dcebb2ad1152c3c998c800b662198e01c3bd682/CPSA.Core.Contracts/Lifetime/FuncOwnedExtensions.cs </remarks>
     public static class FuncOwnedExtensions

@@ -52,38 +52,6 @@
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Extensions.ContextPreservation, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Extensions.ContextPreservation.3.2.0.0\lib\net45-full\Ninject.Extensions.ContextPreservation.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Extensions.Factory, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Extensions.Factory.3.2.1.0\lib\net45-full\Ninject.Extensions.Factory.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Extensions.Interception, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Extensions.Interception.3.2.0.0\lib\net45-full\Ninject.Extensions.Interception.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Extensions.NamedScope, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Extensions.NamedScope.3.2.0.0\lib\net45-full\Ninject.Extensions.NamedScope.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Web.Common.3.2.3.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.MVC5.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Ninject.Web.WebApi, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.Web.WebApi.3.2.4.0\lib\net45-full\Ninject.Web.WebApi.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -159,30 +127,13 @@
     <Compile Include="DateTimeOffsetExtensions.cs" />
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
-    <Compile Include="DI\AsyncAwareAttributeBasedInterceptionPlanningStrategy.cs" />
-    <Compile Include="DI\NonRacingAsyncInterceptor.cs" />
-    <Compile Include="DI\AttributeBasedInterceptionPlanningStrategy.cs" />
-    <Compile Include="DI\BindingRootExtensions.cs" />
-    <Compile Include="DI\IOverridableHttpScopeNinjectModule.cs" />
-    <Compile Include="DI\KernelExtensions.cs" />
-    <Compile Include="DI\Mvc\MvcBindingExtensions.cs" />
-    <Compile Include="DI\OwnedLifetimeModule.cs" />
-    <Compile Include="DI\Scope.cs" />
-    <Compile Include="DI\WebApi\ApiActionFilterDecoraptor.cs" />
-    <Compile Include="DI\WebApi\ApiAuthorizationFilterDecoraptor.cs" />
-    <Compile Include="DI\WebApi\DecoraptedApiFilterBindingWithSyntaxAdapter.cs" />
-    <Compile Include="DI\WebApi\WebApiBindingExtensions.cs" />
-    <Compile Include="DI\WellKnownMemberInjectionHeuristic.cs" />
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="FileInfoBaseExtensions.cs" />
     <Compile Include="IClock.cs" />
     <Compile Include="Int64Extensions.cs" />
     <Compile Include="IWebClient.cs" />
-    <Compile Include="Lifetime\Disposable.cs" />
-    <Compile Include="Lifetime\FuncOwnedExtensions.cs" />
-    <Compile Include="Lifetime\OnDispose.cs" />
-    <Compile Include="Lifetime\Owned.cs" />
     <Compile Include="IHistoricalReactiveProcessor.cs" />
+    <Compile Include="MemberInfoExtensions.cs" />
     <Compile Include="ModelExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyComparer.cs" />
@@ -192,10 +143,6 @@
     <Compile Include="WebClientAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Pump.Eventing\FGS.Pump.Eventing.csproj">
-      <Project>{2E50047A-4F7C-4CC2-AEEE-0D7DC61C6C2C}</Project>
-      <Name>FGS.Pump.Eventing</Name>
-    </ProjectReference>
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj">
       <Project>{0df57f68-08b7-45d8-85b1-9880e976c8d1}</Project>
       <Name>FGS.Pump.Logging</Name>

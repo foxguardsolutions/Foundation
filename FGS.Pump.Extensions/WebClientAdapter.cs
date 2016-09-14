@@ -25,7 +25,7 @@ namespace FGS.Pump.Extensions
             return _innerClient.UploadValues(address, method, data);
         }
 
-        public Task<string> DownloadStringAsync(Uri address)
+        public Task<string> DownloadStringTaskAsync(Uri address)
         {
             return _innerClient.DownloadStringTaskAsync(address);
         }

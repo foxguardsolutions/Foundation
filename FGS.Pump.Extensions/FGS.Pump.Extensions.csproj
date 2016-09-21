@@ -84,6 +84,7 @@
       <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\net45\System.Reactive.PlatformServices.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
       <Private>True</Private>
@@ -122,6 +123,7 @@
     <Compile Include="ComponentModel\DataAnnotations\CveAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\CveListAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MicrosoftSecurityBulletinAttribute.cs" />
+    <Compile Include="ComponentModel\DataAnnotations\MultipleButtonAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MustBeTrueAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\PasswordPolicyAttribute.cs" />
     <Compile Include="ComponentModel\DataAnnotations\SafeEmailAddressAttribute.cs" />

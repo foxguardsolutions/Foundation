@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.Extensions;
@@ -25,6 +27,7 @@ namespace FGS.Pump.Extensions.Tests
             _certificateCollection = new X509Certificate2Collection();
             Fixture.Register<Func<IRestClient>>(() => () => _mockClient.Object);
             Fixture.Register<Func<X509Certificate2, X509Certificate2Collection>>(() => (cert) => _certificateCollection);
+            Fixture.Register<Func<IEnumerable<X509Certificate2>>>(() => () => Fixture.MockMany<X509Certificate2>().Select(c => c.Object));
             _subject = Fixture.Create<RestClientFactory>();
         }
 

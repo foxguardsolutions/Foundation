@@ -12,18 +12,18 @@ namespace FGS.Pump.Extensions
     {
         private readonly IRestClientFactory _clientFactory;
         private readonly Func<Uri, Method, IRestRequest> _restRequestFactory;
-        private readonly Func<byte[], Stream> _streamFactory;
+        private readonly Func<Stream, Stream> _streamCopyFactory;
 
         public X509Certificate2 ClientCertificate { get; set; }
 
         public RestSharpWebClientDecoraptor(
             IRestClientFactory clientFactory,
             Func<Uri, Method, IRestRequest> restRequestFactory,
-            Func<byte[], Stream> streamFactory)
+            Func<Stream, Stream> streamCopyFactory)
         {
             _clientFactory = clientFactory;
             _restRequestFactory = restRequestFactory;
-            _streamFactory = streamFactory;
+            _streamCopyFactory = streamCopyFactory;
         }
 
         public void Dispose()
@@ -35,8 +35,13 @@ namespace FGS.Pump.Extensions
         {
             var client = _clientFactory.Create(address, ClientCertificate);
             var request = _restRequestFactory(address, Method.GET);
-            var response = await client.ExecuteTaskAsync(request);
-            return _streamFactory(response.RawBytes);
+            var result = default(Stream);
+            request.ResponseWriter = (stream) =>
+            {
+                result = _streamCopyFactory(stream);
+            };
+            await client.ExecuteTaskAsync(request);
+            return result;
         }
 
         public byte[] UploadValues(string address, string method, NameValueCollection data)

@@ -125,6 +125,7 @@
     <Compile Include="HistoricalReactiveProcessor.cs" />
     <Compile Include="RestClientFactory.cs" />
     <Compile Include="RestSharpWebClientDecoraptor.cs" />
+    <Compile Include="StreamExtensions.cs" />
     <Compile Include="SystemClock.cs" />
     <Compile Include="StringExtension.cs" />
     <Compile Include="WebClientFactory.cs" />

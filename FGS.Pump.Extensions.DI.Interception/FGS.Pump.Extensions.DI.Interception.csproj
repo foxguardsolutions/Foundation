@@ -77,6 +77,10 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FGS.Pump.Extensions.DI\FGS.Pump.Extensions.DI.csproj">
+      <Project>{478D86CF-5CE7-454B-85FA-909F1279B0A5}</Project>
+      <Name>FGS.Pump.Extensions.DI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj">
       <Project>{8ad7ff34-0120-48bd-bff9-76564faa37a9}</Project>
       <Name>FGS.Pump.Extensions</Name>

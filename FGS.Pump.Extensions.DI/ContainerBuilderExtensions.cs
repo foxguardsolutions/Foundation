@@ -3,6 +3,7 @@
 using Autofac;
 using Autofac.Builder;
 using Autofac.Core;
+using Autofac.Features.Indexed;
 
 namespace FGS.Pump.Extensions.DI
 {
@@ -37,5 +38,16 @@ namespace FGS.Pump.Extensions.DI
                 (pi, ctx) => ctx.ResolveNamed<TService>(implementationRegistrationName));
             return builder.Register(ctx => ctx.ResolveNamed<TService>(decoratorRegistrationName, implementationResolvingParameter)).As<TService>().In(scope);
         }
-            }
+
+        public static IRegistrationBuilder<Func<TKey, TService>, SimpleActivatorData, SingleRegistrationStyle> RegisterFactoryFromIndexLookup<TKey, TService>(this ContainerBuilder builder)
+        {
+            return builder.Register(CreateFactoryFromIndexLookup<TKey, TService>);
         }
+
+        private static Func<TKey, TService> CreateFactoryFromIndexLookup<TKey, TService>(IComponentContext context)
+        {
+            var index = context.Resolve<IIndex<TKey, TService>>();
+            return key => index[key];
+        }
+    }
+}

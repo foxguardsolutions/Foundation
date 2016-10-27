@@ -19,5 +19,10 @@ namespace FGS.Pump.Extensions.DI.Interception
         {
             return originalImplementationType.GetMethods().Any(m => ProxyGenerationHook.ShouldInterceptMethod(originalImplementationType, m));
         }
+
+        protected static TAttribute InterceptorInstanciationDataFactory(IInvocation invocation)
+        {
+            return (TAttribute)invocation.MethodInvocationTarget.GetCustomAttributes(typeof(TAttribute), inherit: true).Single();
+        }
     }
 }

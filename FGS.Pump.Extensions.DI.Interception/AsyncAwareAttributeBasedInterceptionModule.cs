@@ -5,6 +5,7 @@ using Autofac;
 using Autofac.Core;
 
 using Castle.DynamicProxy;
+using FGS.Pump.Extensions.DI;
 
 namespace FGS.Pump.Extensions.DI.Interception
 {
@@ -18,14 +19,16 @@ namespace FGS.Pump.Extensions.DI.Interception
         {
             base.Load(builder);
 
-            builder.RegisterType<AsyncAwareSwitchingInterceptor<TSyncInterceptor, TAsyncInterceptor>>().InstancePerDependency();
+            builder.RegisterType<AsyncAwareSwitchingInterceptor<TSyncInterceptor, TAsyncInterceptor, TAttribute>>()
+                .WithParameterTypedFrom(ctx => (Func<IInvocation, TAttribute>)InterceptorInstanciationDataFactory)
+                .InstancePerDependency();
             builder.RegisterType<TSyncInterceptor>().InstancePerDependency();
             builder.RegisterType<TAsyncInterceptor>().InstancePerDependency();
         }
 
         protected override IEnumerable<Service> DescribeInterceptorServices(Type originalImplementationType)
         {
-            yield return new TypedService(typeof(AsyncAwareSwitchingInterceptor<TSyncInterceptor, TAsyncInterceptor>));
+            yield return new TypedService(typeof(AsyncAwareSwitchingInterceptor<TSyncInterceptor, TAsyncInterceptor, TAttribute>));
         }
     }
 }

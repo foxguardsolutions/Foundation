@@ -50,16 +50,14 @@ namespace FGS.Pump.Extensions.Tests.ComponentModel.DataAnnotations
             yield return "MS12-345,MS11234";
             yield return "MS13";
             yield return "SM12-345";
+            yield return "MS12-345, MS13-456";
+            yield return "MS12-345,MS13-456";
         }
 
         public static IEnumerable<string> SuccessCases()
         {
             yield return "MS12-345";
-            yield return "MS12-345, MS13-456";
-            yield return "MS12-345,MS13-456";
-            yield return "MS12-345, MS13-456, MS14-567";
-            yield return "MS12-345,MS13-456,MS14-567";
-            yield return "MS13-456, MS14-567, MS12-345";
+            yield return "MS13-456";
         }
     }
 }

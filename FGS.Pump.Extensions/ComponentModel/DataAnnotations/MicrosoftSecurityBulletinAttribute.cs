@@ -5,7 +5,7 @@ namespace FGS.Pump.Extensions.ComponentModel.DataAnnotations
     public class MicrosoftSecurityBulletinAttribute : RegularExpressionAttribute
     {
         public MicrosoftSecurityBulletinAttribute()
-            : base(@"MS\d{2}(-)\d{3}(,\s*MS\d{2}(-)\d{3})*$")
+            : base(@"MS\d{2}(-)\d{3}$")
         {
         }
     }

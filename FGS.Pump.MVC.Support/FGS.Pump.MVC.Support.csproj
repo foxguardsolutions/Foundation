@@ -62,7 +62,6 @@
     <Compile Include="Extensions\ExpandoExtensions.cs" />
     <Compile Include="Extensions\ModelStateExtensions.cs" />
     <Compile Include="Extensions\UserData.cs" />
-    <Compile Include="InvalidFileNameException.cs" />
     <Compile Include="IFormsAuthentication.cs" />
     <Compile Include="IURLBuilder.cs" />
     <Compile Include="Principals\User.cs" />
@@ -76,9 +75,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Extensions\Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Backend\FGS.Pump.Settings\FGS.Pump.Settings.csproj">
       <Project>{A5DB2324-A290-4190-A96C-B9C0BF544247}</Project>

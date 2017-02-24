@@ -18,13 +18,6 @@ namespace FGS.Pump.MVC.Support
 
         public abstract bool Delete(string path);
 
-        public string GetFullPathToRepoFile(string filename)
-        {
-            var rawFileName = Path.GetFileName(filename);
-            if (rawFileName != null) return Path.Combine(FileOpsSettings.FileRepo, rawFileName);
-            throw new InvalidFileNameException($"The filename \"{filename}\" could not be parsed by the filesystem.");
-        }
-
         public abstract bool FileExists(string path);
 
         public abstract Stream StreamFile(string path);

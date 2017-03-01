@@ -86,7 +86,6 @@
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
     <Compile Include="EnumExtensions.cs" />
-    <Compile Include="FileInfoBaseExtensions.cs" />
     <Compile Include="GzipRestClientFactoryDecorator.cs" />
     <Compile Include="IClock.cs" />
     <Compile Include="Int64Extensions.cs" />

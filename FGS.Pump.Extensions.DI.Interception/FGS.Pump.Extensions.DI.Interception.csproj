@@ -56,6 +56,8 @@
     <Compile Include="AttributeBasedInterceptionModuleBase.cs" />
     <Compile Include="AttributeProxyGenerationHook.cs" />
     <Compile Include="CustomInterceptionModuleBase.cs" />
+    <Compile Include="FreezeTimeAsyncInterceptor.cs" />
+    <Compile Include="FreezeTimeInterceptor.cs" />
     <Compile Include="NonRacingAsyncInterceptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

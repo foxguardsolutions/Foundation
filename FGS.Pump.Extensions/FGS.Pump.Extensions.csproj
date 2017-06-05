@@ -84,8 +84,11 @@
     <Compile Include="DelegateEqualityComparer.cs" />
     <Compile Include="DistinctBy.cs" />
     <Compile Include="EnumExtensions.cs" />
+    <Compile Include="FreezableClock.cs" />
+    <Compile Include="FreezeTimeAttribute.cs" />
     <Compile Include="GzipRestClientFactoryDecorator.cs" />
     <Compile Include="IClock.cs" />
+    <Compile Include="IFreezableClock.cs" />
     <Compile Include="Int64Extensions.cs" />
     <Compile Include="IRestClientFactory.cs" />
     <Compile Include="IWebClient.cs" />
@@ -120,7 +123,6 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>

@@ -2,6 +2,7 @@
 
 using FGS.Pump.FaultHandling.Retry;
 using FGS.Pump.Tests.Support;
+using FGS.Pump.Tests.Support.Extensions;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;
@@ -28,7 +29,7 @@ namespace FGS.Pump.FaultHandling.Tests.Retry
         [Test]
         public void CalculateBackoff_ReturnsAnExponentialBackoffBasedOnTheRetryAttempt()
         {
-            var retryAttempt = _fixture.Create<int>();
+            var retryAttempt = _fixture.CreateSmallPositiveRandomNumber();
             var expectedBackoffSeconds = Math.Pow(2, retryAttempt - 1);
 
             var backoff = _subject.CalculateBackoff(retryAttempt);

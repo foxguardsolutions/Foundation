@@ -10,7 +10,6 @@ using NUnit.Framework;
 using Ploeh.AutoFixture;
 
 using Polly;
-using Polly.NoOp;
 
 namespace FGS.Pump.FaultHandling.Tests.Retry
 {
@@ -37,18 +36,11 @@ namespace FGS.Pump.FaultHandling.Tests.Retry
         }
 
         [Test]
-        public void Create_GivenNoExceptionPredicates_UsesAPollyNoOpPolicy()
+        public void Create_GivenNoExceptionPredicates_ThrowsAnArgumentException()
         {
             var exceptionPredicates = Enumerable.Empty<Func<Exception, bool>>();
 
-            _retryPolicyWrapperHook = (syncPolicy, asyncPolicy) =>
-            {
-                Assert.That(syncPolicy, Is.InstanceOf<NoOpPolicy>());
-                Assert.That(asyncPolicy, Is.InstanceOf<NoOpPolicy>());
-                return default(IRetryPolicy);
-            };
-
-            _subject.Create(exceptionPredicates);
+            Assert.Throws<ArgumentException>(() => _subject.Create(exceptionPredicates));
         }
 
         [Test]

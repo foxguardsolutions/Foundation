@@ -5,10 +5,6 @@ using Castle.DynamicProxy;
 
 namespace FGS.Pump.Extensions.DI.Interception
 {
-    /// <summary>
-    /// A simple definition of an interceptor, which can take action both before and after
-    /// the invocation proceeds and supports async methods.
-    /// </summary>
     /// <remarks>Taken and modified slightly from: https://github.com/ninject/Ninject.Extensions.Interception/blob/d84db87b15ff675d27b7b8d493e8148d45801910/src/Ninject.Extensions.Interception/AsyncInterceptor.cs </remarks>
     public abstract class NonRacingAsyncInterceptor : IInterceptor
     {
@@ -36,7 +32,7 @@ namespace FGS.Pump.Extensions.DI.Interception
             }
 
             BeforeInvoke(invocation);
-            invocation.Proceed();
+            Invoke(invocation);
             AfterInvoke(invocation);
         }
 
@@ -46,7 +42,7 @@ namespace FGS.Pump.Extensions.DI.Interception
                 Task.Run(() => BeforeInvoke(invocation))
                 .ContinueWith(t =>
                 {
-                    invocation.Proceed();
+                    Invoke(invocation);
                     return invocation.ReturnValue as Task;
                 }).Unwrap()
                 .ContinueWith(t =>
@@ -64,7 +60,7 @@ namespace FGS.Pump.Extensions.DI.Interception
                 Task.Run(() => BeforeInvoke(invocation))
                 .ContinueWith(t =>
                 {
-                    invocation.Proceed();
+                    Invoke(invocation);
                     return invocation.ReturnValue as Task<TResult>;
                 }).Unwrap()
                 .ContinueWith(t =>
@@ -105,6 +101,11 @@ namespace FGS.Pump.Extensions.DI.Interception
         /// <param name="task">The task that was executed.</param>
         protected virtual void AfterInvoke(IInvocation invocation, Task task)
         {
+        }
+
+        protected virtual void Invoke(IInvocation invocation)
+        {
+            invocation.Proceed();
         }
     }
 }

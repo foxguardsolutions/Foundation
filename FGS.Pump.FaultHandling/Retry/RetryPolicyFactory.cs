@@ -4,6 +4,7 @@ using System.Linq;
 
 using FGS.Pump.FaultHandling.Configuration;
 using FGS.Pump.Logging;
+using FGS.Pump.Logging.Factories;
 
 using Polly;
 
@@ -20,17 +21,18 @@ namespace FGS.Pump.FaultHandling.Retry
             IFaultHandlingConfiguration configuration,
             IRetryBackoffCalculator backoffCalculator,
             Func<ISyncPolicy, IAsyncPolicy, IRetryPolicy> wrapPolicies,
-            ILogger logger)
+            ILoggerFactory loggerFactory)
         {
             _configuration = configuration;
             _backoffCalculator = backoffCalculator;
             _wrapPolicies = wrapPolicies;
-            _logger = logger;
+            _logger = loggerFactory.Create(GetType());
         }
 
         public IRetryPolicy Create(IEnumerable<Func<Exception, bool>> exceptionPredicates)
         {
-            if (!exceptionPredicates.Any()) return _wrapPolicies(Policy.NoOp(), Policy.NoOpAsync());
+            if (!exceptionPredicates.Any())
+                throw new ArgumentException($"Expected at least one exception predicate, given none, when creating an instance of {nameof(IRetryPolicy)}", nameof(exceptionPredicates));
 
             var policyBuilder = CreatePolicyBuilder(exceptionPredicates);
 
@@ -61,7 +63,5 @@ namespace FGS.Pump.FaultHandling.Retry
         {
             _logger.Trace($"Caught exception {exception.GetType().Name}. {_configuration.MaxRetries - attempt} attempts remaining… waiting for {backoff.TotalSeconds} seconds and retrying", exception);
         }
-
-        private static Func<T, bool> ConvertToFunc<T>(Predicate<T> predicate) => new Func<T, bool>(predicate);
     }
 }

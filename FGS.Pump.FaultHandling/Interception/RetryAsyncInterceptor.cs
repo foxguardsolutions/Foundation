@@ -29,7 +29,9 @@ namespace FGS.Pump.FaultHandling.Interception
             var returnType = invocation.MethodInvocationTarget.ReturnType;
             if (returnType == typeof(Task))
             {
-                retryPolicy.ExecuteAsync(async () => await Task.Run(() => invocation.Proceed()));
+               var resultTask = retryPolicy.ExecuteAsync(async () => await Task.Run(() => invocation.Proceed()));
+                invocation.ReturnValue = resultTask;
+                resultTask.Wait();
                 return;
             }
 

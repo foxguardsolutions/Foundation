@@ -81,6 +81,7 @@
     <Compile Include="ComponentModel\DataAnnotations\CveListAttributeTests.cs" />
     <Compile Include="ComponentModel\DataAnnotations\MicrosoftSecurityBulletinAttributeTests.cs" />
     <Compile Include="FreezableClockTests.cs" />
+    <Compile Include="CollectionExtensionsTests.cs" />
     <Compile Include="Int64ExtensionsTests.cs" />
     <Compile Include="ObjectAnalyzerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

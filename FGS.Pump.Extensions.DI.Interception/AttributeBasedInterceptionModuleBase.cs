@@ -23,7 +23,7 @@ namespace FGS.Pump.Extensions.DI.Interception
         protected static TAttribute InterceptorInstanciationDataFactory(IInvocation invocation)
         {
             return (TAttribute)invocation.MethodInvocationTarget.GetCustomAttributes(typeof(TAttribute), inherit: true).SingleOrDefault()
-                ?? (TAttribute)invocation.TargetType.GetCustomAttributes(typeof(TAttribute), inherit: true).Single();
+                ?? (TAttribute)invocation.TargetType.GetCustomAttributes(typeof(TAttribute), inherit: true).SingleOrDefault();
         }
     }
 }

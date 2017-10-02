@@ -48,7 +48,7 @@ namespace FGS.Pump.FaultHandling.Tests.Retry
             _mockConfiguration = Fixture.Mock<IFaultHandlingConfiguration>();
             builder.Register(context => _mockConfiguration.Object).As<IFaultHandlingConfiguration>().SingleInstance();
 
-            builder.Register(context => Fixture.Mock<ILogger>().Object).As<ILogger>().SingleInstance();
+            builder.Register(context => Fixture.Mock<IStructuralLogger>().Object).As<IStructuralLogger>().SingleInstance();
 
             _mockRetryBackoffCalculator = Fixture.Mock<IRetryBackoffCalculator>();
             builder.Register(context => _mockRetryBackoffCalculator.Object).As<IRetryBackoffCalculator>().InstancePerDependency();

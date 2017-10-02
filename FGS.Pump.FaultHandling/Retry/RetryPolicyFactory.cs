@@ -4,7 +4,6 @@ using System.Linq;
 
 using FGS.Pump.FaultHandling.Configuration;
 using FGS.Pump.Logging;
-using FGS.Pump.Logging.Factories;
 
 using Polly;
 
@@ -15,18 +14,18 @@ namespace FGS.Pump.FaultHandling.Retry
         private readonly IFaultHandlingConfiguration _configuration;
         private readonly IRetryBackoffCalculator _backoffCalculator;
         private readonly Func<ISyncPolicy, IAsyncPolicy, IRetryPolicy> _wrapPolicies;
-        private readonly ILogger _logger;
+        private readonly IStructuralLogger _logger;
 
         public RetryPolicyFactory(
             IFaultHandlingConfiguration configuration,
             IRetryBackoffCalculator backoffCalculator,
             Func<ISyncPolicy, IAsyncPolicy, IRetryPolicy> wrapPolicies,
-            ILoggerFactory loggerFactory)
+            IStructuralLoggerBuilder structuralLoggerBuilder)
         {
             _configuration = configuration;
             _backoffCalculator = backoffCalculator;
             _wrapPolicies = wrapPolicies;
-            _logger = loggerFactory.Create(GetType());
+            _logger = structuralLoggerBuilder.ForContext(GetType()).Create();
         }
 
         public IRetryPolicy Create(IEnumerable<Func<Exception, bool>> exceptionPredicates)
@@ -61,7 +60,9 @@ namespace FGS.Pump.FaultHandling.Retry
 
         private void LogRetryAttempt(Exception exception, TimeSpan backoff, int attempt, Context ctx)
         {
-            _logger.Trace($"Caught exception {exception.GetType().Name}. {_configuration.MaxRetries - attempt} attempts remaining… waiting for {backoff.TotalSeconds} seconds and retrying", exception);
+            var retriesRemaining = _configuration.MaxRetries - attempt;
+            var backoffTotalSeconds = backoff.TotalSeconds;
+            _logger.Debug(exception, "Caught exception, {retriesRemaining} attempts remaining - waiting for {backoffTotalSeconds} seconds before retrying", retriesRemaining, backoffTotalSeconds);
         }
     }
 }

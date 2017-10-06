@@ -266,7 +266,7 @@ namespace FGS.Pump.Extensions.DI.Mvc.Tests
             var filters = provider.GetFilters(controllerContext, actionDescriptor).ToList();
 
             Assert.That(filters, Has.Count.EqualTo(1));
-            Assert.That(filters[0].Instance, Is.InstanceOf<TFilter1>());
+            Assert.That(filters[0].Instance.ToString(), Is.EqualTo(typeof(TFilter1).ToString()));
             Assert.That(filters[0].Scope, Is.EqualTo(filterScope));
         }
 
@@ -287,11 +287,11 @@ namespace FGS.Pump.Extensions.DI.Mvc.Tests
 
             Assert.That(filters, Has.Count.EqualTo(2));
 
-            var filter = filters.Single(f => f.Instance is TFilter1);
+            var filter = filters.Single(f => f.Instance.ToString() == typeof(TFilter1).FullName);
             Assert.That(filter.Scope, Is.EqualTo(filterScope));
             Assert.That(filter.Order, Is.EqualTo(Filter.DefaultOrder));
 
-            filter = filters.Single(f => f.Instance is TFilter2);
+            filter = filters.Single(f => f.Instance.ToString() == typeof(TFilter2).FullName);
             Assert.That(filter.Scope, Is.EqualTo(filterScope));
             Assert.That(filter.Order, Is.EqualTo(20));
         }

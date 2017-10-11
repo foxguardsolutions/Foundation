@@ -25,22 +25,22 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         protected override Action<IRegistrationBuilder<TestAuthorizationFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureFirstControllerRegistration()
         {
-            return r => r.AsWebApiAuthorizationFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller);
+            return r => r.AsWebApiAuthorizationFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestAuthorizationFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureFirstActionRegistration()
         {
-            return r => r.AsWebApiAuthorizationFilterWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiAuthorizationFilterWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestAuthorizationFilter2, SimpleActivatorData, SingleRegistrationStyle>> ConfigureSecondControllerRegistration()
         {
-            return r => r.AsWebApiAuthorizationFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller);
+            return r => r.AsWebApiAuthorizationFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestAuthorizationFilter2, SimpleActivatorData, SingleRegistrationStyle>> ConfigureSecondActionRegistration()
         {
-            return r => r.AsWebApiAuthorizationFilterWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiAuthorizationFilterWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Type GetWrapperType()
@@ -55,22 +55,22 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         protected override Action<ContainerBuilder> ConfigureControllerFilterOverride()
         {
-            return builder => builder.RegisterWebApiAuthorizationFilterOverrideForWhen(_controllerPredicate, FilterScope.Controller);
+            return builder => builder.RegisterWebApiAuthorizationFilterOverrideForWhen(_controllerPredicate, FilterScope.Controller, order: 0);
         }
 
         protected override Action<ContainerBuilder> ConfigureActionFilterOverride()
         {
-            return builder => builder.RegisterWebApiAuthorizationFilterOverrideForWhen(_actionPredicate, FilterScope.Action);
+            return builder => builder.RegisterWebApiAuthorizationFilterOverrideForWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestAuthorizationFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureActionOverrideRegistration()
         {
-            return r => r.AsWebApiAuthorizationFilterOverrideWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiAuthorizationFilterOverrideWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestAuthorizationFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureControllerOverrideRegistration()
         {
-            return r => r.AsWebApiAuthorizationFilterOverrideWhen(_controllerPredicate, FilterScope.Controller);
+            return r => r.AsWebApiAuthorizationFilterOverrideWhen(_controllerPredicate, FilterScope.Controller, order: 0);
         }
     }
 }

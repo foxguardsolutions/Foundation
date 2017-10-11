@@ -25,22 +25,22 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         protected override Action<IRegistrationBuilder<TestActionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureFirstControllerRegistration()
         {
-            return r => r.AsWebApiActionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller);
+            return r => r.AsWebApiActionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestActionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureFirstActionRegistration()
         {
-            return r => r.AsWebApiActionFilterWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiActionFilterWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestActionFilter2, SimpleActivatorData, SingleRegistrationStyle>> ConfigureSecondControllerRegistration()
         {
-            return r => r.AsWebApiActionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller);
+            return r => r.AsWebApiActionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestActionFilter2, SimpleActivatorData, SingleRegistrationStyle>> ConfigureSecondActionRegistration()
         {
-            return r => r.AsWebApiActionFilterWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiActionFilterWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Type GetWrapperType()
@@ -55,22 +55,22 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         protected override Action<ContainerBuilder> ConfigureControllerFilterOverride()
         {
-            return builder => builder.RegisterWebApiActionFilterOverrideForWhen(_controllerPredicate, FilterScope.Controller);
+            return builder => builder.RegisterWebApiActionFilterOverrideForWhen(_controllerPredicate, FilterScope.Controller, order: 0);
         }
 
         protected override Action<ContainerBuilder> ConfigureActionFilterOverride()
         {
-            return builder => builder.RegisterWebApiActionFilterOverrideForWhen(_actionPredicate, FilterScope.Action);
+            return builder => builder.RegisterWebApiActionFilterOverrideForWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestActionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureActionOverrideRegistration()
         {
-            return r => r.AsWebApiActionFilterOverrideWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiActionFilterOverrideWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestActionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureControllerOverrideRegistration()
         {
-            return r => r.AsWebApiActionFilterOverrideWhen(_controllerPredicate, FilterScope.Controller);
+            return r => r.AsWebApiActionFilterOverrideWhen(_controllerPredicate, FilterScope.Controller, order: 0);
         }
     }
 }

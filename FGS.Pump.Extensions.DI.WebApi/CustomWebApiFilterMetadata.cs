@@ -9,5 +9,7 @@ namespace FGS.Pump.Extensions.DI.WebApi
         public Func<HttpControllerDescriptor, HttpActionDescriptor, bool> Predicate { get; set; }
 
         public FilterScope FilterScope { get; set; }
+
+        public int Order { get; set; }
     }
 }

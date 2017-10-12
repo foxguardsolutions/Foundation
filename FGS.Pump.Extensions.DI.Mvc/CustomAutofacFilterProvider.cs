@@ -115,7 +115,7 @@ namespace FGS.Pump.Extensions.DI.Mvc
             ResolveActionScopedOverrideFilter(filterContext, ResultFilterOverrideMetadataKey);
         }
 
-        private static void ResolveActionScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<TFilter, TFilter> wrapperFactory = null)
+        private static void ResolveActionScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<TFilter, TFilter> wrapperFactory)
             where TFilter : class
         {
             var resolveParameters = CreateResolveParameters(filterContext);
@@ -131,10 +131,7 @@ namespace FGS.Pump.Extensions.DI.Mvc
 
                 var instance = actionFilter.Value.Value;
 
-                if (wrapperFactory != null)
-                {
-                    instance = wrapperFactory(instance);
-                }
+                instance = wrapperFactory(instance);
 
                 var filter = new Filter(instance, FilterScope.Action, metadata.Order);
                 filterContext.Filters.Add(filter);
@@ -152,11 +149,11 @@ namespace FGS.Pump.Extensions.DI.Mvc
 
         private static void ResolveActionScopedFilters(FilterContext filterContext)
         {
-            ResolveActionScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey);
-            ResolveActionScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey);
-            ResolveActionScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey);
-            ResolveActionScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey);
-            ResolveActionScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey);
+            ResolveActionScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey, f => new ActionFilterReflectiveFacade(f));
+            ResolveActionScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey, f => new AuthenticationFilterReflectiveFacade(f));
+            ResolveActionScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey, f => new AuthorizationFilterReflectiveFacade(f));
+            ResolveActionScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey, f => new ExceptionFilterReflectiveFacade(f));
+            ResolveActionScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey, f => new ResultFilterReflectiveFacade(f));
         }
 
         private static void ResolveActionScopedOverrideFilter(FilterContext filterContext, string metadataKey)
@@ -186,7 +183,7 @@ namespace FGS.Pump.Extensions.DI.Mvc
             ResolveControllerScopedOverrideFilter(filterContext, ResultFilterOverrideMetadataKey);
         }
 
-        private static void ResolveControllerScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<TFilter, TFilter> wrapperFactory = null)
+        private static void ResolveControllerScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<TFilter, TFilter> wrapperFactory)
             where TFilter : class
         {
             var resolveParameters = CreateResolveParameters(filterContext);
@@ -202,10 +199,7 @@ namespace FGS.Pump.Extensions.DI.Mvc
 
                 var instance = actionFilter.Value.Value;
 
-                if (wrapperFactory != null)
-                {
-                    instance = wrapperFactory(instance);
-                }
+                instance = wrapperFactory(instance);
 
                 var filter = new Filter(instance, FilterScope.Controller, metadata.Order);
                 filterContext.Filters.Add(filter);
@@ -223,11 +217,11 @@ namespace FGS.Pump.Extensions.DI.Mvc
 
         private static void ResolveControllerScopedFilters(FilterContext filterContext)
         {
-            ResolveControllerScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey);
-            ResolveControllerScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey);
-            ResolveControllerScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey);
-            ResolveControllerScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey);
-            ResolveControllerScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey);
+            ResolveControllerScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey, f => new ActionFilterReflectiveFacade(f));
+            ResolveControllerScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey, f => new AuthenticationFilterReflectiveFacade(f));
+            ResolveControllerScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey, f => new AuthorizationFilterReflectiveFacade(f));
+            ResolveControllerScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey, f => new ExceptionFilterReflectiveFacade(f));
+            ResolveControllerScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey, f => new ResultFilterReflectiveFacade(f));
         }
 
         private static void ResolveControllerScopedOverrideFilter(FilterContext filterContext, string metadataKey)

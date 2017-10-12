@@ -5,19 +5,13 @@ using System.Web.Mvc.Filters;
 namespace FGS.Pump.Extensions.DI.Mvc
 {
     /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Mvc/blob/ac6478034bdd32938fdd6b4923519df95f98ab18/src/Autofac.Integration.Mvc/ActionFilterOverride.cs </remarks>
-    internal class ActionFilterOverride : IActionFilter, IOverrideFilter
+    internal class ActionFilterOverride : ActionFilterReflectiveFacade, IOverrideFilter
     {
-        private readonly IActionFilter _wrappedFilter;
-
         public ActionFilterOverride(IActionFilter wrappedFilter)
+            : base(wrappedFilter)
         {
-            _wrappedFilter = wrappedFilter;
         }
 
         public Type FiltersToOverride => typeof(IActionFilter);
-
-        public void OnActionExecuted(ActionExecutedContext filterContext) => _wrappedFilter.OnActionExecuted(filterContext);
-
-        public void OnActionExecuting(ActionExecutingContext filterContext) => _wrappedFilter.OnActionExecuting(filterContext);
     }
 }

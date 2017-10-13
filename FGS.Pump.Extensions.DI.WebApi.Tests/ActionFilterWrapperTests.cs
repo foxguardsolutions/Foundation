@@ -34,7 +34,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             var activationCount = 0;
             Func<HttpControllerDescriptor, HttpActionDescriptor, bool> predicate = (hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType) && had.ActionName == nameof(TestController.Get);
             builder.Register<ICustomAutofacActionFilter>(c => new TestActionFilter(c.Resolve<ILogger>()))
-                .AsWebApiActionFilterWhen(predicate, FilterScope.Action)
+                .AsWebApiActionFilterWhen(predicate, FilterScope.Action, order: 0)
                 .InstancePerRequest()
                 .OnActivated(e => activationCount++);
             var container = builder.Build();

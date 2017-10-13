@@ -25,22 +25,22 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         protected override Action<IRegistrationBuilder<TestExceptionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureFirstControllerRegistration()
         {
-            return r => r.AsWebApiExceptionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller);
+            return r => r.AsWebApiExceptionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestExceptionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureFirstActionRegistration()
         {
-            return r => r.AsWebApiExceptionFilterWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiExceptionFilterWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestExceptionFilter2, SimpleActivatorData, SingleRegistrationStyle>> ConfigureSecondControllerRegistration()
         {
-            return r => r.AsWebApiExceptionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller);
+            return r => r.AsWebApiExceptionFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType), FilterScope.Controller, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestExceptionFilter2, SimpleActivatorData, SingleRegistrationStyle>> ConfigureSecondActionRegistration()
         {
-            return r => r.AsWebApiExceptionFilterWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiExceptionFilterWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Type GetWrapperType()
@@ -55,22 +55,22 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         protected override Action<ContainerBuilder> ConfigureControllerFilterOverride()
         {
-            return builder => builder.RegisterWebApiExceptionFilterOverrideForWhen(_controllerPredicate, FilterScope.Controller);
+            return builder => builder.RegisterWebApiExceptionFilterOverrideForWhen(_controllerPredicate, FilterScope.Controller, order: 0);
         }
 
         protected override Action<ContainerBuilder> ConfigureActionFilterOverride()
         {
-            return builder => builder.RegisterWebApiExceptionFilterOverrideForWhen(_actionPredicate, FilterScope.Action);
+            return builder => builder.RegisterWebApiExceptionFilterOverrideForWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestExceptionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureActionOverrideRegistration()
         {
-            return r => r.AsWebApiExceptionFilterOverrideWhen(_actionPredicate, FilterScope.Action);
+            return r => r.AsWebApiExceptionFilterOverrideWhen(_actionPredicate, FilterScope.Action, order: 0);
         }
 
         protected override Action<IRegistrationBuilder<TestExceptionFilter, SimpleActivatorData, SingleRegistrationStyle>> ConfigureControllerOverrideRegistration()
         {
-            return r => r.AsWebApiExceptionFilterOverrideWhen(_controllerPredicate, FilterScope.Controller);
+            return r => r.AsWebApiExceptionFilterOverrideWhen(_controllerPredicate, FilterScope.Controller, order: 0);
         }
     }
 }

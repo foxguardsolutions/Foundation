@@ -71,10 +71,10 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
         {
             var builder = new ContainerBuilder();
             builder.RegisterInstance(new TestCombinationFilter())
-                .AsWebApiActionFilterWhen(_controllerPredicate, FilterScope.Controller)
-                .AsWebApiAuthenticationFilterWhen(_controllerPredicate, FilterScope.Controller)
-                .AsWebApiAuthorizationFilterWhen(_controllerPredicate, FilterScope.Controller)
-                .AsWebApiExceptionFilterWhen(_controllerPredicate, FilterScope.Controller);
+                .AsWebApiActionFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
+                .AsWebApiAuthenticationFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
+                .AsWebApiAuthorizationFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
+                .AsWebApiExceptionFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0);
             var container = builder.Build();
 
             Assert.NotNull(container.Resolve<ICustomAutofacActionFilter>());
@@ -90,19 +90,19 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             builder.Register<ILogger>(c => new Logger()).InstancePerDependency();
 
             builder.Register(c => new TestAuthenticationFilter(c.Resolve<ILogger>()))
-                .AsWebApiAuthenticationFilterWhen(_controllerPredicate, FilterScope.Controller)
+                .AsWebApiAuthenticationFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
                 .InstancePerRequest();
 
             builder.Register(c => new TestAuthorizationFilter(c.Resolve<ILogger>()))
-                .AsWebApiAuthorizationFilterWhen(_controllerPredicate, FilterScope.Controller)
+                .AsWebApiAuthorizationFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
                 .InstancePerRequest();
 
             builder.Register(c => new TestExceptionFilter(c.Resolve<ILogger>()))
-                .AsWebApiExceptionFilterWhen(_controllerPredicate, FilterScope.Controller)
+                .AsWebApiExceptionFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
                 .InstancePerRequest();
 
             builder.Register(c => new TestActionFilter(c.Resolve<ILogger>()))
-                .AsWebApiActionFilterWhen(_controllerPredicate, FilterScope.Controller)
+                .AsWebApiActionFilterWhen(_controllerPredicate, FilterScope.Controller, order: 0)
                 .InstancePerRequest();
 
             var container = builder.Build();

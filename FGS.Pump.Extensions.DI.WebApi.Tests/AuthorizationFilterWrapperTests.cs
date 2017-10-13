@@ -35,7 +35,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             builder.Register<ILogger>(c => new Logger()).InstancePerDependency();
             var activationCount = 0;
             builder.Register(c => new TestAuthorizationFilter(c.Resolve<ILogger>()))
-                .AsWebApiAuthorizationFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(had.ControllerDescriptor.ControllerType) && had.ActionName == nameof(TestController.Get), FilterScope.Action)
+                .AsWebApiAuthorizationFilterWhen((hcd, had) => typeof(TestController).IsAssignableFrom(had.ControllerDescriptor.ControllerType) && had.ActionName == nameof(TestController.Get), FilterScope.Action, order: 0)
                 .InstancePerRequest()
                 .OnActivated(e => activationCount++);
             var container = builder.Build();

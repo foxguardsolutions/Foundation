@@ -143,8 +143,10 @@ namespace FGS.Pump.Extensions.DI.WebApi
             where TWrapper : IFilter
         {
             var filters = filterContext.MetadataResolutionLifetimeScope.Resolve<IEnumerable<Meta<Lazy<TFilter>>>>();
+            filters = filters.Where(f => f.Metadata.ContainsKey(metadataKey) && f.Metadata[metadataKey] is CustomWebApiFilterMetadata);
+            var orderedFilters = filters.OrderBy(f => ((CustomWebApiFilterMetadata)f.Metadata[metadataKey]).Order);
 
-            foreach (var filter in filters.Where(a => a.Metadata.ContainsKey(metadataKey) && a.Metadata[metadataKey] is CustomWebApiFilterMetadata))
+            foreach (var filter in orderedFilters)
             {
                 var metadata = (CustomWebApiFilterMetadata)filter.Metadata[metadataKey];
 
@@ -159,8 +161,10 @@ namespace FGS.Pump.Extensions.DI.WebApi
         private static void ResolveOverrideFilterInScope(FilterContext filterContext, string metadataKey, FilterScope scope)
         {
             var filters = filterContext.MetadataResolutionLifetimeScope.Resolve<IEnumerable<Meta<IOverrideFilter>>>();
+            filters = filters.Where(f => f.Metadata.ContainsKey(metadataKey) && f.Metadata[metadataKey] is CustomWebApiFilterMetadata);
+            var orderedFilters = filters.OrderBy(f => ((CustomWebApiFilterMetadata)f.Metadata[metadataKey]).Order);
 
-            foreach (var filter in filters.Where(a => a.Metadata.ContainsKey(metadataKey) && a.Metadata[metadataKey] is CustomWebApiFilterMetadata))
+            foreach (var filter in orderedFilters)
             {
                 var metadata = (CustomWebApiFilterMetadata)filter.Metadata[metadataKey];
 

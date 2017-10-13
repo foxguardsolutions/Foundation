@@ -12,52 +12,52 @@ namespace FGS.Pump.Extensions.DI.WebApi
 {
     public static class RegistrationBuilderExtensions
     {
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthorizationFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthorizationFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacAuthorizationFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthorizationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthorizationFilterMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthorizationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthorizationFilterMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiActionFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiActionFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacActionFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacActionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ActionFilterMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacActionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ActionFilterMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthenticationFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthenticationFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacAuthenticationFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthenticationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthenticationFilterMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthenticationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthenticationFilterMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiExceptionFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiExceptionFilterWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacExceptionFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacExceptionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ExceptionFilterMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacExceptionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ExceptionFilterMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthorizationFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthorizationFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacAuthorizationFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthorizationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthorizationFilterOverrideMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthorizationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthorizationFilterOverrideMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiActionFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiActionFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacActionFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacActionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ActionFilterOverrideMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacActionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ActionFilterOverrideMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthenticationFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiAuthenticationFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacAuthenticationFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthenticationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthenticationFilterOverrideMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacAuthenticationFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.AuthenticationFilterOverrideMetadataKey, order);
         }
 
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiExceptionFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope)
+        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsWebApiExceptionFilterOverrideWhen<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, int order)
             where TLimit : ICustomAutofacExceptionFilter
         {
-            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacExceptionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ExceptionFilterOverrideMetadataKey);
+            return registration.AsFilterWhen<TLimit, TActivatorData, TStyle, ICustomAutofacExceptionFilter>(filterCondition, filterScope, CustomAutofacWebApiFilterProvider.ExceptionFilterOverrideMetadataKey, order);
         }
 
         public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> WithPropertyValueFromApiControllerAttribute<TLimit, TActivatorData, TStyle, TAttribute, TParameterValue>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, string propertyName, Func<TAttribute, TParameterValue> parameterValueResolver)
@@ -108,13 +108,14 @@ namespace FGS.Pump.Extensions.DI.WebApi
                 });
         }
 
-        private static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsFilterWhen<TLimit, TActivatorData, TStyle, TFilterKind>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, string metadataKey)
+        private static IRegistrationBuilder<TLimit, TActivatorData, TStyle> AsFilterWhen<TLimit, TActivatorData, TStyle, TFilterKind>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Func<HttpControllerDescriptor, HttpActionDescriptor, bool> filterCondition, FilterScope filterScope, string metadataKey, int order)
             where TLimit : TFilterKind
         {
             var metadata = new CustomWebApiFilterMetadata()
             {
                 Predicate = filterCondition,
-                FilterScope = filterScope
+                FilterScope = filterScope,
+                Order = order
             };
             return registration.As<TFilterKind>().WithMetadata(metadataKey, metadata);
         }

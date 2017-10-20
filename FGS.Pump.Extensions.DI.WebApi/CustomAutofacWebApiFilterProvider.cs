@@ -91,17 +91,26 @@ namespace FGS.Pump.Extensions.DI.WebApi
                     }.ToDictionary(k => k, _ => new List<CustomWebApiFilterMetadata>())
                 };
 
+                // Global scoped override filters (NOOP kind).
+                ResolveNoopFilterOverridesInScope(filterContext, FilterScope.Global);
+
                 // Controller scoped override filters (NOOP kind).
                 ResolveNoopFilterOverridesInScope(filterContext, FilterScope.Controller);
 
                 // Action scoped override filters (NOOP kind).
                 ResolveNoopFilterOverridesInScope(filterContext, FilterScope.Action);
 
+                // Global scoped override filters.
+                ResolveFilterOverridesInScope(filterContext, FilterScope.Global);
+
                 // Controller scoped override filters.
                 ResolveFilterOverridesInScope(filterContext, FilterScope.Controller);
 
                 // Action scoped override filters.
                 ResolveFilterOverridesInScope(filterContext, FilterScope.Action);
+
+                // Global scoped filters.
+                ResolveFiltersInScope(filterContext, FilterScope.Global);
 
                 // Controller scoped filters.
                 ResolveFiltersInScope(filterContext, FilterScope.Controller);
@@ -115,25 +124,25 @@ namespace FGS.Pump.Extensions.DI.WebApi
 
         private static void ResolveNoopFilterOverridesInScope(FilterContext filterContext, FilterScope scope)
         {
-            ResolveOverrideFilterInScope(filterContext, ActionFilterOverrideMetadataKey, scope);
             ResolveOverrideFilterInScope(filterContext, AuthenticationFilterOverrideMetadataKey, scope);
             ResolveOverrideFilterInScope(filterContext, AuthorizationFilterOverrideMetadataKey, scope);
+            ResolveOverrideFilterInScope(filterContext, ActionFilterOverrideMetadataKey, scope);
             ResolveOverrideFilterInScope(filterContext, ExceptionFilterOverrideMetadataKey, scope);
         }
 
         private static void ResolveFilterOverridesInScope(FilterContext filterContext, FilterScope scope)
         {
-            ResolveFilterInScope<ICustomAutofacActionFilter, ActionFilterOverrideWrapper>(filterContext, m => new ActionFilterOverrideWrapper(m), ActionFilterOverrideMetadataKey, scope);
             ResolveFilterInScope<ICustomAutofacAuthenticationFilter, AuthenticationFilterOverrideWrapper>(filterContext, m => new AuthenticationFilterOverrideWrapper(m), AuthenticationFilterOverrideMetadataKey, scope);
             ResolveFilterInScope<ICustomAutofacAuthorizationFilter, AuthorizationFilterOverrideWrapper>(filterContext, m => new AuthorizationFilterOverrideWrapper(m), AuthorizationFilterOverrideMetadataKey, scope);
+            ResolveFilterInScope<ICustomAutofacActionFilter, ActionFilterOverrideWrapper>(filterContext, m => new ActionFilterOverrideWrapper(m), ActionFilterOverrideMetadataKey, scope);
             ResolveFilterInScope<ICustomAutofacExceptionFilter, ExceptionFilterOverrideWrapper>(filterContext, m => new ExceptionFilterOverrideWrapper(m), ExceptionFilterOverrideMetadataKey, scope);
         }
 
         private static void ResolveFiltersInScope(FilterContext filterContext, FilterScope scope)
         {
-            ResolveFilterInScope<ICustomAutofacActionFilter, ActionFilterWrapper>(filterContext, m => new ActionFilterWrapper(m), ActionFilterMetadataKey, scope);
             ResolveFilterInScope<ICustomAutofacAuthenticationFilter, AuthenticationFilterWrapper>(filterContext, m => new AuthenticationFilterWrapper(m), AuthenticationFilterMetadataKey, scope);
             ResolveFilterInScope<ICustomAutofacAuthorizationFilter, AuthorizationFilterWrapper>(filterContext, m => new AuthorizationFilterWrapper(m), AuthorizationFilterMetadataKey, scope);
+            ResolveFilterInScope<ICustomAutofacActionFilter, ActionFilterWrapper>(filterContext, m => new ActionFilterWrapper(m), ActionFilterMetadataKey, scope);
             ResolveFilterInScope<ICustomAutofacExceptionFilter, ExceptionFilterWrapper>(filterContext, m => new ExceptionFilterWrapper(m), ExceptionFilterMetadataKey, scope);
         }
 

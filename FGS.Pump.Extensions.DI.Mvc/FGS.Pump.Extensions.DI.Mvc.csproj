@@ -82,10 +82,6 @@
       <Project>{478D86CF-5CE7-454B-85FA-909F1279B0A5}</Project>
       <Name>FGS.Pump.Extensions.DI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj">
-      <Project>{8AD7FF34-0120-48BD-BFF9-76564FAA37A9}</Project>
-      <Name>FGS.Pump.Extensions</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />

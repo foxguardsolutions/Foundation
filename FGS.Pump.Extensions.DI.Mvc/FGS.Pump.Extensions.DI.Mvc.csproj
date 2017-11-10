@@ -1,97 +1,30 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{524A859F-91F0-4F89-8576-3F8A7B056F14}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FGS.Pump.Extensions.DI.Mvc</RootNamespace>
-    <AssemblyName>FGS.Pump.Extensions.DI.Mvc</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <NoWarn>CS7035</NoWarn>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <CodeAnalysisRuleSet>..\WebPump.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <TargetFramework>net461</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <NoWarn>CS7035</NoWarn>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <CodeAnalysisRuleSet>..\WebPump.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.6.1.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.4.6.1\lib\net45\Autofac.dll</HintPath>
-    </Reference>
-    <Reference Include="Autofac.Integration.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\packages\Autofac.Mvc5.4.0.2\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="JetBrains.Annotations, Version=11.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
-      <HintPath>..\packages\JetBrains.Annotations.11.0.0\lib\net20\JetBrains.Annotations.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionFilterReflectiveFacade.cs" />
-    <Compile Include="ActionFilterOverride.cs" />
-    <Compile Include="AuthenticationFilterReflectiveFacade.cs" />
-    <Compile Include="AuthenticationFilterOverride.cs" />
-    <Compile Include="AuthorizationFilterReflectiveFacade.cs" />
-    <Compile Include="AuthorizationFilterOverride.cs" />
-    <Compile Include="ContainerBuilderExtensions.cs" />
-    <Compile Include="CustomAutofacFilterProvider.cs" />
-    <Compile Include="CustomAutofacOverrideFilter.cs" />
-    <Compile Include="CustomAutofacWebTypesModule.cs" />
-    <Compile Include="CustomFilterMetadata.cs" />
-    <Compile Include="ExceptionFilterReflectiveFacade.cs" />
-    <Compile Include="ExceptionFilterOverride.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationBuilderExtensions.cs" />
-    <Compile Include="ResultFilterReflectiveFacade.cs" />
-    <Compile Include="ResultFilterOverride.cs" />
+    <PackageReference Include="Autofac" Version="4.6.1" />
+    <PackageReference Include="Autofac.Mvc5" Version="4.0.2" />
+    <PackageReference Include="JetBrains.Annotations" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Pump.Extensions.DI\FGS.Pump.Extensions.DI.csproj">
-      <Project>{478D86CF-5CE7-454B-85FA-909F1279B0A5}</Project>
-      <Name>FGS.Pump.Extensions.DI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj">
-      <Project>{8AD7FF34-0120-48BD-BFF9-76564FAA37A9}</Project>
-      <Name>FGS.Pump.Extensions</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\FGS.Pump.Extensions.DI\FGS.Pump.Extensions.DI.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
-    <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -15,7 +15,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         public Task OnAuthorizationAsync(HttpActionContext actionContext, CancellationToken cancellationToken)
         {
-            return Task.WhenAll();
+            return Task.CompletedTask;
         }
     }
 }

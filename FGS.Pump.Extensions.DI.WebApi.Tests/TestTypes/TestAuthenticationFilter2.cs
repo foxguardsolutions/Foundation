@@ -16,12 +16,12 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
 
         public Task AuthenticateAsync(HttpAuthenticationContext context, CancellationToken cancellationToken)
         {
-            return Task.WhenAll();
+            return Task.CompletedTask;
         }
 
         public Task ChallengeAsync(HttpAuthenticationChallengeContext context, CancellationToken cancellationToken)
         {
-            return Task.WhenAll();
+            return Task.CompletedTask;
         }
     }
 }

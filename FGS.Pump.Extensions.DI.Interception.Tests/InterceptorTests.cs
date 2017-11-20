@@ -70,7 +70,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         [Test]
         public async Task Given_InterceptingWithPassthru_ExecuteReturnAsync_Returns()
         {
-            _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsync(_arbitraryInt, _arbitraryString)).Returns(Task.WhenAll());
+            _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsync(_arbitraryInt, _arbitraryString)).Returns(Task.CompletedTask);
             var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             await subject.ExecuteReturnAsync(_arbitraryInt, _arbitraryString);

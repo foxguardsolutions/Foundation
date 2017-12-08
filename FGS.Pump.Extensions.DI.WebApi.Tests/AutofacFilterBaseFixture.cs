@@ -6,6 +6,7 @@ using System.Web.Http.Controllers;
 using Autofac;
 using Autofac.Builder;
 
+using FGS.Pump.Extensions.DI.WebApi.Tests.TestTypes;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;

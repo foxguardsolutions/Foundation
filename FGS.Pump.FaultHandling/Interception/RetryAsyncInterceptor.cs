@@ -66,7 +66,7 @@ namespace FGS.Pump.FaultHandling.Interception
 
         private void InvokeFunc<TResult>(IInvocation invocation, IRetryPolicy retryPolicy)
         {
-            retryPolicy.Execute<TResult>(() =>
+            retryPolicy.Execute(() =>
             {
                 invocation.Proceed();
                 return (TResult)invocation.ReturnValue;

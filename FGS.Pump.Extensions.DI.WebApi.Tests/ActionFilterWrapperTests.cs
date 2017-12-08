@@ -32,9 +32,9 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             var builder = new ContainerBuilder();
             builder.Register<ILogger>(c => new Logger()).InstancePerDependency();
             var activationCount = 0;
-            Func<HttpControllerDescriptor, HttpActionDescriptor, bool> predicate = (hcd, had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType) && had.ActionName == nameof(TestController.Get);
+            bool Predicate(HttpControllerDescriptor hcd, HttpActionDescriptor had) => typeof(TestController).IsAssignableFrom(hcd.ControllerType) && had.ActionName == nameof(TestController.Get);
             builder.Register<ICustomAutofacActionFilter>(c => new TestActionFilter(c.Resolve<ILogger>()))
-                .AsWebApiActionFilterWhen(predicate, FilterScope.Action, order: 0)
+                .AsWebApiActionFilterWhen(Predicate, FilterScope.Action, order: 0)
                 .InstancePerRequest()
                 .OnActivated(e => activationCount++);
             var container = builder.Build();
@@ -53,7 +53,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             var metadata = new CustomWebApiFilterMetadata()
             {
                 FilterScope = FilterScope.Action,
-                Predicate = predicate
+                Predicate = Predicate
             };
             var wrapper = new ActionFilterWrapper(metadata);
 

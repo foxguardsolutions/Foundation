@@ -48,7 +48,7 @@ namespace FGS.Pump.FaultHandling.Retry
         {
             return UseTrackingSyncLock(
                 () => _exceptionPredicates.Select<IExceptionRetryPredicate, Func<Exception, bool>>(
-                    predicate => (Exception ex) => predicate.ShouldRetry(ex)));
+                    predicate => predicate.ShouldRetry));
         }
 
         private void DecrementCallStackDepth()

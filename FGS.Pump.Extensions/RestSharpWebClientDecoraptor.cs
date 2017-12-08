@@ -68,8 +68,7 @@ namespace FGS.Pump.Extensions
 
         private static Method GetRestMethodFromString(string method)
         {
-            Method methodValue;
-            if (!Enum.TryParse(method, true, out methodValue))
+            if (!Enum.TryParse(method, true, out Method methodValue))
                 throw new ArgumentOutOfRangeException(nameof(method));
             return methodValue;
         }

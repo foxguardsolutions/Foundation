@@ -22,8 +22,7 @@ namespace FGS.Pump.Extensions.DI
 
         public override bool CanSupplyValue(ParameterInfo pi, IComponentContext context, out Func<object> valueProvider)
         {
-            PropertyInfo prop;
-            if (!pi.TryGetDeclaringProperty(out prop) || prop.Name != Name)
+            if (!pi.TryGetDeclaringProperty(out var prop) || prop.Name != Name)
             {
                 valueProvider = null;
                 return false;

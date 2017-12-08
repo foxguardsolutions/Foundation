@@ -29,9 +29,7 @@ namespace FGS.Pump.Extensions.DI.WebApi
         /// <param name="filterMetadata">The filter metadata.</param>
         public AuthorizationFilterWrapper(CustomWebApiFilterMetadata filterMetadata)
         {
-            if (filterMetadata == null) throw new ArgumentNullException(nameof(filterMetadata));
-
-            _filterMetadata = filterMetadata;
+            _filterMetadata = filterMetadata ?? throw new ArgumentNullException(nameof(filterMetadata));
         }
 
         /// <summary>

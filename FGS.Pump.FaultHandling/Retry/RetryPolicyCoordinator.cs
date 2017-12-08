@@ -13,7 +13,7 @@ namespace FGS.Pump.FaultHandling.Retry
         private readonly Func<NoOpRetryPolicy> _noOpFactory;
         private readonly IEnumerable<IExceptionRetryPredicate> _exceptionPredicates;
 
-        private int _callStackDepth = 0;
+        private int _callStackDepth;
 
         public RetryPolicyCoordinator(IRetryPolicyFactory retryPolicyFactory, Func<NoOpRetryPolicy> noOpFactory, IEnumerable<IExceptionRetryPredicate> exceptionPredicates)
         {

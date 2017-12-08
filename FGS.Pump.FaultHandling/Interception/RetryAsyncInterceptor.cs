@@ -14,12 +14,10 @@ namespace FGS.Pump.FaultHandling.Interception
         private readonly MethodInfo _invokeFuncMethodInfo = typeof(RetryAsyncInterceptor).GetMethod(nameof(InvokeFunc), BindingFlags.Instance | BindingFlags.NonPublic);
 
         private readonly IRetryPolicyCoordinator _retryPolicyCoordinator;
-        private readonly RetryOnFaultAttribute _attribute;
 
         public RetryAsyncInterceptor(IRetryPolicyCoordinator retryPolicyCoordinator, RetryOnFaultAttribute attribute)
         {
             _retryPolicyCoordinator = retryPolicyCoordinator;
-            _attribute = attribute;
         }
 
         protected override void Invoke(IInvocation invocation)

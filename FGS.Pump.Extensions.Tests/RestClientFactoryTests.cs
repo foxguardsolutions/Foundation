@@ -2,12 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.Extensions;
 using FGS.Pump.Tests.Support.TestCategories;
+
 using Moq;
+
 using NUnit.Framework;
+
 using Ploeh.AutoFixture;
+
 using RestSharp;
 
 namespace FGS.Pump.Extensions.Tests

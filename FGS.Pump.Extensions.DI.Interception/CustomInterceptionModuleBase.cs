@@ -109,8 +109,7 @@ namespace FGS.Pump.Extensions.DI.Interception
 
         private static IComponentRegistration GetChildRegistration(IComponentRegistration registration)
         {
-            object childRegistration;
-            registration.Metadata.TryGetValue(ChildRegistrationPropertyName, out childRegistration);
+            registration.Metadata.TryGetValue(ChildRegistrationPropertyName, out var childRegistration);
             return childRegistration as IComponentRegistration;
         }
 
@@ -121,8 +120,7 @@ namespace FGS.Pump.Extensions.DI.Interception
 
         private static IEnumerable<Service> GetInterceptorServices(IComponentRegistration childRegistration)
         {
-            object collection;
-            if (!childRegistration.Metadata.TryGetValue(InterceptorServicesPropertyName, out collection))
+            if (!childRegistration.Metadata.TryGetValue(InterceptorServicesPropertyName, out var collection))
             {
                 return Enumerable.Empty<Service>();
             }

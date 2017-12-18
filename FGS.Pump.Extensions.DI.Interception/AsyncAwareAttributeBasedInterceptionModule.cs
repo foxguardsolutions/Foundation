@@ -5,7 +5,6 @@ using Autofac;
 using Autofac.Core;
 
 using Castle.DynamicProxy;
-using FGS.Pump.Extensions.DI;
 
 namespace FGS.Pump.Extensions.DI.Interception
 {

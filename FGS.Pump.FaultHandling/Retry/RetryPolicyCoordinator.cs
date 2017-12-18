@@ -13,7 +13,7 @@ namespace FGS.Pump.FaultHandling.Retry
         private readonly Func<NoOpRetryPolicy> _noOpFactory;
         private readonly IEnumerable<IExceptionRetryPredicate> _exceptionPredicates;
 
-        private int _callStackDepth = 0;
+        private int _callStackDepth;
 
         public RetryPolicyCoordinator(IRetryPolicyFactory retryPolicyFactory, Func<NoOpRetryPolicy> noOpFactory, IEnumerable<IExceptionRetryPredicate> exceptionPredicates)
         {
@@ -48,7 +48,7 @@ namespace FGS.Pump.FaultHandling.Retry
         {
             return UseTrackingSyncLock(
                 () => _exceptionPredicates.Select<IExceptionRetryPredicate, Func<Exception, bool>>(
-                    predicate => (Exception ex) => predicate.ShouldRetry(ex)));
+                    predicate => predicate.ShouldRetry));
         }
 
         private void DecrementCallStackDepth()

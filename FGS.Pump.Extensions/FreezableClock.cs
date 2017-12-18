@@ -7,7 +7,7 @@ namespace FGS.Pump.Extensions
         private readonly object _trackingSyncLock = new object();
         private readonly IClock _clock;
 
-        private bool _frozen = false;
+        private bool _frozen;
         private DateTimeOffset? _frozenNow;
         private DateTimeOffset? _frozenUtcNow;
 

@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web.Http.Controllers;
 
-namespace FGS.Pump.Extensions.DI.WebApi.Tests
+namespace FGS.Pump.Extensions.DI.WebApi.Tests.TestTypes
 {
     public class InterfaceController : IHttpController
     {

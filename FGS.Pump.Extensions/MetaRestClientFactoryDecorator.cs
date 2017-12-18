@@ -2,7 +2,6 @@
 using System.Security.Cryptography.X509Certificates;
 
 using RestSharp;
-using RestSharp.Deserializers;
 
 namespace FGS.Pump.Extensions
 {

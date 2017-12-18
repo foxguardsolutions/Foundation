@@ -10,6 +10,7 @@ using System.Web.Http.Hosting;
 using Autofac;
 using Autofac.Integration.WebApi;
 
+using FGS.Pump.Extensions.DI.WebApi.Tests.TestTypes;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;

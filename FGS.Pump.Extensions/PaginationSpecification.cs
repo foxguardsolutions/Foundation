@@ -14,7 +14,7 @@ namespace FGS.Pump.Extensions
             PageSize = pageSize;
         }
 
-        public static PaginationSpecification FirstPageOfSize(int pageSize) => new PaginationSpecification(1, pageSize);
+        public static PaginationSpecification FirstPageOfSize(int pageSize) => new PaginationSpecification(0, pageSize);
 
         public PaginationSpecification Next() => new PaginationSpecification(PageNumber + 1, PageSize);
 

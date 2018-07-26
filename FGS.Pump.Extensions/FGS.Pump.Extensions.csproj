@@ -20,7 +20,7 @@
     <PackageReference Include="System.IO.Abstractions" Version="2.1.0.176" />
     <PackageReference Include="Rx-Interfaces" Version="2.2.5" />
     <PackageReference Include="Rx-Linq" Version="2.2.5" />
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.3" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.6" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>

@@ -117,7 +117,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
 
         public class PassthruInterceptor : IInterceptor
         {
-            public void Intercept(IInvocation invocation)
+            public void Intercept(Castle.DynamicProxy.IInvocation invocation)
             {
                 invocation.Proceed();
             }

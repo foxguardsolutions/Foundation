@@ -17,10 +17,10 @@
     <PackageReference Include="Castle.Core" Version="4.3.1" />
     <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
     <PackageReference Include="Polly" Version="6.1.0" />
-    <PackageReference Include="System.Configuration.Abstractions" Version="2.0.2.45" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Backend\FGS.Pump.Configuration\FGS.Pump.Configuration.csproj" />
     <ProjectReference Include="..\FGS.Pump.Extensions.DI.Interception\FGS.Pump.Extensions.DI.Interception.csproj" />
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj" />
   </ItemGroup>

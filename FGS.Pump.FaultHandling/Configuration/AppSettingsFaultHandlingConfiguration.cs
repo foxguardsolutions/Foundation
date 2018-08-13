@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Configuration.Abstractions;
+
+using FGS.Pump.Configuration.Abstractions;
 
 namespace FGS.Pump.FaultHandling.Configuration
 {

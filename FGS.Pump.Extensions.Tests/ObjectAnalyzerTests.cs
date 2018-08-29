@@ -1,13 +1,13 @@
 ﻿using System.Dynamic;
 
+using AutoFixture;
+
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using Newtonsoft.Json.Linq;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.Extensions.Tests
 {

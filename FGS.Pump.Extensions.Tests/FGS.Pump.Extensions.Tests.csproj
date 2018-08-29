@@ -21,7 +21,7 @@
     <PackageReference Include="Moq" Version="4.9.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="NUnit" Version="3.10.1" />
-    <PackageReference Include="AutoFixture" Version="3.50.7" />
+    <PackageReference Include="AutoFixture" Version="4.5.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
     <PackageReference Include="RestSharp" Version="106.3.1" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />

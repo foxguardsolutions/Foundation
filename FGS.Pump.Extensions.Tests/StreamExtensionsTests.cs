@@ -1,12 +1,12 @@
 ﻿using System.IO;
 using System.Linq;
 
+using AutoFixture;
+
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.Extensions.Tests
 {

@@ -1,21 +1,22 @@
+using System;
 using System.Web.Mvc;
 
 namespace FGS.Pump.Extensions.DI.Mvc
 {
     internal class ExceptionFilterReflectiveFacade : IExceptionFilter
     {
-        private readonly IExceptionFilter _adapted;
+        private readonly Lazy<IExceptionFilter> _lazyAdapted;
 
-        public ExceptionFilterReflectiveFacade(IExceptionFilter adapted)
+        public ExceptionFilterReflectiveFacade(Lazy<IExceptionFilter> lazyAdapted)
         {
-            _adapted = adapted;
+            _lazyAdapted = lazyAdapted;
         }
 
-        public void OnException(ExceptionContext filterContext) => _adapted.OnException(filterContext);
+        public void OnException(ExceptionContext filterContext) => _lazyAdapted.Value.OnException(filterContext);
 
         public override string ToString()
         {
-            return _adapted.ToString();
+            return _lazyAdapted.Value.ToString();
         }
     }
 }

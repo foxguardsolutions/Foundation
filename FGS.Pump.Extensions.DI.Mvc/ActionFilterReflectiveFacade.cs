@@ -1,23 +1,24 @@
+using System;
 using System.Web.Mvc;
 
 namespace FGS.Pump.Extensions.DI.Mvc
 {
     internal class ActionFilterReflectiveFacade : IActionFilter
     {
-        private readonly IActionFilter _adapted;
+        private readonly Lazy<IActionFilter> _lazyAdapted;
 
-        public ActionFilterReflectiveFacade(IActionFilter adapted)
+        public ActionFilterReflectiveFacade(Lazy<IActionFilter> lazyAdapted)
         {
-            _adapted = adapted;
+            _lazyAdapted = lazyAdapted;
         }
 
-        public void OnActionExecuting(ActionExecutingContext filterContext) => _adapted.OnActionExecuting(filterContext);
+        public void OnActionExecuting(ActionExecutingContext filterContext) => _lazyAdapted.Value.OnActionExecuting(filterContext);
 
-        public void OnActionExecuted(ActionExecutedContext filterContext) => _adapted.OnActionExecuted(filterContext);
+        public void OnActionExecuted(ActionExecutedContext filterContext) => _lazyAdapted.Value.OnActionExecuted(filterContext);
 
         public override string ToString()
         {
-            return _adapted.ToString();
+            return _lazyAdapted.Value.ToString();
         }
     }
 }

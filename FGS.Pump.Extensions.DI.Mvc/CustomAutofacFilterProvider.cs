@@ -92,19 +92,15 @@ namespace FGS.Pump.Extensions.DI.Mvc
             return filters.ToArray();
         }
 
-        private static bool FilterMatchesAction(FilterContext filterContext, CustomFilterMetadata metadata)
-        {
-            return metadata.FilterScope == FilterScope.Action
-                   && metadata.ControllerPredicate(filterContext.ControllerContext)
-                   && metadata.ActionPredicate(filterContext.ControllerContext, filterContext.ActionDescriptor);
-        }
+        private static bool FilterMatchesAction(FilterContext filterContext, CustomFilterMetadata metadata) =>
+            metadata.FilterScope == FilterScope.Action
+            && metadata.ControllerPredicate(filterContext.ControllerContext)
+            && metadata.ActionPredicate(filterContext.ControllerContext, filterContext.ActionDescriptor);
 
-        private static bool FilterMatchesController(FilterContext filterContext, CustomFilterMetadata metadata)
-        {
-            return metadata.FilterScope == FilterScope.Controller
-                   && metadata.ControllerPredicate(filterContext.ControllerContext)
-                   && metadata.ActionPredicate(filterContext.ControllerContext, filterContext.ActionDescriptor);
-        }
+        private static bool FilterMatchesController(FilterContext filterContext, CustomFilterMetadata metadata) =>
+            metadata.FilterScope == FilterScope.Controller
+            && metadata.ControllerPredicate(filterContext.ControllerContext)
+            && metadata.ActionPredicate(filterContext.ControllerContext, filterContext.ActionDescriptor);
 
         private static void ResolveActionScopedEmptyOverrideFilters(FilterContext filterContext)
         {
@@ -115,23 +111,19 @@ namespace FGS.Pump.Extensions.DI.Mvc
             ResolveActionScopedOverrideFilter(filterContext, ResultFilterOverrideMetadataKey);
         }
 
-        private static void ResolveActionScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<TFilter, TFilter> wrapperFactory)
+        private static void ResolveActionScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<Lazy<TFilter>, TFilter> wrapperFactory)
             where TFilter : class
         {
             var resolveParameters = CreateResolveParameters(filterContext);
             var actionFilters = filterContext.LifetimeScope.Resolve<IEnumerable<Meta<Lazy<TFilter>>>>(resolveParameters);
 
-            foreach (var actionFilter in actionFilters.Where(ContainsCustomMetadataForKey<Lazy<TFilter>>(metadataKey)))
+            foreach (var metaLazyActionFilter in actionFilters.Where(ContainsCustomMetadataForKey<TFilter>(metadataKey)))
             {
-                var metadata = (CustomFilterMetadata)actionFilter.Metadata[metadataKey];
+                var metadata = (CustomFilterMetadata)metaLazyActionFilter.Metadata[metadataKey];
                 if (!FilterMatchesAction(filterContext, metadata))
-                {
                     continue;
-                }
 
-                var instance = actionFilter.Value.Value;
-
-                instance = wrapperFactory(instance);
+                var instance = wrapperFactory(metaLazyActionFilter.Value);
 
                 var filter = new Filter(instance, FilterScope.Action, metadata.Order);
                 filterContext.Filters.Add(filter);
@@ -140,36 +132,34 @@ namespace FGS.Pump.Extensions.DI.Mvc
 
         private static void ResolveActionScopedFilterOverrides(FilterContext filterContext)
         {
-            ResolveActionScopedFilter<IActionFilter>(filterContext, ActionFilterOverrideMetadataKey, filter => new ActionFilterOverride(filter));
-            ResolveActionScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterOverrideMetadataKey, filter => new AuthenticationFilterOverride(filter));
-            ResolveActionScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterOverrideMetadataKey, filter => new AuthorizationFilterOverride(filter));
-            ResolveActionScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterOverrideMetadataKey, filter => new ExceptionFilterOverride(filter));
-            ResolveActionScopedFilter<IResultFilter>(filterContext, ResultFilterOverrideMetadataKey, filter => new ResultFilterOverride(filter));
+            ResolveActionScopedFilter<IActionFilter>(filterContext, ActionFilterOverrideMetadataKey, lazyFilter => new ActionFilterOverride(lazyFilter));
+            ResolveActionScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterOverrideMetadataKey, lazyFilter => new AuthenticationFilterOverride(lazyFilter));
+            ResolveActionScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterOverrideMetadataKey, lazyFilter => new AuthorizationFilterOverride(lazyFilter));
+            ResolveActionScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterOverrideMetadataKey, lazyFilter => new ExceptionFilterOverride(lazyFilter));
+            ResolveActionScopedFilter<IResultFilter>(filterContext, ResultFilterOverrideMetadataKey, lazyFilter => new ResultFilterOverride(lazyFilter));
         }
 
         private static void ResolveActionScopedFilters(FilterContext filterContext)
         {
-            ResolveActionScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey, f => new ActionFilterReflectiveFacade(f));
-            ResolveActionScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey, f => new AuthenticationFilterReflectiveFacade(f));
-            ResolveActionScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey, f => new AuthorizationFilterReflectiveFacade(f));
-            ResolveActionScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey, f => new ExceptionFilterReflectiveFacade(f));
-            ResolveActionScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey, f => new ResultFilterReflectiveFacade(f));
+            ResolveActionScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey, lazyFilter => new ActionFilterReflectiveFacade(lazyFilter));
+            ResolveActionScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey, lazyFilter => new AuthenticationFilterReflectiveFacade(lazyFilter));
+            ResolveActionScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey, lazyFilter => new AuthorizationFilterReflectiveFacade(lazyFilter));
+            ResolveActionScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey, lazyFilter => new ExceptionFilterReflectiveFacade(lazyFilter));
+            ResolveActionScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey, lazyFilter => new ResultFilterReflectiveFacade(lazyFilter));
         }
 
         private static void ResolveActionScopedOverrideFilter(FilterContext filterContext, string metadataKey)
         {
             var resolveParameters = CreateResolveParameters(filterContext);
-            var actionFilters = filterContext.LifetimeScope.Resolve<IEnumerable<Meta<IOverrideFilter>>>(resolveParameters);
+            var actionFilters = filterContext.LifetimeScope.Resolve<IEnumerable<Meta<Lazy<IOverrideFilter>>>>(resolveParameters);
 
-            foreach (var actionFilter in actionFilters.Where(ContainsCustomMetadataForKey<IOverrideFilter>(metadataKey)))
+            foreach (var metaLazyActionFilter in actionFilters.Where(ContainsCustomMetadataForKey<IOverrideFilter>(metadataKey)))
             {
-                var metadata = (CustomFilterMetadata)actionFilter.Metadata[metadataKey];
+                var metadata = (CustomFilterMetadata)metaLazyActionFilter.Metadata[metadataKey];
                 if (!FilterMatchesAction(filterContext, metadata))
-                {
                     continue;
-                }
 
-                var filter = new Filter(actionFilter.Value, FilterScope.Action, metadata.Order);
+                var filter = new Filter(metaLazyActionFilter.Value.Value, FilterScope.Action, metadata.Order);
                 filterContext.Filters.Add(filter);
             }
         }
@@ -183,23 +173,19 @@ namespace FGS.Pump.Extensions.DI.Mvc
             ResolveControllerScopedOverrideFilter(filterContext, ResultFilterOverrideMetadataKey);
         }
 
-        private static void ResolveControllerScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<TFilter, TFilter> wrapperFactory)
+        private static void ResolveControllerScopedFilter<TFilter>(FilterContext filterContext, string metadataKey, Func<Lazy<TFilter>, TFilter> wrapperFactory)
             where TFilter : class
         {
             var resolveParameters = CreateResolveParameters(filterContext);
             var actionFilters = filterContext.LifetimeScope.Resolve<IEnumerable<Meta<Lazy<TFilter>>>>(resolveParameters);
 
-            foreach (var actionFilter in actionFilters.Where(ContainsCustomMetadataForKey<Lazy<TFilter>>(metadataKey)))
+            foreach (var metaLazyActionFilter in actionFilters.Where(ContainsCustomMetadataForKey<TFilter>(metadataKey)))
             {
-                var metadata = (CustomFilterMetadata)actionFilter.Metadata[metadataKey];
+                var metadata = (CustomFilterMetadata)metaLazyActionFilter.Metadata[metadataKey];
                 if (!FilterMatchesController(filterContext, metadata))
-                {
                     continue;
-                }
 
-                var instance = actionFilter.Value.Value;
-
-                instance = wrapperFactory(instance);
+                var instance = wrapperFactory(metaLazyActionFilter.Value);
 
                 var filter = new Filter(instance, FilterScope.Controller, metadata.Order);
                 filterContext.Filters.Add(filter);
@@ -208,54 +194,47 @@ namespace FGS.Pump.Extensions.DI.Mvc
 
         private static void ResolveControllerScopedFilterOverrides(FilterContext filterContext)
         {
-            ResolveControllerScopedFilter<IActionFilter>(filterContext, ActionFilterOverrideMetadataKey, filter => new ActionFilterOverride(filter));
-            ResolveControllerScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterOverrideMetadataKey, filter => new AuthenticationFilterOverride(filter));
-            ResolveControllerScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterOverrideMetadataKey, filter => new AuthorizationFilterOverride(filter));
-            ResolveControllerScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterOverrideMetadataKey, filter => new ExceptionFilterOverride(filter));
-            ResolveControllerScopedFilter<IResultFilter>(filterContext, ResultFilterOverrideMetadataKey, filter => new ResultFilterOverride(filter));
+            ResolveControllerScopedFilter<IActionFilter>(filterContext, ActionFilterOverrideMetadataKey, lazyFilter => new ActionFilterOverride(lazyFilter));
+            ResolveControllerScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterOverrideMetadataKey, lazyFilter => new AuthenticationFilterOverride(lazyFilter));
+            ResolveControllerScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterOverrideMetadataKey, lazyFilter => new AuthorizationFilterOverride(lazyFilter));
+            ResolveControllerScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterOverrideMetadataKey, lazyFilter => new ExceptionFilterOverride(lazyFilter));
+            ResolveControllerScopedFilter<IResultFilter>(filterContext, ResultFilterOverrideMetadataKey, lazyFilter => new ResultFilterOverride(lazyFilter));
         }
 
         private static void ResolveControllerScopedFilters(FilterContext filterContext)
         {
-            ResolveControllerScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey, f => new ActionFilterReflectiveFacade(f));
-            ResolveControllerScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey, f => new AuthenticationFilterReflectiveFacade(f));
-            ResolveControllerScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey, f => new AuthorizationFilterReflectiveFacade(f));
-            ResolveControllerScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey, f => new ExceptionFilterReflectiveFacade(f));
-            ResolveControllerScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey, f => new ResultFilterReflectiveFacade(f));
+            ResolveControllerScopedFilter<IActionFilter>(filterContext, ActionFilterMetadataKey, lazyFilter => new ActionFilterReflectiveFacade(lazyFilter));
+            ResolveControllerScopedFilter<IAuthenticationFilter>(filterContext, AuthenticationFilterMetadataKey, lazyFilter => new AuthenticationFilterReflectiveFacade(lazyFilter));
+            ResolveControllerScopedFilter<IAuthorizationFilter>(filterContext, AuthorizationFilterMetadataKey, lazyFilter => new AuthorizationFilterReflectiveFacade(lazyFilter));
+            ResolveControllerScopedFilter<IExceptionFilter>(filterContext, ExceptionFilterMetadataKey, lazyFilter => new ExceptionFilterReflectiveFacade(lazyFilter));
+            ResolveControllerScopedFilter<IResultFilter>(filterContext, ResultFilterMetadataKey, lazyFilter => new ResultFilterReflectiveFacade(lazyFilter));
         }
 
         private static void ResolveControllerScopedOverrideFilter(FilterContext filterContext, string metadataKey)
         {
             var resolveParameters = CreateResolveParameters(filterContext);
-            var actionFilters = filterContext.LifetimeScope.Resolve<IEnumerable<Meta<IOverrideFilter>>>(resolveParameters);
+            var actionFilters = filterContext.LifetimeScope.Resolve<IEnumerable<Meta<Lazy<IOverrideFilter>>>>(resolveParameters);
 
-            foreach (var actionFilter in actionFilters.Where(ContainsCustomMetadataForKey<IOverrideFilter>(metadataKey)))
+            foreach (var metaLazyActionFilter in actionFilters.Where(ContainsCustomMetadataForKey<IOverrideFilter>(metadataKey)))
             {
-                var metadata = (CustomFilterMetadata)actionFilter.Metadata[metadataKey];
+                var metadata = (CustomFilterMetadata)metaLazyActionFilter.Metadata[metadataKey];
                 if (!FilterMatchesController(filterContext, metadata))
-                {
                     continue;
-                }
 
-                var filter = new Filter(actionFilter.Value, FilterScope.Controller, metadata.Order);
+                var filter = new Filter(metaLazyActionFilter.Value.Value, FilterScope.Controller, metadata.Order);
                 filterContext.Filters.Add(filter);
             }
         }
 
-        private static Func<Meta<T>, bool> ContainsCustomMetadataForKey<T>(string metadataKey)
-        {
-            return a => a.Metadata.ContainsKey(metadataKey) && a.Metadata[metadataKey] is CustomFilterMetadata;
-        }
+        private static Func<Meta<Lazy<T>>, bool> ContainsCustomMetadataForKey<T>(string metadataKey) =>
+            a => a.Metadata.ContainsKey(metadataKey) && a.Metadata[metadataKey] is CustomFilterMetadata;
 
-        private static Parameter[] CreateResolveParameters(FilterContext filterContext)
-        {
-            var resolveParameters = new Parameter[]
-                                        {
-                                            new NamedParameter(ControllerContextParameterName, filterContext.ControllerContext),
-                                            new NamedParameter(ActionDescriptorParameterName, filterContext.ActionDescriptor)
-                                        };
-            return resolveParameters;
-        }
+        private static Parameter[] CreateResolveParameters(FilterContext filterContext) =>
+            new Parameter[]
+            {
+                new NamedParameter(ControllerContextParameterName, filterContext.ControllerContext),
+                new NamedParameter(ActionDescriptorParameterName, filterContext.ActionDescriptor)
+            };
 
         private class FilterContext
         {

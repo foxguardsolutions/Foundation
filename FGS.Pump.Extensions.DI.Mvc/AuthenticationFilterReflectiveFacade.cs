@@ -1,22 +1,23 @@
+using System;
 using System.Web.Mvc.Filters;
 
 namespace FGS.Pump.Extensions.DI.Mvc
 {
     internal class AuthenticationFilterReflectiveFacade : IAuthenticationFilter
     {
-        private readonly IAuthenticationFilter _adapted;
+        private readonly Lazy<IAuthenticationFilter> _lazyAdapted;
 
-        public AuthenticationFilterReflectiveFacade(IAuthenticationFilter adapted)
+        public AuthenticationFilterReflectiveFacade(Lazy<IAuthenticationFilter> lazyAdapted)
         {
-            _adapted = adapted;
+            _lazyAdapted = lazyAdapted;
         }
 
-        public void OnAuthentication(AuthenticationContext filterContext) => _adapted.OnAuthentication(filterContext);
+        public void OnAuthentication(AuthenticationContext filterContext) => _lazyAdapted.Value.OnAuthentication(filterContext);
 
-        public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext) => _adapted.OnAuthenticationChallenge(filterContext);
+        public void OnAuthenticationChallenge(AuthenticationChallengeContext filterContext) => _lazyAdapted.Value.OnAuthenticationChallenge(filterContext);
         public override string ToString()
         {
-            return _adapted.ToString();
+            return _lazyAdapted.Value.ToString();
         }
     }
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using AutoFixture;
+
 using FGS.Pump.FaultHandling.Adapters;
 using FGS.Pump.FaultHandling.Retry;
 using FGS.Pump.Tests.Support;
@@ -11,8 +13,6 @@ using FGS.Pump.Tests.Support.TestCategories;
 using Moq;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.FaultHandling.Tests.Retry
 {

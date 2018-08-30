@@ -1,13 +1,13 @@
 ﻿using System;
 
+using AutoFixture;
+
 using FGS.Pump.FaultHandling.Retry;
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.Extensions;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.FaultHandling.Tests.Retry
 {

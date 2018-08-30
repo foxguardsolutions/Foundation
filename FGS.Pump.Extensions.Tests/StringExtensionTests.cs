@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
+using AutoFixture;
+
 using FGS.Pump.Tests.Support;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.Extensions.Tests
 {

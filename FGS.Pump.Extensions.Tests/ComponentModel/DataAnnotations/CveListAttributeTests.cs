@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 
+using AutoFixture;
+
 using FGS.Pump.Extensions.ComponentModel.DataAnnotations;
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.Extensions.Tests.ComponentModel.DataAnnotations
 {

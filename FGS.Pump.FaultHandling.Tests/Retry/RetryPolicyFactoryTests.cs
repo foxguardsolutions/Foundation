@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
 
+using AutoFixture;
+
 using FGS.Pump.FaultHandling.Retry;
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.TestCategories;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 using Polly;
 

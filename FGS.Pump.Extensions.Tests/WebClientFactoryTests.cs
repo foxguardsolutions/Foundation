@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
 
+using AutoFixture;
+
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.Extensions;
 using FGS.Pump.Tests.Support.TestCategories;
@@ -8,8 +10,6 @@ using FGS.Pump.Tests.Support.TestCategories;
 using Moq;
 
 using NUnit.Framework;
-
-using Ploeh.AutoFixture;
 
 namespace FGS.Pump.Extensions.Tests
 {

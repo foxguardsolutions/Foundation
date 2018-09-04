@@ -9,8 +9,8 @@ namespace FGS.Pump.Extensions.DI.Mvc
     /// </summary>
     internal class AuthorizationFilterOverride : AuthorizationFilterReflectiveFacade, IOverrideFilter
     {
-        public AuthorizationFilterOverride(IAuthorizationFilter wrappedFilter)
-            : base(wrappedFilter)
+        public AuthorizationFilterOverride(Lazy<IAuthorizationFilter> lazyWrappedFilter)
+            : base(lazyWrappedFilter)
         {
         }
 

@@ -1,21 +1,22 @@
+using System;
 using System.Web.Mvc;
 
 namespace FGS.Pump.Extensions.DI.Mvc
 {
     internal class AuthorizationFilterReflectiveFacade : IAuthorizationFilter
     {
-        private readonly IAuthorizationFilter _adapted;
+        private readonly Lazy<IAuthorizationFilter> _lazyAdapted;
 
-        public AuthorizationFilterReflectiveFacade(IAuthorizationFilter adapted)
+        public AuthorizationFilterReflectiveFacade(Lazy<IAuthorizationFilter> lazyAdapted)
         {
-            _adapted = adapted;
+            _lazyAdapted = lazyAdapted;
         }
 
-        public void OnAuthorization(AuthorizationContext filterContext) => _adapted.OnAuthorization(filterContext);
+        public void OnAuthorization(AuthorizationContext filterContext) => _lazyAdapted.Value.OnAuthorization(filterContext);
 
         public override string ToString()
         {
-            return _adapted.ToString();
+            return _lazyAdapted.Value.ToString();
         }
     }
 }

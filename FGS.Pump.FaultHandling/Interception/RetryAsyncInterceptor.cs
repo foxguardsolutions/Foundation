@@ -15,7 +15,7 @@ namespace FGS.Pump.FaultHandling.Interception
 
         private readonly IRetryPolicyCoordinator _retryPolicyCoordinator;
 
-        public RetryAsyncInterceptor(IRetryPolicyCoordinator retryPolicyCoordinator, RetryOnFaultAttribute attribute)
+        public RetryAsyncInterceptor(IRetryPolicyCoordinator retryPolicyCoordinator)
         {
             _retryPolicyCoordinator = retryPolicyCoordinator;
         }

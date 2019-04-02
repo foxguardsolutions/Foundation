@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Serilog support for ASP.NET Core logging</Description>
     <VersionPrefix>2.1.1</VersionPrefix>
     <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog</AssemblyName>

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Pump.Configuration\FGS.Pump.Configuration.csproj" />
+    <ProjectReference Include="..\..\Backend\FGS.Pump.Settings\FGS.Pump.Settings.csproj" />
     <ProjectReference Include="..\FGS.Pump.Extensions.DI.Interception\FGS.Pump.Extensions.DI.Interception.csproj" />
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj" />
   </ItemGroup>

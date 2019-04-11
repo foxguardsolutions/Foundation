@@ -1,9 +1,9 @@
-﻿using System.Web.Routing;
+using Microsoft.AspNetCore.Routing;
 
 namespace FGS.Pump.MVC.Support.Startup
 {
     public interface IRouteRegistrar
     {
-        void RegisterRoutes(RouteCollection routes);
+        void RegisterRoutes(IRouteBuilder routes);
     }
 }

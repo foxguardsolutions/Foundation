@@ -1,5 +1,6 @@
 using System.Collections.Generic;
-using System.Web.Routing;
+
+using Microsoft.AspNetCore.Routing;
 
 namespace FGS.Pump.MVC.Support.Startup
 {
@@ -14,7 +15,7 @@ namespace FGS.Pump.MVC.Support.Startup
 
         #region Implementation of IRouteRegistrar
 
-        public void RegisterRoutes(RouteCollection routes)
+        public void RegisterRoutes(IRouteBuilder routes)
         {
             foreach (var routeRegistrar in _routeRegistrars)
                 routeRegistrar.RegisterRoutes(routes);

@@ -1,14 +1,17 @@
-﻿using System;
+using System;
 using System.Linq.Expressions;
-using System.Web.Mvc;
+
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace FGS.Pump.Extensions
 {
     public static class ModelExtensions
     {
-        public static string GetDisplayName<TModel, TProperty>(this TModel model, Expression<Func<TModel, TProperty>> expression)
+        public static string GetDisplayName<TModel, TProperty>(TModel model, Expression<Func<TModel, TProperty>> expression)
         {
-            return ModelMetadata.FromLambdaExpression(expression, new ViewDataDictionary<TModel>(model)).DisplayName;
+            var modelMetadataProvider = new EmptyModelMetadataProvider();
+            return modelMetadataProvider.GetModelExplorerForType(typeof(TModel), model).GetExplorerForExpression(typeof(TProperty), expression).GetSimpleDisplayText();
         }
     }
 }

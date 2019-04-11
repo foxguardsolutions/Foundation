@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Low-level Serilog provider for Microsoft.Extensions.Logging</Description>
     <VersionPrefix>2.0.4</VersionPrefix>
     <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
-    <TargetFrameworks>net472</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>FGS.Extensions.Logging.Serilog</AssemblyName>
@@ -14,7 +15,7 @@
 
   <ItemGroup>
     <PackageReference Include="Serilog" Version="2.8.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="[2.2.0, 2.3.0)" />
   </ItemGroup>
 
   <PropertyGroup>

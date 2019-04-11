@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <CodeAnalysisRuleSet>..\..\WebPump.ruleset</CodeAnalysisRuleSet>
-    <NoWarn>1701;1702;1705;CS7035;NU1701</NoWarn>
   </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
@@ -15,28 +13,19 @@
     <PackageReference Include="Castle.Core" Version="4.4.0" />
     <PackageReference Include="FluentAssertions" Version="5.7.0" />
     <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
-    <PackageReference Include="JetBrains.Annotations" Version="2019.1.1" />
     <PackageReference Include="Moq" Version="4.12.0" />
     <PackageReference Include="NUnit" Version="3.12.0" />
     <PackageReference Include="AutoFixture" Version="4.10.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\FGS.Pump.Extensions.DI.Interception\FGS.Pump.Extensions.DI.Interception.csproj" />
     <ProjectReference Include="..\..\FGS.Pump.Tests.Support\FGS.Pump.Tests.Support.csproj" />
   </ItemGroup>
+
   <ItemGroup>
     <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

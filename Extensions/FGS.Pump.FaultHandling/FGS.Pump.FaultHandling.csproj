@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-    <CodeAnalysisRuleSet>..\..\WebPump.ruleset</CodeAnalysisRuleSet>
-    <NoWarn>1701;1702;1705;CS7035;NU1701</NoWarn>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-  </ItemGroup>
+
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.2" />
     <PackageReference Include="Castle.Core" Version="4.4.0" />
-    <PackageReference Include="JetBrains.Annotations" Version="2019.1.1" />
     <PackageReference Include="Polly" Version="7.1.0" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\FGS.Pump.Configuration\FGS.Pump.Configuration.csproj" />
     <ProjectReference Include="..\FGS.Pump.Extensions.DI.Interception\FGS.Pump.Extensions.DI.Interception.csproj" />
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj" />
   </ItemGroup>
+
 </Project>

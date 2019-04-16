@@ -28,11 +28,25 @@ namespace FGS.Tests.Support
         public static Mock<T> Mock<T>(this Fixture fixture)
             where T : class
         {
-            var mock = new Mock<T>();
-            fixture.Inject(mock);
-            fixture.Register(() => fixture.Create<Mock<T>>().Object);
-            fixture.Freeze<T>();
-            return mock;
+            return fixture.Mock<T>(() => new Mock<T>());
+        }
+
+        public static Mock<T> Mock<T>(this Fixture fixture, MockBehavior behavior)
+            where T : class
+        {
+            return fixture.Mock<T>(() => new Mock<T>(behavior));
+        }
+
+        public static Mock<T> Mock<T>(this Fixture fixture, params object[] args)
+            where T : class
+        {
+            return fixture.Mock<T>(() => new Mock<T>(MockBehavior.Default, args));
+        }
+
+        public static Mock<T> Mock<T>(this Fixture fixture, MockBehavior behavior, params object[] args)
+            where T : class
+        {
+            return fixture.Mock<T>(() => new Mock<T>(behavior, args));
         }
 
         public static IEnumerable<Mock<T>> MockMany<T>(this Fixture fixture, int count = 3)
@@ -79,6 +93,16 @@ namespace FGS.Tests.Support
             var additive = fixture.Create<int>();
 
             return (TEnum)(object)(maxInteger + additive);
+        }
+
+        private static Mock<T> Mock<T>(this Fixture fixture, Func<Mock<T>> mockFactory)
+            where T : class
+        {
+            var mock = mockFactory();
+            fixture.Inject(mock);
+            fixture.Register(() => fixture.Create<Mock<T>>().Object);
+            fixture.Freeze<T>();
+            return mock;
         }
     }
 }

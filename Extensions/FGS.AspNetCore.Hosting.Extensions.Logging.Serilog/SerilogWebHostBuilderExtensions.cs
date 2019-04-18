@@ -84,11 +84,15 @@ namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
         /// </summary>
         /// <param name="builder">The web host builder to configure.</param>
         /// <returns>The web host builder.</returns>
-        public static IWebHostBuilder UseSerilogScoped(this IWebHostBuilder builder)
+        public static IWebHostBuilder UseSerilogExternallyRegistered(this IWebHostBuilder builder)
         {
             if (builder == null) throw new ArgumentNullException(nameof(builder));
+
+            // This has to be singleton in order to support the ASP.NET Core framework attempting to resolve it in singleton scope, otherwise we would get
+            // an exception with the message `Cannot consume scoped service from singleton` during application startup.
             builder.ConfigureServices(collection =>
-                collection.AddScoped<ILoggerFactory>(services => new SerilogLoggerFactory(services.GetRequiredService<ILogger>())));
+                collection.AddSingleton<ILoggerFactory>(services => new SerilogLoggerFactory(services.GetRequiredService<ILogger>())));
+
             return builder;
         }
     }

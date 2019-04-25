@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 2.3.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 2.3.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="[2.2.0, 2.3.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Pump.Extensions.DI\FGS.Pump.Extensions.DI.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -4,21 +4,24 @@ using Castle.DynamicProxy;
 
 namespace FGS.Pump.Extensions.DI.Interception
 {
-    public class FreezeTimeInterceptor : IInterceptor
+    public class FreezeTimeAsyncInterceptor : NonRacingAsyncInterceptor
     {
         private readonly Func<IFreezableClock> _freezableClockFactory;
 
-        public FreezeTimeInterceptor(Func<IFreezableClock> freezableClockFactory)
+        public FreezeTimeAsyncInterceptor(Func<IFreezableClock> freezableClockFactory)
         {
             _freezableClockFactory = freezableClockFactory;
         }
 
-        public void Intercept(IInvocation invocation)
+        protected override void BeforeInvoke(IInvocation invocation)
         {
             var freezableClock = _freezableClockFactory();
-
             freezableClock.FreezeTime();
-            invocation.Proceed();
+        }
+
+        protected override void AfterInvoke(IInvocation invocation)
+        {
+            var freezableClock = _freezableClockFactory();
             freezableClock.UnfreezeTime();
         }
     }

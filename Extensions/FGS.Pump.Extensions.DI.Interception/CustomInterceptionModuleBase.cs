@@ -79,7 +79,7 @@ namespace FGS.Pump.Extensions.DI.Interception
 
                 var interceptors = GetInterceptorServices(args.Component)
                     .Select(s => args.Context.ResolveService(s))
-                    .Cast<Castle.DynamicProxy.IInterceptor>()
+                    .Cast<IInterceptor>()
                     .ToArray();
                 proxyParameters.Add(new PositionalParameter(index++, interceptors));
 

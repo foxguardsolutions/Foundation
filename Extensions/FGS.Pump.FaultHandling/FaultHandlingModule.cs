@@ -1,4 +1,4 @@
-using Autofac;
+﻿using Autofac;
 
 using FGS.Pump.Extensions.DI.Interception;
 using FGS.Pump.FaultHandling.Adapters;
@@ -27,7 +27,9 @@ namespace FGS.Pump.FaultHandling
 
         private static void RegisterInterceptor(ContainerBuilder builder)
         {
-            builder.RegisterModule<AttributeBasedInterceptionModule<RetryOnFaultAttribute, RetryInterceptor>>();
+            builder.RegisterType<RetryInterceptor>().AsSelf().InstancePerDependency();
+            builder.RegisterType<RetryAsyncInterceptor>().AsSelf().InstancePerDependency();
+            builder.RegisterModule<AsyncAwareAttributeBasedInterceptionModule<RetryOnFaultAttribute, RetryInterceptor, RetryAsyncInterceptor>>();
         }
     }
 }

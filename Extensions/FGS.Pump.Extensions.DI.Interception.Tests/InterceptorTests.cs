@@ -1,8 +1,10 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 using Autofac;
 
 using AutoFixture;
+
+using Castle.DynamicProxy;
 
 using FGS.Pump.Tests.Support;
 using FGS.Pump.Tests.Support.TestCategories;
@@ -32,7 +34,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         [Test]
         public void Given_InterceptingWithPassthru_ExecuteVoid_Returns()
         {
-            var subject = Given_InterceptedSubject<PassthruInterceptor>();
+            var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             subject.ExecuteVoid(_arbitraryInt, _arbitraryString);
 
@@ -44,7 +46,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         {
             var expected = Fixture.Create<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnValue(_arbitraryInt, _arbitraryString)).Returns(expected);
-            var subject = Given_InterceptedSubject<PassthruInterceptor>();
+            var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             var actual = subject.ExecuteReturnValue(_arbitraryInt, _arbitraryString);
 
@@ -57,7 +59,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         {
             var expected = Fixture.CreateMany<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnReference(_arbitraryInt, _arbitraryString)).Returns(expected);
-            var subject = Given_InterceptedSubject<PassthruInterceptor>();
+            var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             var actual = subject.ExecuteReturnReference(_arbitraryInt, _arbitraryString);
 
@@ -69,7 +71,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         public async Task Given_InterceptingWithPassthru_ExecuteReturnAsync_Returns()
         {
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsync(_arbitraryInt, _arbitraryString)).Returns(Task.CompletedTask);
-            var subject = Given_InterceptedSubject<PassthruInterceptor>();
+            var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             await subject.ExecuteReturnAsync(_arbitraryInt, _arbitraryString);
 
@@ -81,7 +83,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         {
             var expected = Fixture.Create<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsyncValue(_arbitraryInt, _arbitraryString)).ReturnsAsync(expected);
-            var subject = Given_InterceptedSubject<PassthruInterceptor>();
+            var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             var actual = await subject.ExecuteReturnAsyncValue(_arbitraryInt, _arbitraryString);
 
@@ -94,7 +96,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         {
             var expected = Fixture.CreateMany<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsyncReference(_arbitraryInt, _arbitraryString)).ReturnsAsync(expected);
-            var subject = Given_InterceptedSubject<PassthruInterceptor>();
+            var subject = Given_InterceptedSubject<PassthruInterceptor, PassthruAsyncInterceptor>();
 
             var actual = await subject.ExecuteReturnAsyncReference(_arbitraryInt, _arbitraryString);
 
@@ -102,27 +104,27 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
             Assert.That(actual, Is.SameAs(expected));
         }
 
-        private IInterceptionTestSubject Given_InterceptedSubject<TInterceptor>()
-            where TInterceptor : IInterceptor
+        private IInterceptionTestSubject Given_InterceptedSubject<TSyncInterceptor, TAsyncInterceptor>()
+            where TSyncInterceptor : IInterceptor
+            where TAsyncInterceptor : NonRacingAsyncInterceptor
         {
             var containerBuilder = new ContainerBuilder();
-            containerBuilder.RegisterModule<AttributeBasedInterceptionModule<InterceptForTestAttribute, TInterceptor>>();
+            containerBuilder.RegisterModule<AsyncAwareAttributeBasedInterceptionModule<InterceptForTestAttribute, TSyncInterceptor, TAsyncInterceptor>>();
             containerBuilder.Register(ctx => new InterceptionSubjectInnerImplementationDecorator(_mockInnermostImplementation.Object)).AsSelf().InstancePerDependency();
             var container = containerBuilder.Build();
             return container.Resolve<InterceptionSubjectInnerImplementationDecorator>();
         }
 
-        private class PassthruInterceptor : IInterceptor
+        public class PassthruInterceptor : IInterceptor
         {
-            public void Intercept(IInvocation invocation)
+            public void Intercept(Castle.DynamicProxy.IInvocation invocation)
             {
                 invocation.Proceed();
             }
+        }
 
-            public async Task InterceptAsync(IAsyncInvocation invocation)
-            {
-                await invocation.ProceedAsync();
-            }
+        public class PassthruAsyncInterceptor : NonRacingAsyncInterceptor
+        {
         }
     }
 }

@@ -1,6 +1,5 @@
-﻿using System;
-
-using Castle.DynamicProxy;
+using System;
+using System.Threading.Tasks;
 
 namespace FGS.Pump.Extensions.DI.Interception
 {
@@ -16,9 +15,16 @@ namespace FGS.Pump.Extensions.DI.Interception
         public void Intercept(IInvocation invocation)
         {
             var freezableClock = _freezableClockFactory();
-
             freezableClock.FreezeTime();
             invocation.Proceed();
+            freezableClock.UnfreezeTime();
+        }
+
+        public async Task InterceptAsync(IAsyncInvocation invocation)
+        {
+            var freezableClock = _freezableClockFactory();
+            freezableClock.FreezeTime();
+            await invocation.ProceedAsync();
             freezableClock.UnfreezeTime();
         }
     }

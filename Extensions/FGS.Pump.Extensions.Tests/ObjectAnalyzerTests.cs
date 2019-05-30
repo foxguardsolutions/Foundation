@@ -3,7 +3,7 @@
 using AutoFixture;
 
 using FGS.Pump.Tests.Support;
-using FGS.Pump.Tests.Support.TestCategories;
+using FGS.Tests.Support.TestCategories;
 
 using Newtonsoft.Json.Linq;
 

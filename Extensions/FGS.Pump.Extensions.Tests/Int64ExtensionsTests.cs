@@ -1,4 +1,4 @@
-﻿using FGS.Pump.Tests.Support.TestCategories;
+﻿using FGS.Tests.Support.TestCategories;
 
 using NUnit.Framework;
 

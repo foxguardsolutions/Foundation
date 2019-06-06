@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net472</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <CodeAnalysisRuleSet>..\..\WebPump.ruleset</CodeAnalysisRuleSet>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -11,7 +11,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac" Version="4.9.1" />
+    <PackageReference Include="FluentAssertions" Version="5.6.0" />
+    <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
     <PackageReference Include="JetBrains.Annotations" Version="2018.2.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
     <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />

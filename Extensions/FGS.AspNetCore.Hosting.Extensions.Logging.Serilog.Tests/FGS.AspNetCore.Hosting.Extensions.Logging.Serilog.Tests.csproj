@@ -2,15 +2,11 @@
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.0</TargetFrameworks>
-    <AssemblyName>Serilog.AspNetCore.Tests</AssemblyName>
-    <AssemblyOriginatorKeyFile>../../assets/Serilog.snk</AssemblyOriginatorKeyFile>
-    <SignAssembly>true</SignAssembly>
-    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Serilog.AspNetCore\Serilog.AspNetCore.csproj" />
+    <ProjectReference Include="..\FGS.AspNetCore.Hosting.Extensions.Logging.Serilog\FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.csproj" />
   </ItemGroup>
 
   <ItemGroup>

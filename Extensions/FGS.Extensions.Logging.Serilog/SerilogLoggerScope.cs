@@ -3,10 +3,11 @@
 
 using System;
 using System.Collections.Generic;
+
 using Serilog.Core;
 using Serilog.Events;
 
-namespace Serilog.Extensions.Logging
+namespace FGS.Extensions.Logging.Serilog
 {
     class SerilogLoggerScope : IDisposable
     {
@@ -30,7 +31,7 @@ namespace Serilog.Extensions.Logging
         }
 
         public SerilogLoggerScope Parent { get; }
-        
+
         public void Dispose()
         {
             if (!_disposed)
@@ -78,7 +79,7 @@ namespace Serilog.Extensions.Logging
                         key = key.Substring(1);
                         destructureObject = true;
                     }
-                    
+
                     var property = propertyFactory.CreateProperty(key, stateProperty.Value, destructureObject);
                     logEvent.AddPropertyIfAbsent(property);
                 }

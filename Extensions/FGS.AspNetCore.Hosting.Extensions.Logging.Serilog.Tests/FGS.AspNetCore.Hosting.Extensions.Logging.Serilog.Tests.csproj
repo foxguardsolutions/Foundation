@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net472</TargetFrameworks>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AssemblyName>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.Tests</AssemblyName>
+    <RootNamespace>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Low-level Serilog provider for Microsoft.Extensions.Logging</Description>
@@ -7,9 +7,9 @@
     <TargetFrameworks>net472</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>Serilog.Extensions.Logging</AssemblyName>
+    <AssemblyName>FGS.Extensions.Logging.Serilog</AssemblyName>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <RootNamespace>Serilog</RootNamespace>
+    <RootNamespace>FGS.Extensions.Logging.Serilog</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

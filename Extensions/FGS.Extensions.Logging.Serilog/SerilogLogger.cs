@@ -1,16 +1,20 @@
 // Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
+
+using Microsoft.Extensions.Logging;
+
 using Serilog.Core;
 using Serilog.Events;
-using FrameworkLogger = Microsoft.Extensions.Logging.ILogger;
-using System.Reflection;
 using Serilog.Parsing;
 
-namespace Serilog.Extensions.Logging
+using FrameworkLogger = Microsoft.Extensions.Logging.ILogger;
+using ILogger = Serilog.ILogger;
+
+namespace FGS.Extensions.Logging.Serilog
 {
     class SerilogLogger : FrameworkLogger
     {
@@ -29,7 +33,7 @@ namespace Serilog.Extensions.Logging
             _logger = logger;
 
             // If a logger was passed, the provider has already added itself as an enricher
-            _logger = _logger ?? Serilog.Log.Logger.ForContext(new[] { provider });
+            _logger = _logger ?? global::Serilog.Log.Logger.ForContext(new[] { provider });
 
             if (name != null)
             {
@@ -80,7 +84,7 @@ namespace Serilog.Extensions.Logging
                         LogEventProperty bound;
                         if (logger.BindProperty(property.Key, property.Value, false, out bound))
                             properties.Add(bound);
-                    }                    
+                    }
                 }
 
                 var stateType = state.GetType();

@@ -1,18 +1,23 @@
-﻿// Copyright (c) .NET Foundation. All rights reserved.
+// Copyright (c) .NET Foundation. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
 using System.Collections;
-using Serilog.Events;
-using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+
+using Microsoft.Extensions.Logging;
+
+using Serilog;
 using Serilog.Debugging;
-using Serilog.Framework.Logging.Tests.Support;
+using Serilog.Events;
+
+using FGS.Extensions.Logging.Serilog.Tests.Support;
+
 using Xunit;
 
-namespace Serilog.Extensions.Logging.Test
+namespace FGS.Extensions.Logging.Serilog.Tests
 {
     public class SerilogLoggerTest
     {
@@ -327,7 +332,7 @@ namespace Serilog.Extensions.Logging.Test
             var t = SetUp(LogLevel.Trace);
             var logger = t.Item1;
             var sink = t.Item2;
-            
+
             using (logger.BeginScope(new Dictionary<string, object> {{ "@Person", new Person { FirstName = "John", LastName = "Smith" }}}))
             {
                 logger.Log(LogLevel.Information, 0, TestMessage, null, null);

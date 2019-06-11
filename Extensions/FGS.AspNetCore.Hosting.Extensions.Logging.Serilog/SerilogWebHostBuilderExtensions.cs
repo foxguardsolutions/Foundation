@@ -78,5 +78,18 @@ namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
             });
             return builder;
         }
+
+        /// <summary>
+        /// Sets Serilog as the logging provider, using an already-registered <see cref="ILogger"/>.
+        /// </summary>
+        /// <param name="builder">The web host builder to configure.</param>
+        /// <returns>The web host builder.</returns>
+        public static IWebHostBuilder UseSerilogScoped(this IWebHostBuilder builder)
+        {
+            if (builder == null) throw new ArgumentNullException(nameof(builder));
+            builder.ConfigureServices(collection =>
+                collection.AddScoped<ILoggerFactory>(services => new SerilogLoggerFactory(services.GetRequiredService<ILogger>())));
+            return builder;
+        }
     }
 }

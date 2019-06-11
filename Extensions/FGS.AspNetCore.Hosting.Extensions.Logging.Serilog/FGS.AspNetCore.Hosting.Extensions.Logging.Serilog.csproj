@@ -4,7 +4,7 @@
     <Description>Serilog support for ASP.NET Core logging</Description>
     <VersionPrefix>2.1.1</VersionPrefix>
     <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net472</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Serilog.AspNetCore</AssemblyName>

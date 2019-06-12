@@ -4,20 +4,23 @@
     <Description>Serilog support for ASP.NET Core logging</Description>
     <VersionPrefix>2.1.1</VersionPrefix>
     <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net472</TargetFrameworks>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>Serilog.AspNetCore</AssemblyName>
+    <AssemblyName>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog</AssemblyName>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <RootNamespace>Serilog</RootNamespace>
+    <RootNamespace>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Serilog" Version="2.5.0" />
-    <PackageReference Include="Serilog.Extensions.Logging" Version="2.0.0" />
+    <PackageReference Include="Serilog" Version="2.8.0" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Extensions.Logging.Serilog\FGS.Extensions.Logging.Serilog.csproj" />
   </ItemGroup>
 
 </Project>

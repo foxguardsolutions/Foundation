@@ -1,4 +1,4 @@
-﻿// Copyright 2017 Serilog Contributors
+// Copyright 2017 Serilog Contributors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,12 +13,16 @@
 // limitations under the License.
 
 using System;
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Logging;
-using Serilog.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Serilog
+using Serilog;
+
+using ILogger = Serilog.ILogger;
+
+namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
 {
     /// <summary>
     /// Extends <see cref="IWebHostBuilder"/> with Serilog configuration methods.
@@ -29,12 +33,12 @@ namespace Serilog
         /// Sets Serilog as the logging provider.
         /// </summary>
         /// <param name="builder">The web host builder to configure.</param>
-        /// <param name="logger">The Serilog logger; if not supplied, the static <see cref="Serilog.Log"/> will be used.</param>
+        /// <param name="logger">The Serilog logger; if not supplied, the static <see cref="Log"/> will be used.</param>
         /// <param name="dispose">When true, dispose <paramref name="logger"/> when the framework disposes the provider. If the
         /// logger is not specified but <paramref name="dispose"/> is true, the <see cref="Log.CloseAndFlush()"/> method will be
         /// called on the static <see cref="Log"/> class instead.</param>
         /// <returns>The web host builder.</returns>
-        public static IWebHostBuilder UseSerilog(this IWebHostBuilder builder, Serilog.ILogger logger = null, bool dispose = false)
+        public static IWebHostBuilder UseSerilog(this IWebHostBuilder builder, ILogger logger = null, bool dispose = false)
         {
             if (builder == null) throw new ArgumentNullException(nameof(builder));
             builder.ConfigureServices(collection =>
@@ -64,7 +68,7 @@ namespace Serilog
                 {
                     collection.AddSingleton<ILoggerFactory>(services => new SerilogLoggerFactory(logger, true));
                 }
-                else 
+                else
                 {
                     // Passing a `null` logger to `SerilogLoggerFactory` results in disposal via
                     // `Log.CloseAndFlush()`, which additionally replaces the static logger with a no-op.
@@ -72,6 +76,19 @@ namespace Serilog
                     collection.AddSingleton<ILoggerFactory>(services => new SerilogLoggerFactory(null, true));
                 }
             });
+            return builder;
+        }
+
+        /// <summary>
+        /// Sets Serilog as the logging provider, using an already-registered <see cref="ILogger"/>.
+        /// </summary>
+        /// <param name="builder">The web host builder to configure.</param>
+        /// <returns>The web host builder.</returns>
+        public static IWebHostBuilder UseSerilogScoped(this IWebHostBuilder builder)
+        {
+            if (builder == null) throw new ArgumentNullException(nameof(builder));
+            builder.ConfigureServices(collection =>
+                collection.AddScoped<ILoggerFactory>(services => new SerilogLoggerFactory(services.GetRequiredService<ILogger>())));
             return builder;
         }
     }

@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+
+using Serilog;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace Serilog.Framework.Logging.Tests.Support
+namespace FGS.Extensions.Logging.Serilog.Tests.Support
 {
     public class DisposeTrackingLogger : ILogger, IDisposable
     {

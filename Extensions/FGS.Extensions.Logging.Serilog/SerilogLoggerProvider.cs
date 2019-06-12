@@ -2,20 +2,25 @@
 // Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
 using System;
+using System.Collections.Generic;
 #if ASYNCLOCAL
 using System.Threading;
 #else
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Messaging;
 #endif
+
 using Microsoft.Extensions.Logging;
+
+using Serilog;
 using Serilog.Core;
 using Serilog.Events;
-using FrameworkLogger = Microsoft.Extensions.Logging.ILogger;
-using System.Collections.Generic;
 using Serilog.Context;
 
-namespace Serilog.Extensions.Logging
+using FrameworkLogger = Microsoft.Extensions.Logging.ILogger;
+using ILogger = Serilog.ILogger;
+
+namespace FGS.Extensions.Logging.Serilog
 {
     /// <summary>
     /// An <see cref="ILoggerProvider"/> that pipes events through Serilog.
@@ -66,7 +71,7 @@ namespace Serilog.Extensions.Logging
             // The outermost scope pushes and pops the Serilog `LogContext` - once
             // this enricher is on the stack, the `CurrentScope` property takes care
             // of the rest of the `BeginScope()` stack.
-            var popSerilogContext = LogContext.PushProperties(this);
+            var popSerilogContext = LogContext.Push(this);
             return new SerilogLoggerScope(this, state, popSerilogContext);
         }
 

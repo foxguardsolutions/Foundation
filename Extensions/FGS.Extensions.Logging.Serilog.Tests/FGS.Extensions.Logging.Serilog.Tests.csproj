@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>net472</TargetFrameworks>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AssemblyName>FGS.Extensions.Logging.Serilog.Tests</AssemblyName>
+    <RootNamespace>FGS.Extensions.Logging.Serilog.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

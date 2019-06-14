@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.CompositionRoot.Abstractions\FGS.Autofac.CompositionRoot.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.CompositionRoot\FGS.Autofac.CompositionRoot.csproj" />
+  </ItemGroup>
+
+</Project>

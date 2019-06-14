@@ -1,6 +1,6 @@
-﻿using Autofac.Core;
+using Autofac.Core;
 
-namespace FGS.Pump.Extensions.DI
+namespace FGS.Autofac.DynamicScoping.Abstractions.Specialized
 {
     public interface IOverridableHttpScopeAutofacModule : IModule
     {

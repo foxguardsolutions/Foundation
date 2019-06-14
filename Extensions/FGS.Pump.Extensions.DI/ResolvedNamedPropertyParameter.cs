@@ -1,14 +1,15 @@
-﻿using System;
+using System;
 using System.Reflection;
 
 using Autofac;
+using Autofac.Core;
 
 namespace FGS.Pump.Extensions.DI
 {
     /// <remarks>Based on:
     ///     https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/ResolvedParameter.cs
     /// and https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/NamedPropertyParameter.cs </remarks>
-    public class ResolvedNamedPropertyParameter<TPropertyValue> : Autofac.Core.Parameter
+    public class ResolvedNamedPropertyParameter<TPropertyValue> : Parameter
     {
         public string Name { get; }
 

@@ -1,5 +1,6 @@
-﻿using Autofac;
+using Autofac;
 
+using FGS.Autofac.DynamicScoping.Abstractions;
 using FGS.Pump.Extensions.DI;
 
 namespace FGS.Pump.Eventing

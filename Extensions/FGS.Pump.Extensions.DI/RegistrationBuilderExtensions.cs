@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using Autofac;
 using Autofac.Builder;
@@ -7,23 +7,6 @@ namespace FGS.Pump.Extensions.DI
 {
     public static class RegistrationBuilderExtensions
     {
-        public static IRegistrationBuilder<TLimit, TActivatorData, TStyle> In<TLimit, TActivatorData, TStyle>(this IRegistrationBuilder<TLimit, TActivatorData, TStyle> registration, Scope scope)
-        {
-            switch (scope)
-            {
-                case Scope.PerDependency:
-                    return registration.InstancePerDependency();
-                case Scope.PerLifetimeScope:
-                    return registration.InstancePerLifetimeScope();
-                case Scope.PerRequest:
-                    return registration.InstancePerRequest();
-                case Scope.Singleton:
-                    return registration.SingleInstance();
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(scope), scope, null);
-            }
-        }
-
         public static IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle> WithParameterTypedFrom<TLimit, TReflectionActivatorData, TStyle, TParameter>(
             this IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle> registration,
             Func<IComponentContext, TParameter> valueProvider)

@@ -1,9 +1,10 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Reflection;
 using System.Web.Mvc;
 using System.Web.Mvc.Filters;
 
 using Autofac;
+using Autofac.Integration.Mvc;
 
 using FGS.Pump.Extensions.DI.Mvc.Tests.TestTypes;
 
@@ -71,7 +72,7 @@ namespace FGS.Pump.Extensions.DI.Mvc.Tests
 
         private static void SetupMockLifetimeScopeProvider(ILifetimeScope container)
         {
-            var resolver = new Autofac.Integration.Mvc.AutofacDependencyResolver(container, new StubLifetimeScopeProvider(container));
+            var resolver = new AutofacDependencyResolver(container, new StubLifetimeScopeProvider(container));
             DependencyResolver.SetResolver(resolver);
         }
     }

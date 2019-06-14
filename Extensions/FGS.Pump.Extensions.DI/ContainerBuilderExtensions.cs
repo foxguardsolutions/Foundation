@@ -1,9 +1,12 @@
-﻿using System;
+using System;
 
 using Autofac;
 using Autofac.Builder;
 using Autofac.Core;
 using Autofac.Features.Indexed;
+
+using FGS.Autofac.DynamicScoping;
+using FGS.Autofac.DynamicScoping.Abstractions;
 
 namespace FGS.Pump.Extensions.DI
 {

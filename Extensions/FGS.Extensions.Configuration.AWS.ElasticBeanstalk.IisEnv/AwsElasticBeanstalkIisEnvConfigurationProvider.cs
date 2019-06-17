@@ -40,7 +40,10 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
                 var actualKeyValuePair = awsElasticBeanstalkContainerConfiguration[containerConfigKey];
 
                 var indexOfSeparator = actualKeyValuePair.IndexOf('=');
-                var key = actualKeyValuePair.Substring(0, indexOfSeparator);
+
+                // ASP.NET Core does this conversion for environment variables, and we do it _here_ because Elastic Beanstalk calls these "environment variables".
+                // This allows our infrastructure configuration to continue to treat configuration settings as if setting environment variables (for ASP.NET Core), and allows the app to continue to remain unaware of the differences.
+                var key = actualKeyValuePair.Substring(0, indexOfSeparator).Replace("__",":");
                 var value = actualKeyValuePair.Substring(indexOfSeparator + 1);
 
                 results.Add(key, value);

@@ -12,10 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 namespace FGS.Extensions.DependencyInjection.Autofac
 {
     /// <summary>
-    /// A factory for creating a <see cref="ContainerBuilder"/> and an <see cref="IServiceProvider" />.
+    /// A factory for creating an Autofac-based <see cref="IServiceProvider" />.
     /// </summary>
     /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Extensions.DependencyInjection/blob/36d487749ef7184357bbc4d162bf425b8474eb36/src/Autofac.Extensions.DependencyInjection/AutofacServiceProviderFactory.cs </remarks>
-    public class ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider> : IServiceProviderFactory<ContainerBuilder>
+    public class ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider> : IServiceProviderFactory<IServiceCollection>
         where TModulesProvider : IModulesProvider, new()
     {
         private readonly Action<IModule> _forEachModule;
@@ -26,7 +26,7 @@ namespace FGS.Extensions.DependencyInjection.Autofac
         /// </summary>
         /// <param name="forEachModule">Action for each <see cref="IModule"/> that can provide additional configuration before it is registered.</param>
         /// <param name="configurationAction">Action on a <see cref="ContainerBuilder"/> that adds component registrations to the container.</param>
-        public ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule> forEachModule, Action<ContainerBuilder> configurationAction = null)
+        public ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule> forEachModule = null, Action<ContainerBuilder> configurationAction = null)
         {
             _forEachModule = forEachModule;
             _configurationAction = configurationAction ?? (builder => { });
@@ -36,9 +36,18 @@ namespace FGS.Extensions.DependencyInjection.Autofac
         /// Creates a container builder from an <see cref="IServiceCollection" />.
         /// </summary>
         /// <param name="services">The collection of services.</param>
-        /// <returns>A container builder that can be used to create an <see cref="IServiceProvider" />.</returns>
-        public ContainerBuilder CreateBuilder(IServiceCollection services)
+        /// <returns>A service collection that can be used to create an <see cref="IServiceProvider" />.</returns>
+        public IServiceCollection CreateBuilder(IServiceCollection services) => services;
+
+        /// <summary>
+        /// Creates an <see cref="IServiceProvider" /> from the given set of services.
+        /// </summary>
+        /// <param name="services">The the services to create an <see cref="IServiceProvider" /> from.</param>
+        /// <returns>An <see cref="IServiceProvider" />.</returns>
+        public IServiceProvider CreateServiceProvider(IServiceCollection services)
         {
+            if (services == null) throw new ArgumentNullException(nameof(services));
+
             var builder = new ContainerBuilder();
 
             builder.Populate(services);
@@ -47,19 +56,7 @@ namespace FGS.Extensions.DependencyInjection.Autofac
 
             _configurationAction(builder);
 
-            return builder;
-        }
-
-        /// <summary>
-        /// Creates an <see cref="IServiceProvider" /> from the container builder.
-        /// </summary>
-        /// <param name="containerBuilder">The container builder.</param>
-        /// <returns>An <see cref="IServiceProvider" />.</returns>
-        public IServiceProvider CreateServiceProvider(ContainerBuilder containerBuilder)
-        {
-            if (containerBuilder == null) throw new ArgumentNullException(nameof(containerBuilder));
-
-            var container = containerBuilder.Build();
+            var container = builder.Build();
 
             return new AutofacServiceProvider(container);
         }

@@ -2,9 +2,8 @@ namespace FGS.Autofac.DynamicScoping.Abstractions
 {
     public enum Scope
     {
-        PerDependency,
-        PerLifetimeScope,
-        PerRequest,
-        Singleton
+        PerDependency = 1,
+        PerLifetimeScope = 2,
+        Singleton = 3
     }
 }

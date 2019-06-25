@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.9.1" />
+    <PackageReference Include="Autofac" Version="4.9.2" />
     <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 2.3.0)" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 2.3.0)" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="[2.2.0, 2.3.0)" />

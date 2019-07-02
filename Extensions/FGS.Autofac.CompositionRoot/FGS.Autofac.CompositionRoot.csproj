@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.CompositionRoot.Abstractions\FGS.Autofac.CompositionRoot.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

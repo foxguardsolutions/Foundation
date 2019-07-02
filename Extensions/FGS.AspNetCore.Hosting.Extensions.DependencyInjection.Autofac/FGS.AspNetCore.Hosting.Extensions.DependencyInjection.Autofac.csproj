@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="[2.2.0, 2.3.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj" />
+  </ItemGroup>
+
+</Project>

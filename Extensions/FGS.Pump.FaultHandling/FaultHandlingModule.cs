@@ -8,7 +8,7 @@ using FGS.Pump.FaultHandling.Retry;
 
 namespace FGS.Pump.FaultHandling
 {
-    public class FaultHandlingModule : Autofac.Module
+    public class FaultHandlingModule : Module
     {
         protected override void Load(ContainerBuilder builder)
         {

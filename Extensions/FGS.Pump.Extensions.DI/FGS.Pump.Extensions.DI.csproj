@@ -20,6 +20,8 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.DynamicScoping\FGS.Autofac.DynamicScoping.csproj" />
     <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj" />
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

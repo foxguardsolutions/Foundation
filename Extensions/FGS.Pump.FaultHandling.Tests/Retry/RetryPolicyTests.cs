@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 using Autofac;
 
-using FGS.Pump.Extensions.DI;
+using FGS.Autofac.DynamicScoping.Abstractions;
 using FGS.Pump.FaultHandling.Configuration;
 using FGS.Pump.FaultHandling.Retry;
 using FGS.Pump.Logging;

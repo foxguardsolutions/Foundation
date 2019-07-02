@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
@@ -8,6 +8,7 @@ using System.Web.Http.Filters;
 using System.Web.Http.Hosting;
 
 using Autofac;
+using Autofac.Integration.WebApi;
 
 using FGS.Pump.Extensions.DI.WebApi.Tests.TestTypes;
 using FGS.Pump.Tests.Support.TestCategories;
@@ -40,7 +41,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
                 .OnActivated(e => activationCount++);
             var container = builder.Build();
 
-            var resolver = new Autofac.Integration.WebApi.AutofacWebApiDependencyResolver(container);
+            var resolver = new AutofacWebApiDependencyResolver(container);
             var configuration = new HttpConfiguration { DependencyResolver = resolver };
             var requestMessage = new HttpRequestMessage();
             requestMessage.Properties.Add(HttpPropertyKeys.HttpConfigurationKey, configuration);

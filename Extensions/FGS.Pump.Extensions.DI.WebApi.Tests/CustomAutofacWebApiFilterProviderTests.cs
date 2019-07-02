@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 
 using Autofac;
+using Autofac.Integration.WebApi;
 
 using FGS.Pump.Extensions.DI.WebApi.Tests.TestTypes;
 using FGS.Pump.Tests.Support.TestCategories;
@@ -28,7 +29,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             builder.RegisterType<AuthorizeAttribute>().AsImplementedInterfaces();
             var container = builder.Build();
             var provider = new CustomAutofacWebApiFilterProvider(container);
-            var configuration = new HttpConfiguration { DependencyResolver = new Autofac.Integration.WebApi.AutofacWebApiDependencyResolver(container) };
+            var configuration = new HttpConfiguration { DependencyResolver = new AutofacWebApiDependencyResolver(container) };
             var actionDescriptor = BuildActionDescriptorForGetMethod();
 
             var filterInfos = provider.GetFilters(configuration, actionDescriptor);
@@ -43,7 +44,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             builder.Register<ILogger>(c => new Logger()).InstancePerDependency();
             var container = builder.Build();
             var provider = new CustomAutofacWebApiFilterProvider(container);
-            var configuration = new HttpConfiguration { DependencyResolver = new Autofac.Integration.WebApi.AutofacWebApiDependencyResolver(container) };
+            var configuration = new HttpConfiguration { DependencyResolver = new AutofacWebApiDependencyResolver(container) };
             var actionDescriptor = BuildActionDescriptorForGetMethod();
 
             var filterInfos = provider.GetFilters(configuration, actionDescriptor).ToArray();
@@ -58,7 +59,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             var builder = new ContainerBuilder();
             var container = builder.Build();
             var provider = new CustomAutofacWebApiFilterProvider(container);
-            var configuration = new HttpConfiguration { DependencyResolver = new Autofac.Integration.WebApi.AutofacWebApiDependencyResolver(container) };
+            var configuration = new HttpConfiguration { DependencyResolver = new AutofacWebApiDependencyResolver(container) };
             var actionDescriptor = BuildActionDescriptorForGetMethod();
 
             var filterInfos = provider.GetFilters(configuration, actionDescriptor).ToArray();
@@ -110,7 +111,7 @@ namespace FGS.Pump.Extensions.DI.WebApi.Tests
             var provider = new CustomAutofacWebApiFilterProvider(container);
             var configuration = new HttpConfiguration
             {
-                DependencyResolver = new Autofac.Integration.WebApi.AutofacWebApiDependencyResolver(container)
+                DependencyResolver = new AutofacWebApiDependencyResolver(container)
             };
             var actionDescriptor = BuildActionDescriptorForGetMethod();
 

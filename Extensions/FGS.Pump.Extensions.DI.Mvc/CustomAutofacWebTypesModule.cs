@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.CodeAnalysis;
 using System.Web;
 using System.Web.Hosting;
 using System.Web.Mvc;
@@ -6,6 +6,10 @@ using System.Web.Routing;
 
 using Autofac;
 using Autofac.Integration.Mvc;
+
+using FGS.Autofac.DynamicScoping;
+using FGS.Autofac.DynamicScoping.Abstractions;
+using FGS.Autofac.DynamicScoping.Abstractions.Specialized;
 
 namespace FGS.Pump.Extensions.DI.Mvc
 {
@@ -23,14 +27,14 @@ namespace FGS.Pump.Extensions.DI.Mvc
         /// Registers web abstractions with dependency injection.
         /// </summary>
         /// <param name="builder">
-        /// The <see cref="Autofac.ContainerBuilder"/> in which registration
+        /// The <see cref="ContainerBuilder"/> in which registration
         /// should take place.
         /// </param>
         /// <remarks>
         /// <para>
         /// This method registers mappings between common current context-related
         /// web constructs and their associated abstract counterparts. See
-        /// <see cref="Autofac.Integration.Mvc.AutofacWebTypesModule"/> for the complete
+        /// <see cref="AutofacWebTypesModule"/> for the complete
         /// list of mappings that get registered.
         /// </para>
         /// </remarks>

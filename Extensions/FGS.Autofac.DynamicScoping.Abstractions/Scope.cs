@@ -1,4 +1,4 @@
-namespace FGS.Pump.Extensions.DI
+namespace FGS.Autofac.DynamicScoping.Abstractions
 {
     public enum Scope
     {

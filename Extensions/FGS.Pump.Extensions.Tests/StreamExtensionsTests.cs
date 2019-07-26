@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Linq;
 
 using AutoFixture;
@@ -18,23 +18,26 @@ namespace FGS.Pump.Extensions.Tests
         public void CopyToMemory_GivenBytes_ReturnsStreamWithSameBytes()
         {
             var expected = Fixture.CreateMany<byte>().ToArray();
-            var inputStream = new MemoryStream(expected);
+            using (var inputStream = new MemoryStream(expected))
+            {
+                var resultStream = inputStream.CopyToMemory();
 
-            var resultStream = inputStream.CopyToMemory();
-            var actual = resultStream.ToArray();
+                var actual = resultStream.ToArray();
 
-            Assert.That(actual, Is.EqualTo(expected));
+                Assert.That(actual, Is.EqualTo(expected));
+            }
         }
 
         [Test]
         public void CopyToMemory_GivenBytes_ReturnsMemoryStream()
         {
             var inputBytes = Fixture.CreateMany<byte>().ToArray();
-            var inputStream = new MemoryStream(inputBytes);
+            using (var inputStream = new MemoryStream(inputBytes))
+            {
+                var actual = inputStream.CopyToMemory();
 
-            var actual = inputStream.CopyToMemory();
-
-            Assert.That(actual, Is.AssignableTo<MemoryStream>());
+                Assert.That(actual, Is.AssignableTo<MemoryStream>());
+            }
         }
     }
 }

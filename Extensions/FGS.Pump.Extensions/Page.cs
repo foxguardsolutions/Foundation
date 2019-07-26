@@ -1,10 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace FGS.Pump.Extensions
 {
-    public class Page<T> : IReadOnlyList<T>
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Naming", "CA1710:Identifiers should have correct suffix", Justification = "Name is a noun known to be a collection of items")]
+    public sealed class Page<T> : IReadOnlyList<T>
     {
         public Page(IEnumerable<T> items, PaginationSpecification paginationSpecification, bool hasNextPage)
         {

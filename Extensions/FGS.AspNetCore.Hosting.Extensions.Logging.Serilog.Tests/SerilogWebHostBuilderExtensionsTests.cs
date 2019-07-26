@@ -10,7 +10,6 @@ namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.Tests
         [Fact]
         public void Todo()
         {
-
         }
     }
 }

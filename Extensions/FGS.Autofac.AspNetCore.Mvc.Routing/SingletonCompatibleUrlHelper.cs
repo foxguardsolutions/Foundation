@@ -15,6 +15,8 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
     ///  - <see cref="IHttpContextAccessor"/> can be used in singleton scope because ASP.NET Core registers it as such.
     ///  - <see cref="IActionContextAccesspr"/> cannot be used in singleton scope, because ASP.NET Core registers only register it in the scope of a request.
     /// </remarks>
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1055:Uri return values should not be strings", Justification = "A specific API is being implemented wherein we do not have control over the method names or return types")]
+    [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1054:Uri parameters should not be strings", Justification = "A specific API is being implemented wherein we do not have control over the method parameters' names or types")]
     public class SingletonCompatibleUrlHelper : IUrlHelper
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
@@ -32,7 +34,7 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
         public ActionContext ActionContext => throw new NotSupportedException();
 
         /// <inheritdoc />
-        /// <remarks>Taken from: https://github.com/aspnet/AspNetCore/blob/7a26d27e8b7f67a1ac80532e5872bfde6c28f952/src/Mvc/Mvc.Core/src/Routing/UrlHelperBase.cs </remarks>
+        /// <remarks>Taken from: https://github.com/aspnet/AspNetCore/blob/7a26d27e8b7f67a1ac80532e5872bfde6c28f952/src/Mvc/Mvc.Core/src/Routing/UrlHelperBase.cs. </remarks>
         public virtual bool IsLocalUrl(string url)
         {
             if (string.IsNullOrEmpty(url))
@@ -80,7 +82,7 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
         }
 
         /// <inheritdoc />
-        /// <remarks>Taken and modified from: https://github.com/aspnet/AspNetCore/blob/7a26d27e8b7f67a1ac80532e5872bfde6c28f952/src/Mvc/Mvc.Core/src/Routing/UrlHelperBase.cs </remarks>
+        /// <remarks>Taken and modified from: https://github.com/aspnet/AspNetCore/blob/7a26d27e8b7f67a1ac80532e5872bfde6c28f952/src/Mvc/Mvc.Core/src/Routing/UrlHelperBase.cs. </remarks>
         public virtual string Content(string contentPath)
         {
             if (string.IsNullOrEmpty(contentPath))
@@ -106,7 +108,7 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
                 RouteName = routeName,
                 Values = values,
                 Protocol = HttpContext.Request.Scheme,
-                Host = HttpContext.Request.Host.ToUriComponent()
+                Host = HttpContext.Request.Host.ToUriComponent(),
             });
         }
 

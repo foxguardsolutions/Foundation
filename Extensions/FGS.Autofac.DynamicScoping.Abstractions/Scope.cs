@@ -4,6 +4,6 @@ namespace FGS.Autofac.DynamicScoping.Abstractions
     {
         PerDependency = 1,
         PerLifetimeScope = 2,
-        Singleton = 3
+        Singleton = 3,
     }
 }

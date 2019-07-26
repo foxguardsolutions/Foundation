@@ -25,6 +25,7 @@ namespace FGS.Extensions.Logging.Serilog
         /// logger is not specified but <paramref name="dispose"/> is true, the <see cref="Log.CloseAndFlush()"/> method will be
         /// called on the static <see cref="Log"/> class instead.</param>
         /// <returns>The logger factory.</returns>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "The framework takes ownership of the ILoggerProvider's lifetime management after we hand it over")]
         public static ILoggerFactory AddSerilog(
             this ILoggerFactory factory,
             ILogger logger = null,

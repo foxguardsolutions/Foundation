@@ -33,7 +33,7 @@ namespace FGS.Tests.Support.AspNetCore.Mvc.Routing
         {
             var compareConfig = new ComparisonConfig()
             {
-                IgnoreObjectTypes = true
+                IgnoreObjectTypes = true,
             };
 
             return new CompareLogic(compareConfig);

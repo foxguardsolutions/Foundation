@@ -126,8 +126,11 @@ namespace FGS.Pump.FaultHandling.Tests.Retry
 
         private static IEnumerable<int> NumberOfAttemptsLessThanMaxRetries() => Enumerable.Range(1, RETRY_MAX_ATTEMPTS - 1);
 
-        [Serializable]
-        private class TestException : Exception
+#pragma warning disable CA1032 // Implement standard exception constructors
+#pragma warning disable CA2237 // Mark ISerializable types with serializable
+        public class TestException : Exception
+#pragma warning restore CA2237 // Mark ISerializable types with serializable
+#pragma warning restore CA1032 // Implement standard exception constructors
         {
         }
     }

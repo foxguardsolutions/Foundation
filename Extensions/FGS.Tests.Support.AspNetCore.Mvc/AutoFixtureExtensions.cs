@@ -37,7 +37,7 @@ namespace FGS.Tests.Support.AspNetCore.Mvc
             where TApiController : ControllerBase
         {
             var mockUrlHelper = fixture.MockUrlHelper();
-            
+
             var mockHttpContext = fixture.Mock<HttpContext>();
             httpContextAdditionalSetup?.Invoke(mockHttpContext);
 

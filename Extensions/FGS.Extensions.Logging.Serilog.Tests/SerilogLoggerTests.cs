@@ -7,13 +7,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
+using FGS.Extensions.Logging.Serilog.Tests.Support;
+
 using Microsoft.Extensions.Logging;
 
 using Serilog;
 using Serilog.Debugging;
 using Serilog.Events;
-
-using FGS.Extensions.Logging.Serilog.Tests.Support;
 
 using Xunit;
 
@@ -33,18 +33,20 @@ namespace FGS.Extensions.Logging.Serilog.Tests
 
             SetMinLevel(config, logLevel);
 
+#pragma warning disable CA2000 // Dispose objects before losing scope
             var provider = new SerilogLoggerProvider(config.CreateLogger());
+#pragma warning restore CA2000 // Dispose objects before losing scope
             var logger = (SerilogLogger)provider.CreateLogger(Name);
 
             return new Tuple<SerilogLogger, SerilogSink>(logger, sink);
         }
 
-        private void SetMinLevel(LoggerConfiguration serilog, LogLevel logLevel)
+        private static void SetMinLevel(LoggerConfiguration serilog, LogLevel logLevel)
         {
             serilog.MinimumLevel.Is(MapLevel(logLevel));
         }
 
-        private LogEventLevel MapLevel(LogLevel logLevel)
+        private static LogEventLevel MapLevel(LogLevel logLevel)
         {
             switch (logLevel)
             {
@@ -251,7 +253,9 @@ namespace FGS.Extensions.Logging.Serilog.Tests
         [Fact]
         public void CarriesMessageTemplateProperties()
         {
+#pragma warning disable CA2000 // Dispose objects before losing scope
             var selfLog = new StringWriter();
+#pragma warning restore CA2000 // Dispose objects before losing scope
             SelfLog.Enable(selfLog);
 
             var t = SetUp(LogLevel.Trace);
@@ -281,15 +285,17 @@ namespace FGS.Extensions.Logging.Serilog.Tests
 
             Assert.Single(sink.Writes);
 
-            var eventId = (StructureValue) sink.Writes[0].Properties["EventId"];
-            var id = (ScalarValue) eventId.Properties.Single(p => p.Name == "Id").Value;
+            var eventId = (StructureValue)sink.Writes[0].Properties["EventId"];
+            var id = (ScalarValue)eventId.Properties.Single(p => p.Name == "Id").Value;
             Assert.Equal(42, id.Value);
         }
 
         [Fact]
         public void WhenDisposeIsFalseProvidedLoggerIsNotDisposed()
         {
+#pragma warning disable CA2000 // Dispose objects before losing scope
             var logger = new DisposeTrackingLogger();
+#pragma warning restore CA2000 // Dispose objects before losing scope
             var provider = new SerilogLoggerProvider(logger, false);
             provider.Dispose();
             Assert.False(logger.IsDisposed);
@@ -298,7 +304,9 @@ namespace FGS.Extensions.Logging.Serilog.Tests
         [Fact]
         public void WhenDisposeIsTrueProvidedLoggerIsDisposed()
         {
+#pragma warning disable CA2000 // Dispose objects before losing scope
             var logger = new DisposeTrackingLogger();
+#pragma warning restore CA2000 // Dispose objects before losing scope
             var provider = new SerilogLoggerProvider(logger, true);
             provider.Dispose();
             Assert.True(logger.IsDisposed);
@@ -333,7 +341,7 @@ namespace FGS.Extensions.Logging.Serilog.Tests
             var logger = t.Item1;
             var sink = t.Item2;
 
-            using (logger.BeginScope(new Dictionary<string, object> {{ "@Person", new Person { FirstName = "John", LastName = "Smith" }}}))
+            using (logger.BeginScope(new Dictionary<string, object> { { "@Person", new Person { FirstName = "John", LastName = "Smith" } } }))
             {
                 logger.Log(LogLevel.Information, 0, TestMessage, null, null);
             }
@@ -371,7 +379,7 @@ namespace FGS.Extensions.Logging.Serilog.Tests
             var logger = t.Item1;
             var sink = t.Item2;
 
-            using (logger.BeginScope(new Dictionary<string, object> { { "FirstName", "John"}}))
+            using (logger.BeginScope(new Dictionary<string, object> { { "FirstName", "John" } }))
             {
                 logger.Log(LogLevel.Information, 0, TestMessage, null, null);
             }
@@ -406,7 +414,7 @@ namespace FGS.Extensions.Logging.Serilog.Tests
 
         private class FoodScope : IEnumerable<KeyValuePair<string, object>>
         {
-            readonly string _name;
+            private readonly string _name;
 
             public FoodScope(string name)
             {
@@ -426,7 +434,7 @@ namespace FGS.Extensions.Logging.Serilog.Tests
 
         private class LuckyScope : IEnumerable<KeyValuePair<string, object>>
         {
-            readonly int _luckyNumber;
+            private readonly int _luckyNumber;
 
             public LuckyScope(int luckyNumber)
             {

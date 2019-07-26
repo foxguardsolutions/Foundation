@@ -13,9 +13,9 @@ using System.Runtime.Remoting.Messaging;
 using Microsoft.Extensions.Logging;
 
 using Serilog;
+using Serilog.Context;
 using Serilog.Core;
 using Serilog.Events;
-using Serilog.Context;
 
 using FrameworkLogger = Microsoft.Extensions.Logging.ILogger;
 using ILogger = Serilog.ILogger;
@@ -28,14 +28,14 @@ namespace FGS.Extensions.Logging.Serilog
 #if LOGGING_BUILDER
     [ProviderAlias("Serilog")]
 #endif
-    public class SerilogLoggerProvider : ILoggerProvider, ILogEventEnricher
+    public sealed class SerilogLoggerProvider : ILoggerProvider, ILogEventEnricher
     {
         internal const string OriginalFormatPropertyName = "{OriginalFormat}";
         internal const string ScopePropertyName = "Scope";
 
         // May be null; if it is, Log.Logger will be lazily used
-        readonly ILogger _logger;
-        readonly Action _dispose;
+        private readonly ILogger _logger;
+        private readonly Action _dispose;
 
         /// <summary>
         /// Construct a <see cref="SerilogLoggerProvider"/>.
@@ -99,7 +99,7 @@ namespace FGS.Extensions.Logging.Serilog
         }
 
 #if ASYNCLOCAL
-        readonly AsyncLocal<SerilogLoggerScope> _value = new AsyncLocal<SerilogLoggerScope>();
+        private readonly AsyncLocal<SerilogLoggerScope> _value = new AsyncLocal<SerilogLoggerScope>();
 
         internal SerilogLoggerScope CurrentScope
         {

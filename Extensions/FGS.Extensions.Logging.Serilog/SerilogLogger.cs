@@ -16,12 +16,12 @@ using ILogger = Serilog.ILogger;
 
 namespace FGS.Extensions.Logging.Serilog
 {
-    class SerilogLogger : FrameworkLogger
+    internal class SerilogLogger : FrameworkLogger
     {
-        readonly SerilogLoggerProvider _provider;
-        readonly ILogger _logger;
+        private readonly SerilogLoggerProvider _provider;
+        private readonly ILogger _logger;
 
-        static readonly MessageTemplateParser _messageTemplateParser = new MessageTemplateParser();
+        private static readonly MessageTemplateParser _messageTemplateParser = new MessageTemplateParser();
 
         public SerilogLogger(
             SerilogLoggerProvider provider,
@@ -73,7 +73,7 @@ namespace FGS.Extensions.Logging.Serilog
                     {
                         messageTemplate = (string)property.Value;
                     }
-                    else if (property.Key.StartsWith("@"))
+                    else if (property.Key.StartsWith("@", StringComparison.OrdinalIgnoreCase))
                     {
                         LogEventProperty destructured;
                         if (logger.BindProperty(property.Key.Substring(1), property.Value, true, out destructured))
@@ -89,6 +89,7 @@ namespace FGS.Extensions.Logging.Serilog
 
                 var stateType = state.GetType();
                 var stateTypeInfo = stateType.GetTypeInfo();
+
                 // Imperfect, but at least eliminates `1 names
                 if (messageTemplate == null && !stateTypeInfo.IsGenericType)
                 {
@@ -124,12 +125,12 @@ namespace FGS.Extensions.Logging.Serilog
             if (eventId.Id != 0 || eventId.Name != null)
                 properties.Add(CreateEventIdProperty(eventId));
 
-            var parsedTemplate = _messageTemplateParser.Parse(messageTemplate ?? "");
+            var parsedTemplate = _messageTemplateParser.Parse(messageTemplate ?? string.Empty);
             var evt = new LogEvent(DateTimeOffset.Now, level, exception, parsedTemplate, properties);
             logger.Write(evt);
         }
 
-        static object AsLoggableValue<TState>(TState state, Func<TState, Exception, string> formatter)
+        private static object AsLoggableValue<TState>(TState state, Func<TState, Exception, string> formatter)
         {
             object sobj = state;
             if (formatter != null)
@@ -137,7 +138,7 @@ namespace FGS.Extensions.Logging.Serilog
             return sobj;
         }
 
-        static LogEventLevel ConvertLevel(LogLevel logLevel)
+        private static LogEventLevel ConvertLevel(LogLevel logLevel)
         {
             switch (logLevel)
             {
@@ -151,14 +152,16 @@ namespace FGS.Extensions.Logging.Serilog
                     return LogEventLevel.Information;
                 case LogLevel.Debug:
                     return LogEventLevel.Debug;
+
                 // ReSharper disable once RedundantCaseLabel
                 case LogLevel.Trace:
+
                 default:
                     return LogEventLevel.Verbose;
             }
         }
 
-        static LogEventProperty CreateEventIdProperty(EventId eventId)
+        private static LogEventProperty CreateEventIdProperty(EventId eventId)
         {
             var properties = new List<LogEventProperty>(2);
 

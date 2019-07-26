@@ -26,6 +26,7 @@ namespace FGS.Pump.Extensions.DI.Interception
             _asyncInvocationAdapterFactory = asyncInvocationAdapterFactory;
         }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1031:Do not catch general exception types", Justification = "For interceptors, upstream exception types are unknowable by definition")]
         void ICastleInterceptor.Intercept(ICastleInterceptorInvocation invocation)
         {
             var instantiationData = _interceptorInstantiationDataFactory(invocation);

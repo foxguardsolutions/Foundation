@@ -6,7 +6,6 @@
     <VersionPrefix>2.0.4</VersionPrefix>
     <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>FGS.Extensions.Logging.Serilog</AssemblyName>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>

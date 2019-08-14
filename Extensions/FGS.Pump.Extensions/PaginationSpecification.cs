@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace FGS.Pump.Extensions
 {
@@ -40,6 +40,16 @@ namespace FGS.Pump.Extensions
             {
                 return (PageNumber * 397) ^ PageSize;
             }
+        }
+
+        public static bool operator ==(PaginationSpecification left, PaginationSpecification right)
+        {
+            return left.Equals(right);
+        }
+
+        public static bool operator !=(PaginationSpecification left, PaginationSpecification right)
+        {
+            return !(left == right);
         }
     }
 }

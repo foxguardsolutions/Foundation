@@ -10,8 +10,8 @@ using FGS.Pump.FaultHandling.Configuration;
 using FGS.Pump.FaultHandling.Retry;
 using FGS.Pump.Logging;
 using FGS.Pump.Tests.Support;
-using FGS.Pump.Tests.Support.Extensions;
-using FGS.Pump.Tests.Support.TestCategories;
+using FGS.Tests.Support;
+using FGS.Tests.Support.TestCategories;
 
 using Moq;
 
@@ -126,8 +126,11 @@ namespace FGS.Pump.FaultHandling.Tests.Retry
 
         private static IEnumerable<int> NumberOfAttemptsLessThanMaxRetries() => Enumerable.Range(1, RETRY_MAX_ATTEMPTS - 1);
 
-        [Serializable]
-        private class TestException : Exception
+#pragma warning disable CA1032 // Implement standard exception constructors
+#pragma warning disable CA2237 // Mark ISerializable types with serializable
+        public class TestException : Exception
+#pragma warning restore CA2237 // Mark ISerializable types with serializable
+#pragma warning restore CA1032 // Implement standard exception constructors
         {
         }
     }

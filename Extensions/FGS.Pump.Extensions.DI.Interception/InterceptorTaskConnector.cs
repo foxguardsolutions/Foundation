@@ -21,13 +21,17 @@ namespace FGS.Pump.Extensions.DI.Interception
             }
             else
             {
+#pragma warning disable CA2008 // Do not create tasks without passing a TaskScheduler
                 invocation.ReturnValue = task.ContinueWith(x => returnValue);
+#pragma warning restore CA2008 // Do not create tasks without passing a TaskScheduler
             }
         }
 
         private static void InnerConnect<T>(ICastleInterceptorInvocation invocation, object returnValue, Task adaptedContinuation)
         {
+#pragma warning disable CA2008 // Do not create tasks without passing a TaskScheduler
             invocation.ReturnValue = adaptedContinuation.ContinueWith(async x => await (Task<T>)returnValue).Unwrap();
+#pragma warning restore CA2008 // Do not create tasks without passing a TaskScheduler
         }
     }
 }

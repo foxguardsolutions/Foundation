@@ -9,16 +9,16 @@ using Serilog.Events;
 
 namespace FGS.Extensions.Logging.Serilog
 {
-    class SerilogLoggerScope : IDisposable
+    internal class SerilogLoggerScope : IDisposable
     {
-        const string NoName = "None";
+        private const string NoName = "None";
 
-        readonly SerilogLoggerProvider _provider;
-        readonly object _state;
-        readonly IDisposable _chainedDisposable;
+        private readonly SerilogLoggerProvider _provider;
+        private readonly object _state;
+        private readonly IDisposable _chainedDisposable;
 
         // An optimization only, no problem if there are data races on this.
-        bool _disposed;
+        private bool _disposed;
 
         public SerilogLoggerScope(SerilogLoggerProvider provider, object state, IDisposable chainedDisposable = null)
         {
@@ -74,7 +74,7 @@ namespace FGS.Extensions.Logging.Serilog
                     var key = stateProperty.Key;
                     var destructureObject = false;
 
-                    if (key.StartsWith("@"))
+                    if (key.StartsWith("@", StringComparison.OrdinalIgnoreCase))
                     {
                         key = key.Substring(1);
                         destructureObject = true;

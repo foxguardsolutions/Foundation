@@ -17,8 +17,6 @@ namespace FGS.Autofac.DynamicScoping
                     return registration.InstancePerDependency();
                 case Scope.PerLifetimeScope:
                     return registration.InstancePerLifetimeScope();
-                case Scope.PerRequest:
-                    return registration.InstancePerRequest();
                 case Scope.Singleton:
                     return registration.SingleInstance();
                 default:

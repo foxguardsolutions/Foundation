@@ -17,5 +17,4 @@ namespace FGS.Autofac.DynamicScoping
             return containerBuilder;
         }
     }
-
 }

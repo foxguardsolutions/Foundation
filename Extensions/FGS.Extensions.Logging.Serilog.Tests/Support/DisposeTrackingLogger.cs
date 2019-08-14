@@ -7,7 +7,7 @@ using Serilog.Events;
 
 namespace FGS.Extensions.Logging.Serilog.Tests.Support
 {
-    public class DisposeTrackingLogger : ILogger, IDisposable
+    public sealed class DisposeTrackingLogger : ILogger, IDisposable
     {
         public bool IsDisposed { get; set; }
 
@@ -52,7 +52,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Write<T0, T1, T2>(LogEventLevel level, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Write<T0, T1, T2>(
+            LogEventLevel level,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -69,13 +73,22 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Write<T0, T1>(LogEventLevel level, Exception exception, string messageTemplate, T0 propertyValue0,
+        public void Write<T0, T1>(
+            LogEventLevel level,
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
             T1 propertyValue1)
         {
         }
 
-        public void Write<T0, T1, T2>(LogEventLevel level, Exception exception, string messageTemplate, T0 propertyValue0,
-            T1 propertyValue1, T2 propertyValue2)
+        public void Write<T0, T1, T2>(
+            LogEventLevel level,
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
+            T2 propertyValue2)
         {
         }
 
@@ -120,7 +133,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Verbose<T0, T1, T2>(Exception exception, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Verbose<T0, T1, T2>(
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -161,7 +178,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Debug<T0, T1, T2>(Exception exception, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Debug<T0, T1, T2>(
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -202,7 +223,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Information<T0, T1, T2>(Exception exception, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Information<T0, T1, T2>(
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -243,7 +268,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Warning<T0, T1, T2>(Exception exception, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Warning<T0, T1, T2>(
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -284,7 +313,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Error<T0, T1, T2>(Exception exception, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Error<T0, T1, T2>(
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -325,7 +358,11 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public void Fatal<T0, T1, T2>(Exception exception, string messageTemplate, T0 propertyValue0, T1 propertyValue1,
+        public void Fatal<T0, T1, T2>(
+            Exception exception,
+            string messageTemplate,
+            T0 propertyValue0,
+            T1 propertyValue1,
             T2 propertyValue2)
         {
         }
@@ -334,7 +371,10 @@ namespace FGS.Extensions.Logging.Serilog.Tests.Support
         {
         }
 
-        public bool BindMessageTemplate(string messageTemplate, object[] propertyValues, out MessageTemplate parsedTemplate,
+        public bool BindMessageTemplate(
+            string messageTemplate,
+            object[] propertyValues,
+            out MessageTemplate parsedTemplate,
             out IEnumerable<LogEventProperty> boundProperties)
         {
             parsedTemplate = null;

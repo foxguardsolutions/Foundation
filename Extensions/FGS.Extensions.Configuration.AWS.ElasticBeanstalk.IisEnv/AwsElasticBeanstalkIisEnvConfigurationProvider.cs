@@ -16,7 +16,10 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
         /// Initializes a new instance with the specified source.
         /// </summary>
         /// <param name="source">The source settings.</param>
-        public AwsElasticBeanstalkIisEnvConfigurationProvider(AwsElasticBeanstalkContainerConfigurationConfigurationSource source) : base(source) { }
+        public AwsElasticBeanstalkIisEnvConfigurationProvider(AwsElasticBeanstalkContainerConfigurationConfigurationSource source)
+            : base(source)
+        {
+        }
 
         /// <summary>
         /// Loads the JSON data from a stream, but then extracts from it the "IIS Environment" configuration as the actual configuration data being provided by this provider.
@@ -34,13 +37,16 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
         {
             var results = new Dictionary<string, string>();
 
-            var applicableContainerConfigKeys = awsElasticBeanstalkContainerConfiguration.Keys.Where(k => k.StartsWith("iis:env:")).ToArray();
-            foreach(var containerConfigKey in applicableContainerConfigKeys)
+            var applicableContainerConfigKeys = awsElasticBeanstalkContainerConfiguration.Keys.Where(k => k.StartsWith("iis:env:", System.StringComparison.OrdinalIgnoreCase)).ToArray();
+            foreach (var containerConfigKey in applicableContainerConfigKeys)
             {
                 var actualKeyValuePair = awsElasticBeanstalkContainerConfiguration[containerConfigKey];
 
                 var indexOfSeparator = actualKeyValuePair.IndexOf('=');
-                var key = actualKeyValuePair.Substring(0, indexOfSeparator);
+
+                // ASP.NET Core does this conversion for environment variables, and we do it _here_ because Elastic Beanstalk calls these "environment variables".
+                // This allows our infrastructure configuration to continue to treat configuration settings as if setting environment variables (for ASP.NET Core), and allows the app to continue to remain unaware of the differences.
+                var key = actualKeyValuePair.Substring(0, indexOfSeparator).Replace("__", ":");
                 var value = actualKeyValuePair.Substring(indexOfSeparator + 1);
 
                 results.Add(key, value);

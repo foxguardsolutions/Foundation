@@ -1,8 +1,8 @@
-﻿using AutoFixture;
+using AutoFixture;
 
 using FGS.Pump.Tests.Support;
-using FGS.Pump.Tests.Support.Extensions;
-using FGS.Pump.Tests.Support.TestCategories;
+using FGS.Tests.Support;
+using FGS.Tests.Support.TestCategories;
 
 using Moq;
 

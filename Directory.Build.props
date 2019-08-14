@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <Company>FoxGuard Solutions</Company>
+    <Copyright>© 2019 FoxGuard Solutions. All rights reserved.</Copyright>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <CodeAnalysisRuleSet>$(MSBuildThisFileDirectory)WebPump.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>$(NoWarn);CS0006;NU1701;CA2007;SA0001</NoWarn>
+  </PropertyGroup>
+</Project>

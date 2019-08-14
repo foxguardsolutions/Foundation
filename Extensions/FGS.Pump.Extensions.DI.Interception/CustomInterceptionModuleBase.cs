@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -42,6 +42,7 @@ namespace FGS.Pump.Extensions.DI.Interception
         protected abstract IEnumerable<Service> DescribeInterceptorServices(Type originalImplementationType);
 
         /// <remarks>Ported from <see cref="Autofac.Extras.DynamicProxy2.RegistrationExtensions.EnableClassInterceptors{TLimit, TConcreteReflectionActivatorData, TRegistrationStyle}(IRegistrationBuilder{TLimit,TConcreteReflectionActivatorData,TRegistrationStyle}, ProxyGenerationOptions, Type[])"/> found here: https://github.com/autofac/Autofac.Extras.DynamicProxy/blob/c35bfe7c51a0bce6fe7439d58f5fecda9980a5dd/src/Autofac.Extras.DynamicProxy/RegistrationExtensions.cs </remarks>>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "ReflectionActivator is used to create a ComponentRegistration which then owns the former, and has a lifetime extending outside of this method")]
         private IComponentRegistration CreateClassInterceptorRegistration(IComponentRegistration registration)
         {
             if (registration == null) throw new ArgumentNullException(nameof(registration));
@@ -53,7 +54,7 @@ namespace FGS.Pump.Extensions.DI.Interception
 
             var newImplementationType = ProxyGenerator.ProxyBuilder.CreateClassProxyType(
                 existingImplementationType,
-                new Type[0],
+                Array.Empty<Type>(),
                 options);
 
             var newActivator = new ReflectionActivator(

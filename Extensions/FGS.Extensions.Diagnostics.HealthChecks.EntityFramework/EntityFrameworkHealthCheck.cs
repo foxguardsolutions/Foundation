@@ -11,12 +11,12 @@ namespace FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
     public class EntityFrameworkHealthCheck<TDbContext> : IHealthCheck
         where TDbContext : DbContext
     {
-        private readonly TDbContext _dbContext;
+        private readonly Lazy<TDbContext> _lazyDbContext;
         private readonly Func<TDbContext, IQueryable<bool>> _healthQuery;
 
-        public EntityFrameworkHealthCheck(TDbContext dbContext, Func<TDbContext, IQueryable<bool>> healthQuery)
+        public EntityFrameworkHealthCheck(Lazy<TDbContext> lazyDbContext, Func<TDbContext, IQueryable<bool>> healthQuery)
         {
-            _dbContext = dbContext;
+            _lazyDbContext = lazyDbContext;
             _healthQuery = healthQuery;
         }
 
@@ -25,7 +25,9 @@ namespace FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
         {
             try
             {
-                await _healthQuery(_dbContext).FirstAsync(cancellationToken).ConfigureAwait(false);
+                var dbContext = _lazyDbContext.Value;
+
+                await _healthQuery(dbContext).FirstAsync(cancellationToken).ConfigureAwait(false);
 
                 return HealthCheckResult.Healthy();
             }

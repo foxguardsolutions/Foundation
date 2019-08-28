@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoFixture" Version="4.10.0" />
-    <PackageReference Include="CompareNETObjects" Version="4.59.0" />
+    <PackageReference Include="CompareNETObjects" Version="4.62.0" />
     <PackageReference Include="FluentAssertions" Version="5.8.0" />
     <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
     <PackageReference Include="FluentAssertions.AspNetCore.Mvc" Version="2.1.0" />

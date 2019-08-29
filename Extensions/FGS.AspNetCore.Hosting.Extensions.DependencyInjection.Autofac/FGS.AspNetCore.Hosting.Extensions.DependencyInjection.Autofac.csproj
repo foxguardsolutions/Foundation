@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="[2.2.0, 2.3.0)" />
   </ItemGroup>
 

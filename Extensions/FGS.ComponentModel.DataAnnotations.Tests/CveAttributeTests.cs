@@ -1,14 +1,13 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 using AutoFixture;
 
-using FGS.Pump.Extensions.ComponentModel.DataAnnotations;
 using FGS.Pump.Tests.Support;
 using FGS.Tests.Support.TestCategories;
 
 using NUnit.Framework;
 
-namespace FGS.Pump.Extensions.Tests.ComponentModel.DataAnnotations
+namespace FGS.ComponentModel.DataAnnotations.Tests
 {
     [Unit]
     [TestFixture]

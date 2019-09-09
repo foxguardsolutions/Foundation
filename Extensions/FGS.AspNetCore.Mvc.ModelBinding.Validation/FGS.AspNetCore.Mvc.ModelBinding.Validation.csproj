@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="[2.2.0, 2.3.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.ComponentModel.DataAnnotations\FGS.ComponentModel.DataAnnotations.csproj" />
+  </ItemGroup>
+
+</Project>

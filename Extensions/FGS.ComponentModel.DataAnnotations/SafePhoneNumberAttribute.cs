@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
-namespace FGS.Pump.Extensions.ComponentModel.DataAnnotations
+namespace FGS.ComponentModel.DataAnnotations
 {
     /// <summary>
     /// Safely validates a phone number.

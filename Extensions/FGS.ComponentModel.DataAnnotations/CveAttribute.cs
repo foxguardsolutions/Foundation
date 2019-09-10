@@ -1,6 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
-namespace FGS.Pump.Extensions.ComponentModel.DataAnnotations
+namespace FGS.ComponentModel.DataAnnotations
 {
     public class CveAttribute : RegularExpressionAttribute
     {

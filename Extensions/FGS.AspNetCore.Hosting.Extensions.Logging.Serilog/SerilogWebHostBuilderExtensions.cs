@@ -14,13 +14,21 @@
 
 using System;
 
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using Serilog;
 
 using ILogger = Serilog.ILogger;
+
+#if NETSTANDARD2_0
+using IWebHostBuilder = Microsoft.AspNetCore.Hosting.IWebHostBuilder;
+using WebHostBuilderContext = Microsoft.AspNetCore.Hosting.WebHostBuilderContext;
+#elif NETSTANDARD2_1
+using Microsoft.Extensions.Hosting;
+using IWebHostBuilder = Microsoft.Extensions.Hosting.IHostBuilder;
+using WebHostBuilderContext = Microsoft.Extensions.Hosting.HostBuilderContext;
+#endif
 
 namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
 {

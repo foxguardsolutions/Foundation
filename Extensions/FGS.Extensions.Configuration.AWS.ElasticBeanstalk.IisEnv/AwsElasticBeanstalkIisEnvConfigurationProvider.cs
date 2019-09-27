@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
             Data = ExtractIisEnvConfiguration(Data);
         }
 
-        /// <remarks>Roughly based on code seen at https://stackoverflow.com/questions/40127703/aws-elastic-beanstalk-environment-variables-in-asp-net-core-1-0 </remarks>
+        /// <remarks>Roughly based on code seen at https://stackoverflow.com/questions/40127703/aws-elastic-beanstalk-environment-variables-in-asp-net-core-1-0. </remarks>
         private static IDictionary<string, string> ExtractIisEnvConfiguration(IDictionary<string, string> awsElasticBeanstalkContainerConfiguration)
         {
             var results = new Dictionary<string, string>();
@@ -41,12 +42,15 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
             foreach (var containerConfigKey in applicableContainerConfigKeys)
             {
                 var actualKeyValuePair = awsElasticBeanstalkContainerConfiguration[containerConfigKey];
-
-                var indexOfSeparator = actualKeyValuePair.IndexOf('=');
+                var indexOfSeparator = actualKeyValuePair.IndexOf("=", StringComparison.Ordinal);
 
                 // ASP.NET Core does this conversion for environment variables, and we do it _here_ because Elastic Beanstalk calls these "environment variables".
                 // This allows our infrastructure configuration to continue to treat configuration settings as if setting environment variables (for ASP.NET Core), and allows the app to continue to remain unaware of the differences.
+#if NETSTANDARD2_0
                 var key = actualKeyValuePair.Substring(0, indexOfSeparator).Replace("__", ":");
+#elif NETSTANDARD2_1
+                var key = actualKeyValuePair.Substring(0, indexOfSeparator).Replace("__", ":", StringComparison.Ordinal);
+#endif
                 var value = actualKeyValuePair.Substring(indexOfSeparator + 1);
 
                 results.Add(key, value);

@@ -3,7 +3,7 @@ using System.Linq.Expressions;
 
 namespace FGS.Linq.Expressions
 {
-    /// <remarks>Taken and modified from: https://stackoverflow.com/questions/11159697/replace-parameter-in-lambda-expression </remarks>
+    /// <remarks>Taken and modified from: https://stackoverflow.com/questions/11159697/replace-parameter-in-lambda-expression. </remarks>
     public static class ParameterReplacer
     {
         // Produces an expression identical to 'expression'

@@ -13,7 +13,7 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
     /// <remarks>
     /// This implementation is bound by these constraints:
     ///  - <see cref="IHttpContextAccessor"/> can be used in singleton scope because ASP.NET Core registers it as such.
-    ///  - <see cref="IActionContextAccesspr"/> cannot be used in singleton scope, because ASP.NET Core registers only register it in the scope of a request.
+    ///  - <see cref="IActionContextAccessor"/> cannot be used in singleton scope, because ASP.NET Core registers only register it in the scope of a request.
     /// </remarks>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1055:Uri return values should not be strings", Justification = "A specific API is being implemented wherein we do not have control over the method names or return types")]
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1054:Uri parameters should not be strings", Justification = "A specific API is being implemented wherein we do not have control over the method parameters' names or types")]
@@ -30,8 +30,11 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
             _linkGenerator = linkGenerator;
         }
 
+#pragma warning disable CA1065 // Do not raise exceptions in unexpected locations
+
         /// <inheritdoc />
         public ActionContext ActionContext => throw new NotSupportedException();
+#pragma warning restore CA1065 // Do not raise exceptions in unexpected locations
 
         /// <inheritdoc />
         /// <remarks>Taken from: https://github.com/aspnet/AspNetCore/blob/7a26d27e8b7f67a1ac80532e5872bfde6c28f952/src/Mvc/Mvc.Core/src/Routing/UrlHelperBase.cs. </remarks>

@@ -8,15 +8,21 @@ using FGS.Autofac.DynamicScoping.Abstractions;
 using FGS.Autofac.DynamicScoping.Abstractions.Specialized;
 using FGS.Extensions.DependencyInjection.Autofac;
 
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+
+#if NETSTANDARD2_0
+using IWebHostBuilder = Microsoft.AspNetCore.Hosting.IWebHostBuilder;
+#elif NETSTANDARD2_1
+using Microsoft.Extensions.Hosting;
+using IWebHostBuilder = Microsoft.Extensions.Hosting.IHostBuilder;
+#endif
 
 namespace FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac
 {
     /// <summary>
     /// Extension methods for the <see cref="IWebHostBuilder"/> interface.
     /// </summary>
-    /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.AspNetCore/blob/e8254995519b96c568de194371edad4d2c20db0e/src/Autofac.Integration.AspNetCore/AutofacWebHostBuilderExtensions.cs </remarks>
+    /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.AspNetCore/blob/e8254995519b96c568de194371edad4d2c20db0e/src/Autofac.Integration.AspNetCore/AutofacWebHostBuilderExtensions.cs. </remarks>
     public static class AutofacWebHostBuilderExtensions
     {
         /// <summary>

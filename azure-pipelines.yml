@@ -34,5 +34,6 @@ steps:
     displayName: "dotnet push"
     inputs:
       command: push
-      nuGetFeedType: internal
-      publishVstsFeed: InternalDevelopment
+      packagesToPush: $(Build.ArtifactStagingDirectory)/*.nupkg
+      nuGetFeedType: external
+      publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

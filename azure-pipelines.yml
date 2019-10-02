@@ -1,9 +1,8 @@
 # Publish NuGet packages from PUMP that can be shared with other projects.
 
-
 # Sets the build number to a format that can be used to generate the package
 # version numbers for NuGet, when using the `byBuildNumber` versioning scheme.
-name: '$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)'
+name: "$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)"
 
 # This job is setup to only build on commits to foxguardsolutions/pump/master
 # when files in the projects we're going to pack are changed. This is intended
@@ -13,27 +12,28 @@ trigger:
   batch: true
   branches:
     include:
-    - 'master'
+      - "master"
   paths:
     include:
-    - 'Extensions/FGS.[!Pump]*/*'
+      - "Extensions/FGS.[!Pump]*/*"
 pr: none
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: "windows-latest"
 
 steps:
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet pack'
-  inputs:
-    command: pack
-    packagesToPack: 'Extensions/FGS.[!Pump]*/*.csproj'
-    versioningScheme: byBuildNumber
-    arguments: --configuration Release
+  - task: DotNetCoreCLI@2
+    displayName: "dotnet pack"
+    inputs:
+      command: pack
+      packagesToPack: "Extensions/FGS.[!Pump]*/*.csproj"
+      versioningScheme: byBuildNumber
+      arguments: --configuration Release
 
-- task: DotNetCoreCLI@2
-  displayName: 'dotnet push'
-  inputs:
-    command: push
-    nuGetFeedType: internal
-    publishVstsFeed: InternalDevelopment
+  - task: DotNetCoreCLI@2
+    displayName: "dotnet push"
+    inputs:
+      command: push
+      packagesToPush: $(Build.ArtifactStagingDirectory)/*.nupkg
+      nuGetFeedType: external
+      publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

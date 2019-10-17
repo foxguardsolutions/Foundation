@@ -7,7 +7,11 @@ using Autofac.Core;
 
 using Castle.DynamicProxy;
 
-namespace FGS.Pump.Extensions.DI.Interception
+using FGS.Interception.DynamicProxy;
+
+using IInterceptor = FGS.Interception.Abstractions.IInterceptor;
+
+namespace FGS.Autofac.Interception.DynamicProxy
 {
     public sealed class AttributeBasedInterceptionModule<TAttribute, TInterceptor> : CustomInterceptionModuleBase
         where TAttribute : Attribute

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -13,7 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Backend\FGS.Pump.Settings\FGS.Pump.Settings.csproj" />
-    <ProjectReference Include="..\FGS.Pump.Extensions.DI.Interception\FGS.Pump.Extensions.DI.Interception.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
+    <ProjectReference Include="..\FGS.Interception.Abstractions\FGS.Interception.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj" />
   </ItemGroup>
 

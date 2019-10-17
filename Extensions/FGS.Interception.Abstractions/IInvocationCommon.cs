@@ -1,4 +1,4 @@
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.Abstractions
 {
     public interface IInvocationCommon
     {

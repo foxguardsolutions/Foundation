@@ -4,29 +4,33 @@ using Autofac;
 
 using AutoFixture;
 
-using FGS.Pump.Tests.Support;
-using FGS.Tests.Support.TestCategories;
+using FGS.Interception.Abstractions;
 
 using Moq;
 
 using NUnit.Framework;
 
-namespace FGS.Pump.Extensions.DI.Interception.Tests
+using IInterceptor = FGS.Interception.Abstractions.IInterceptor;
+using IInvocation = FGS.Interception.Abstractions.IInvocation;
+
+namespace FGS.Autofac.Interception.DynamicProxy.Tests
 {
-    [Unit]
+    [Category("Unit")]
     [TestFixture]
-    public class InterceptorTests : BaseUnitTest
+    public class InterceptorTests
     {
-        private Mock<IInterceptionTestSubject> _mockInnermostImplementation;
+        private Fixture _fixture;
+        private Moq.Mock<IInterceptionTestSubject> _mockInnermostImplementation;
         private int _arbitraryInt;
         private string _arbitraryString;
 
         [SetUp]
         public void SetUp()
         {
-            _mockInnermostImplementation = new Mock<IInterceptionTestSubject>();
-            _arbitraryInt = Fixture.Create<int>();
-            _arbitraryString = Fixture.Create<string>();
+            _fixture = new AutoFixture.Fixture();
+            _mockInnermostImplementation = new Moq.Mock<IInterceptionTestSubject>();
+            _arbitraryInt = _fixture.Create<int>();
+            _arbitraryString = _fixture.Create<string>();
         }
 
         [Test]
@@ -42,7 +46,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         [Test]
         public void Given_InterceptingWithPassthru_ExecuteReturnValue_ReturnsExpected()
         {
-            var expected = Fixture.Create<bool>();
+            var expected = _fixture.Create<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnValue(_arbitraryInt, _arbitraryString)).Returns(expected);
             var subject = Given_InterceptedSubject<PassthruInterceptor>();
 
@@ -55,7 +59,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         [Test]
         public void Given_InterceptingWithPassthru_ExecuteReturnReference_ReturnsExpected()
         {
-            var expected = Fixture.CreateMany<bool>();
+            var expected = _fixture.CreateMany<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnReference(_arbitraryInt, _arbitraryString)).Returns(expected);
             var subject = Given_InterceptedSubject<PassthruInterceptor>();
 
@@ -79,7 +83,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         [Test]
         public async Task Given_InterceptingWithPassthru_ExecuteReturnAsyncValue_ReturnsExpected()
         {
-            var expected = Fixture.Create<bool>();
+            var expected = _fixture.Create<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsyncValue(_arbitraryInt, _arbitraryString)).ReturnsAsync(expected);
             var subject = Given_InterceptedSubject<PassthruInterceptor>();
 
@@ -92,7 +96,7 @@ namespace FGS.Pump.Extensions.DI.Interception.Tests
         [Test]
         public async Task Given_InterceptingWithPassthru_ExecuteReturnAsyncReference_ReturnsExpected()
         {
-            var expected = Fixture.CreateMany<bool>();
+            var expected = _fixture.CreateMany<bool>();
             _mockInnermostImplementation.Setup(i => i.ExecuteReturnAsyncReference(_arbitraryInt, _arbitraryString)).ReturnsAsync(expected);
             var subject = Given_InterceptedSubject<PassthruInterceptor>();
 

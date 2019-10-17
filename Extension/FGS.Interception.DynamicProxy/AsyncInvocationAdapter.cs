@@ -2,11 +2,13 @@ using System.Threading.Tasks;
 
 using Castle.DynamicProxy;
 
+using FGS.Interception.Abstractions;
+
 using ICastleInterceptorInvocation = Castle.DynamicProxy.IInvocation;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.DynamicProxy
 {
-    internal class AsyncInvocationAdapter : InvocationAdapterBase, IAsyncInvocation
+    public class AsyncInvocationAdapter : InvocationAdapterBase, IAsyncInvocation
     {
         private readonly IInvocationProceedInfo _proceedInfo;
 

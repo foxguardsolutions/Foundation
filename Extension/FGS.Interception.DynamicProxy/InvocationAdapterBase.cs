@@ -1,10 +1,13 @@
 using System;
 using System.Reflection;
 
+using FGS.Interception.Abstractions;
+
 using ICastleInterceptorInvocation = Castle.DynamicProxy.IInvocation;
-namespace FGS.Pump.Extensions.DI.Interception
+
+namespace FGS.Interception.DynamicProxy
 {
-    internal abstract class InvocationAdapterBase : IInvocationCommon
+    public abstract class InvocationAdapterBase : IInvocationCommon
     {
         protected ICastleInterceptorInvocation Adapted { get; }
 

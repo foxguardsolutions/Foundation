@@ -9,7 +9,7 @@ using Autofac.Core.Registration;
 
 using Castle.DynamicProxy;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Autofac.Interception.DynamicProxy
 {
     public abstract class CustomInterceptionModuleBase : Module
     {

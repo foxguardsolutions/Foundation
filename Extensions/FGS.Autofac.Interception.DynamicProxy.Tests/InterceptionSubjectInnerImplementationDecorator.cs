@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace FGS.Pump.Extensions.DI.Interception.Tests
+namespace FGS.Autofac.Interception.DynamicProxy.Tests
 {
     public class InterceptionSubjectInnerImplementationDecorator : IInterceptionTestSubject
     {

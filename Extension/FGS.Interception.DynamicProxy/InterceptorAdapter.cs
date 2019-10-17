@@ -1,12 +1,14 @@
 using System;
 using System.Threading.Tasks;
 
+using FGS.Interception.Abstractions;
+
 using ICastleInterceptor = Castle.DynamicProxy.IInterceptor;
 using ICastleInterceptorInvocation = Castle.DynamicProxy.IInvocation;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.DynamicProxy
 {
-    internal class InterceptorAdapter<TInterceptor, TInterceptorInstantiationData> : ICastleInterceptor
+    public sealed class InterceptorAdapter<TInterceptor, TInterceptorInstantiationData> : ICastleInterceptor
         where TInterceptor : IInterceptor
     {
         private readonly Func<ICastleInterceptorInvocation, TInterceptorInstantiationData> _interceptorInstantiationDataFactory;

@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.Abstractions
 {
     /// <summary>
     /// Represents an asynchronous method invocation that has been intercepted.

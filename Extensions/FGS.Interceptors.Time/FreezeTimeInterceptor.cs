@@ -1,9 +1,10 @@
 using System;
 using System.Threading.Tasks;
 
+using FGS.Interception.Abstractions;
 using FGS.Primitives.Time.Abstractions;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interceptors.Time
 {
     public class FreezeTimeInterceptor : IInterceptor
     {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 using ICastleInterceptorInvocation = Castle.DynamicProxy.IInvocation;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.DynamicProxy
 {
     internal static class InterceptorTaskConnector
     {

@@ -1,13 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
+
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
     <PackageReference Include="Castle.Core" Version="4.4.0" />
@@ -22,12 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Pump.Extensions.DI.Interception\FGS.Pump.Extensions.DI.Interception.csproj" />
-    <ProjectReference Include="..\..\FGS.Pump.Tests.Support\FGS.Pump.Tests.Support.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+    <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
+    <ProjectReference Include="..\FGS.Interception.Abstractions\FGS.Interception.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

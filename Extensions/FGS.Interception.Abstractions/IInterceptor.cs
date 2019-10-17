@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.Abstractions
 {
     /// <summary>
     /// Defines a discrete unit of behavior executed as part of the process of intercepting the execution of a member of a type.

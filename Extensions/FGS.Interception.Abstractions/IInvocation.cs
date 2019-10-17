@@ -1,4 +1,4 @@
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.Abstractions
 {
     /// <summary>
     /// Represents a method invocation that has been intercepted.

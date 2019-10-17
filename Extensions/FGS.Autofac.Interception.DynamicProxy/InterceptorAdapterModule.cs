@@ -1,6 +1,9 @@
 using Autofac;
 
-namespace FGS.Pump.Extensions.DI.Interception
+using FGS.Interception.Abstractions;
+using FGS.Interception.DynamicProxy;
+
+namespace FGS.Autofac.Interception.DynamicProxy
 {
     public class InterceptorAdapterModule : Module
     {

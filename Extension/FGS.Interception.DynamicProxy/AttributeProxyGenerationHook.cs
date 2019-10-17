@@ -5,7 +5,7 @@ using Castle.DynamicProxy;
 
 using FGS.Reflection.Extensions;
 
-namespace FGS.Pump.Extensions.DI.Interception
+namespace FGS.Interception.DynamicProxy
 {
     public class AttributeProxyGenerationHook<TAttribute> : IProxyGenerationHook
         where TAttribute : Attribute

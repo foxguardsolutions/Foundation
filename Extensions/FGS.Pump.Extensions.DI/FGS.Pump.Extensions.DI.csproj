@@ -12,7 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping\FGS.Autofac.DynamicScoping.csproj" />
-    <ProjectReference Include="..\FGS.Pump.Extensions\FGS.Pump.Extensions.csproj" />
+    <ProjectReference Include="..\FGS.Reflection.Extensions\FGS.Reflection.Extensions.csproj" />
   </ItemGroup>
 
 </Project>

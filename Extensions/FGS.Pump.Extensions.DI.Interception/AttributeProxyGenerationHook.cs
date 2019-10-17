@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Reflection;
 
 using Castle.DynamicProxy;
+
+using FGS.Reflection.Extensions;
 
 namespace FGS.Pump.Extensions.DI.Interception
 {

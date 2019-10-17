@@ -1,6 +1,8 @@
 using System;
 using System.Threading.Tasks;
 
+using FGS.Primitives.Time.Abstractions;
+
 namespace FGS.Pump.Extensions.DI.Interception
 {
     public class FreezeTimeInterceptor : IInterceptor

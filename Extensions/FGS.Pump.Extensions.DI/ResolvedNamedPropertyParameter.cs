@@ -4,6 +4,8 @@ using System.Reflection;
 using Autofac;
 using Autofac.Core;
 
+using FGS.Reflection.Extensions;
+
 namespace FGS.Pump.Extensions.DI
 {
     /// <remarks>Based on:

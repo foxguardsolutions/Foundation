@@ -8,7 +8,7 @@ using Autofac.Features.Indexed;
 using FGS.Autofac.DynamicScoping;
 using FGS.Autofac.DynamicScoping.Abstractions;
 
-namespace FGS.Pump.Extensions.DI
+namespace FGS.Autofac.Registration.Extensions
 {
     public static class ContainerBuilderExtensions
     {

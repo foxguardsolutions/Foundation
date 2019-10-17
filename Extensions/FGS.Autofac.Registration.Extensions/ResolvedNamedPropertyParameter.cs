@@ -6,11 +6,11 @@ using Autofac.Core;
 
 using FGS.Reflection.Extensions;
 
-namespace FGS.Pump.Extensions.DI
+namespace FGS.Autofac.Registration.Extensions
 {
-    /// <remarks>Based on:
+    /// <remarks>Based on
     ///     https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/ResolvedParameter.cs
-    /// and https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/NamedPropertyParameter.cs </remarks>
+    /// and https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/NamedPropertyParameter.cs. </remarks>
     public class ResolvedNamedPropertyParameter<TPropertyValue> : Parameter
     {
         public string Name { get; }

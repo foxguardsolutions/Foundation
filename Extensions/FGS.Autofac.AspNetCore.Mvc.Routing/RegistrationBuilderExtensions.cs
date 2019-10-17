@@ -3,7 +3,7 @@ using System;
 using Autofac;
 using Autofac.Builder;
 
-using FGS.Pump.Extensions.DI;
+using FGS.Autofac.Registration.Extensions;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

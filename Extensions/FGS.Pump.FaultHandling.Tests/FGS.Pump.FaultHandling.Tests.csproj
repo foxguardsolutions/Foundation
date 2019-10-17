@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Pump.Extensions.DI\FGS.Pump.Extensions.DI.csproj" />
     <ProjectReference Include="..\FGS.Pump.FaultHandling\FGS.Pump.FaultHandling.csproj" />
     <ProjectReference Include="..\FGS.Pump.Logging\FGS.Pump.Logging.csproj" />
     <ProjectReference Include="..\..\FGS.Pump.Tests.Support\FGS.Pump.Tests.Support.csproj" />

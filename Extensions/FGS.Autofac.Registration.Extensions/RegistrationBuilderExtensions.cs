@@ -3,7 +3,7 @@ using System;
 using Autofac;
 using Autofac.Builder;
 
-namespace FGS.Pump.Extensions.DI
+namespace FGS.Autofac.Registration.Extensions
 {
     public static class RegistrationBuilderExtensions
     {

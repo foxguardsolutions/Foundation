@@ -28,6 +28,20 @@ namespace FGS.Interception.DynamicProxy
             _asyncInvocationAdapterFactory = asyncInvocationAdapterFactory;
         }
 
+        /// <inheritdoc />
+        /// <remarks>
+        /// <para>
+        ///   ⚠🐛 If <value>_interceptorInstantiationDataFactory</value> or <value>_adaptedFactory</value> throw exceptions, (which
+        ///   can result from misconfigured dependency injection), it can be difficult to detect based on how this class and its
+        ///   collaborators interact. They have been known to manifest as difficult-to-explain <see cref="NullReferenceException"/>s thrown
+        ///   during sociable testing or production runtime conditions.
+        /// </para>
+        /// <para>
+        ///   🏗ℹ Ideally, this implementation would catch possible exceptions from the factories that are called during setup - and then
+        ///   chain them into the returned continuation - but such would increase the complexity of this type beyond what has been time-budgeted
+        ///   each time we've happened to be refactoring near it.
+        /// </para>
+        /// </remarks>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1031:Do not catch general exception types", Justification = "For interceptors, upstream exception types are unknowable by definition")]
         void ICastleInterceptor.Intercept(ICastleInterceptorInvocation invocation)
         {

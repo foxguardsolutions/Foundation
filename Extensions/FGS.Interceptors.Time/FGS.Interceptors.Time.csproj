@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Interception.Abstractions\FGS.Interception.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Primitives.Time.Abstractions\FGS.Primitives.Time.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

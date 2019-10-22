@@ -1,6 +1,6 @@
 using Autofac;
 
-using FGS.Pump.Extensions.DI.Interception;
+using FGS.Autofac.Interception.DynamicProxy;
 using FGS.Pump.FaultHandling.Adapters;
 using FGS.Pump.FaultHandling.Configuration;
 using FGS.Pump.FaultHandling.Interception;

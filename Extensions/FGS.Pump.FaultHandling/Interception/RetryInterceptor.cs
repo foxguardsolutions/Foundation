@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-using FGS.Pump.Extensions.DI.Interception;
+using FGS.Interception.Abstractions;
 
 namespace FGS.Pump.FaultHandling.Interception
 {

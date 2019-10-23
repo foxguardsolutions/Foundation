@@ -30,12 +30,20 @@ using IWebHostBuilder = Microsoft.Extensions.Hosting.IHostBuilder;
 using WebHostBuilderContext = Microsoft.Extensions.Hosting.HostBuilderContext;
 #endif
 
+#if NET472 || NETSTANDARD2_0
 namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
+namespace FGS.Extensions.Hosting.Logging.Serilog
+#endif
 {
     /// <summary>
     /// Extends <see cref="IWebHostBuilder"/> with Serilog configuration methods.
     /// </summary>
+#if NET472 || NETSTANDARD2_0
     public static class SerilogWebHostBuilderExtensions
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
+    public static class SerilogHostBuilderExtensions
+#endif
     {
         /// <summary>
         /// Sets Serilog as the logging provider.

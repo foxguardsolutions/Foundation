@@ -21,7 +21,11 @@ using Serilog.Debugging;
 
 using ILogger = Serilog.ILogger;
 
+#if NET472 || NETSTANDARD2_0
 namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
+namespace FGS.Extensions.Hosting.Logging.Serilog
+#endif
 {
     /// <summary>
     /// Implements <see cref="ILoggerFactory"/> so that we can inject Serilog Logger.

@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Extension\FGS.Interception.DynamicProxy\FGS.Interception.DynamicProxy.csproj" />
+    <ProjectReference Include="..\..\Extensions\FGS.Interception.DynamicProxy\FGS.Interception.DynamicProxy.csproj" />
   </ItemGroup>
 
 </Project>

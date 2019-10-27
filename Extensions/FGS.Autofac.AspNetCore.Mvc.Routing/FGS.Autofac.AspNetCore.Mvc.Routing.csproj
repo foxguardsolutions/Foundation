@@ -1,15 +1,28 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="4.9.4" />
-    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 2.3.0)" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 2.3.0)" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="[2.2.0, 2.3.0)" />
+    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>

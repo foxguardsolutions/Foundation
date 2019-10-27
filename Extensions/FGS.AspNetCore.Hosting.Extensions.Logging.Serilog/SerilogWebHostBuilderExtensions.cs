@@ -21,10 +21,10 @@ using Serilog;
 
 using ILogger = Serilog.ILogger;
 
-#if NETSTANDARD2_0
+#if NET472 || NETSTANDARD2_0
 using IWebHostBuilder = Microsoft.AspNetCore.Hosting.IWebHostBuilder;
 using WebHostBuilderContext = Microsoft.AspNetCore.Hosting.WebHostBuilderContext;
-#elif NETSTANDARD2_1
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
 using Microsoft.Extensions.Hosting;
 using IWebHostBuilder = Microsoft.Extensions.Hosting.IHostBuilder;
 using WebHostBuilderContext = Microsoft.Extensions.Hosting.HostBuilderContext;

@@ -33,6 +33,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Linq.Expressions\FGS.Linq.Expressions.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support.Autofixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj" />
     <ProjectReference Include="..\FGS.Tests.Support\FGS.Tests.Support.csproj" />
   </ItemGroup>
 

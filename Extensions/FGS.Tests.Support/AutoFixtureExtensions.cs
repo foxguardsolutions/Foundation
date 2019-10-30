@@ -1,12 +1,9 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
 using AutoFixture;
 using AutoFixture.Kernel;
-
-using Moq;
 
 namespace FGS.Tests.Support
 {
@@ -23,38 +20,6 @@ namespace FGS.Tests.Support
 
             var result = methodInfo.MakeGenericMethod(type).Invoke(null, new object[] { fixture });
             return result;
-        }
-
-        public static Mock<T> Mock<T>(this Fixture fixture)
-            where T : class
-        {
-            return fixture.Mock<T>(() => new Mock<T>());
-        }
-
-        public static Mock<T> Mock<T>(this Fixture fixture, MockBehavior behavior)
-            where T : class
-        {
-            return fixture.Mock<T>(() => new Mock<T>(behavior));
-        }
-
-        public static Mock<T> Mock<T>(this Fixture fixture, params object[] args)
-            where T : class
-        {
-            return fixture.Mock<T>(() => new Mock<T>(MockBehavior.Default, args));
-        }
-
-        public static Mock<T> Mock<T>(this Fixture fixture, MockBehavior behavior, params object[] args)
-            where T : class
-        {
-            return fixture.Mock<T>(() => new Mock<T>(behavior, args));
-        }
-
-        public static IEnumerable<Mock<T>> MockMany<T>(this Fixture fixture, int count = 3)
-            where T : class
-        {
-            var mocks = Enumerable.Range(0, count).Select(_ => new Mock<T>()).ToList();
-            mocks.ForEach(m => fixture.Register(() => m.Object));
-            return mocks;
         }
 
         public static ushort CreateSmallPositiveRandomNumber(this Fixture fixture)
@@ -93,16 +58,6 @@ namespace FGS.Tests.Support
             var additive = fixture.Create<int>();
 
             return (TEnum)(object)(maxInteger + additive);
-        }
-
-        private static Mock<T> Mock<T>(this Fixture fixture, Func<Mock<T>> mockFactory)
-            where T : class
-        {
-            var mock = mockFactory();
-            fixture.Inject(mock);
-            fixture.Register(() => fixture.Create<Mock<T>>().Object);
-            fixture.Freeze<T>();
-            return mock;
         }
     }
 }

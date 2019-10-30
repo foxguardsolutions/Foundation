@@ -46,9 +46,9 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
 
                 // ASP.NET Core does this conversion for environment variables, and we do it _here_ because Elastic Beanstalk calls these "environment variables".
                 // This allows our infrastructure configuration to continue to treat configuration settings as if setting environment variables (for ASP.NET Core), and allows the app to continue to remain unaware of the differences.
-#if NETSTANDARD2_0
+#if NET472 || NETSTANDARD2_0
                 var key = actualKeyValuePair.Substring(0, indexOfSeparator).Replace("__", ":");
-#elif NETSTANDARD2_1
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
                 var key = actualKeyValuePair.Substring(0, indexOfSeparator).Replace("__", ":", StringComparison.Ordinal);
 #endif
                 var value = actualKeyValuePair.Substring(indexOfSeparator + 1);

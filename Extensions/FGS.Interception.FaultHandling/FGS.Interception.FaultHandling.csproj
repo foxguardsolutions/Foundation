@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.FaultHandling.Abstractions\FGS.FaultHandling.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Interception.Abstractions\FGS.Interception.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

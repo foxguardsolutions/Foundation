@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.1' ">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support.Autofac.Mocking\FGS.Tests.Support.Autofac.Mocking.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -8,8 +8,6 @@ using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Extensions.Localization;
 
-using Newtonsoft.Json;
-
 namespace FGS.AspNetCore.Mvc.ModelBinding.Validation
 {
     /// <remarks>Taken and modified from: https://github.com/rpgkaiser/FoolProof.Core/blob/268c8afc60dc020089ea03920b1499162b0987b4/FoolProof.Core/Utilities/ValidationAdapter.cs.</remarks>
@@ -43,7 +41,11 @@ namespace FGS.AspNetCore.Mvc.ModelBinding.Validation
                 var validationKey = $"data-val-{validName}-{validationParam.Key.ToLowerInvariant()}";
 #pragma warning restore CA1308 // Normalize strings to uppercase
                 var validationValue = validationParam.Value != null && validationParam.Value.GetType() != typeof(string)
-                    ? JsonConvert.SerializeObject(validationParam.Value)
+#if NET472 || NETSTANDARD2_0
+                    ? Newtonsoft.Json.JsonConvert.SerializeObject(validationParam.Value)
+#elif NETCOREAPP3_0
+                    ? System.Text.Json.JsonSerializer.Serialize<object>(validationParam.Value)
+#endif
                     : validationParam.Value as string;
 
                 MergeAttribute(context.Attributes, validationKey, validationValue);

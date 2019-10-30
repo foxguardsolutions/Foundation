@@ -10,9 +10,9 @@ using FGS.Extensions.DependencyInjection.Autofac;
 
 using Microsoft.Extensions.DependencyInjection;
 
-#if NETSTANDARD2_0
+#if NET472 || NETSTANDARD2_0
 using IWebHostBuilder = Microsoft.AspNetCore.Hosting.IWebHostBuilder;
-#elif NETSTANDARD2_1
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
 using Microsoft.Extensions.Hosting;
 using IWebHostBuilder = Microsoft.Extensions.Hosting.IHostBuilder;
 #endif

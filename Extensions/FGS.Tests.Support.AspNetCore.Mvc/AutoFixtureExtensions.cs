@@ -3,6 +3,8 @@ using System;
 using AutoFixture;
 using AutoFixture.Dsl;
 
+using FGS.Tests.Support.AutoFixture.Mocking;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;

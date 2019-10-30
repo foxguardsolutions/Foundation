@@ -27,6 +27,8 @@ namespace FGS.Autofac.Interceptors.FaultHandling
 
             builder.RegisterType<ExponentialRetryBackoffCalculator>().As<IRetryBackoffCalculator>().SingleInstance();
 
+            builder.RegisterModule<InterceptorAdapterModule>();
+
             RegisterInterceptor(builder);
         }
 

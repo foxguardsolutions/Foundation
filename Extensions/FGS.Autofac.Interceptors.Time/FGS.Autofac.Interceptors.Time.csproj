@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+    
+    <Description>
+      Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
+      `FreezeTimeAttribute` such that resolved `IClock` instances will reflect a frozen instance in time time, throughout
+      the duration of each intercepted call.
+
+      This is useful for making sure timestamps are consistent across multiple accesses during a single business transaction,
+      such as during compound persistence operations that independently consume the current time.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop;freeze;stop;clock;time;date;datetime;datetimeoffset</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.Registration.Extensions\FGS.Autofac.Registration.Extensions.csproj" />
+    <ProjectReference Include="..\FGS.Interception.Annotations.Time\FGS.Interception.Annotations.Time.csproj" />
+    <ProjectReference Include="..\FGS.Interceptors.Time\FGS.Interceptors.Time.csproj" />
+    <ProjectReference Include="..\FGS.Primitives.Time.Abstractions\FGS.Primitives.Time.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Primitives.Time\FGS.Primitives.Time.csproj" />
+  </ItemGroup>
+
+</Project>

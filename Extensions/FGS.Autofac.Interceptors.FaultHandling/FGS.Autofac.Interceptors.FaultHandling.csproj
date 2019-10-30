@@ -32,7 +32,7 @@
     <ProjectReference Include="..\FGS.FaultHandling.Polly\FGS.FaultHandling.Polly.csproj" />
     <ProjectReference Include="..\FGS.FaultHandling.Primitives\FGS.FaultHandling.Primitives.csproj" />
     <ProjectReference Include="..\FGS.Interception.Annotations.FaultHandling\FGS.Interception.Annotations.FaultHandling.csproj" />
-    <ProjectReference Include="..\FGS.Interception.FaultHandling\FGS.Interception.FaultHandling.csproj" />
+    <ProjectReference Include="..\FGS.Interceptors.FaultHandling\FGS.Interceptors.FaultHandling.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,7 +7,7 @@ using FGS.FaultHandling.Abstractions.Retry;
 using FGS.FaultHandling.Polly.Retry;
 using FGS.FaultHandling.Primitives.Retry;
 using FGS.Interception.Annotations.FaultHandling;
-using FGS.Interception.FaultHandling.Retry;
+using FGS.Interceptors.FaultHandling.Retry;
 
 using Microsoft.Extensions.Configuration;
 

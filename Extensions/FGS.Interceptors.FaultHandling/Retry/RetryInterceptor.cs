@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using FGS.FaultHandling.Abstractions.Retry;
 using FGS.Interception.Abstractions;
 
-namespace FGS.Interception.FaultHandling.Retry
+namespace FGS.Interceptors.FaultHandling.Retry
 {
     public class RetryInterceptor : IInterceptor
     {

@@ -1,5 +1,7 @@
 using System;
 
+using Autofac.Builder;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -9,12 +11,14 @@ using Microsoft.AspNetCore.Routing;
 namespace FGS.Autofac.AspNetCore.Mvc.Routing
 {
     /// <summary>
-    /// An implementation of <see cref="IUrlHelper"/> that attempts to retains most of <see cref="IUrlHelper"/>'s functionality when used in a singleton context, when an <see cref="HttpContext"/> is likely available but <see cref="ActionContext"/> is not.
+    /// <para>An implementation of <see cref="IUrlHelper"/> that attempts to retains most of <see cref="IUrlHelper"/>'s functionality when used
+    /// in a singleton context, when an <see cref="HttpContext"/> is likely available but <see cref="ActionContext"/> is not.</para>
+    /// <para>To use this, provide it to an Autofac registration with <see cref="RegistrationBuilderExtensions.WithSingletonCompatibleUrlHelper(IRegistrationBuilder{TLimit,TReflectionActivatorData,TStyle})"/>.</para>
     /// </summary>
     /// <remarks>
     /// This implementation is bound by these constraints:
     ///  - <see cref="IHttpContextAccessor"/> can be used in singleton scope because ASP.NET Core registers it as such.
-    ///  - <see cref="IActionContextAccessor"/> cannot be used in singleton scope, because ASP.NET Core registers only register it in the scope of a request.
+    ///  - <see cref="IActionContextAccessor"/> cannot be used in singleton scope, because ASP.NET Core registrations only register it in the scope of a request.
     /// </remarks>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1055:Uri return values should not be strings", Justification = "A specific API is being implemented wherein we do not have control over the method names or return types")]
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Design", "CA1054:Uri parameters should not be strings", Justification = "A specific API is being implemented wherein we do not have control over the method parameters' names or types")]
@@ -25,7 +29,7 @@ namespace FGS.Autofac.AspNetCore.Mvc.Routing
 
         protected HttpContext HttpContext => _httpContextAccessor.HttpContext;
 
-        public SingletonCompatibleUrlHelper(IHttpContextAccessor httpContextAccessor, LinkGenerator linkGenerator)
+        internal SingletonCompatibleUrlHelper(IHttpContextAccessor httpContextAccessor, LinkGenerator linkGenerator)
         {
             _httpContextAccessor = httpContextAccessor;
             _linkGenerator = linkGenerator;

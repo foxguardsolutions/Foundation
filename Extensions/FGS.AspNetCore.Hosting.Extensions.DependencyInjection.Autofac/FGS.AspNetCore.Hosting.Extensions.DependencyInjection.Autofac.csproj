@@ -3,6 +3,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides fluent extensions of ASP.NET Core's hosting mechanisms so that consumers can easily
+      wire in large sets of Autofac configuration, without crowding their `Startup` classes.
+
+      An alternative to `Autofac.Extensions.Hosting`.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;aspnet;aspnetcore</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net472'">

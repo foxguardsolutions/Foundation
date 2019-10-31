@@ -9,6 +9,7 @@ using Serilog.Events;
 
 namespace FGS.Extensions.Logging.Serilog
 {
+    /// <remarks>Taken and modified from: https://github.com/serilog/serilog-extensions-logging/blob/767f884a1dafb033a8232c6c8e61b8f4bf5db6ed/src/Serilog.Extensions.Logging/Extensions/Logging/SerilogLoggerScope.cs. </remarks>
     internal class SerilogLoggerScope : IDisposable
     {
         private const string NoName = "None";

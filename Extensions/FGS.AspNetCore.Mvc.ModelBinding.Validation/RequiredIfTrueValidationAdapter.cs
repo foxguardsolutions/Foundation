@@ -10,14 +10,16 @@ using Microsoft.Extensions.Localization;
 
 namespace FGS.AspNetCore.Mvc.ModelBinding.Validation
 {
+    /// <summary>Implements server-side logic for <see cref="RequiredIfTrueAttribute"/>, and sets up the annotated model for client-side validation as well.</summary>
     /// <remarks>Taken and modified from: https://github.com/rpgkaiser/FoolProof.Core/blob/268c8afc60dc020089ea03920b1499162b0987b4/FoolProof.Core/Utilities/ValidationAdapter.cs.</remarks>
     public class RequiredIfTrueValidationAdapter : AttributeAdapterBase<RequiredIfTrueAttribute>
     {
-        public RequiredIfTrueValidationAdapter(RequiredIfTrueAttribute attribute, IStringLocalizer stringLocalizer)
+        internal RequiredIfTrueValidationAdapter(RequiredIfTrueAttribute attribute, IStringLocalizer stringLocalizer)
             : base(attribute, stringLocalizer)
         {
         }
 
+        /// <inheritdoc />
         public override void AddValidation(ClientModelValidationContext context)
         {
             var otherPropertyInfo = context.ModelMetadata.ContainerType.GetProperty(Attribute.DependentProperty);
@@ -52,6 +54,7 @@ namespace FGS.AspNetCore.Mvc.ModelBinding.Validation
             }
         }
 
+        /// <inheritdoc />
         public override string GetErrorMessage(ModelValidationContextBase validationContext)
         {
             return GetErrorMessage(validationContext.ModelMetadata, validationContext.ModelMetadata.GetDisplayName());

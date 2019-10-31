@@ -11,13 +11,22 @@ using Castle.DynamicProxy;
 
 namespace FGS.Autofac.Interception.DynamicProxy
 {
+    /// <summary>
+    /// An abstraction representing an Autofac module that dynamically wires up interceptors to resolved types.
+    /// </summary>
     public abstract class CustomInterceptionModuleBase : Module
     {
         private const string ChildRegistrationPropertyName = "FGS.Pump.Extensions.DI" + nameof(CustomInterceptionModuleBase) + "." + nameof(ChildRegistrationPropertyName);
         private const string InterceptorServicesPropertyName = "FGS.Pump.Extensions.DI" + nameof(CustomInterceptionModuleBase) + "." + nameof(InterceptorServicesPropertyName);
-        internal static readonly ProxyGenerator ProxyGenerator = new ProxyGenerator();
+        private static readonly ProxyGenerator ProxyGenerator = new ProxyGenerator();
 
-        protected override void AttachToComponentRegistration(IComponentRegistry componentRegistry, IComponentRegistration registration)
+        /// <inheritdoc />
+        internal CustomInterceptionModuleBase()
+        {
+        }
+
+        /// <inheritdoc />
+        protected sealed override void AttachToComponentRegistration(IComponentRegistry componentRegistry, IComponentRegistration registration)
         {
             if (IsChildRegistration(registration) || !HasEligibleActivator(registration))
                 return;
@@ -35,13 +44,26 @@ namespace FGS.Autofac.Interception.DynamicProxy
             SetInterceptorServices(childRegistration, existingInterceptorServices.Concat(newInterceptorServices));
         }
 
+        /// <summary>
+        /// Determines whether or not instances of <paramref name="originalImplementationType"/> should be intercepted.
+        /// </summary>
+        /// <param name="originalImplementationType">The type whose instances might be intercepted.</param>
         protected abstract bool ShouldInterceptType(Type originalImplementationType);
 
+        /// <summary>
+        /// Creates a <see cref="IProxyGenerationHook"/> for the type <paramref name="originalImplementationType"/>.
+        /// </summary>
+        /// <param name="originalImplementationType">The type whose instances are being intercepted.</param>
         protected abstract IProxyGenerationHook CreateProxyGenerationHook(Type originalImplementationType);
 
+        /// <summary>
+        /// Determines the set of <see cref="Service"/> that represent distinctly resolvable instances of <see cref="Castle.DynamicProxy.IInterceptor"/>
+        /// that are meant to intercept instances of <paramref name="originalImplementationType"/>.
+        /// </summary>
+        /// <param name="originalImplementationType">The type whose instances are being intercepted.</param>
         protected abstract IEnumerable<Service> DescribeInterceptorServices(Type originalImplementationType);
 
-        /// <remarks>Ported from <see cref="Autofac.Extras.DynamicProxy2.RegistrationExtensions.EnableClassInterceptors{TLimit, TConcreteReflectionActivatorData, TRegistrationStyle}(IRegistrationBuilder{TLimit,TConcreteReflectionActivatorData,TRegistrationStyle}, ProxyGenerationOptions, Type[])"/> found here: https://github.com/autofac/Autofac.Extras.DynamicProxy/blob/c35bfe7c51a0bce6fe7439d58f5fecda9980a5dd/src/Autofac.Extras.DynamicProxy/RegistrationExtensions.cs </remarks>>
+        /// <remarks>Ported from <see cref="Autofac.Extras.DynamicProxy2.RegistrationExtensions.EnableClassInterceptors{TLimit, TConcreteReflectionActivatorData, TRegistrationStyle}(IRegistrationBuilder{TLimit,TActivatorData,TRegistrationStyle}, ProxyGenerationOptions, Type[])"/> found here: https://github.com/autofac/Autofac.Extras.DynamicProxy/blob/c35bfe7c51a0bce6fe7439d58f5fecda9980a5dd/src/Autofac.Extras.DynamicProxy/RegistrationExtensions.cs </remarks>>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2000:Dispose objects before losing scope", Justification = "ReflectionActivator is used to create a ComponentRegistration which then owns the former, and has a lifetime extending outside of this method")]
         private IComponentRegistration CreateClassInterceptorRegistration(IComponentRegistration registration)
         {

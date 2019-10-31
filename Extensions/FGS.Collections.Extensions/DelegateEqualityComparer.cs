@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace FGS.Collections.Extensions
 {
-    /// <remarks>Stolen wholesale from http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer. </remarks>
+    /// <remarks>Taken and modified from: http://stackoverflow.com/questions/4607485/linq-distinct-use-delegate-for-equality-comparer. </remarks>
     internal class DelegateEqualityComparer<T, TIdentity> : IEqualityComparer<T>
     {
         private readonly Func<T, TIdentity> identitySelector;
 
-        public DelegateEqualityComparer(Func<T, TIdentity> identitySelector)
+        internal DelegateEqualityComparer(Func<T, TIdentity> identitySelector)
         {
             this.identitySelector = identitySelector;
         }

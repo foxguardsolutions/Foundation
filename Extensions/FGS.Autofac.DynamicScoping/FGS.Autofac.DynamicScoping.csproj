@@ -3,6 +3,11 @@
 
     <PropertyGroup>
       <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+      <Description>
+        Provides helpers for dynamically deciding the lifetime management semantics of component registrations in an Autofac container.
+      </Description>
+      <PackageTags>autofac;di;ioc;dependencyinjection</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

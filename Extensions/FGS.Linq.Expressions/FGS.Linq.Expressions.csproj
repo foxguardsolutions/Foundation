@@ -3,6 +3,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Authors>Ani;$(Authors)</Authors>
+    <Description>
+      Provides the ability to manipulate LINQ expression trees.
+    </Description>
+    <PackageTags>LINQ;lambda;expressions;ParameterReplacer</PackageTags>
   </PropertyGroup>
 
 </Project>

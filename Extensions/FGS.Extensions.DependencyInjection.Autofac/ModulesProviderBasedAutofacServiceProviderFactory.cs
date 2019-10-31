@@ -14,7 +14,8 @@ namespace FGS.Extensions.DependencyInjection.Autofac
     /// <summary>
     /// A factory for creating an Autofac-based <see cref="IServiceProvider" />.
     /// </summary>
-    /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Extensions.DependencyInjection/blob/36d487749ef7184357bbc4d162bf425b8474eb36/src/Autofac.Extensions.DependencyInjection/AutofacServiceProviderFactory.cs </remarks>
+    /// <typeparam name="TModulesProvider">The type of provider that can enumerate all of the Autofac modules to be registered.</typeparam>
+    /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Extensions.DependencyInjection/blob/36d487749ef7184357bbc4d162bf425b8474eb36/src/Autofac.Extensions.DependencyInjection/AutofacServiceProviderFactory.cs. </remarks>
     public class ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider> : IServiceProviderFactory<IServiceCollection>
         where TModulesProvider : IModulesProvider, new()
     {
@@ -22,11 +23,11 @@ namespace FGS.Extensions.DependencyInjection.Autofac
         private readonly Action<ContainerBuilder> _configurationAction;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AutofacServiceProviderFactory"/> class.
+        /// Initializes a new instance of the <see cref="ModulesProviderBasedAutofacServiceProviderFactory{TModulesProvider}"/> class.
         /// </summary>
         /// <param name="forEachModule">Action for each <see cref="IModule"/> that can provide additional configuration before it is registered.</param>
         /// <param name="configurationAction">Action on a <see cref="ContainerBuilder"/> that adds component registrations to the container.</param>
-        public ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule> forEachModule = null, Action<ContainerBuilder> configurationAction = null)
+        internal ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule> forEachModule = null, Action<ContainerBuilder> configurationAction = null)
         {
             _forEachModule = forEachModule;
             _configurationAction = configurationAction ?? (builder => { });

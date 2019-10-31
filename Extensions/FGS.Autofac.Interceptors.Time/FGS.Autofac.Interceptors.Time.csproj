@@ -1,8 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
-    
+
     <Description>
       Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
       `FreezeTimeAttribute` such that resolved `IClock` instances will reflect a frozen instance in time time, throughout

@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics.CodeAnalysis;
 
 using Autofac;
 
@@ -10,8 +9,19 @@ using Moq;
 
 namespace FGS.Tests.Support.Autofac.Mocking
 {
+    /// <summary>
+    /// Extends <see cref="ContainerBuilder"/> with functionality for registering mocks.
+    /// </summary>
     public static class ContainerBuilderExtensions
     {
+        /// <summary>
+        /// Registers a mocked <typeparamref name="T"/> with the <paramref name="builder"/>.
+        /// </summary>
+        /// <typeparam name="T">The type of object to mock.</typeparam>
+        /// <param name="builder">The <see cref="ContainerBuilder"/> into which to register the mock.</param>
+        /// <param name="scope">The lifetime management semantics by which the component will be resolved.</param>
+        /// <returns>A <see cref="Mock{T}"/> so that additional configuration calls may be chained.</returns>
+        /// <remarks>The mocked object is registered with a deferred style, such that callers may continue to configure the mock until it is resolved.</remarks>
         public static Mock<T> RegisterMock<T>(this ContainerBuilder builder, Scope scope)
             where T : class
         {
@@ -20,6 +30,12 @@ namespace FGS.Tests.Support.Autofac.Mocking
             return mock;
         }
 
+        /// <summary>
+        /// Registers mocks of the unbound generic type represented by <paramref name="unboundGeneric"/>.
+        /// </summary>
+        /// <param name="builder">The <see cref="ContainerBuilder"/> into which to register the mocks.</param>
+        /// <param name="unboundGeneric">The type of unbound generic to generate mock registrations for.</param>
+        /// <param name="scope">The lifetime management semantics by which the component will be resolved.</param>
         public static void RegisterUnboundMock(this ContainerBuilder builder, Type unboundGeneric, Scope scope)
         {
             if (unboundGeneric.IsValueType || !unboundGeneric.IsGenericType || unboundGeneric.IsConstructedGenericType)

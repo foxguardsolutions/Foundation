@@ -25,6 +25,7 @@ namespace FGS.Extensions.Logging.Serilog
     /// <summary>
     /// An <see cref="ILoggerProvider"/> that pipes events through Serilog.
     /// </summary>
+    /// <remarks>Taken and modified from: https://github.com/serilog/serilog-extensions-logging/blob/767f884a1dafb033a8232c6c8e61b8f4bf5db6ed/src/Serilog.Extensions.Logging/Extensions/Logging/SerilogLoggerProvider.cs. </remarks>
 #if LOGGING_BUILDER
     [ProviderAlias("Serilog")]
 #endif
@@ -38,7 +39,7 @@ namespace FGS.Extensions.Logging.Serilog
         private readonly Action _dispose;
 
         /// <summary>
-        /// Construct a <see cref="SerilogLoggerProvider"/>.
+        /// Initializes a new instance of the <see cref="SerilogLoggerProvider"/> class.
         /// </summary>
         /// <param name="logger">A Serilog logger to pipe events through; if null, the static <see cref="Log"/> class will be used.</param>
         /// <param name="dispose">If true, the provided logger or static log class will be disposed/closed when the provider is disposed.</param>

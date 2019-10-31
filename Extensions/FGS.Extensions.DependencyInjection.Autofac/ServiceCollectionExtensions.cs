@@ -12,7 +12,7 @@ namespace FGS.Extensions.DependencyInjection.Autofac
     /// <summary>
     /// Extension methods on <see cref="IServiceCollection"/> to register the <see cref="IServiceProviderFactory{TContainerBuilder}"/>.
     /// </summary>
-    /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Extensions.DependencyInjection/blob/36d487749ef7184357bbc4d162bf425b8474eb36/src/Autofac.Extensions.DependencyInjection/ServiceCollectionExtensions.cs </remarks>
+    /// <remarks>Taken and modified from: https://github.com/autofac/Autofac.Extensions.DependencyInjection/blob/36d487749ef7184357bbc4d162bf425b8474eb36/src/Autofac.Extensions.DependencyInjection/ServiceCollectionExtensions.cs. </remarks>
     public static class ServiceCollectionExtensions
     {
         /// <summary>

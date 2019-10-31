@@ -9,28 +9,29 @@ namespace FGS.Autofac.Options
     using Options = Microsoft.Extensions.Options.Options;
 
     /// <summary>
-    /// Used to configure TOptions instances.
+    /// Used to configure <typeparamref name="TOptions" /> instances.
     /// </summary>
-    /// <typeparam name="TOptions">The type of options being requested.</typeparam>
+    /// <typeparam name="TOptions">The type of Options being requested.</typeparam>
     /// <remarks>Taken and modified from: https://github.com/aspnet/Extensions/blob/e311a440d51cddd8f645160d9e27a574c77955a1/src/Options/Options/src/OptionsBuilder.cs. </remarks>
     public class AutofacOptionsBuilder<TOptions>
         where TOptions : class
     {
         /// <summary>
-        /// Gets the default name of the TOptions instance.
+        /// Gets the default name of the <typeparamref name="TOptions" /> instance.
         /// </summary>
         public string Name { get; }
 
         /// <summary>
-        /// Gets the <see cref="global::Autofac.ContainerBuilder"/> for the options being configured.
+        /// Gets the <see cref="global::Autofac.ContainerBuilder"/> for the Options being configured.
         /// </summary>
         public ContainerBuilder ContainerBuilder { get; }
 
         /// <summary>
-        /// Constructor.
+        /// Initializes a new instance of the <see cref="AutofacOptionsBuilder{TOptions}"/> class.
         /// </summary>
-        /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> for the options being configured.</param>
-        /// <param name="name">The default name of the TOptions instance, if null Options.DefaultName is used.</param>
+        /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> for the Options being configured.</param>
+        /// <param name="name">The name of the <typeparamref name="TOptions" /> instance. If <see langword="null" />, <see cref="Options.DefaultName" /> is used.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public AutofacOptionsBuilder(ContainerBuilder containerBuilder, string name)
         {
             if (containerBuilder == null) throw new ArgumentNullException(nameof(containerBuilder));
@@ -40,10 +41,11 @@ namespace FGS.Autofac.Options
         }
 
         /// <summary>
-        /// Registers an action used to configure a particular type of options.
+        /// Registers an action used to configure a particular type of Options.
         /// Note: These are run before all <seealso cref="PostConfigure(Action{TOptions})"/>.
         /// </summary>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> Configure(Action<TOptions> configureOptions)
         {
             if (configureOptions == null) throw new ArgumentNullException(nameof(configureOptions));
@@ -53,6 +55,13 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes a single additional dependency parameter.
+        /// Note: These are run before all <seealso cref="PostConfigure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep">The type of a dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> Configure<TDep>(Action<TOptions, TDep> configureOptions)
             where TDep : class
         {
@@ -63,6 +72,14 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes two additional dependency parameters.
+        /// Note: These are run before all <seealso cref="PostConfigure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> Configure<TDep1, TDep2>(Action<TOptions, TDep1, TDep2> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -74,6 +91,15 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes three additional dependency parameters.
+        /// Note: These are run before all <seealso cref="PostConfigure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep3">The type of the third dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> Configure<TDep1, TDep2, TDep3>(Action<TOptions, TDep1, TDep2, TDep3> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -94,6 +120,16 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes four additional dependency parameters.
+        /// Note: These are run before all <seealso cref="PostConfigure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep3">The type of the third dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep4">The type of the fourth dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> Configure<TDep1, TDep2, TDep3, TDep4>(Action<TOptions, TDep1, TDep2, TDep3, TDep4> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -116,6 +152,17 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes five additional dependency parameters.
+        /// Note: These are run before all <seealso cref="PostConfigure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep3">The type of the third dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep4">The type of the fourth dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep5">The type of the fifth dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> Configure<TDep1, TDep2, TDep3, TDep4, TDep5>(Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -141,10 +188,11 @@ namespace FGS.Autofac.Options
         }
 
         /// <summary>
-        /// Registers an action used to configure a particular type of options.
+        /// Registers an action used to configure a particular type of Options.
         /// Note: These are run after all <seealso cref="Configure(Action{TOptions})"/>.
         /// </summary>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> PostConfigure(Action<TOptions> configureOptions)
         {
             if (configureOptions == null) throw new ArgumentNullException(nameof(configureOptions));
@@ -154,6 +202,13 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes a single additional dependency parameter.
+        /// Note: These are run after all <seealso cref="Configure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep">The type of a dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> PostConfigure<TDep>(Action<TOptions, TDep> configureOptions)
             where TDep : class
         {
@@ -164,6 +219,14 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes two additional dependency parameters.
+        /// Note: These are run after all <seealso cref="Configure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> PostConfigure<TDep1, TDep2>(Action<TOptions, TDep1, TDep2> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -175,6 +238,15 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes three additional dependency parameters.
+        /// Note: These are run after all <seealso cref="Configure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep3">The type of the third dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> PostConfigure<TDep1, TDep2, TDep3>(Action<TOptions, TDep1, TDep2, TDep3> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -195,6 +267,16 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes four additional dependency parameters.
+        /// Note: These are run after all <seealso cref="Configure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep3">The type of the third dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep4">The type of the fourth dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> PostConfigure<TDep1, TDep2, TDep3, TDep4>(Action<TOptions, TDep1, TDep2, TDep3, TDep4> configureOptions)
             where TDep1 : class
             where TDep2 : class
@@ -217,6 +299,17 @@ namespace FGS.Autofac.Options
             return this;
         }
 
+        /// <summary>
+        /// Registers an action used to configure a particular type of Options, wherein the action takes five additional dependency parameters.
+        /// Note: These are run after all <seealso cref="Configure(Action{TOptions})"/>.
+        /// </summary>
+        /// <typeparam name="TDep1">The type of the first dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep2">The type of the second dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep3">The type of the third dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep4">The type of the fourth dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <typeparam name="TDep5">The type of the fifth dependency resolved and passed to <paramref name="configureOptions"/> when it is executed.</typeparam>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
+        /// <returns>Returns an <see cref="AutofacOptionsBuilder{TOptions}"/>, so that additional configuration calls can be chained.</returns>
         public virtual AutofacOptionsBuilder<TOptions> PostConfigure<TDep1, TDep2, TDep3, TDep4, TDep5>(Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> configureOptions)
             where TDep1 : class
             where TDep2 : class

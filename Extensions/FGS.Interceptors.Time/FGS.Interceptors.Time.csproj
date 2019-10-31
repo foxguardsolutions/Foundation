@@ -1,7 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides an implementation of an interceptor that freezes time before an inbound invocation, and then unfreezes
+      time after the invocation has been completed.
+    </Description>
+    <PackageTags>interception;freeze;stop;time;clock;date;datetime;datetimeoffset</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

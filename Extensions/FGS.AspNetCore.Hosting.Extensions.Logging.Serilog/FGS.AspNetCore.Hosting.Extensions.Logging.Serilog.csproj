@@ -1,11 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
-    <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
-    <Description>Serilog support for ASP.NET Core logging</Description>
+    <Authors>Microsoft;Serilog Contributors;$(Authors)</Authors>
+    <Description>
+      Provides fluent extensions of ASP.NET Core's hosting mechanisms so that consumers can wire up a Serilog
+      implementation of Microsoft's logging abstraction, as long as it has been elsewhere registered with
+      dependency injection in a singleton scope.
+
+      This allows the use of Serilog-backed logging as part of the ASP.NET Core application's startup, rather
+      than afterwards.
+
+      An alternative to `Serilog.AspNetCore`.
+    </Description>
+    <PackageTags>serilog;aspnet;aspnetcore</PackageTags>
+    <PackageLicenseExpression>Apache-2.0 AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net472'">

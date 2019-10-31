@@ -8,10 +8,15 @@ using ICastleInterceptorInvocation = Castle.DynamicProxy.IInvocation;
 
 namespace FGS.Interception.DynamicProxy
 {
-    public class AsyncInvocationAdapter : InvocationAdapterBase, IAsyncInvocation
+    /// <inheritdoc cref="IAsyncInvocation"/>
+    public sealed class AsyncInvocationAdapter : InvocationAdapterBase, IAsyncInvocation
     {
         private readonly IInvocationProceedInfo _proceedInfo;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AsyncInvocationAdapter"/> class.
+        /// </summary>
+        /// <param name="adapted">The underlying implementation that is being adapted.</param>
         public AsyncInvocationAdapter(ICastleInterceptorInvocation adapted)
             : base(adapted)
         {
@@ -21,6 +26,7 @@ namespace FGS.Interception.DynamicProxy
             _proceedInfo = adapted.CaptureProceedInfo();
         }
 
+        /// <inheritdoc />
         public async Task ProceedAsync()
         {
             _proceedInfo.Invoke();

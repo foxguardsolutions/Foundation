@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
+
+    <Authors>Stefan Kern;Rafael Peña García;$(Authors)</Authors>
+    <Description>
+      Provides an ASP.NET Core model validator that marks a member as being required, contingent on the value of a sibling boolean member.
+
+      Based on `foolproof`.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;validation;mvc;api</PackageTags>
+    <PackageLicenseExpression>MS-PL AND MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework) == 'net472' ">

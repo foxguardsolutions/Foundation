@@ -13,8 +13,15 @@ using Microsoft.Extensions.Configuration;
 
 namespace FGS.Autofac.Interceptors.FaultHandling
 {
-    public class FaultHandlingModule : Module
+    /// <summary>
+    /// <para>Registers interception such that types annotated with <see cref="RetryOnFaultAttribute"/> will have their virtual members intercepted by
+    /// <see cref="RetryInterceptor"/>, which will retry failed operations with an exponential back-off calculated by <see cref="ExponentialRetryBackoffCalculator"/>.</para>
+    /// <para>Assumes that zero or more instances of <see cref="IExceptionRetryPredicate"/> are registered, which help shape the retry behavior.</para>
+    /// <para>Assumes an <see cref="IConfiguration"/> is resolvable, with a section named <value>FaultHandling</value> that is mappable to <see cref="FaultHandlingConfiguration"/>.</para>
+    /// </summary>
+    public sealed class FaultHandlingModule : Module
     {
+        /// <inheritdoc />
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<RetryPolicyFactory>().As<IRetryPolicyFactory>().InstancePerLifetimeScope();

@@ -6,6 +6,11 @@ using FGS.FaultHandling.Abstractions.Retry;
 
 namespace FGS.FaultHandling.Primitives.Retry
 {
+    /// <summary>
+    /// An implementation of <see cref="IRetryPolicyCoordinator"/> that satisfies requests for <see cref="IRetryPolicy"/> by
+    /// checking first-time exceptions against <see cref="IExceptionRetryPredicate"/> instances, in order to determine whether
+    /// or not a _retrying_ retry policy is returned to the caller.
+    /// </summary>
     public sealed class RetryPolicyCoordinator : IRetryPolicyCoordinator
     {
         private readonly object _trackingSyncLock = new object();
@@ -15,6 +20,12 @@ namespace FGS.FaultHandling.Primitives.Retry
 
         private int _callStackDepth;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RetryPolicyCoordinator"/> class.
+        /// </summary>
+        /// <param name="retryPolicyFactory">A factory that is used to retrieve instances of <see cref="IRetryPolicy"/> that can be used to retry operations.</param>
+        /// <param name="noOpFactory">A factory that is used to retrieve instances of <see cref="NoOpRetryPolicy"/> which can be used to prevent operations from being retried.</param>
+        /// <param name="exceptionPredicates">The conditions indicating whether or not an operation that failed from a given exception should be retried.</param>
         public RetryPolicyCoordinator(IRetryPolicyFactory retryPolicyFactory, Func<NoOpRetryPolicy> noOpFactory, IEnumerable<IExceptionRetryPredicate> exceptionPredicates)
         {
             _retryPolicyFactory = retryPolicyFactory;
@@ -22,6 +33,7 @@ namespace FGS.FaultHandling.Primitives.Retry
             _exceptionPredicates = exceptionPredicates;
         }
 
+        /// <inheritdoc />
         public IRetryPolicy RequestPolicy()
         {
             return UseTrackingSyncLock(

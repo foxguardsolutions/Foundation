@@ -1,7 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>Extends Autofac with the ability to register empty ASP.NET Core configuration.</Description>
+    <PackageTags>testing;autofac;di;ioc;dependencyinjection;configuration</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

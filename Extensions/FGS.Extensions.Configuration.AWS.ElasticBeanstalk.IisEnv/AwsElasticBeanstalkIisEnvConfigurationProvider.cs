@@ -14,9 +14,9 @@ namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
     public class AwsElasticBeanstalkIisEnvConfigurationProvider : JsonConfigurationProvider
     {
         /// <summary>
-        /// Initializes a new instance with the specified source.
+        /// Initializes a new instance of the <see cref="AwsElasticBeanstalkIisEnvConfigurationProvider"/> class.
         /// </summary>
-        /// <param name="source">The source settings.</param>
+        /// <param name="source">The source of the settings.</param>
         public AwsElasticBeanstalkIisEnvConfigurationProvider(AwsElasticBeanstalkContainerConfigurationConfigurationSource source)
             : base(source)
         {

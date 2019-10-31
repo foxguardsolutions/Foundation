@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides an implementation of an ASP.NET Core health check that runs a given query against a resolved Entity Framework 6 db context.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;diagnostics;health;entityframework;entityframework6</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Condition="$(TargetFramework) == 'net472' ">

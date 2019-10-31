@@ -37,7 +37,7 @@ namespace FGS.Extensions.Hosting.Logging.Serilog
 #endif
 {
     /// <summary>
-    /// Extends <see cref="IWebHostBuilder"/> with Serilog configuration methods.
+    /// Extends <see cref="IWebHostBuilder"/> with functionality to configure Serilog.
     /// </summary>
 #if NET472 || NETSTANDARD2_0
     public static class SerilogWebHostBuilderExtensions
@@ -54,6 +54,14 @@ namespace FGS.Extensions.Hosting.Logging.Serilog
         /// logger is not specified but <paramref name="dispose"/> is true, the <see cref="Log.CloseAndFlush()"/> method will be
         /// called on the static <see cref="Log"/> class instead.</param>
         /// <returns>The web host builder.</returns>
+        /// <example>
+        /// <code>
+        /// public static IWebHostBuilder CreateWebHostBuilder(string[] args) =&gt;
+        ///     WebHost.CreateDefaultBuilder(args)
+        ///         .UseSerilog()
+        ///         .UseStartup&lt;Startup&gt;();
+        /// </code>
+        /// </example>
         public static IWebHostBuilder UseSerilog(this IWebHostBuilder builder, ILogger logger = null, bool dispose = false)
         {
             if (builder == null) throw new ArgumentNullException(nameof(builder));
@@ -100,6 +108,14 @@ namespace FGS.Extensions.Hosting.Logging.Serilog
         /// </summary>
         /// <param name="builder">The web host builder to configure.</param>
         /// <returns>The web host builder.</returns>
+        /// <example>
+        /// <code>
+        /// public static IWebHostBuilder CreateWebHostBuilder(string[] args) =&gt;
+        ///     WebHost.CreateDefaultBuilder(args)
+        ///         .UseSerilogExternallyRegistered()
+        ///         .UseStartup&lt;Startup&gt;();
+        /// </code>
+        /// </example>
         public static IWebHostBuilder UseSerilogExternallyRegistered(this IWebHostBuilder builder)
         {
             if (builder == null) throw new ArgumentNullException(nameof(builder));

@@ -3,6 +3,14 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides fluent extensions of .NET Core's service registration mechanism so that consumers can easily
+      wire in large sets of Autofac configuration, without crowding their `Startup` classes.
+
+      An alternative to `Autofac.Extensions.DependencyInjection`.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;hosting</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

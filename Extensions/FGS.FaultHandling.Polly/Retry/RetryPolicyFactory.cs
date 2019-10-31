@@ -12,6 +12,9 @@ using Polly;
 
 namespace FGS.FaultHandling.Polly.Retry
 {
+    /// <summary>
+    /// Represents a factory of <see cref="IRetryPolicy"/> instances based on Polly.
+    /// </summary>
     public sealed class RetryPolicyFactory : IRetryPolicyFactory
     {
         private readonly IOptionsSnapshot<FaultHandlingConfiguration> _configuration;
@@ -19,6 +22,13 @@ namespace FGS.FaultHandling.Polly.Retry
         private readonly Func<ISyncPolicy, IAsyncPolicy, IRetryPolicy> _wrapPolicies;
         private readonly ILogger _logger;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RetryPolicyFactory"/> class.
+        /// </summary>
+        /// <param name="configuration">A snapshot of the <see cref="FaultHandlingConfiguration"/> used to configure policies returned by this factory.</param>
+        /// <param name="backoffCalculator">An implementation of <see cref="IRetryBackoffCalculator"/> used to calculate backoff delay between retries.</param>
+        /// <param name="wrapPolicies">A factory that is used to combine a pair of synchronous and asynchronous Polly policies into an <see cref="IRetryPolicy"/>.</param>
+        /// <param name="logger">The <see cref="ILogger"/> used to log retry attempts.</param>
         public RetryPolicyFactory(
             IOptionsSnapshot<FaultHandlingConfiguration> configuration,
             IRetryBackoffCalculator backoffCalculator,
@@ -31,6 +41,7 @@ namespace FGS.FaultHandling.Polly.Retry
             _logger = logger;
         }
 
+        /// <inheritdoc/>
         public IRetryPolicy Create(IEnumerable<Func<Exception, bool>> exceptionPredicates)
         {
             if (!exceptionPredicates.Any())

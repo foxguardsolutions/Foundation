@@ -3,6 +3,11 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Defines functionality to help with automated testing, including extensions methods for AutoFixture.
+    </Description>
+    <PackageTags>testing;autofixture</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

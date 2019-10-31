@@ -1,7 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>Extends Autofac with the ability to register null-patterned ASP.NET Core loggers.</Description>
+    <PackageTags>testing;autofac;di;ioc;dependencyinjection;logging;mocking;moq;generic</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

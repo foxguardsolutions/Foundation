@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides an implementation of the ability to replay a collection of timestamped events through an Rx stream,
+      transform it using Rx syntax, and await the result materialized back into a collection.
+    </Description>
+    <PackageTags>Rx;Reactive;Extensions;Observable;LINQ;Events;replay;historicalreactiveprocessor</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides a retry predicate that enables retry for exceptions caused by SQL Server connectivity issues.
+    </Description>
+    <PackageTags>retry;retries;fault;exception;handling;mssql;sql</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net472' ">

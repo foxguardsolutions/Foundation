@@ -3,6 +3,9 @@ using System.Threading.Tasks;
 
 namespace FGS.FaultHandling.Abstractions.Retry
 {
+    /// <summary>
+    /// Represents a retry policy.
+    /// </summary>
     public interface IRetryPolicy
     {
         /// <summary>

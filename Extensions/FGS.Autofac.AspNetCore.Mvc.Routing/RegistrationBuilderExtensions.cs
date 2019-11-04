@@ -11,8 +11,24 @@ using Microsoft.AspNetCore.Routing;
 
 namespace FGS.Autofac.AspNetCore.Mvc.Routing
 {
+    /// <summary>
+    /// Extends a <see cref="IRegistrationBuilder{TLimit, TReflectionActivatorData, TStyle}"/> with the capability to provide a singleton-compatible <see cref="IUrlHelper"/>.
+    /// </summary>
     public static class RegistrationBuilderExtensions
     {
+        /// <summary>
+        /// Provides a parameter to <typeparamref name="TLimit"/> that resolves a singleton-compatible <see cref="IUrlHelper"/>.
+        /// </summary>
+        /// <example>
+        /// Use this in an Autofac registration:
+        /// <code>
+        ///   containerBuilder
+        ///         .RegisterType&lt;MyConcreteType&gt;()
+        ///         .As&lt;IMyAbstractType&gt;()
+        ///         .WithSingletonCompatibleUrlHelper()
+        ///         .SingleInstance();
+        /// </code>
+        /// </example>
         public static IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle> WithSingletonCompatibleUrlHelper<TLimit, TReflectionActivatorData, TStyle>(
             this IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle> registration)
             where TReflectionActivatorData : ReflectionActivatorData

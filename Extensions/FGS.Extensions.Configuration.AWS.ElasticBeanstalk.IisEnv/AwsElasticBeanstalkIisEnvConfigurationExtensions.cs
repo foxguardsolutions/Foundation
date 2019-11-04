@@ -6,7 +6,7 @@ using Microsoft.Extensions.FileProviders;
 namespace FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
 {
     /// <summary>
-    /// Extension methods for adding <see cref="AwsElasticBeanstalkIisEnvConfigurationProvider"/>.
+    /// Extension methods for adding <see cref="AwsElasticBeanstalkIisEnvConfigurationProvider"/> to an application's <see cref="IConfigurationBuilder"/>.
     /// </summary>
     /// <remarks>Based on: https://github.com/aspnet/Extensions/blob/67394a5c9f92832d31d871c124763bc6231c9009/src/Configuration/Config.Json/src/JsonConfigurationExtensions.cs </remarks>
     public static class AwsElasticBeanstalkIisEnvConfigurationExtensions

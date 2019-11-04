@@ -2,14 +2,37 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Serilog support for ASP.NET Core logging</Description>
-    <VersionPrefix>2.1.1</VersionPrefix>
-    <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <Authors>Microsoft;Serilog Contributors;$(Authors)</Authors>
+    <Description>
+      Provides fluent extensions of ASP.NET Core's hosting mechanisms so that consumers can wire up a Serilog
+      implementation of Microsoft's logging abstraction, as long as it has been elsewhere registered with
+      dependency injection in a singleton scope.
+
+      This allows the use of Serilog-backed logging as part of the ASP.NET Core application's startup, rather
+      than afterwards.
+
+      An alternative to `Serilog.AspNetCore`.
+    </Description>
+    <PackageTags>serilog;aspnet;aspnetcore</PackageTags>
+    <PackageLicenseExpression>Apache-2.0 AND $(PackageLicenseExpression)</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net472'">
     <AssemblyName>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog</AssemblyName>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <RootNamespace>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
+    <AssemblyName>FGS.AspNetCore.Hosting.Extensions.Logging.Serilog</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.1'">
+    <AssemblyName>FGS.Extensions.Hosting.Logging.Serilog</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0'">
+    <AssemblyName>FGS.Extensions.Hosting.Logging.Serilog</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net472'">

@@ -5,31 +5,30 @@ using System.Reflection;
 
 namespace FGS.Reflection.Extensions
 {
+    /// <summary>
+    /// Provides functionality to assist with reading information about the members of types.
+    /// </summary>
     /// <remarks>Taken and modified from: https://github.com/ninject/Ninject/blob/cc00946b1484db3c8d1c80c0c44e91beabc6b5be/src/Ninject/Infrastructure/Language/ExtensionsForMemberInfo.cs </remarks>
     /// <remarks>Other parts taken and modified from: https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Util/ReflectionExtensions.cs </remarks>
     public static class MemberInfoExtensions
     {
         /// <summary>
-        /// Determines whether the specified member has attribute.
+        /// Determines whether the specified member has a given type of attribute.
         /// </summary>
-        /// <typeparam name="T">The type of the attribute.</typeparam>
-        /// <param name="member">The member.</param>
-        /// <returns>
-        ///     <c>true</c> if the specified member has attribute; otherwise, <c>false</c>.
-        /// </returns>
+        /// <typeparam name="T">The type of the attribute that is sought.</typeparam>
+        /// <param name="member">The member being inquired about.</param>
+        /// <returns><see langword="true"/> if the specified member has the attribute; otherwise <see langword="false"/>.</returns>
         public static bool HasAttribute<T>(this MemberInfo member)
         {
             return member.HasAttribute(typeof(T));
         }
 
         /// <summary>
-        /// Determines whether the specified member has attribute.
+        /// Determines whether the specified member has a given type of attribute.
         /// </summary>
-        /// <param name="member">The member.</param>
-        /// <param name="type">The type of the attribute.</param>
-        /// <returns>
-        ///     <c>true</c> if the specified member has attribute; otherwise, <c>false</c>.
-        /// </returns>
+        /// <param name="member">The member being inquired about.</param>
+        /// <param name="type">The type of the attribute that is sought.</param>
+        /// <returns><see langword="true"/> if the specified member has the attribute; otherwise <see langword="false"/>.</returns>
         public static bool HasAttribute(this MemberInfo member, Type type)
         {
             var propertyInfo = member as PropertyInfo;
@@ -41,13 +40,7 @@ namespace FGS.Reflection.Extensions
             return member.IsDefined(type, true);
         }
 
-        /// <summary>
-        /// Gets the property info from its declared tpe.
-        /// </summary>
-        /// <param name="memberInfo">The member info.</param>
-        /// <param name="propertyDefinition">The property definition.</param>
-        /// <returns>The property info from the declared type of the property.</returns>
-        public static PropertyInfo GetPropertyFromDeclaredType(this MemberInfo memberInfo, PropertyInfo propertyDefinition)
+        private static PropertyInfo GetPropertyFromDeclaredType(this MemberInfo memberInfo, PropertyInfo propertyDefinition)
         {
             return memberInfo.DeclaringType.GetRuntimeProperties().FirstOrDefault(
                 p => p.Name == propertyDefinition.Name &&
@@ -70,12 +63,10 @@ namespace FGS.Reflection.Extensions
         }
 
         /// <summary>
-        /// Determines whether the specified property info is private.
+        /// Determines whether <paramref nam="propertyInfo"/> represents a private property.
         /// </summary>
         /// <param name="propertyInfo">The property info.</param>
-        /// <returns>
-        ///     <c>true</c> if the specified property info is private; otherwise, <c>false</c>.
-        /// </returns>
+        /// <returns><see langword="true"/> if the specified property is private; otherwise <see langword="false"/>.</returns>
         public static bool IsPrivate(this PropertyInfo propertyInfo)
         {
             var getMethod = propertyInfo.GetMethod;
@@ -85,30 +76,11 @@ namespace FGS.Reflection.Extensions
         }
 
         /// <summary>
-        /// Gets the custom attributes.
-        /// This version is able to get custom attributes for properties from base types even if the property is non-public.
-        /// </summary>
-        /// <param name="member">The member.</param>
-        /// <param name="attributeType">Type of the attribute.</param>
-        /// <param name="inherited">if set to <c>true</c> [inherited].</param>
-        /// <returns></returns>
-        public static IEnumerable<Attribute> GetCustomAttributesExtended(this MemberInfo member, Type attributeType, bool inherited)
-        {
-            var propertyInfo = member as PropertyInfo;
-            if (propertyInfo != null)
-            {
-                return GetCustomAttributes(propertyInfo, attributeType, inherited);
-            }
-
-            return member.GetCustomAttributes(attributeType, inherited).Cast<Attribute>();
-        }
-
-        /// <summary>
         /// Maps from a property-set-value parameter to the declaring property.
         /// </summary>
         /// <param name="pi">Parameter to the property setter.</param>
         /// <param name="prop">The property info on which the setter is specified.</param>
-        /// <returns>True if the parameter is a property setter.</returns>
+        /// <returns><see langword="true"/> if the parameter is a property setter; otherwise <see langword="false"/>.</returns>
         public static bool TryGetDeclaringProperty(this ParameterInfo pi, out PropertyInfo prop)
         {
             var mi = pi.Member as MethodInfo;

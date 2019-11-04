@@ -3,6 +3,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
+
+    <Authors>Microsoft;$(Authors)</Authors>
+    <Description>
+      Provides an Autofac helper that augments registrations with the ability to provide a singleton-compatible implementation of ASP.NET Core's IUrlHelper.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;aspnet;aspnetcore;routing;urlhelper</PackageTags>
+    <PackageLicenseExpression>Apache-2.0 AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

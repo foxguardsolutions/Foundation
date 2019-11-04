@@ -5,8 +5,13 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FGS.AspNetCore.Mvc.ModelBinding
 {
+    /// <summary>
+    /// An implementation of <see cref="IModelBinder"/> for base-64 encoded byte arrays that supports both of ASP.NET Core's contemporary
+    /// and legacy implementations of URL encoding of such.
+    /// </summary>
     public class Base64UrlEncodedByteArrayModelBinder : IModelBinder
     {
+        /// <inheritdoc />
         public Task BindModelAsync(ModelBindingContext bindingContext)
         {
             if (bindingContext.ModelType == typeof(byte[]))

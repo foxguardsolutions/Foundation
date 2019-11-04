@@ -13,13 +13,13 @@ namespace FGS.Autofac.Options
     using Options = Microsoft.Extensions.Options.Options;
 
     /// <summary>
-    /// Extension methods for options services to the Autofac-based DI container.
+    /// Extension methods for adding Options services to the Autofac-based DI container.
     /// </summary>
     /// <remarks>Taken and modified from: https://github.com/aspnet/Extensions/blob/e311a440d51cddd8f645160d9e27a574c77955a1/src/Options/Options/src/OptionsServiceCollectionExtensions.cs. </remarks>
     public static class OptionsContainerBuilderExtensions
     {
         /// <summary>
-        /// Adds services required for using options.
+        /// Adds services required for using Options.
         /// </summary>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
@@ -40,25 +40,25 @@ namespace FGS.Autofac.Options
         }
 
         /// <summary>
-        /// Registers an action used to configure a particular type of options.
+        /// Registers an action used to configure a particular type of Options.
         /// Note: These are run before all <seealso cref="PostConfigure{TOptions}(ContainerBuilder, Action{TOptions})"/>.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder Configure<TOptions>(this ContainerBuilder containerBuilder, Action<TOptions> configureOptions)
             where TOptions : class
             => containerBuilder.Configure(Options.DefaultName, configureOptions);
 
         /// <summary>
-        /// Registers an action used to configure a particular type of options.
+        /// Registers an action used to configure a particular type of Options.
         /// Note: These are run before all <seealso cref="PostConfigure{TOptions}(ContainerBuilder, Action{TOptions})"/>.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="name">The name of the options instance.</param>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="name">The name of the Options instance.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder Configure<TOptions>(this ContainerBuilder containerBuilder, string name, Action<TOptions> configureOptions)
             where TOptions : class
@@ -73,36 +73,36 @@ namespace FGS.Autofac.Options
         }
 
         /// <summary>
-        /// Registers an action used to configure all instances of a particular type of options.
+        /// Registers an action used to configure all instances of a particular type of Options.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder ConfigureAll<TOptions>(this ContainerBuilder containerBuilder, Action<TOptions> configureOptions)
             where TOptions : class
             => containerBuilder.Configure(name: null, configureOptions: configureOptions);
 
         /// <summary>
-        /// Registers an action used to initialize a particular type of options.
+        /// Registers an action used to initialize a particular type of Options.
         /// Note: These are run after all <seealso cref="Configure{TOptions}(ContainerBuilder, Action{TOptions})"/>.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder PostConfigure<TOptions>(this ContainerBuilder containerBuilder, Action<TOptions> configureOptions)
             where TOptions : class
             => containerBuilder.PostConfigure(Options.DefaultName, configureOptions);
 
         /// <summary>
-        /// Registers an action used to configure a particular type of options.
+        /// Registers an action used to configure a particular type of Options.
         /// Note: These are run after all <seealso cref="Configure{TOptions}(ContainerBuilder, Action{TOptions})"/>.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configure.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configure.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="name">The name of the options instance.</param>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="name">The name of the Options instance.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder PostConfigure<TOptions>(this ContainerBuilder containerBuilder, string name, Action<TOptions> configureOptions)
             where TOptions : class
@@ -117,12 +117,12 @@ namespace FGS.Autofac.Options
         }
 
         /// <summary>
-        /// Registers an action used to post configure all instances of a particular type of options.
+        /// Registers an action used to post configure all instances of a particular type of Options.
         /// Note: These are run after all <seealso cref="Configure{TOptions}(ContainerBuilder, Action{TOptions})"/>.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="configureOptions">The action used to configure the options.</param>
+        /// <param name="configureOptions">The action used to configure the Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder PostConfigureAll<TOptions>(this ContainerBuilder containerBuilder, Action<TOptions> configureOptions)
             where TOptions : class
@@ -131,7 +131,7 @@ namespace FGS.Autofac.Options
         /// <summary>
         /// Registers a type that will have all of its I[Post]ConfigureOptions registered.
         /// </summary>
-        /// <typeparam name="TConfigureOptions">The type that will configure options.</typeparam>
+        /// <typeparam name="TConfigureOptions">The type that will configure Options.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder ConfigureOptions<TConfigureOptions>(this ContainerBuilder containerBuilder)
@@ -163,7 +163,7 @@ namespace FGS.Autofac.Options
         /// Registers a type that will have all of its I[Post]ConfigureOptions registered.
         /// </summary>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="configureType">The type that will configure options.</param>
+        /// <param name="configureType">The type that will configure Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder ConfigureOptions(this ContainerBuilder containerBuilder, Type configureType)
         {
@@ -182,7 +182,7 @@ namespace FGS.Autofac.Options
         /// Registers an object that will have all of its I[Post]ConfigureOptions registered.
         /// </summary>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="configureInstance">The instance that will configure options.</param>
+        /// <param name="configureInstance">The instance that will configure Options.</param>
         /// <returns>The <see cref="ContainerBuilder"/> so that additional calls can be chained.</returns>
         public static ContainerBuilder ConfigureOptions(this ContainerBuilder containerBuilder, object configureInstance)
         {
@@ -198,9 +198,9 @@ namespace FGS.Autofac.Options
         }
 
         /// <summary>
-        /// Gets an options builder that forwards Configure calls for the same <typeparamref name="TOptions"/> to the underlying service collection.
+        /// Gets an Options builder that forwards Configure calls for the same <typeparamref name="TOptions"/> to the underlying service collection.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
         /// <returns>The <see cref="OptionsBuilder{TOptions}"/> so that configure calls can be chained in it.</returns>
         public static AutofacOptionsBuilder<TOptions> AddOptions<TOptions>(this ContainerBuilder containerBuilder)
@@ -208,11 +208,11 @@ namespace FGS.Autofac.Options
             => containerBuilder.AddOptions<TOptions>(Options.DefaultName);
 
         /// <summary>
-        /// Gets an options builder that forwards Configure calls for the same named <typeparamref name="TOptions"/> to the underlying service collection.
+        /// Gets an Options builder that forwards Configure calls for the same named <typeparamref name="TOptions"/> to the underlying service collection.
         /// </summary>
-        /// <typeparam name="TOptions">The options type to be configured.</typeparam>
+        /// <typeparam name="TOptions">The Options type to be configured.</typeparam>
         /// <param name="containerBuilder">The <see cref="ContainerBuilder"/> to add the services to.</param>
-        /// <param name="name">The name of the options instance.</param>
+        /// <param name="name">The name of the Options instance.</param>
         /// <returns>The <see cref="OptionsBuilder{TOptions}"/> so that configure calls can be chained in it.</returns>
         public static AutofacOptionsBuilder<TOptions> AddOptions<TOptions>(this ContainerBuilder containerBuilder, string name)
             where TOptions : class

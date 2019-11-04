@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>Extends AutoFixture with the ability to register mocked ASP.NET Core Options.</Description>
+    <PackageTags>testing;autofixture;aspnetcore;options;mocking;moq</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

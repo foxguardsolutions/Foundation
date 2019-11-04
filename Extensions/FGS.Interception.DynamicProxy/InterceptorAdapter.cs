@@ -8,6 +8,11 @@ using ICastleInterceptorInvocation = Castle.DynamicProxy.IInvocation;
 
 namespace FGS.Interception.DynamicProxy
 {
+    /// <summary>
+    /// Adapts our <typeparamref name="TInterceptor"/> interceptor as an implementation of <see cref="ICastleInterceptor"/>.
+    /// </summary>
+    /// <typeparam name="TInterceptor">The implementation type of <see cref="IInterceptor"/> being adapted.</typeparam>
+    /// <typeparam name="TInterceptorInstantiationData">The type of data that should be provided to the underlying <typeparamref name="TInterceptor"/> when it is being instantiated.</typeparam>
     public sealed class InterceptorAdapter<TInterceptor, TInterceptorInstantiationData> : ICastleInterceptor
         where TInterceptor : IInterceptor
     {
@@ -16,6 +21,13 @@ namespace FGS.Interception.DynamicProxy
         private readonly Func<ICastleInterceptorInvocation, IInvocation> _invocationAdapterFactory;
         private readonly Func<ICastleInterceptorInvocation, IAsyncInvocation> _asyncInvocationAdapterFactory;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InterceptorAdapter{TInterceptor, TInterceptorInstantiationData}"/> class.
+        /// </summary>
+        /// <param name="interceptorInstantiationDataFactory">A factory that can retrieve or create an instance of <typeparamref name="TInterceptorInstantiationData"/> from an inbound <see cref="ICastleInterceptorInvocation"/>.</param>
+        /// <param name="adaptedFactory">A factory that can retrieve or create an instance of <typeparamref name="TInterceptor"/> based on a given <typeparamref name="TInterceptorInstantiationData"/>.</param>
+        /// <param name="invocationAdapterFactory">A factory that can retrieve or create an instance of <see cref="IInvocation"/> based on an inbound <see cref="ICastleInterceptorInvocation"/>.</param>
+        /// <param name="asyncInvocationAdapterFactory">A factory that can retrieve or create an instance of <see cref="IAsyncInvocation"/> based on an inbound <see cref="ICastleInterceptorInvocation"/>.</param>
         public InterceptorAdapter(
             Func<ICastleInterceptorInvocation, TInterceptorInstantiationData> interceptorInstantiationDataFactory,
             Func<TInterceptorInstantiationData, TInterceptor> adaptedFactory,

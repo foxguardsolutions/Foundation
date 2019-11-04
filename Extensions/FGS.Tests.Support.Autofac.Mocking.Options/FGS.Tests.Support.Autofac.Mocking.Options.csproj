@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>Extends Autofac with the ability to register mocked or null-patterned ASP.NET Core Options.</Description>
+    <PackageTags>testing;autofac;di;ioc;dependencyinjection;aspnetcore;options;mocking;moq;generic</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

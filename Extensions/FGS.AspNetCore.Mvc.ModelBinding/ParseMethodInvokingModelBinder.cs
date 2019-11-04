@@ -6,10 +6,18 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace FGS.AspNetCore.Mvc.ModelBinding
 {
+    /// <summary>
+    /// An implementation of <see cref="IModelBinder"/> that defers its underlying implementation to a
+    /// given static `Parse` method with a signature shaped like primitive `Parse` methods such as <see cref="int.Parse(string)"/>.
+    /// </summary>
     public class ParseMethodInvokingModelBinder : IModelBinder
     {
         private readonly MethodInfo _methodInfo;
 
+        /// <summary>
+        /// Creates a new instance of <see cref="ParseMethodInvokingModelBinder"/>.
+        /// </summary>
+        /// <param name="methodInfo">Represents the `Parse` method to which parsing logic is deferred to.</param>
         public ParseMethodInvokingModelBinder(MethodInfo methodInfo)
         {
             _methodInfo = methodInfo ?? throw new ArgumentNullException(nameof(methodInfo));
@@ -17,6 +25,7 @@ namespace FGS.AspNetCore.Mvc.ModelBinding
 
         #region Implementation of IModelBinder
 
+        /// <inheritdoc />
         public Task BindModelAsync(ModelBindingContext bindingContext)
         {
             var value = bindingContext.ValueProvider.GetValue(bindingContext.ModelName).FirstValue;

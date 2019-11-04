@@ -3,6 +3,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides the ability to bulk populate an Autofac ContainerBuilder with modules grouped into "module providers".
+
+      This is a useful abstraction for projects that have large numbers of Autofac modules.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

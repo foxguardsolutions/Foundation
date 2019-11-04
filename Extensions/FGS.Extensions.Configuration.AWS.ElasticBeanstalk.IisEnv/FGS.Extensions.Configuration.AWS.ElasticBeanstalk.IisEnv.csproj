@@ -1,8 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides support for idiomatic configuration of ASP.NET Core within Windows-based AWS Elastic Beanstalk instances,
+      as a mitigation of a known deficiency wherein AWS Elastic Beanstalk IIS Environment configuration doesn't actually
+      get its configuration values into ASP.NET Core applications hosted on such.
+
+      For more information about the above-mentioned AWS Elastic Beanstalk deficiency, see: https://stackoverflow.com/questions/40127703/aws-elastic-beanstalk-environment-variables-in-asp-net-core-1-0
+    </Description>
+    <PackageTags>aspnet;aspnetcore;configuration;aws;iis;elastic-beanstalk</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net472'">

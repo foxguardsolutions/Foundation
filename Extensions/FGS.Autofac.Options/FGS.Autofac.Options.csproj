@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides the ability to configure configuration-based Options with Autofac-based dependency injection.
+
+      An Autofac-specific alternative to `Microsoft.Extensions.Options.ConfigurationExtensions`.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;configuration;options</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

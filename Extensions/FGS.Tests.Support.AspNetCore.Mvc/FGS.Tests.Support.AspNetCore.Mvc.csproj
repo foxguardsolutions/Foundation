@@ -1,8 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides functionality to help with testing code that has dependencies on parts of ASP.NET Core.
+    </Description>
+    <PackageTags>testing;mocking;autofixture;aspnet;aspnetcore;urlhelper;routing;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

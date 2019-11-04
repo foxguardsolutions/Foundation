@@ -21,11 +21,16 @@ using Serilog.Debugging;
 
 using ILogger = Serilog.ILogger;
 
+#if NET472 || NETSTANDARD2_0
 namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
+namespace FGS.Extensions.Hosting.Logging.Serilog
+#endif
 {
     /// <summary>
     /// Implements <see cref="ILoggerFactory"/> so that we can inject Serilog Logger.
     /// </summary>
+    /// <remarks>Registered with dependency injection as part of using <see cref="SerilogWebHostBuilderExtensions"/>.</remarks>
     public sealed class SerilogLoggerFactory : ILoggerFactory
     {
         private readonly SerilogLoggerProvider _provider;
@@ -37,7 +42,7 @@ namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
         /// <param name="dispose">When true, dispose <paramref name="logger"/> when the framework disposes the provider. If the
         /// logger is not specified but <paramref name="dispose"/> is true, the <see cref="Log.CloseAndFlush()"/> method will be
         /// called on the static <see cref="Log"/> class instead.</param>
-        public SerilogLoggerFactory(ILogger logger = null, bool dispose = false)
+        internal SerilogLoggerFactory(ILogger logger = null, bool dispose = false)
         {
             _provider = new SerilogLoggerProvider(logger, dispose);
         }

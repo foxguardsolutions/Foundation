@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
+      `RetryOnFaultAttribute` such that failed operations will be retried with a configurable exponential back-off.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop;retry;retries;fault;exception;handling;polly</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -32,7 +38,7 @@
     <ProjectReference Include="..\FGS.FaultHandling.Polly\FGS.FaultHandling.Polly.csproj" />
     <ProjectReference Include="..\FGS.FaultHandling.Primitives\FGS.FaultHandling.Primitives.csproj" />
     <ProjectReference Include="..\FGS.Interception.Annotations.FaultHandling\FGS.Interception.Annotations.FaultHandling.csproj" />
-    <ProjectReference Include="..\FGS.Interception.FaultHandling\FGS.Interception.FaultHandling.csproj" />
+    <ProjectReference Include="..\FGS.Interceptors.FaultHandling\FGS.Interceptors.FaultHandling.csproj" />
   </ItemGroup>
 
 </Project>

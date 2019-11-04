@@ -1,15 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Description>Low-level Serilog provider for Microsoft.Extensions.Logging</Description>
-    <VersionPrefix>2.0.4</VersionPrefix>
-    <Authors>Microsoft;Serilog Contributors;FoxGuard Solutions</Authors>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyName>FGS.Extensions.Logging.Serilog</AssemblyName>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <RootNamespace>FGS.Extensions.Logging.Serilog</RootNamespace>
+
+    <Authors>Microsoft;Serilog Contributors;$(Authors)</Authors>
+    <Description>
+      Low-level Serilog provider for `Microsoft.Extensions.Logging`.
+
+      An alternative to `Serilog.Extensions.Logging`.
+    </Description>
+    <PackageTags>serilog;Microsoft.Extensions.Logging</PackageTags>
+    <PackageLicenseExpression>Apache-2.0 AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net472'">

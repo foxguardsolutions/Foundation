@@ -3,6 +3,9 @@ using System.Reflection;
 
 namespace FGS.Reflection.Extensions
 {
+    /// <summary>
+    /// Provides functionality that helps assist with loading assembly-embedded resources.
+    /// </summary>
     public static class EmbeddedResourceLoader
     {
         /// <summary>

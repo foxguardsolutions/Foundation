@@ -8,24 +8,20 @@ using FGS.Reflection.Extensions;
 
 namespace FGS.Autofac.Registration.Extensions
 {
-    /// <remarks>Based on
-    ///     https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/ResolvedParameter.cs
-    /// and https://github.com/autofac/Autofac/blob/d5fb10034f14564f2d3d59bc70ffd793161b677e/src/Autofac/Core/NamedPropertyParameter.cs. </remarks>
-    public class ResolvedNamedPropertyParameter<TPropertyValue> : Parameter
+    internal sealed class ResolvedNamedPropertyParameter<TPropertyValue> : Parameter
     {
-        public string Name { get; }
-
+        private readonly string _name;
         private readonly Func<IComponentContext, TPropertyValue> _valueAccessor;
 
-        public ResolvedNamedPropertyParameter(string propertyName, Func<IComponentContext, TPropertyValue> valueAccessor)
+        internal ResolvedNamedPropertyParameter(string propertyName, Func<IComponentContext, TPropertyValue> valueAccessor)
         {
-            Name = propertyName;
+            _name = propertyName;
             _valueAccessor = valueAccessor;
         }
 
         public override bool CanSupplyValue(ParameterInfo pi, IComponentContext context, out Func<object> valueProvider)
         {
-            if (!pi.TryGetDeclaringProperty(out var prop) || prop.Name != Name)
+            if (!pi.TryGetDeclaringProperty(out var prop) || prop.Name != _name)
             {
                 valueProvider = null;
                 return false;

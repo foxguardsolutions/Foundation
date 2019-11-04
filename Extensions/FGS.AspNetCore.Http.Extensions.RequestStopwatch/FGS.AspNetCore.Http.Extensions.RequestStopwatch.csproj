@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides ASP.NET Core request middleware that starts and manages a stopwatch specific to the current request.
+      The value of the stopwatch is made available in the request's `HttpContext`, and the final value at the end of the request
+      is logged for future analysis.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;timer;stopwatch;middleware</PackageTags>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net472'">

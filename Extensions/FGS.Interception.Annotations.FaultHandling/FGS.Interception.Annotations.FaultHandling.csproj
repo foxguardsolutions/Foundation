@@ -1,7 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides an annotation that indicates a target type or member should be intercepted with retry-on-fault semantics.
+    </Description>
+    <PackageTags>interception;aop;retry;retries;fault;exception;handling;polly</PackageTags>
   </PropertyGroup>
 
 </Project>

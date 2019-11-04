@@ -76,7 +76,7 @@ public class MyAutofacModule : Autofac.Module
     {
         // other registrations
         // ...
-
+        builder.RegisterModule<InterceptorAdapterModule>();
         builder.RegisterModule<AttributeBasedInterceptionModule<MyAttribute, MyInterceptor>>();
     }
 }

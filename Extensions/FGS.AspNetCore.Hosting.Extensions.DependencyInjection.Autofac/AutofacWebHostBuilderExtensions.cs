@@ -58,8 +58,12 @@ namespace FGS.Extensions.Hosting.DependencyInjection.Autofac
                 (module as IOverridableHttpScopeAutofacModule)?.SetHttpScope(Scope.PerLifetimeScope);
                 forEachModule?.Invoke(module);
             }
-
+#if NET472 || NETSTANDARD2_0
             return builder.ConfigureServices(services => services.AddAutofacWithModulesProvider<TModulesProvider>(ForEachModule, configurationAction));
+
+#elif NETSTANDARD2_1 || NETCOREAPP3_0
+            return builder.UseServiceProviderFactory(new ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider>(ForEachModule, configurationAction));
+#endif
         }
     }
 }

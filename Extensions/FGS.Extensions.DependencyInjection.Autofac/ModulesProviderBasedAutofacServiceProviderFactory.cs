@@ -27,7 +27,7 @@ namespace FGS.Extensions.DependencyInjection.Autofac
         /// </summary>
         /// <param name="forEachModule">Action for each <see cref="IModule"/> that can provide additional configuration before it is registered.</param>
         /// <param name="configurationAction">Action on a <see cref="ContainerBuilder"/> that adds component registrations to the container.</param>
-        internal ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule> forEachModule = null, Action<ContainerBuilder> configurationAction = null)
+        public ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule> forEachModule = null, Action<ContainerBuilder> configurationAction = null)
         {
             _forEachModule = forEachModule;
             _configurationAction = configurationAction ?? (builder => { });

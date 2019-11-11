@@ -21,7 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\FGS.FaultHandling.Primitives\FGS.FaultHandling.Primitives.csproj" />
-    <ProjectReference Include="..\..\src\FGS.Tests.Support.Autofixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Tests.Support.AutoFixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj" />
     <ProjectReference Include="..\..\src\FGS.Tests.Support\FGS.Tests.Support.csproj" />
   </ItemGroup>
 

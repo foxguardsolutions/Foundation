@@ -15,7 +15,7 @@ trigger:
       - "master"
   paths:
     include:
-      - "Extensions/FGS.[!Pump]*/*"
+      - "src/FGS.*/*"
 pr: none
 
 pool:
@@ -26,7 +26,7 @@ steps:
     displayName: "dotnet pack"
     inputs:
       command: pack
-      packagesToPack: "Extensions/FGS.[!Pump]*/*.csproj"
+      packagesToPack: "src/FGS.*/*.csproj"
       versioningScheme: byBuildNumber
       arguments: --configuration Release
 

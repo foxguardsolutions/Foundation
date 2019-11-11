@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
+      `RetryOnFaultAttribute` such that failed operations will be retried with a configurable exponential back-off.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop;retry;retries;fault;exception;handling;polly</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.1' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.Options\FGS.Autofac.Options.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.Registration.Extensions\FGS.Autofac.Registration.Extensions.csproj" />
+    <ProjectReference Include="..\FGS.FaultHandling.Abstractions\FGS.FaultHandling.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.FaultHandling.Polly\FGS.FaultHandling.Polly.csproj" />
+    <ProjectReference Include="..\FGS.FaultHandling.Primitives\FGS.FaultHandling.Primitives.csproj" />
+    <ProjectReference Include="..\FGS.Interception.Annotations.FaultHandling\FGS.Interception.Annotations.FaultHandling.csproj" />
+    <ProjectReference Include="..\FGS.Interceptors.FaultHandling\FGS.Interceptors.FaultHandling.csproj" />
+  </ItemGroup>
+
+</Project>

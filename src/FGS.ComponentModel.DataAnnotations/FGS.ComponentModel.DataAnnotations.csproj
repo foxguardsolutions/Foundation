@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides assorted model annotations that FoxGuard uses in its internal-use line-of-business software.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;mvc;model;validation;annotation;cve;email;phone;url;password;requirediftrue;foolproof</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="[4.5.0, 5.0.0)" />
+  </ItemGroup>
+
+</Project>

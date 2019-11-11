@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides an implementation of an ASP.NET Core health check that runs a given query against a resolved Entity Framework 6 db context.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;diagnostics;health;entityframework;entityframework6</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="EntityFramework" Version="[6.2.0, 7.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="EntityFramework" Version="[6.3.0, 7.0.0)" />
+  </ItemGroup>
+
+</Project>

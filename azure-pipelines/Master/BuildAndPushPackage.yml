@@ -1,0 +1,26 @@
+parameters:
+  project: ""
+
+jobs:
+- job: Build_and_Push_Package
+  displayName: Build & Push Package for "${{ parameters.project }}"
+  pool:
+    vmImage: 'windows-latest'
+
+  steps:
+
+  - task: DotNetCoreCLI@2
+    displayName: dotnet pack "src/${{ parameters.project }}/${{ parameters.project }}.csproj"
+    inputs:
+      command: pack
+      packagesToPack: "src/${{ parameters.project }}/${{ parameters.project }}.csproj"
+      versioningScheme: byBuildNumber
+      arguments: --configuration Release
+
+  - task: NuGetCommand@2
+    displayName: nuget push "src/${{ parameters.project }}/${{ parameters.project }}.csproj"
+    inputs:
+      command: push
+      packagesToPush: "src/${{ parameters.project }}/**/*.nupkg;!src/${{ parameters.project }}/**/*.symbols.nupkg"
+      nuGetFeedType: external
+      publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

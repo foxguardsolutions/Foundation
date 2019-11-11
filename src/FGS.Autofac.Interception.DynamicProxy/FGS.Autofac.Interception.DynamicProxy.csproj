@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FGS.Interception.Abstractions\FGS.Interception.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Interception.DynamicProxy\FGS.Interception.DynamicProxy.csproj" />
   </ItemGroup>
 

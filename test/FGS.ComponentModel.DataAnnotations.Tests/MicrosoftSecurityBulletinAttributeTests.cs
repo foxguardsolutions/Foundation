@@ -2,7 +2,6 @@ using System.Collections.Generic;
 
 using AutoFixture;
 
-using FGS.Pump.Tests.Support;
 using FGS.Tests.Support.TestCategories;
 
 using NUnit.Framework;
@@ -11,14 +10,15 @@ namespace FGS.ComponentModel.DataAnnotations.Tests
 {
     [Unit]
     [TestFixture]
-    public class MicrosoftSecurityBulletinAttributeTests : BaseUnitTest
+    public class MicrosoftSecurityBulletinAttributeTests
     {
         private MicrosoftSecurityBulletinAttribute _subject;
 
         [SetUp]
         public void Setup()
         {
-            _subject = Fixture.Create<MicrosoftSecurityBulletinAttribute>();
+            var fixture = new Fixture();
+            _subject = fixture.Create<MicrosoftSecurityBulletinAttribute>();
         }
 
         [TestCaseSource(nameof(FailureCases))]

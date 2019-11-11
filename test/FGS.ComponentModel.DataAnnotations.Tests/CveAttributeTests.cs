@@ -2,7 +2,6 @@ using System.Collections.Generic;
 
 using AutoFixture;
 
-using FGS.Pump.Tests.Support;
 using FGS.Tests.Support.TestCategories;
 
 using NUnit.Framework;
@@ -11,14 +10,15 @@ namespace FGS.ComponentModel.DataAnnotations.Tests
 {
     [Unit]
     [TestFixture]
-    public class CveAttributeTests : BaseUnitTest
+    public class CveAttributeTests
     {
         private CveAttribute _subject;
 
         [SetUp]
         public void Setup()
         {
-            _subject = Fixture.Create<CveAttribute>();
+            var fixture = new Fixture();
+            _subject = fixture.Create<CveAttribute>();
         }
 
         [TestCaseSource(nameof(FailureCases))]

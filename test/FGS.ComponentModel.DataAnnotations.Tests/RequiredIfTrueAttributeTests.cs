@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 using AutoFixture;
 
-using FGS.Pump.Tests.Support;
 using FGS.Tests.Support;
 using FGS.Tests.Support.TestCategories;
 
@@ -15,7 +14,7 @@ namespace FGS.ComponentModel.DataAnnotations.Tests
 {
     [Unit]
     [TestFixture]
-    public class RequiredIfTrueAttributeTests : BaseUnitTest
+    public class RequiredIfTrueAttributeTests
     {
         [SetUp]
         public void Setup()

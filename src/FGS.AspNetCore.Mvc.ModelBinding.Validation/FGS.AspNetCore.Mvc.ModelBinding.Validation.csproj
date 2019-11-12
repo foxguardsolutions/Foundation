@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
+
+    <Authors>Stefan Kern;Rafael Peña García;$(Authors)</Authors>
+    <Description>
+      Provides an ASP.NET Core model validator that marks a member as being required, contingent on the value of a sibling boolean member.
+
+      Based on `foolproof`.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;validation;mvc;api</PackageTags>
+    <PackageLicenseExpression>MS-PL AND MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.DataAnnotations" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.ComponentModel.DataAnnotations\FGS.ComponentModel.DataAnnotations.csproj" />
+  </ItemGroup>
+
+</Project>

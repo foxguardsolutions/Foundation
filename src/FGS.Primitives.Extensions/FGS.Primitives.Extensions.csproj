@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>Provides functionality to improve the ergonomics of dealing with primitives such as strings and timestamps in the core framework.</Description>
+    <PackageTags>DateTimeOffset;floor;round;unix;string;trim;reverse</PackageTags>
+  </PropertyGroup>
+
+</Project>

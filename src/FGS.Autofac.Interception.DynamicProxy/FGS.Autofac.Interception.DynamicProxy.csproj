@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Authors>Autofac Contributors;$(Authors)</Authors>
+    <Description>
+      Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes with
+      interceptors based on annotated attributes.
+
+      An (Autofac-specific) alternative to (and combination of) both `Ninject.Extensions.Interception` and `Autofac.Extras.DynamicProxy`.
+    </Description>
+    <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop</PackageTags>
+    <PackageLicenseExpression>MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Castle.Core" Version="[4.4.0, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Interception.Abstractions\FGS.Interception.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Interception.DynamicProxy\FGS.Interception.DynamicProxy.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="README.md" />
+    <Content Include="README.md" Pack="true" PackagePath="." />
+  </ItemGroup>
+
+</Project>

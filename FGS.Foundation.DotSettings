@@ -1,0 +1,166 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7F9D4044_002DD6D3_002D4AE9_002D9B3D_002DBE3064E703F5_002Fd_003Abower_005Fcomponents/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=7F9D4044_002DD6D3_002D4AE9_002D9B3D_002DBE3064E703F5_002Fd_003Atypings/@EntryIndexedValue">ExplicitlyExcluded</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpCodeStyle/ThisQualifier/INSTANCE_MEMBERS_QUALIFY_DECLARED_IN/@EntryValue">ThisClass, BaseClass</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpCodeStyle/ThisQualifier/INSTANCE_MEMBERS_QUALIFY_MEMBERS/@EntryValue">None</s:String>
+	<s:Int64 x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/BLANK_LINES_BETWEEN_USING_GROUPS/@EntryValue">1</s:Int64>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/PLACE_ACCESSORHOLDER_ATTRIBUTE_ON_SAME_LINE_EX/@EntryValue">NEVER</s:String>
+	<s:String x:Key="/Default/CodeStyle/CodeFormatting/CSharpFormat/REDUNDANT_THIS_QUALIFIER_STYLE/@EntryValue">DO_NOT_USE</s:String>
+	<s:Boolean x:Key="/Default/CodeStyle/CSharpUsing/AddImportsToDeepestScope/@EntryValue">False</s:Boolean>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=CC/@EntryIndexedValue">CC</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=DB/@EntryIndexedValue">DB</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=EF/@EntryIndexedValue">EF</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=HTTP/@EntryIndexedValue">HTTP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SMTP/@EntryIndexedValue">SMTP</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=SSL/@EntryIndexedValue">SSL</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=UI/@EntryIndexedValue">UI</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/Abbreviations/=XSS/@EntryIndexedValue">XSS</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=Constants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb"&gt;&lt;ExtraRule Prefix="" Suffix="" Style="AA_BB" /&gt;&lt;/Policy&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=LocalConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb"&gt;&lt;ExtraRule Prefix="" Suffix="" Style="AA_BB" /&gt;&lt;/Policy&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=MethodPropertyEvent/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb_AaBb" /&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateConstants/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="" Suffix="" Style="AaBb"&gt;&lt;ExtraRule Prefix="" Suffix="" Style="AA_BB" /&gt;&lt;/Policy&gt;</s:String>
+	<s:String x:Key="/Default/CodeStyle/Naming/CSharpNaming/PredefinedNamingRules/=PrivateInstanceFields/@EntryIndexedValue">&lt;Policy Inspect="True" Prefix="_" Suffix="" Style="aaBb" /&gt;</s:String>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpAttributeForSingleLineMethodUpgrade/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpKeepExistingMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpPlaceEmbeddedOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpRenamePlacementToArrangementMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ECSharpUseContinuousIndentInsideBracesMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EAddAccessorOwnerDeclarationBracesMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002ECSharpPlaceAttributeOnSameLineMigration/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateBlankLinesAroundFieldToBlankLinesAroundProperty/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/SettingsMigration/IsMigratorApplied/=JetBrains_002EReSharper_002EPsi_002ECSharp_002ECodeStyle_002ESettingsUpgrade_002EMigrateThisQualifierSettings/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/DisabledProviders/=Jasmine/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/DisabledProviders/=QUnit/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/Comment/@EntryValue">Use AddOrAppend for TempData Error</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=Arguments/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=Arguments/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=Arguments/Properties/=Minimal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=Arguments/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=TempData/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=TempData/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=TempData/Properties/=ExpressionType/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=TempData/Properties/=Type/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/CustomPatternPlaceholder/=TempData/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/ReplaceComment/@EntryValue">Use AddOrAppend</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/ReplacePattern/@EntryValue">$TempData$.AddOrAppend("Error", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/SearchPattern/@EntryValue">$TempData$.Add("Error", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=24F7861F2EBCF240AD0577EE58A92D40/Severity/@EntryValue">ERROR</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/Comment/@EntryValue">Use AddOrAppend for TempData Warning</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=Arguments/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=Arguments/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=Arguments/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=Arguments/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=TempData/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=TempData/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=TempData/Properties/=ExpressionType/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=TempData/Properties/=Type/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/CustomPatternPlaceholder/=TempData/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/ReplaceComment/@EntryValue">Use AddOrAppend</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/ReplacePattern/@EntryValue">$TempData$.AddOrAppend("Warning", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/SearchPattern/@EntryValue">$TempData$.Add("Warning", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=34BB8F6ACB81D24D955E25BC32C73E88/Severity/@EntryValue">ERROR</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/Comment/@EntryValue">Use AddOrAppend for TempData Success</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=Arguments/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=Arguments/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=Arguments/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=Arguments/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=TempData/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=TempData/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=TempData/Properties/=ExpressionType/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=TempData/Properties/=Type/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/CustomPatternPlaceholder/=TempData/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/ReplaceComment/@EntryValue">Use AddOrAppend</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/ReplacePattern/@EntryValue">$TempData$.AddOrAppend("Success", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/SearchPattern/@EntryValue">$TempData$.Add("Success", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5239285F7C93374E97F1F2598BC024CE/Severity/@EntryValue">ERROR</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=55ED86FBAF7BA04A834B5E46A437F81C/@KeyIndexDefined">False</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=5CD0FC7ED1DB984AAC19FF2A735A65CC/@KeyIndexDefined">False</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/Comment/@EntryValue">Use AddOrAppend for TempData Info</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=Arguments/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=Arguments/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=Arguments/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=Arguments/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=TempData/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=TempData/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=TempData/Properties/=ExpressionType/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=TempData/Properties/=Type/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/CustomPatternPlaceholder/=TempData/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/ReplaceComment/@EntryValue">Use AddOrAppend</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/ReplacePattern/@EntryValue">$TempData$.AddOrAppend("Info", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/SearchPattern/@EntryValue">$TempData$.Add("Info", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=6F41B6B2AC08FC4D99C24E463326A156/Severity/@EntryValue">ERROR</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=B4F46076EBFF824A8D1F7E902F4A5775/@KeyIndexDefined">False</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/Comment/@EntryValue">Use AddOrAppend for TempData Alert</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=Arguments/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=Arguments/Properties/=Maximal/@EntryIndexedValue">-1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=Arguments/Properties/=Minimal/@EntryIndexedValue">1</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=Arguments/Type/@EntryValue">ArgumentPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=TempData/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=TempData/Properties/=ExactType/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=TempData/Properties/=ExpressionType/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=TempData/Properties/=Type/@EntryIndexedValue">System.Web.Mvc.TempDataDictionary</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/CustomPatternPlaceholder/=TempData/Type/@EntryValue">ExpressionPlaceholder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/IsReplacePattern/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/LanguageName/@EntryValue">CSHARP</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/ReplaceComment/@EntryValue">Use AddOrAppend</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/ReplacePattern/@EntryValue">$TempData$.AddOrAppend("Alert", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/SearchPattern/@EntryValue">$TempData$.Add("Alert", $Arguments$);</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=CBF59934EB9D79448AB8B5F6E19225F5/Severity/@EntryValue">ERROR</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/StructuralSearch/Pattern/=D81994B4BBB84F4AA20C999D6CECCEA0/@KeyIndexDefined">False</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</wpf:ResourceDictionary>

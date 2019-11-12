@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides functionality to help with testing code that has dependencies on parts of ASP.NET Core.
+    </Description>
+    <PackageTags>testing;mocking;autofixture;aspnet;aspnetcore;urlhelper;routing;</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="[4.0.0, 5.0.0)" />
+    <PackageReference Include="CompareNETObjects" Version="[4.56.0, 5.0.0)" />
+    <PackageReference Include="Moq" Version="[4.11.0, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.AspNetCore.Routing.Abstractions" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Linq.Expressions\FGS.Linq.Expressions.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support.AutoFixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support\FGS.Tests.Support.csproj" />
+  </ItemGroup>
+
+</Project>

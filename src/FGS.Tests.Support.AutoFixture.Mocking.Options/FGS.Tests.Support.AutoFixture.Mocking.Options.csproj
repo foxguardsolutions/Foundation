@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>Extends AutoFixture with the ability to register mocked ASP.NET Core Options.</Description>
+    <PackageTags>testing;autofixture;aspnetcore;options;mocking;moq</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="[4.0.0, 5.0.0)" />
+    <PackageReference Include="Moq" Version="[4.11.0, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.1' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Tests.Support.AutoFixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj" />
+  </ItemGroup>
+
+</Project>

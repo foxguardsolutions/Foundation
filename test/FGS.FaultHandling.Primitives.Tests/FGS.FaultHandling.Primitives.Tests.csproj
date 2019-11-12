@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="Castle.Core" Version="4.4.0" />
+    <PackageReference Include="FluentAssertions" Version="5.9.0" />
+    <PackageReference Include="FluentAssertions.Analyzers" Version="0.11.4" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="Moq" Version="4.12.0" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NunitXml.TestLogger" Version="2.1.41" />
+    <PackageReference Include="AutoFixture" Version="4.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.15.0" />
+    <PackageReference Include="System.Configuration.Abstractions" Version="2.0.2.45" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\FGS.FaultHandling.Primitives\FGS.FaultHandling.Primitives.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Tests.Support.AutoFixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Tests.Support\FGS.Tests.Support.csproj" />
+  </ItemGroup>
+
+</Project>

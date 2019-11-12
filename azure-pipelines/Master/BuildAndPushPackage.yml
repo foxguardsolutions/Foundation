@@ -1,26 +1,84 @@
 parameters:
-  project: ""
+# If you want a project to be deployed as a package, make sure it is in this list.
+  packageProjects:
+  - FGS.Collections.Extensions.Pagination
+  - FGS.Collections.Extensions.Pagination.Abstractions
+  - FGS.ComponentModel.DataAnnotations
+  - FGS.ComponentModel.DataAnnotations.Extensions
+  - FGS.Configuration.Abstractions
+  - FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
+  - FGS.Extensions.DependencyInjection.Autofac
+  - FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
+  - FGS.Extensions.Logging.Serilog
+  - FGS.FaultHandling.Abstractions
+  - FGS.FaultHandling.Polly
+  - FGS.FaultHandling.Predicates.Mssql
+  - FGS.FaultHandling.Predicates.Win32
+  - FGS.FaultHandling.Primitives
+  - FGS.Interception.Abstractions
+  - FGS.Interception.Annotations.FaultHandling
+  - FGS.Interception.Annotations.Time
+  - FGS.Interception.DynamicProxy
+  - FGS.Interceptors.FaultHandling
+  - FGS.Interceptors.Time
+  - FGS.Linq.Expressions
+  - FGS.Primitives.Extensions
+  - FGS.Primitives.Time
+  - FGS.Primitives.Time.Abstractions
+  - FGS.Reflection.Extensions
+  - FGS.Rx.Extensions
+  - FGS.Rx.Extensions.Abstractions
+  - FGS.Tests.Support
+  - FGS.Tests.Support.AspNetCore.Mvc
+  - FGS.Tests.Support.Autofac.Mocking
+  - FGS.Tests.Support.Autofac.Mocking.Configuration
+  - FGS.Tests.Support.Autofac.Mocking.Logging
+  - FGS.Tests.Support.Autofac.Mocking.Options
+  - FGS.Tests.Support.AutoFixture.Mocking
+  - FGS.Tests.Support.AutoFixture.Mocking.Options
+  - FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac
+  - FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
+  - FGS.AspNetCore.Http.Extensions.AWS.ALB
+  - FGS.AspNetCore.Http.Extensions.RequestStopwatch
+  - FGS.AspNetCore.Mvc.ModelBinding
+  - FGS.AspNetCore.Mvc.ModelBinding.Validation
+  - FGS.Autofac.AspNetCore.Mvc.Routing
+  - FGS.Autofac.CompositionRoot
+  - FGS.Autofac.CompositionRoot.Abstractions
+  - FGS.Autofac.DynamicScoping
+  - FGS.Autofac.DynamicScoping.Abstractions
+  - FGS.Autofac.Interception.DynamicProxy
+  - FGS.Autofac.Interceptors.FaultHandling
+  - FGS.Autofac.Interceptors.Time
+  - FGS.Autofac.Options
+  - FGS.Autofac.Registration.Extensions
+  - FGS.Collections.Extensions
 
-jobs:
-- job: Build_and_Push_Package
-  displayName: Build & Push Package for "${{ parameters.project }}"
-  pool:
-    vmImage: 'windows-latest'
+stages:
 
-  steps:
+- stage: Deploy
+  displayName: Deploy
+  jobs:
+  - ${{ each project in parameters.packageProjects }}:
+    - job: Build_and_Push_Package__${{ project }}
+      displayName: Build & Push Package for "${{ project }}"
+      pool:
+        vmImage: 'windows-latest'
 
-  - task: DotNetCoreCLI@2
-    displayName: dotnet pack "src/${{ parameters.project }}/${{ parameters.project }}.csproj"
-    inputs:
-      command: pack
-      packagesToPack: "src/${{ parameters.project }}/${{ parameters.project }}.csproj"
-      versioningScheme: byBuildNumber
-      arguments: --configuration Release
+      steps:
 
-  - task: NuGetCommand@2
-    displayName: nuget push "src/${{ parameters.project }}/${{ parameters.project }}.csproj"
-    inputs:
-      command: push
-      packagesToPush: "src/${{ parameters.project }}/**/*.nupkg;!src/${{ parameters.project }}/**/*.symbols.nupkg"
-      nuGetFeedType: external
-      publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"
+      - task: DotNetCoreCLI@2
+        displayName: dotnet pack "src/${{ project }}/${{ project }}.csproj"
+        inputs:
+          command: pack
+          packagesToPack: "src/${{ project }}/${{ project }}.csproj"
+          versioningScheme: byBuildNumber
+          arguments: --configuration Release
+
+      - task: NuGetCommand@2
+        displayName: nuget push "src/${{ project }}/${{ project }}.csproj"
+        inputs:
+          command: push
+          packagesToPush: "src/${{ project }}/**/*.nupkg;!src/${{ project }}/**/*.symbols.nupkg"
+          nuGetFeedType: external
+          publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

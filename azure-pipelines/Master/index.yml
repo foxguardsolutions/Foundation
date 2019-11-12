@@ -2,7 +2,7 @@
 # version numbers for NuGet, when using the `byBuildNumber` versioning scheme.
 name: "$(BuildDefinitionName)_$(Year:yyyy).$(Month).$(DayOfMonth)$(Rev:.r)"
 
-variables:
+parameters:
 # If you want a project to be deployed as a package, make sure it is in this list.
   packageProjects: [
   "FGS.Collections.Extensions.Pagination",
@@ -82,7 +82,7 @@ stages:
 - stage: Deploy
   displayName: Deploy
   jobs:
-  - ${{ each packageProject in variables.packageProjects  }}:
+  - ${{ each packageProject in parameters.packageProjects  }}:
     - template: ./BuildAndPushPackage.yml
       parameters:
         project: ${{ packageProject }}

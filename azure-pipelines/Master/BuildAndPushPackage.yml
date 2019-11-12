@@ -53,6 +53,8 @@ parameters:
     50: FGS.Autofac.Options
     51: FGS.Autofac.Registration.Extensions
     52: FGS.Collections.Extensions
+    53: FGS.Extensions.Hosting.Middleware.Abstractions
+    54: FGS.Extensions.Hosting.Middleware
 
 stages:
 

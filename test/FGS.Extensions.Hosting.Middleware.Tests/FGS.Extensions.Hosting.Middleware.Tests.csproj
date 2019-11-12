@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware.Abstractions\FGS.Extensions.Hosting.Middleware.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware\FGS.Extensions.Hosting.Middleware.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Tests.Support\FGS.Tests.Support.csproj" />
+  </ItemGroup>
+
+</Project>

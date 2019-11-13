@@ -68,7 +68,7 @@ stages:
       steps:
 
       - task: DotNetCoreCLI@2
-        displayName: dotnet pack "src/${{ project.value }}/${{ project.value }}.csproj"
+        displayName: dotnet pack "${{ project.value }}"
         inputs:
           command: pack
           packagesToPack: "src/${{ project.value }}/${{ project.value }}.csproj"
@@ -76,9 +76,9 @@ stages:
           arguments: --configuration Release
 
       - task: NuGetCommand@2
-        displayName: nuget push "src/${{ project.value }}/${{ project.value }}.csproj"
+        displayName: nuget push "${{ project.value }}"
         inputs:
           command: push
-          packagesToPush: "src/${{ project.value }}/**/*.nupkg;!src/${{ project.value }}/**/*.symbols.nupkg"
+          packagesToPush: "**/*.nupkg;!**/*.symbols.nupkg"
           nuGetFeedType: external
           publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

@@ -72,6 +72,7 @@ stages:
         inputs:
           command: pack
           packagesToPack: "src/${{ project.value }}/${{ project.value }}.csproj"
+          outputDir: "$(Build.ArtifactStagingDirectory)"
           versioningScheme: byBuildNumber
           arguments: --configuration Release
 
@@ -79,6 +80,6 @@ stages:
         displayName: nuget push "${{ project.value }}"
         inputs:
           command: push
-          packagesToPush: "**/*.nupkg;!**/*.symbols.nupkg"
+          packagesToPush: "$(Build.ArtifactStagingDirectory)*.nupkg;!$(Build.ArtifactStagingDirectory)/*.symbols.nupkg"
           nuGetFeedType: external
           publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

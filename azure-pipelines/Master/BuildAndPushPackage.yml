@@ -1,58 +1,58 @@
 parameters:
 # If you want a project to be deployed as a package, make sure it is in this list.
   packageProjects:
-  - FGS.Collections.Extensions.Pagination
-  - FGS.Collections.Extensions.Pagination.Abstractions
-  - FGS.ComponentModel.DataAnnotations
-  - FGS.ComponentModel.DataAnnotations.Extensions
-  - FGS.Configuration.Abstractions
-  - FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
-  - FGS.Extensions.DependencyInjection.Autofac
-  - FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
-  - FGS.Extensions.Logging.Serilog
-  - FGS.FaultHandling.Abstractions
-  - FGS.FaultHandling.Polly
-  - FGS.FaultHandling.Predicates.Mssql
-  - FGS.FaultHandling.Predicates.Win32
-  - FGS.FaultHandling.Primitives
-  - FGS.Interception.Abstractions
-  - FGS.Interception.Annotations.FaultHandling
-  - FGS.Interception.Annotations.Time
-  - FGS.Interception.DynamicProxy
-  - FGS.Interceptors.FaultHandling
-  - FGS.Interceptors.Time
-  - FGS.Linq.Expressions
-  - FGS.Primitives.Extensions
-  - FGS.Primitives.Time
-  - FGS.Primitives.Time.Abstractions
-  - FGS.Reflection.Extensions
-  - FGS.Rx.Extensions
-  - FGS.Rx.Extensions.Abstractions
-  - FGS.Tests.Support
-  - FGS.Tests.Support.AspNetCore.Mvc
-  - FGS.Tests.Support.Autofac.Mocking
-  - FGS.Tests.Support.Autofac.Mocking.Configuration
-  - FGS.Tests.Support.Autofac.Mocking.Logging
-  - FGS.Tests.Support.Autofac.Mocking.Options
-  - FGS.Tests.Support.AutoFixture.Mocking
-  - FGS.Tests.Support.AutoFixture.Mocking.Options
-  - FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac
-  - FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
-  - FGS.AspNetCore.Http.Extensions.AWS.ALB
-  - FGS.AspNetCore.Http.Extensions.RequestStopwatch
-  - FGS.AspNetCore.Mvc.ModelBinding
-  - FGS.AspNetCore.Mvc.ModelBinding.Validation
-  - FGS.Autofac.AspNetCore.Mvc.Routing
-  - FGS.Autofac.CompositionRoot
-  - FGS.Autofac.CompositionRoot.Abstractions
-  - FGS.Autofac.DynamicScoping
-  - FGS.Autofac.DynamicScoping.Abstractions
-  - FGS.Autofac.Interception.DynamicProxy
-  - FGS.Autofac.Interceptors.FaultHandling
-  - FGS.Autofac.Interceptors.Time
-  - FGS.Autofac.Options
-  - FGS.Autofac.Registration.Extensions
-  - FGS.Collections.Extensions
+    1: FGS.Collections.Extensions.Pagination
+    2: FGS.Collections.Extensions.Pagination.Abstractions
+    3: FGS.ComponentModel.DataAnnotations
+    4: FGS.ComponentModel.DataAnnotations.Extensions
+    5: FGS.Configuration.Abstractions
+    6: FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
+    7: FGS.Extensions.DependencyInjection.Autofac
+    8: FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
+    9: FGS.Extensions.Logging.Serilog
+    10: FGS.FaultHandling.Abstractions
+    11: FGS.FaultHandling.Polly
+    12: FGS.FaultHandling.Predicates.Mssql
+    13: FGS.FaultHandling.Predicates.Win32
+    14: FGS.FaultHandling.Primitives
+    15: FGS.Interception.Abstractions
+    16: FGS.Interception.Annotations.FaultHandling
+    17: FGS.Interception.Annotations.Time
+    18: FGS.Interception.DynamicProxy
+    19: FGS.Interceptors.FaultHandling
+    20: FGS.Interceptors.Time
+    21: FGS.Linq.Expressions
+    22: FGS.Primitives.Extensions
+    23: FGS.Primitives.Time
+    24: FGS.Primitives.Time.Abstractions
+    25: FGS.Reflection.Extensions
+    26: FGS.Rx.Extensions
+    27: FGS.Rx.Extensions.Abstractions
+    28: FGS.Tests.Support
+    29: FGS.Tests.Support.AspNetCore.Mvc
+    30: FGS.Tests.Support.Autofac.Mocking
+    31: FGS.Tests.Support.Autofac.Mocking.Configuration
+    32: FGS.Tests.Support.Autofac.Mocking.Logging
+    33: FGS.Tests.Support.Autofac.Mocking.Options
+    34: FGS.Tests.Support.AutoFixture.Mocking
+    35: FGS.Tests.Support.AutoFixture.Mocking.Options
+    36: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac
+    37: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
+    38: FGS.AspNetCore.Http.Extensions.AWS.ALB
+    39: FGS.AspNetCore.Http.Extensions.RequestStopwatch
+    40: FGS.AspNetCore.Mvc.ModelBinding
+    41: FGS.AspNetCore.Mvc.ModelBinding.Validation
+    42: FGS.Autofac.AspNetCore.Mvc.Routing
+    43: FGS.Autofac.CompositionRoot
+    44: FGS.Autofac.CompositionRoot.Abstractions
+    45: FGS.Autofac.DynamicScoping
+    46: FGS.Autofac.DynamicScoping.Abstractions
+    47: FGS.Autofac.Interception.DynamicProxy
+    48: FGS.Autofac.Interceptors.FaultHandling
+    49: FGS.Autofac.Interceptors.Time
+    50: FGS.Autofac.Options
+    51: FGS.Autofac.Registration.Extensions
+    52: FGS.Collections.Extensions
 
 stages:
 
@@ -60,25 +60,25 @@ stages:
   displayName: Deploy
   jobs:
   - ${{ each project in parameters.packageProjects }}:
-    - job: Build_and_Push_Package__${{ project }}
-      displayName: Build & Push Package for "${{ project }}"
+    - job: Build_and_Push_Package__${{ project.key }}
+      displayName: Build & Push Package for "${{ project.value }}"
       pool:
         vmImage: 'windows-latest'
 
       steps:
 
       - task: DotNetCoreCLI@2
-        displayName: dotnet pack "src/${{ project }}/${{ project }}.csproj"
+        displayName: dotnet pack "src/${{ project.value }}/${{ project.value }}.csproj"
         inputs:
           command: pack
-          packagesToPack: "src/${{ project }}/${{ project }}.csproj"
+          packagesToPack: "src/${{ project.value }}/${{ project.value }}.csproj"
           versioningScheme: byBuildNumber
           arguments: --configuration Release
 
       - task: NuGetCommand@2
-        displayName: nuget push "src/${{ project }}/${{ project }}.csproj"
+        displayName: nuget push "src/${{ project.value }}/${{ project.value }}.csproj"
         inputs:
           command: push
-          packagesToPush: "src/${{ project }}/**/*.nupkg;!src/${{ project }}/**/*.symbols.nupkg"
+          packagesToPush: "src/${{ project.value }}/**/*.nupkg;!src/${{ project.value }}/**/*.symbols.nupkg"
           nuGetFeedType: external
           publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2FC8DF88-182F-4A79-9185-F242A6C12701}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Build.targets = src\Directory.Build.targets
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{355D7A68-14B5-4489-B3D3-D1BCBE44B774}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+		test\Directory.Build.targets = test\Directory.Build.targets
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac", "src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.csproj", "{6D35876D-19F6-466F-A778-0D8483B452D7}"
 EndProject

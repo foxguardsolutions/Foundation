@@ -21,12 +21,12 @@ using Serilog.Debugging;
 
 using ILogger = Serilog.ILogger;
 
-namespace FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
+namespace FGS.Extensions.Hosting.Logging.Serilog
 {
     /// <summary>
     /// Implements <see cref="ILoggerFactory"/> so that we can inject Serilog Logger.
     /// </summary>
-    /// <remarks>Registered with dependency injection as part of using <see cref="SerilogWebHostBuilderExtensions"/>.</remarks>
+    /// <remarks>Registered with dependency injection as part of using <see cref="SerilogHostBuilderExtensions"/>.</remarks>
     public sealed class SerilogLoggerFactory : ILoggerFactory
     {
         private readonly SerilogLoggerProvider _provider;

@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <Description>
+      Provides an abstraction of "hosting middleware" that can be added to the application's web hosting pipeline as a means to asynchronously intercept startup and graceful shutdowns.
+
+      Part of an alternative to `IStartupFilter` that is asynchronous.
+    </Description>
+    <PackageTags>aspnet;aspnetcore;hosting;startup;middleware;IStartupFilter</PackageTags>
+  </PropertyGroup>
+
+</Project>

@@ -53,6 +53,8 @@ parameters:
     50: FGS.Autofac.Options
     51: FGS.Autofac.Registration.Extensions
     52: FGS.Collections.Extensions
+    53: FGS.Extensions.Hosting.Middleware.Abstractions
+    54: FGS.Extensions.Hosting.Middleware
 
 stages:
 
@@ -80,6 +82,6 @@ stages:
         displayName: nuget push "${{ project.value }}"
         inputs:
           command: push
-          packagesToPush: "$(Build.ArtifactStagingDirectory)/*.nupkg;!$(Build.ArtifactStagingDirectory)/*.symbols.nupkg"
+          packagesToPush: "$(Build.ArtifactStagingDirectory)/*.nupkg;$(Build.ArtifactStagingDirectory)/*.snupkg"
           nuGetFeedType: external
           publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

@@ -1,8 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <PropertyGroup>
     <Authors>FoxGuard Solutions</Authors>
     <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>	
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>	
   </PropertyGroup>
 </Project>

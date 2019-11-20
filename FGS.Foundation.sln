@@ -4,8 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2FC8DF88-182F-4A79-9185-F242A6C12701}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Build.targets = src\Directory.Build.targets
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{355D7A68-14B5-4489-B3D3-D1BCBE44B774}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+		test\Directory.Build.targets = test\Directory.Build.targets
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac", "src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.csproj", "{6D35876D-19F6-466F-A778-0D8483B452D7}"
 EndProject
@@ -128,6 +136,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Primitives.Extensions.Tests", "test\FGS.Primitives.Extensions.Tests\FGS.Primitives.Extensions.Tests.csproj", "{DF4B5F79-591D-4D31-B3EC-55AC3E7B72AE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Primitives.Time.Tests", "test\FGS.Primitives.Time.Tests\FGS.Primitives.Time.Tests.csproj", "{D639F8A5-8E01-4917-8DAC-646083FB65BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware.Abstractions", "src\FGS.Extensions.Hosting.Middleware.Abstractions\FGS.Extensions.Hosting.Middleware.Abstractions.csproj", "{6E667FAD-B06B-4754-A511-0C66D4A6D39A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware", "src\FGS.Extensions.Hosting.Middleware\FGS.Extensions.Hosting.Middleware.csproj", "{C3608BFF-4440-4671-8E7D-8144D4D62B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Middleware.Tests", "test\FGS.Extensions.Hosting.Middleware.Tests\FGS.Extensions.Hosting.Middleware.Tests.csproj", "{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -379,6 +393,18 @@ Global
 		{D639F8A5-8E01-4917-8DAC-646083FB65BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D639F8A5-8E01-4917-8DAC-646083FB65BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D639F8A5-8E01-4917-8DAC-646083FB65BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E667FAD-B06B-4754-A511-0C66D4A6D39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E667FAD-B06B-4754-A511-0C66D4A6D39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E667FAD-B06B-4754-A511-0C66D4A6D39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E667FAD-B06B-4754-A511-0C66D4A6D39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3608BFF-4440-4671-8E7D-8144D4D62B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3608BFF-4440-4671-8E7D-8144D4D62B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3608BFF-4440-4671-8E7D-8144D4D62B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3608BFF-4440-4671-8E7D-8144D4D62B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -445,6 +471,9 @@ Global
 		{CCA4BA06-44CF-4B65-89C0-C56C3723CA07} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 		{DF4B5F79-591D-4D31-B3EC-55AC3E7B72AE} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 		{D639F8A5-8E01-4917-8DAC-646083FB65BE} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
+		{6E667FAD-B06B-4754-A511-0C66D4A6D39A} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{C3608BFF-4440-4671-8E7D-8144D4D62B51} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

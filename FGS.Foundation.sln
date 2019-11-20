@@ -143,6 +143,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Midd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Middleware.Tests", "test\FGS.Extensions.Hosting.Middleware.Tests\FGS.Extensions.Hosting.Middleware.Tests.csproj", "{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac\FGS.Extensions.Hosting.DependencyInjection.Autofac.csproj", "{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -405,6 +407,10 @@ Global
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -474,6 +480,7 @@ Global
 		{6E667FAD-B06B-4754-A511-0C66D4A6D39A} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{C3608BFF-4440-4671-8E7D-8144D4D62B51} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

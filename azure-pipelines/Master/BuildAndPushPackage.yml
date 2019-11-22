@@ -69,6 +69,13 @@ stages:
 
       steps:
 
+      - task: NuGetToolInstaller@0
+        inputs:
+          versionSpec: '>=4.9.1'
+
+      - pwsh: |
+            nuget sources Update -Name nuget.org -Source https://api.nuget.org/v3/index.json
+
       - task: DotNetCoreCLI@2
         displayName: dotnet pack "${{ project.value }}"
         inputs:

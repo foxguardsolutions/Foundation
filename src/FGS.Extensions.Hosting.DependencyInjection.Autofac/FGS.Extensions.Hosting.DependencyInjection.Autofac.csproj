@@ -1,22 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
     <Description>
-      Provides fluent extensions of ASP.NET Core's hosting mechanisms so that consumers can easily
+      Provides fluent extensions of .NET Core's hosting mechanisms so that consumers can easily
       wire in large sets of Autofac configuration, without crowding their `Startup` classes.
 
       An alternative to `Autofac.Extensions.Hosting`.
     </Description>
-    <PackageTags>autofac;di;ioc;dependencyinjection;aspnet;aspnetcore;hosting</PackageTags>
+    <PackageTags>autofac;di;ioc;dependencyinjection;aspnetcore;hosting</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>FGS.Extensions.Hosting.DependencyInjection.Autofac</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="[2.2.0, 3.0.0)" />
-    <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="[2.2.0, 3.0.0)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="[3.0.0, 4.0.0)" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="[3.0.0, 4.0.0)" />
   </ItemGroup>
 
   <ItemGroup>

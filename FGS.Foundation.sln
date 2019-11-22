@@ -119,8 +119,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.AutoFixtu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.AutoFixture.Mocking.Options", "src\FGS.Tests.Support.AutoFixture.Mocking.Options\FGS.Tests.Support.AutoFixture.Mocking.Options.csproj", "{4C8B4B58-3D19-4062-8EEE-E3300115BB3D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.Tests", "test\FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.Tests\FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.Tests.csproj", "{5A71B160-F2E6-46B1-80F7-E1957794C63A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interception.DynamicProxy.Tests", "test\FGS.Autofac.Interception.DynamicProxy.Tests\FGS.Autofac.Interception.DynamicProxy.Tests.csproj", "{6B422DC7-668A-49BE-AA34-1EDF1A5DF534}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interceptors.FaultHandling.Tests", "test\FGS.Autofac.Interceptors.FaultHandling.Tests\FGS.Autofac.Interceptors.FaultHandling.Tests.csproj", "{29CD46EB-BA12-495B-97BF-0D56B95BB51F}"
@@ -142,6 +140,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware", "src\FGS.Extensions.Hosting.Middleware\FGS.Extensions.Hosting.Middleware.csproj", "{C3608BFF-4440-4671-8E7D-8144D4D62B51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Middleware.Tests", "test\FGS.Extensions.Hosting.Middleware.Tests\FGS.Extensions.Hosting.Middleware.Tests.csproj", "{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac\FGS.Extensions.Hosting.DependencyInjection.Autofac.csproj", "{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Logging.Serilog", "src\FGS.Extensions.Hosting.Logging.Serilog\FGS.Extensions.Hosting.Logging.Serilog.csproj", "{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -357,10 +359,6 @@ Global
 		{4C8B4B58-3D19-4062-8EEE-E3300115BB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C8B4B58-3D19-4062-8EEE-E3300115BB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C8B4B58-3D19-4062-8EEE-E3300115BB3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A71B160-F2E6-46B1-80F7-E1957794C63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A71B160-F2E6-46B1-80F7-E1957794C63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A71B160-F2E6-46B1-80F7-E1957794C63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A71B160-F2E6-46B1-80F7-E1957794C63A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6B422DC7-668A-49BE-AA34-1EDF1A5DF534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6B422DC7-668A-49BE-AA34-1EDF1A5DF534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B422DC7-668A-49BE-AA34-1EDF1A5DF534}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -405,6 +403,14 @@ Global
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -462,7 +468,6 @@ Global
 		{45AC3B25-FC4F-4DCD-9414-F49856760330} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{EFD05CF6-741B-4C1B-9E9D-0C2B0979196A} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{4C8B4B58-3D19-4062-8EEE-E3300115BB3D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
-		{5A71B160-F2E6-46B1-80F7-E1957794C63A} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 		{6B422DC7-668A-49BE-AA34-1EDF1A5DF534} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 		{29CD46EB-BA12-495B-97BF-0D56B95BB51F} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 		{8974CF73-6B43-4901-BA52-51F621EFE8AB} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
@@ -474,6 +479,8 @@ Global
 		{6E667FAD-B06B-4754-A511-0C66D4A6D39A} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{C3608BFF-4440-4671-8E7D-8144D4D62B51} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
+		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

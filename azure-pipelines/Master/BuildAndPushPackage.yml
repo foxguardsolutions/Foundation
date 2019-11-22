@@ -89,6 +89,6 @@ stages:
         displayName: nuget push "${{ project.value }}"
         inputs:
           command: push
-          packagesToPush: "$(Build.ArtifactStagingDirectory)/*.nupkg;$(Build.ArtifactStagingDirectory)/*.snupkg"
+          packagesToPush: "$(Build.ArtifactStagingDirectory)/*.nupkg"
           nuGetFeedType: external
           publishFeedCredentials: "NuGet foxguardsolutions Push All FGS.*"

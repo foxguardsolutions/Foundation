@@ -55,6 +55,8 @@ parameters:
     52: FGS.Collections.Extensions
     53: FGS.Extensions.Hosting.Middleware.Abstractions
     54: FGS.Extensions.Hosting.Middleware
+    55: FGS.Extensions.Hosting.DependencyInjection.Autofac
+    56: FGS.Extensions.Hosting.Logging.Serilog
 
 stages:
 

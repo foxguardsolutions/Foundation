@@ -58,6 +58,7 @@ parameters:
     55: FGS.Extensions.Hosting.DependencyInjection.Autofac
     56: FGS.Extensions.Hosting.Logging.Serilog
     57: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking
+    58: FGS.Extensions.Hosting.Middleware.DelayedStart
 
 stages:
 

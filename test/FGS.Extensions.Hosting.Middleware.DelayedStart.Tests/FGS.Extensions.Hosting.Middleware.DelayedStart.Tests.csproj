@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -6,12 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware.Abstractions\FGS.Extensions.Hosting.Middleware.Abstractions.csproj" />
-    <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware\FGS.Extensions.Hosting.Middleware.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware.DelayedStart\FGS.Extensions.Hosting.Middleware.DelayedStart.csproj" />
     <ProjectReference Include="..\..\src\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.csproj" />
     <ProjectReference Include="..\..\src\FGS.Tests.Support\FGS.Tests.Support.csproj" />
   </ItemGroup>

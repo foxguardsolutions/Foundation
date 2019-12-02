@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <Description>
+      Provides functionality for mocking application hosting and hosting middleware components to ease in the testing of same.
+    </Description>
+    <PackageTags>testing;aspnet;aspnetcore;hosting;startup;middleware;IStartupFilter;mocking;moq</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.0.1" />
+    <PackageReference Include="Moq" Version="[4.11.0, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Extensions.Hosting.Middleware.Abstractions\FGS.Extensions.Hosting.Middleware.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

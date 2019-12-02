@@ -1,12 +1,10 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
-using FGS.Extensions.Hosting.Middleware.Tests.Mocks;
+using FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking;
 using FGS.Tests.Support.TestCategories;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Moq;
 using NUnit.Framework;
 
 namespace FGS.Extensions.Hosting.Middleware.Tests
@@ -66,27 +64,10 @@ namespace FGS.Extensions.Hosting.Middleware.Tests
 
         private static IHostBuilder CreateHostBuilder()
         {
-            IHostBuilder result = new HostBuilder();
-            return result.ConfigureServices(
-                sc =>
-                {
-                    sc.AddSingleton<IHost, HostSpy>();
-                    sc.AddSingleton(CreateFakeServiceScopeFactory);
-                });
-        }
-
-        private static IServiceScopeFactory CreateFakeServiceScopeFactory(IServiceProvider serviceProvider)
-        {
-            IServiceScope CreateFakeServiceScope()
+            return FakedServiceScopeHostBuilderFactory.Create(sc =>
             {
-                var mockServiceScope = new Mock<IServiceScope>();
-                mockServiceScope.Setup(ss => ss.ServiceProvider).Returns(serviceProvider);
-                return mockServiceScope.Object;
-            }
-
-            var mockServiceScopeFactory = new Mock<IServiceScopeFactory>();
-            mockServiceScopeFactory.Setup(ssf => ssf.CreateScope()).Returns(CreateFakeServiceScope);
-            return mockServiceScopeFactory.Object;
+                sc.AddSingleton<IHost, HostSpy>();
+            });
         }
 
         private void Verify_HostStart_Called()

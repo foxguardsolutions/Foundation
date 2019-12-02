@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware.Abstractions\FGS.Extensions.Hosting.Middleware.Abstractions.csproj" />
     <ProjectReference Include="..\..\src\FGS.Extensions.Hosting.Middleware\FGS.Extensions.Hosting.Middleware.csproj" />
+    <ProjectReference Include="..\..\src\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.csproj" />
     <ProjectReference Include="..\..\src\FGS.Tests.Support\FGS.Tests.Support.csproj" />
   </ItemGroup>
 

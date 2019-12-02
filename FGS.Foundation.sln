@@ -139,11 +139,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Midd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware", "src\FGS.Extensions.Hosting.Middleware\FGS.Extensions.Hosting.Middleware.csproj", "{C3608BFF-4440-4671-8E7D-8144D4D62B51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Middleware.Tests", "test\FGS.Extensions.Hosting.Middleware.Tests\FGS.Extensions.Hosting.Middleware.Tests.csproj", "{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware.Tests", "test\FGS.Extensions.Hosting.Middleware.Tests\FGS.Extensions.Hosting.Middleware.Tests.csproj", "{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac\FGS.Extensions.Hosting.DependencyInjection.Autofac.csproj", "{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac\FGS.Extensions.Hosting.DependencyInjection.Autofac.csproj", "{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Logging.Serilog", "src\FGS.Extensions.Hosting.Logging.Serilog\FGS.Extensions.Hosting.Logging.Serilog.csproj", "{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Logging.Serilog", "src\FGS.Extensions.Hosting.Logging.Serilog\FGS.Extensions.Hosting.Logging.Serilog.csproj", "{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking", "src\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.csproj", "{BF244A7D-7728-4F46-948D-877B18159A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -411,6 +413,10 @@ Global
 		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF244A7D-7728-4F46-948D-877B18159A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF244A7D-7728-4F46-948D-877B18159A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF244A7D-7728-4F46-948D-877B18159A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF244A7D-7728-4F46-948D-877B18159A3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -481,6 +487,7 @@ Global
 		{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
 		{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{BF244A7D-7728-4F46-948D-877B18159A3D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

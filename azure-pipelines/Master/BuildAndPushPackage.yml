@@ -63,6 +63,8 @@ parameters:
     60: FGS.Linq.Extensions.AutoMapper7
     61: FGS.Linq.Extensions.Pagination.Abstractions
     62: FGS.Linq.Extensions.Pagination
+    63: FGS.Linq.Extensions.EntityFramework6
+    64: FGS.Linq.Extensions.EntityFrameworkCore
 
 stages:
 

@@ -7,7 +7,10 @@
     <Description>
       Provides abstractions used as part of adding pagination support to LINQ.
     </Description>
-    <PackageTags>collections;linq;pagination</PackageTags>
+    <PackageTags>collections;linq;pagination;paging;pager;paged</PackageTags>
+
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

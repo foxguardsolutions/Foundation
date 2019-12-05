@@ -61,6 +61,8 @@ parameters:
     58: FGS.Extensions.Hosting.Middleware.DelayedStart
     59: FGS.Linq.Extensions.AutoMapper
     60: FGS.Linq.Extensions.AutoMapper7
+    61: FGS.Linq.Extensions.Pagination.Abstractions
+    62: FGS.Linq.Extensions.Pagination
 
 stages:
 

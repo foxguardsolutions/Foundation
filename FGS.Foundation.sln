@@ -145,13 +145,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Depe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Logging.Serilog", "src\FGS.Extensions.Hosting.Logging.Serilog\FGS.Extensions.Hosting.Logging.Serilog.csproj", "{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking", "src\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.csproj", "{BF244A7D-7728-4F46-948D-877B18159A3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking", "src\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking\FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.csproj", "{BF244A7D-7728-4F46-948D-877B18159A3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Middleware.DelayedStart", "src\FGS.Extensions.Hosting.Middleware.DelayedStart\FGS.Extensions.Hosting.Middleware.DelayedStart.csproj", "{05D9D419-6E36-4AB8-8E7E-AEB3D635C603}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware.DelayedStart", "src\FGS.Extensions.Hosting.Middleware.DelayedStart\FGS.Extensions.Hosting.Middleware.DelayedStart.csproj", "{05D9D419-6E36-4AB8-8E7E-AEB3D635C603}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Extensions.Hosting.Middleware.DelayedStart.Tests", "test\FGS.Extensions.Hosting.Middleware.DelayedStart.Tests\FGS.Extensions.Hosting.Middleware.DelayedStart.Tests.csproj", "{D638BF49-5051-4FD8-9555-6D51106EC0E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware.DelayedStart.Tests", "test\FGS.Extensions.Hosting.Middleware.DelayedStart.Tests\FGS.Extensions.Hosting.Middleware.DelayedStart.Tests.csproj", "{D638BF49-5051-4FD8-9555-6D51106EC0E6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Linq.Extensions.AutoMapper.Shared", "src\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.shproj", "{293E1465-E2E0-40C1-A28D-1BBD23961B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Linq.Extensions.AutoMapper7", "src\FGS.Linq.Extensions.AutoMapper7\FGS.Linq.Extensions.AutoMapper7.csproj", "{4FF4041C-1809-4800-A378-A80560A05D03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Linq.Extensions.AutoMapper", "src\FGS.Linq.Extensions.AutoMapper\FGS.Linq.Extensions.AutoMapper.csproj", "{32407A8B-39E5-43C2-B63A-F490D2578272}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems*{293e1465-e2e0-40c1-a28d-1bbd23961b55}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -429,6 +438,14 @@ Global
 		{D638BF49-5051-4FD8-9555-6D51106EC0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D638BF49-5051-4FD8-9555-6D51106EC0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D638BF49-5051-4FD8-9555-6D51106EC0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FF4041C-1809-4800-A378-A80560A05D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FF4041C-1809-4800-A378-A80560A05D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FF4041C-1809-4800-A378-A80560A05D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FF4041C-1809-4800-A378-A80560A05D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32407A8B-39E5-43C2-B63A-F490D2578272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32407A8B-39E5-43C2-B63A-F490D2578272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32407A8B-39E5-43C2-B63A-F490D2578272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32407A8B-39E5-43C2-B63A-F490D2578272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -502,6 +519,9 @@ Global
 		{BF244A7D-7728-4F46-948D-877B18159A3D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{05D9D419-6E36-4AB8-8E7E-AEB3D635C603} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{D638BF49-5051-4FD8-9555-6D51106EC0E6} = {355D7A68-14B5-4489-B3D3-D1BCBE44B774}
+		{293E1465-E2E0-40C1-A28D-1BBD23961B55} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{4FF4041C-1809-4800-A378-A80560A05D03} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{32407A8B-39E5-43C2-B63A-F490D2578272} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

@@ -59,6 +59,8 @@ parameters:
     56: FGS.Extensions.Hosting.Logging.Serilog
     57: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking
     58: FGS.Extensions.Hosting.Middleware.DelayedStart
+    59: FGS.Linq.Extensions.AutoMapper
+    60: FGS.Linq.Extensions.AutoMapper7
 
 stages:
 

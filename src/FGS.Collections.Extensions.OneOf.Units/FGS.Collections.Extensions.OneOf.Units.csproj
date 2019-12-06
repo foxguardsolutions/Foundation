@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <Description>
+      Provides collection-query-related unit types to be used with discriminated unions.
+    </Description>
+    <PackageTags>OneOf;NoElements;MoreThanOneElement</PackageTags>
+
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

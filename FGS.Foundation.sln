@@ -173,9 +173,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Linq.Extensions.Paginat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Linq.Extensions.Pagination.EntityFrameworkCore", "src\FGS.Linq.Extensions.Pagination.EntityFrameworkCore\FGS.Linq.Extensions.Pagination.EntityFrameworkCore.csproj", "{5B6E00E9-4217-45FB-93DA-0E822DC6B42D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Collections.Extensions.OneOf.Units", "src\FGS.Collections.Extensions.OneOf.Units\FGS.Collections.Extensions.OneOf.Units.csproj", "{431C9136-225F-43FF-B11B-B5A597913166}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Linq.Extensions.OneOf.EntityFramework.Shared", "src\FGS.Linq.Extensions.OneOf.EntityFramework.Shared\FGS.Linq.Extensions.OneOf.EntityFramework.Shared.shproj", "{8A11571F-0DE7-4E1F-8C1D-6A441F3EAA85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Linq.Extensions.OneOf.EntityFramework6", "src\FGS.Linq.Extensions.OneOf.EntityFramework6\FGS.Linq.Extensions.OneOf.EntityFramework6.csproj", "{037E878C-996E-4922-AC99-38DB0644CB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.Linq.Extensions.OneOf.EntityFrameworkCore", "src\FGS.Linq.Extensions.OneOf.EntityFrameworkCore\FGS.Linq.Extensions.OneOf.EntityFrameworkCore.csproj", "{19AC1E1D-73F5-4F74-8DC9-14E327933B3E}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems*{293e1465-e2e0-40c1-a28d-1bbd23961b55}*SharedItemsImports = 13
+		src\FGS.Linq.Extensions.OneOf.EntityFramework.Shared\FGS.Linq.Extensions.OneOf.EntityFramework.Shared.projitems*{8a11571f-0de7-4e1f-8c1d-6a441f3eaa85}*SharedItemsImports = 13
 		src\FGS.Linq.Extensions.Pagination.EntityFramework.Shared\FGS.Linq.Extensions.Pagination.EntityFramework.Shared.projitems*{96015fe6-1b5e-48f4-bcb3-464366c098f2}*SharedItemsImports = 13
 		src\FGS.Linq.Extensions.EntityFramework.Shared\FGS.Linq.Extensions.EntityFramework.Shared.projitems*{a3e025be-c165-4bc4-bf83-a9bf5dc512e2}*SharedItemsImports = 13
 	EndGlobalSection
@@ -488,6 +497,18 @@ Global
 		{5B6E00E9-4217-45FB-93DA-0E822DC6B42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B6E00E9-4217-45FB-93DA-0E822DC6B42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B6E00E9-4217-45FB-93DA-0E822DC6B42D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431C9136-225F-43FF-B11B-B5A597913166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431C9136-225F-43FF-B11B-B5A597913166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431C9136-225F-43FF-B11B-B5A597913166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431C9136-225F-43FF-B11B-B5A597913166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037E878C-996E-4922-AC99-38DB0644CB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037E878C-996E-4922-AC99-38DB0644CB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037E878C-996E-4922-AC99-38DB0644CB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037E878C-996E-4922-AC99-38DB0644CB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19AC1E1D-73F5-4F74-8DC9-14E327933B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AC1E1D-73F5-4F74-8DC9-14E327933B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AC1E1D-73F5-4F74-8DC9-14E327933B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AC1E1D-73F5-4F74-8DC9-14E327933B3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -572,6 +593,10 @@ Global
 		{96015FE6-1B5E-48F4-BCB3-464366C098F2} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{8A64A5C6-2B3C-4BB2-B9FC-7C30B3F2B3E2} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{5B6E00E9-4217-45FB-93DA-0E822DC6B42D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{431C9136-225F-43FF-B11B-B5A597913166} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{8A11571F-0DE7-4E1F-8C1D-6A441F3EAA85} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{037E878C-996E-4922-AC99-38DB0644CB79} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{19AC1E1D-73F5-4F74-8DC9-14E327933B3E} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

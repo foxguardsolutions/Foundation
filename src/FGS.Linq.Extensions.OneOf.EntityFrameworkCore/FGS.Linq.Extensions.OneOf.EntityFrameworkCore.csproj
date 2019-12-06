@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);EFCORE</DefineConstants>
+
+    <Description>
+      Provides extension methods to materialize query results while describing failures using discriminated unions.
+
+      An `IQueryable` version of `OneOf.Linq`.
+
+      This package is for Entity Framework Core. For an identical API on Entity Framework 6.x, see `FGS.Linq.Extensions.EntityFramework6`.
+    </Description>
+    <PackageTags>EntityFramework;EF;EntityFrameworkCore;EFCore;materialize;discriminated unions;match;switch</PackageTags>
+
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[1.0.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[1.0.0, 3.1.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[3.0.0, 3.1.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OneOf" Version="[2.0.17, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Collections.Extensions.OneOf.Units\FGS.Collections.Extensions.OneOf.Units.csproj" />
+    <ProjectReference Include="..\FGS.Linq.Extensions.EntityFrameworkCore\FGS.Linq.Extensions.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\FGS.Linq.Extensions.OneOf.EntityFramework.Shared\FGS.Linq.Extensions.OneOf.EntityFramework.Shared.projitems" Label="Shared" />
+
+</Project>

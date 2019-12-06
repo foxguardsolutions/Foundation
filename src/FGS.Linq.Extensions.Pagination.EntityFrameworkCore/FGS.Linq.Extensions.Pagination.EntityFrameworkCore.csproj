@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);EFCORE</DefineConstants>
+
+    <Description>
+      Provides an extension method to materialize a paginated query.
+
+      This package is for Entity Framework Core. For an identical API on Entity Framework 6.x, see `FGS.Linq.Extensions.Pagination.EntityFramework6`.
+    </Description>
+    <PackageTags>pagination;paging;pager;paged;pagequery;EntityFramework;EF;EntityFrameworkCore;EFCore;materialize</PackageTags>
+
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Linq.Extensions.EntityFrameworkCore\FGS.Linq.Extensions.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\FGS.Linq.Extensions.Pagination.Abstractions\FGS.Linq.Extensions.Pagination.Abstractions.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\FGS.Linq.Extensions.Pagination.EntityFramework.Shared\FGS.Linq.Extensions.Pagination.EntityFramework.Shared.projitems" Label="Shared" />
+
+</Project>

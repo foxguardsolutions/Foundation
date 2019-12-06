@@ -65,6 +65,8 @@ parameters:
     62: FGS.Linq.Extensions.Pagination
     63: FGS.Linq.Extensions.EntityFramework6
     64: FGS.Linq.Extensions.EntityFrameworkCore
+    65: FGS.Linq.Extensions.Pagination.EntityFramework6
+    66: FGS.Linq.Extensions.Pagination.EntityFrameworkCore
 
 stages:
 

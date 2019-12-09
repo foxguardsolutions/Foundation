@@ -1,0 +1,3011 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/Foundation/Foundation/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": ".nojekyll",
+      "output": {
+        "resource": {
+          "relative_path": ".nojekyll"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.html",
+          "hash": "nRz6kH9gptGhoWfhCibNeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.html",
+          "hash": "1CC7Uk4pKV9/A2wa20fJLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogLoggerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogLoggerFactory.html",
+          "hash": "W6XXOXbtdUxEhRNaf2Ip7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.html",
+          "hash": "HNORIoeFOnocCEbEJL57lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.html",
+          "hash": "tD5aiKQoz+0Z3tUmiwQXSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.AWS.ALB.AwsAlbApplicationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.AWS.ALB.AwsAlbApplicationBuilderExtensions.html",
+          "hash": "n9JsEiX6iA5NbizqYELvWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.AWS.ALB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.AWS.ALB.html",
+          "hash": "eUKh8BnQqozh+ZhF3ZLKXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.AppBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.AppBuilderExtensions.html",
+          "hash": "1JkEeSp6YDFyU25+UlKl7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.HttpContextExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.HttpContextExtensions.html",
+          "hash": "ALXVNGX3fAfcbPMUurHsMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.RequestStopwatchMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.RequestStopwatchMiddleware.html",
+          "hash": "gJS55/zRbTMNwXYX+2f/ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.ServiceCollectionExtensions.html",
+          "hash": "6bKZhYDxDZUoluo/v9RUoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Http.Extensions.RequestStopwatch.html",
+          "hash": "/eFzvixEKjm+cGnfxV3zfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Base64UrlEncodedByteArrayAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Base64UrlEncodedByteArrayAttribute.html",
+          "hash": "KAFofwlwpWg4Q3msqDVxSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Base64UrlEncodedByteArrayModelBinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Base64UrlEncodedByteArrayModelBinder.html",
+          "hash": "Uy4GfH+jH/Nlb7rghDcy0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.html",
+          "hash": "KMOvoryFwRH0hwuplLDW6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.StringCleanupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.StringCleanupAttribute.html",
+          "hash": "iMYsr2botHTTjM5TJF0W5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.StringCleanupModelBinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.StringCleanupModelBinder.html",
+          "hash": "cawHfNf1VWGfQAqLZmEmEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Validation.RequiredIfTrueValidationAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Validation.RequiredIfTrueValidationAdapter.html",
+          "hash": "vm/ZIAqNDD1q+Aqvov4hYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Validation.RequiredIfTrueValidationAdapterProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Validation.RequiredIfTrueValidationAdapterProvider.html",
+          "hash": "BRo9m7Z1qw71m4mFqxGLNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.Validation.html",
+          "hash": "QgTfA4Obj/tL37Lb4VFLbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.AspNetCore.Mvc.ModelBinding.html",
+          "hash": "GUguifGtOZgk6FAkj76TDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.AspNetCore.Mvc.Routing.RegistrationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.AspNetCore.Mvc.Routing.RegistrationBuilderExtensions.html",
+          "hash": "7vK2lK7ivJpZR//HRUYXBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.AspNetCore.Mvc.Routing.SingletonCompatibleUrlHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.AspNetCore.Mvc.Routing.SingletonCompatibleUrlHelper.html",
+          "hash": "4bV4T26BkKKK2NysCxBuiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.AspNetCore.Mvc.Routing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.AspNetCore.Mvc.Routing.html",
+          "hash": "U/TCiAH0WxD38AsKQpBYsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.CompositionRoot.Abstractions.IModulesProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.CompositionRoot.Abstractions.IModulesProvider.html",
+          "hash": "C/p0iN2IGG79yxnvCfmK0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.CompositionRoot.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.CompositionRoot.Abstractions.html",
+          "hash": "o/7i8y4vqZYFez39JbSmBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.html",
+          "hash": "gzY2IARVpFtI0Cp83sI/IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.CompositionRoot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.CompositionRoot.html",
+          "hash": "3jJ32OCp9RzZ5cnXmqZQxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.Scope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.Scope.html",
+          "hash": "mP8Xy8kqUpYNQstbyYWuug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.Specialized.IOverridableHttpScopeAutofacModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.Specialized.IOverridableHttpScopeAutofacModule.html",
+          "hash": "LP72ui8i+OLNMEiyAM7jjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.Specialized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.Specialized.html",
+          "hash": "x1oTUxGIbQbWx8pqwrewag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.Abstractions.html",
+          "hash": "ACExQew8ulPVBAKnWO+6Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.ContainerBuilderFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.ContainerBuilderFactory.html",
+          "hash": "FZtwNWvy/BA/gjCEN5UQzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.RegistrationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.RegistrationBuilderExtensions.html",
+          "hash": "Lqwtrq28Qw5i6c+xYwCO+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.DynamicScoping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.DynamicScoping.html",
+          "hash": "b/UNgFU99EflDUNIACSywg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html",
+          "hash": "uxQy8vUJtVJEmuInR+6McA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html",
+          "hash": "Svpk7ltCtWeX6dCZgCGMSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.InterceptorAdapterModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.InterceptorAdapterModule.html",
+          "hash": "OH6zriDcN9pKF7NhXs8Zew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.IInterceptionTestSubject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.IInterceptionTestSubject.html",
+          "hash": "PGCQ9BwhYTD5oYN98pOXGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.InterceptForTestAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.InterceptForTestAttribute.html",
+          "hash": "fZwwwD7u8ZtlFjR5HHmKRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.InterceptionSubjectInnerImplementationDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.InterceptionSubjectInnerImplementationDecorator.html",
+          "hash": "+bCqVBpDJ6R8plLXUYQdtA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.InterceptorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.InterceptorTests.html",
+          "hash": "8QFLhH/hggwOBRz8pOCY3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.Tests.html",
+          "hash": "WUdtoKglpj0r8TkRBKqDZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interception.DynamicProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interception.DynamicProxy.html",
+          "hash": "c/Y+IZ0fo7AGXz82cSYxAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.FaultHandlingModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.FaultHandlingModule.html",
+          "hash": "SGk4BpBdcQ03T2hnI3QZiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.Tests.RetryPolicyFactorySociableTests.TestException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.Tests.RetryPolicyFactorySociableTests.TestException.html",
+          "hash": "D7muCchVT/f5uL0qvKSreA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.Tests.RetryPolicyFactorySociableTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.Tests.RetryPolicyFactorySociableTests.html",
+          "hash": "x1I8UcHB+kqlbNqrLX7f0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.Tests.html",
+          "hash": "MOcrHzqOYf2RcQsGiIrO6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.FaultHandling.html",
+          "hash": "nQfPoF6gsqjrycvOHsos2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.Time.FreezeTimeModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.Time.FreezeTimeModule.html",
+          "hash": "4qBs3WZybHQJESvR9WE5LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Interceptors.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Interceptors.Time.html",
+          "hash": "7srT39V7HYI+JsimF+tG2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Options.AutofacOptionsBuilder-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Options.AutofacOptionsBuilder-1.html",
+          "hash": "pfr3hWRzL3qA5odeA6NW0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Options.OptionsConfigurationContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Options.OptionsConfigurationContainerBuilderExtensions.html",
+          "hash": "88XY9p1NGoAU84xjsF8u1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Options.OptionsContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Options.OptionsContainerBuilderExtensions.html",
+          "hash": "QSJbrSu8tzItpOpEmBsteg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Options.html",
+          "hash": "OLt4WQlTOmT/aWKoRooOow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Registration.Extensions.ContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Registration.Extensions.ContainerBuilderExtensions.html",
+          "hash": "vRTphmYtK5suN55YBwEagA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html",
+          "hash": "Va3qGIBdV68JrbZLMR4rDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Autofac.Registration.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Autofac.Registration.Extensions.html",
+          "hash": "xenIYWtua/+EmbzzLqhwaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.EnumerableExtensions.html",
+          "hash": "RdpetUDAWayYjgGQRCiasQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.OneOf.Units.MoreThanOneElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.OneOf.Units.MoreThanOneElement.html",
+          "hash": "tJ2upQhKC9MWn+Ckt7Yb5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.OneOf.Units.NoElements.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.OneOf.Units.NoElements.html",
+          "hash": "6Ei6gYm+63oevtXE52O+sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.OneOf.Units.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.OneOf.Units.html",
+          "hash": "2CaYyPbn8bD3eyGKEnRcjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.Pagination.Abstractions.Page-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.Pagination.Abstractions.Page-1.html",
+          "hash": "Kl6aCCF5/q5HNPDbKTl15Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification.html",
+          "hash": "nq/PC1yoamf+Dpi2+ukSWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.Pagination.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.Pagination.Abstractions.html",
+          "hash": "QAFodUwJMLkm2a9MRuedMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.Pagination.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.Pagination.EnumerableExtensions.html",
+          "hash": "lZdmQcsZFSexNL1QfeCSwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.Pagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.Pagination.html",
+          "hash": "1kIxZ2/E/RWsEsAy7or+1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Collections.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Collections.Extensions.html",
+          "hash": "AWLCN60XS8lnUMFRZS486g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.CveAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.CveAttribute.html",
+          "hash": "8rit/V+iLYe4OD1JDdD6mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.CveListAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.CveListAttribute.html",
+          "hash": "rok/4pFNm6N5lJIqIX/uyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Extensions.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Extensions.EnumExtensions.html",
+          "hash": "0YiVEGfpfFuSBbQu/FjC+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Extensions.ModelExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Extensions.ModelExtensions.html",
+          "hash": "bmYh7LaM9KoSFUADJrQziQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Extensions.html",
+          "hash": "fUhfX9bLqW4kabOk4szYKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.MicrosoftSecurityBulletinAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.MicrosoftSecurityBulletinAttribute.html",
+          "hash": "dq8ZxUNU1Lo7/+shwrvvGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.PasswordPolicyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.PasswordPolicyAttribute.html",
+          "hash": "W5yz+2UAJYjl1bD4OOcLTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.RequiredIfTrueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.RequiredIfTrueAttribute.html",
+          "hash": "ge3a6CzhgqgXnLBJky00dA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.SafeEmailAddressAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.SafeEmailAddressAttribute.html",
+          "hash": "u9xEQ1lsL4Hwp+EFsncXrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.SafePhoneNumberAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.SafePhoneNumberAttribute.html",
+          "hash": "wZcExj1rsKGPDTZ851A+GQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.SafeUrlAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.SafeUrlAttribute.html",
+          "hash": "MlPhRQrv+5f9QW6XMPgWnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.CveAttributeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.CveAttributeTests.html",
+          "hash": "AQJNQDCHqUgFoiBbUcvtbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.CveListAttributeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.CveListAttributeTests.html",
+          "hash": "aCsB7CAnXrMqe15UmAkE/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.MicrosoftSecurityBulletinAttributeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.MicrosoftSecurityBulletinAttributeTests.html",
+          "hash": "bUFOivZJLBRfdYBB3r2c4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.RequiredIfTrueAttributeTests.TestModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.RequiredIfTrueAttributeTests.TestModel-1.html",
+          "hash": "b/ymWyL+uTubLl3WWu02zQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.RequiredIfTrueAttributeTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.RequiredIfTrueAttributeTests.html",
+          "hash": "LYSWP64uWZ4HKsF6TukNyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.Tests.html",
+          "hash": "FkSaTQAX82A1Tpr0wmD4EQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.ComponentModel.DataAnnotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.ComponentModel.DataAnnotations.html",
+          "hash": "ZGdYkQJiHnws8hX7o59/+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Configuration.Abstractions.ConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Configuration.Abstractions.ConfigurationExtensions.html",
+          "hash": "eCacdLVoepOKpWXmSl35GA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Configuration.Abstractions.IConnectionString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Configuration.Abstractions.IConnectionString.html",
+          "hash": "z4UWJOCSVtDfsKr0O+Awgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Configuration.Abstractions.LiteralConnectionString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Configuration.Abstractions.LiteralConnectionString.html",
+          "hash": "Jdwh+bzM8iRLf8JiWLb5fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Configuration.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Configuration.Abstractions.html",
+          "hash": "u31cru0+zPnLy46c4CaqOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.AwsElasticBeanstalkContainerConfigurationConfigurationSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.AwsElasticBeanstalkContainerConfigurationConfigurationSource.html",
+          "hash": "uwOQl44m83yJuiuauepfAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.AwsElasticBeanstalkIisEnvConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.AwsElasticBeanstalkIisEnvConfigurationExtensions.html",
+          "hash": "QiFuVa2VPaFJrQwwqD0T3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.AwsElasticBeanstalkIisEnvConfigurationProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.AwsElasticBeanstalkIisEnvConfigurationProvider.html",
+          "hash": "1XQvfEW+nVZ2NU3FJ5J4ew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.html",
+          "hash": "gq8AZSt65iQHz6BdA67nZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory-1.html",
+          "hash": "rTM3ZLVzyjwIFmicz3UR4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.html",
+          "hash": "MCfo5WfmknzxpienI4MIVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.DependencyInjection.Autofac.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.DependencyInjection.Autofac.html",
+          "hash": "UfxdnyZNJnsi2jZ9O1WeIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.EntityFrameworkHealthCheck-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.EntityFrameworkHealthCheck-1.html",
+          "hash": "OpX6ywskFuHBF/u3Sl2XvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.HealthChecksBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.HealthChecksBuilderExtensions.html",
+          "hash": "mRnPDp22Y/NK7BjsJ+OGrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.html",
+          "hash": "TlOFVEm6nLtw2/vCw+PPeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.html",
+          "hash": "2e0hiXWjD5R/VkxFAUpbvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.DependencyInjection.Autofac.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.DependencyInjection.Autofac.html",
+          "hash": "wQ1VW/KDSya+FSoON2cTaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.html",
+          "hash": "WB6E8yGG9WPWxYZ00ZYoTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Logging.Serilog.SerilogLoggerFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Logging.Serilog.SerilogLoggerFactory.html",
+          "hash": "Ys0uXBSZcAUxGFE7CaZ0PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Logging.Serilog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Logging.Serilog.html",
+          "hash": "Ox+xab5OD0UQZlUwicVHMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.html",
+          "hash": "FFHO1fKuwV9jAhzD5qx1Dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.Abstractions.html",
+          "hash": "0WaBAaMD+cEYOHpWeGuGuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.html",
+          "hash": "RCZhMxvhzwZh4MiyXeOS9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.html",
+          "hash": "R1Nj8AYp80KyeHRc26oEBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartOptions.html",
+          "hash": "4TyRHgqrrf3TVkUTWFMCUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.Tests.DelayedStartHostBuilderExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.Tests.DelayedStartHostBuilderExtensionsTests.html",
+          "hash": "bi1xOZbDBx3rGKP/8zA38Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.Tests.html",
+          "hash": "QS0TyNUEjPs6WXd5btH7nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.DelayedStart.html",
+          "hash": "vHx+ciEbfS+jb9RbLaP+Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.html",
+          "hash": "y822sGw+xdlIxRzp5LKn9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.Tests.HostBuilderExtensionsTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.Tests.HostBuilderExtensionsTests.html",
+          "hash": "tHBQl9oLkNICAJZ49FGcNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.Tests.html",
+          "hash": "t76xSWFQxbcKd7qG3azzUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Hosting.Middleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Hosting.Middleware.html",
+          "hash": "5cscVIuzeCcXU4I718oW9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.SerilogLoggerFactoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.SerilogLoggerFactoryExtensions.html",
+          "hash": "Itqz9bcrhFuZMe3TqnE5VQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.SerilogLoggerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.SerilogLoggerProvider.html",
+          "hash": "mqfUgQCkzlQKNJy83WBjvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.SerilogLoggingBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.SerilogLoggingBuilderExtensions.html",
+          "hash": "gcBLopuxsGnw08xNneBlxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.SerilogLoggerTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.SerilogLoggerTest.html",
+          "hash": "ZfLJf/Ncw3fBq4OjVCFMZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.Support.DisposeTrackingLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.Support.DisposeTrackingLogger.html",
+          "hash": "brEczqr9NLoHURXyFlXZfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.Support.SerilogSink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.Support.SerilogSink.html",
+          "hash": "bSqjhvgE1K8wXAkg4FhFFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.Support.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.Support.html",
+          "hash": "QvPXEbmvGV1isR/aEU7QuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.Tests.html",
+          "hash": "3PTUm++hqv7rr/9PedXXvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Extensions.Logging.Serilog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Extensions.Logging.Serilog.html",
+          "hash": "rsJwBk2T8iF+94BwOXgtAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.FaultHandlingConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.FaultHandlingConfiguration.html",
+          "hash": "11CngDpBQgyGxhtDCR/Y9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate.html",
+          "hash": "yG+wYVnrWzmULv9pqhh7/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator.html",
+          "hash": "UusjdaWlUB2Um9NWtUMqWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryPolicy.html",
+          "hash": "s3CGRkUboXMCENkyh9TDLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryPolicyCoordinator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryPolicyCoordinator.html",
+          "hash": "JL8ceMIS6TuAX534MybCMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory.html",
+          "hash": "fb/ybjUsDRrnKkMyDaUwYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.Retry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.Retry.html",
+          "hash": "1GrNefK6IuAHTfSOAelCaQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Abstractions.html",
+          "hash": "GlmPpMbx9hJddZYMtBxT5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html",
+          "hash": "wN+Kb7f1+UxDwSeiTMBsqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.html",
+          "hash": "fMrD9wq48o2IVASupjX+mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Polly.Retry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Polly.Retry.html",
+          "hash": "xPGwa9AjNs3lZ6+ZrEE6Bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Polly.Tests.Retry.RetryPolicyFactoryTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Polly.Tests.Retry.RetryPolicyFactoryTests.html",
+          "hash": "9ocpa5H/RC2IDAvoTQXJGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Polly.Tests.Retry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Polly.Tests.Retry.html",
+          "hash": "yTKxaW2BIZypqYazS+x1wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.html",
+          "hash": "WvowaMUlypKagidAl2YF5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Predicates.Mssql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Predicates.Mssql.html",
+          "hash": "5V2vDOixiPtnbYnYHkLRvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.html",
+          "hash": "NjvdvYSRBQ3X/mjJ01BTuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Predicates.Win32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Predicates.Win32.html",
+          "hash": "EuE2aikGqRIOfVzeW85Zww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Retry.ExponentialRetryBackoffCalculator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Retry.ExponentialRetryBackoffCalculator.html",
+          "hash": "MEpbHX7ybTcADOMGeQJ/3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html",
+          "hash": "p+5XS41+7mscPRiPlQECdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html",
+          "hash": "FQJX3fgm/r1duGeL86qnkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.html",
+          "hash": "sSpDXJ6WGwl+RDVc6KkU9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Retry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Retry.html",
+          "hash": "ytRf/o2Ubigu+VI6aZn8QQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Tests.Retry.ExponentialRetryBackoffCalculatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Tests.Retry.ExponentialRetryBackoffCalculatorTests.html",
+          "hash": "Pcpw6nE9osbPEhqMJztZQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Tests.Retry.RetryPolicyCoordinatorTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Tests.Retry.RetryPolicyCoordinatorTests.html",
+          "hash": "N8KgpHMjFchqNlxtvRpurA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.FaultHandling.Primitives.Tests.Retry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.FaultHandling.Primitives.Tests.Retry.html",
+          "hash": "UPl4Q1SBVYwGfUniRBELQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Abstractions.IAsyncInvocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Abstractions.IAsyncInvocation.html",
+          "hash": "wIXCdXuX3twMrQiCDaArbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Abstractions.IInterceptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Abstractions.IInterceptor.html",
+          "hash": "ovAxY/7NQoOqkTZSDRUwqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Abstractions.IInvocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Abstractions.IInvocation.html",
+          "hash": "Ilw8C9PfFxN3Ak83mvzOoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Abstractions.IInvocationCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Abstractions.IInvocationCommon.html",
+          "hash": "v5Tc54u2/pngIrm7eKtknQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Abstractions.html",
+          "hash": "l6/rH8jvqB92C3IrX4boaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Annotations.FaultHandling.RetryOnFaultAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Annotations.FaultHandling.RetryOnFaultAttribute.html",
+          "hash": "FIyLHV8ig9I/2WjIJWllBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Annotations.FaultHandling.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Annotations.FaultHandling.html",
+          "hash": "JLlxOClGewgpRhlCQNMyKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Annotations.Time.FreezeTimeAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Annotations.Time.FreezeTimeAttribute.html",
+          "hash": "GqjWEoAQUxcIONVsqz5zkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.Annotations.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.Annotations.Time.html",
+          "hash": "ADUcy3PWkfrbywh7FhlcIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.DynamicProxy.AsyncInvocationAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.DynamicProxy.AsyncInvocationAdapter.html",
+          "hash": "3aBChnVWzIuikMpAQkwPmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.DynamicProxy.AttributeProxyGenerationHook-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.DynamicProxy.AttributeProxyGenerationHook-1.html",
+          "hash": "Slq71j2wqERV2EVG49vR9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.DynamicProxy.InterceptorAdapter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.DynamicProxy.InterceptorAdapter-2.html",
+          "hash": "AiUEeAgQc7jx7OSpKeB4qQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.DynamicProxy.InvocationAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.DynamicProxy.InvocationAdapter.html",
+          "hash": "Lv/xJtwdQOwwNuzyMmw9mg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.DynamicProxy.InvocationAdapterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.DynamicProxy.InvocationAdapterBase.html",
+          "hash": "OLaqc/pons90VxPzsLP1vw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interception.DynamicProxy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interception.DynamicProxy.html",
+          "hash": "KFpexN+PGLmpFLY17XMdfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interceptors.FaultHandling.Retry.RetryInterceptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interceptors.FaultHandling.Retry.RetryInterceptor.html",
+          "hash": "R8n7M/4BLSPY+EPOb9Py9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interceptors.FaultHandling.Retry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interceptors.FaultHandling.Retry.html",
+          "hash": "OcCXkh7YnP5B8SaWzKhx1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interceptors.Time.FreezeTimeInterceptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interceptors.Time.FreezeTimeInterceptor.html",
+          "hash": "9baJvF7BTnP7Ri5KkFoz5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Interceptors.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Interceptors.Time.html",
+          "hash": "mGJqKTSuguFTr+Z6am/hqg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Expressions.ParameterReplacer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Expressions.ParameterReplacer.html",
+          "hash": "oeiUJM2QAN6GI/rmykop7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Expressions.QueryProviderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Expressions.QueryProviderExtensions.html",
+          "hash": "qPJdLawiIyDXhdlKS4FZuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Expressions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Expressions.html",
+          "hash": "Rd/XBMuIMzwRHR2+LVqG7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.AutoMapper.AutoMapperQueryableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.AutoMapper.AutoMapperQueryableExtensions.html",
+          "hash": "4t2rwCmaQzGrdClSy7UrXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.AutoMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.AutoMapper.html",
+          "hash": "NEoo5OQ6LFPpBhjXVUgK1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.EntityFramework.MaterializingQueryableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.EntityFramework.MaterializingQueryableExtensions.html",
+          "hash": "90LINtOrkO9dhODC0uzTmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.EntityFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.EntityFramework.html",
+          "hash": "PPPqBOPjrBeal+OdfDnaYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.OneOf.EntityFramework.OneOfQueryableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.OneOf.EntityFramework.OneOfQueryableExtensions.html",
+          "hash": "gReKTeM/8TKjALKbjxCbdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.OneOf.EntityFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.OneOf.EntityFramework.html",
+          "hash": "hbEO198EqL6OkHL/jsWhYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.Pagination.Abstractions.PageQuery-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.Pagination.Abstractions.PageQuery-1.html",
+          "hash": "sthZJDGWfAjwT8FlAuP5nw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.Pagination.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.Pagination.Abstractions.html",
+          "hash": "tRFD4LsG266ap9JJi6iScw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.Pagination.EntityFramework.PageQueryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.Pagination.EntityFramework.PageQueryExtensions.html",
+          "hash": "7UTOharTatLB/rmz///YoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.Pagination.EntityFramework.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.Pagination.EntityFramework.html",
+          "hash": "x87/H9wgxYiAxMiznFFiBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.html",
+          "hash": "nDEedcjOUiPpV4vRtkVx9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Linq.Extensions.Pagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Linq.Extensions.Pagination.html",
+          "hash": "4viTiCR/WtX+vveLbL0ctQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Extensions.DateTimeOffsetExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Extensions.DateTimeOffsetExtensions.html",
+          "hash": "669s7fU1MVnELgBzTKdCnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Extensions.StringExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Extensions.StringExtension.html",
+          "hash": "ExsU+n1a9KFPKpkBvkTEBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Extensions.Tests.StringExtensionTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Extensions.Tests.StringExtensionTests.html",
+          "hash": "Dmc31qbkHu41SnrYmTU9ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Extensions.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Extensions.Tests.html",
+          "hash": "lxRG3A7KWrEO8H3JrKUIeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Extensions.html",
+          "hash": "uiWTgO0EJB67sP47JER2mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.Abstractions.IClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.Abstractions.IClock.html",
+          "hash": "H948UhvNHWPkay7p47Yhxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.Abstractions.IFreezableClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.Abstractions.IFreezableClock.html",
+          "hash": "zdYUenuuZgtsi93yu9qNPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.Abstractions.html",
+          "hash": "AsAbcP+i+KS51m/SSnKKNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.FreezableClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.FreezableClock.html",
+          "hash": "sk/asweRnUffGMgefsf31g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.SystemClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.SystemClock.html",
+          "hash": "xCEiRtgGk18A3yN5cw6uUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.Tests.FreezableClockTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.Tests.FreezableClockTests.html",
+          "hash": "gs9a2Y33rNk0tSEXyUAhvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.Tests.html",
+          "hash": "mG7+SJNLI3jdxB0vOJY7ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Primitives.Time.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Primitives.Time.html",
+          "hash": "AoTGif3gatHPQavFsD7uPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Reflection.Extensions.EmbeddedResourceLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Reflection.Extensions.EmbeddedResourceLoader.html",
+          "hash": "JWHjATaAvsPcHGVWP334wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Reflection.Extensions.MemberInfoExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Reflection.Extensions.MemberInfoExtensions.html",
+          "hash": "qaX+afAkBgVqR/8ZYC3zcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Reflection.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Reflection.Extensions.html",
+          "hash": "kSDuZSoyt6ARkTVgBDQT1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Rx.Extensions.Abstractions.IHistoricalReactiveProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Rx.Extensions.Abstractions.IHistoricalReactiveProcessor.html",
+          "hash": "GARL4C8G01aVXgzo57a2dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Rx.Extensions.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Rx.Extensions.Abstractions.html",
+          "hash": "wvzcx81T75/iAU2V/necyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Rx.Extensions.HistoricalReactiveProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Rx.Extensions.HistoricalReactiveProcessor.html",
+          "hash": "dqR4UdcLprfRP4ajJLqKsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Rx.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Rx.Extensions.html",
+          "hash": "k7AOzRG8m9XSRT36ppP+wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html",
+          "hash": "6ic949cGYsLCqJ68WLJq0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.Routing.MockUrlHelperExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.Routing.MockUrlHelperExtensions.html",
+          "hash": "Qvb+JwOyz9dTRjShS+QOcg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.html",
+          "hash": "zHuabgDmwACiqO/0kR5feg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.Routing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.Routing.html",
+          "hash": "FeQbovw8juqwjox2qpq42w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AspNetCore.Mvc.html",
+          "hash": "UWZGekiREkIbiIs5uOmbyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.AutoFixtureExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.AutoFixtureExtensions.html",
+          "hash": "GhrI05J2Q7Q4CBCOSzXJyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.html",
+          "hash": "BZtInl70rhj67LShmfARDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.Options.html",
+          "hash": "jSbHMU/lQL20nc93m4htAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AutoFixture.Mocking.html",
+          "hash": "rwCT2K9WrduCQz0DyJElPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AutoFixtureExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AutoFixtureExtensions.html",
+          "hash": "iCkmZ7TzfjQ09p0fAnwhmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.AutoFixtureFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.AutoFixtureFactory.html",
+          "hash": "kyGID8Mmx9ogkt47rcZxVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Configuration.ContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Configuration.ContainerBuilderExtensions.html",
+          "hash": "gFD4zYnFJ3aAc1kkgo0D3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Configuration.html",
+          "hash": "D+Vw9XkXniuYpXM+DOw7gQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.html",
+          "hash": "BDiX8hZyayiQAiFdcsI4+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Logging.ContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Logging.ContainerBuilderExtensions.html",
+          "hash": "GxmeW7rD8TNSfAvvGz+AYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Logging.html",
+          "hash": "CzTt8Q+4tCt2dKChefCSuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.html",
+          "hash": "S30kgDf+S3Eh8W0Nh8D4vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.Options.html",
+          "hash": "9CmNUT2H+9enYpSAB43qew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Autofac.Mocking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Autofac.Mocking.html",
+          "hash": "V+DePItX44VX1vZcnjlvHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.EnumerableExtensions.html",
+          "hash": "gIBXC3TFrC6XLBwzx2yfNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.html",
+          "hash": "4oL8kUp6TV4yHhoDWJ/9Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.html",
+          "hash": "uIl/XV5Lq75++xKYS7ZRfQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.html",
+          "hash": "eoPJ+ZErZEBO7zEO6z88+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.html",
+          "hash": "4FDpc1LzcoTGEK/B+8bSew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.html",
+          "hash": "a33wXy4mUiLIaUThJNTjuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.Extensions.html",
+          "hash": "KDeBnHuAz7+wPrAivtlIjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.TestCategories.AcceptanceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.TestCategories.AcceptanceAttribute.html",
+          "hash": "sP7EJrUbmtwh7O5uczjcJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.TestCategories.FunctionalAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.TestCategories.FunctionalAttribute.html",
+          "hash": "Q9JX4XXHbnP/cHO9h30O0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.TestCategories.IntegrationAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.TestCategories.IntegrationAttribute.html",
+          "hash": "mvzs0wSrJUTWEvoFR/V4aA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.TestCategories.StaticAnalysisAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.TestCategories.StaticAnalysisAttribute.html",
+          "hash": "+8LTyQC7xLeOCVl0KXTnzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.TestCategories.UnitAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.TestCategories.UnitAttribute.html",
+          "hash": "lGOvv78fUqxACqbqk2YXTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.TestCategories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.TestCategories.html",
+          "hash": "DoVIfGkbE0U1VPIg6JGU+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/FGS.Tests.Support.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/FGS.Tests.Support.html",
+          "hash": "wlq3bBgDEi6vvvMEaX8Z1Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Okw6ZekW5134ioyl7+8esQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "SdrLQVBO9eiYkvc53nay/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "KrI758WSim1Trs2WtLxzHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "Dxbz61O0oyFG40Jd+wfwFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 238,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

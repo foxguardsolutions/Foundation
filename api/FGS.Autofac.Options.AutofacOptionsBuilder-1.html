@@ -1,0 +1,1179 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AutofacOptionsBuilder&lt;TOptions&gt;
+   | FoxGuard Foundation Libraries </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AutofacOptionsBuilder&lt;TOptions&gt;
+   | FoxGuard Foundation Libraries ">
+    <meta name="generator" content="docfx 2.48.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1">
+  
+  
+  <h1 id="FGS_Autofac_Options_AutofacOptionsBuilder_1" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1" class="text-break">Class AutofacOptionsBuilder&lt;TOptions&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Used to configure <code data-dev-comment-type="typeparamref" class="typeparamref">TOptions</code> instances.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AutofacOptionsBuilder&lt;TOptions&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Autofac.Options.html">FGS.Autofac.Options</a></h6>
+  <h6><strong>Assembly</strong>: FGS.Autofac.Options.dll</h6>
+  <h5 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AutofacOptionsBuilder&lt;TOptions&gt;
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The type of Options being requested.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Taken and modified from: <a href="https://github.com/aspnet/Extensions/blob/e311a440d51cddd8f645160d9e27a574c77955a1/src/Options/Options/src/OptionsBuilder.cs">https://github.com/aspnet/Extensions/blob/e311a440d51cddd8f645160d9e27a574c77955a1/src/Options/Options/src/OptionsBuilder.cs</a>.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1__ctor_ContainerBuilder_System_String_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.%23ctor(ContainerBuilder%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L35">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1__ctor_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.#ctor*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1__ctor_ContainerBuilder_System_String_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.#ctor(ContainerBuilder,System.String)">AutofacOptionsBuilder(ContainerBuilder, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutofacOptionsBuilder(ContainerBuilder containerBuilder, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_ContainerBuilder">ContainerBuilder</a> for the Options being configured.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the <code data-dev-comment-type="typeparamref" class="typeparamref">TOptions</code> instance. If <span class="xref">null</span>, <see cref="!:Options.DefaultName"></see> is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_ContainerBuilder.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.ContainerBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L27">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_ContainerBuilder_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.ContainerBuilder*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_ContainerBuilder" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.ContainerBuilder">ContainerBuilder</h4>
+  <div class="markdown level1 summary"><p>Gets the <see cref="!:global::Autofac.ContainerBuilder"></see> for the Options being configured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContainerBuilder ContainerBuilder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Name.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L22">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Name_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Name*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Name" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Gets the default name of the <code data-dev-comment-type="typeparamref" class="typeparamref">TOptions</code> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Configure(System.Action%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L49">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure(System.Action{`0})">Configure(Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__">PostConfigure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; Configure(Action&lt;TOptions&gt; configureOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__1_System_Action__0___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Configure%60%601(System.Action%7B%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L65">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__1_System_Action__0___0__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure``1(System.Action{`0,``0})">Configure&lt;TDep&gt;(Action&lt;TOptions, TDep&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes a single additional dependency parameter.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__">PostConfigure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; Configure&lt;TDep&gt;(Action&lt;TOptions, TDep&gt; configureOptions)
+    where TDep : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep</span></td>
+        <td><p>The type of a dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__2_System_Action__0___0___1__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Configure%60%602(System.Action%7B%600%2C%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L83">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__2_System_Action__0___0___1__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure``2(System.Action{`0,``0,``1})">Configure&lt;TDep1, TDep2&gt;(Action&lt;TOptions, TDep1, TDep2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes two additional dependency parameters.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__">PostConfigure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; Configure&lt;TDep1, TDep2&gt;(Action&lt;TOptions, TDep1, TDep2&gt; configureOptions)
+    where TDep1 : class where TDep2 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__3_System_Action__0___0___1___2__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Configure%60%603(System.Action%7B%600%2C%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L103">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__3_System_Action__0___0___1___2__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure``3(System.Action{`0,``0,``1,``2})">Configure&lt;TDep1, TDep2, TDep3&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes three additional dependency parameters.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__">PostConfigure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; Configure&lt;TDep1, TDep2, TDep3&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3&gt; configureOptions)
+    where TDep1 : class where TDep2 : class where TDep3 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2, TDep3&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep3</span></td>
+        <td><p>The type of the third dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__4_System_Action__0___0___1___2___3__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Configure%60%604(System.Action%7B%600%2C%60%600%2C%60%601%2C%60%602%2C%60%603%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L133">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__4_System_Action__0___0___1___2___3__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure``4(System.Action{`0,``0,``1,``2,``3})">Configure&lt;TDep1, TDep2, TDep3, TDep4&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes four additional dependency parameters.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__">PostConfigure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; Configure&lt;TDep1, TDep2, TDep3, TDep4&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4&gt; configureOptions)
+    where TDep1 : class where TDep2 : class where TDep3 : class where TDep4 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2, TDep3, TDep4&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep3</span></td>
+        <td><p>The type of the third dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep4</span></td>
+        <td><p>The type of the fourth dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__5_System_Action__0___0___1___2___3___4__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.Configure%60%605(System.Action%7B%600%2C%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L166">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure__5_System_Action__0___0___1___2___3___4__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.Configure``5(System.Action{`0,``0,``1,``2,``3,``4})">Configure&lt;TDep1, TDep2, TDep3, TDep4, TDep5&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4, TDep5&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes five additional dependency parameters.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__">PostConfigure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; Configure&lt;TDep1, TDep2, TDep3, TDep4, TDep5&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4, TDep5&gt; configureOptions)
+    where TDep1 : class where TDep2 : class where TDep3 : class where TDep4 : class where TDep5 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2, TDep3, TDep4, TDep5&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep3</span></td>
+        <td><p>The type of the third dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep4</span></td>
+        <td><p>The type of the fourth dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep5</span></td>
+        <td><p>The type of the fifth dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.PostConfigure(System.Action%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L196">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_System_Action__0__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure(System.Action{`0})">PostConfigure(Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__">Configure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; PostConfigure(Action&lt;TOptions&gt; configureOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__1_System_Action__0___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.PostConfigure%60%601(System.Action%7B%600%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L212">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__1_System_Action__0___0__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure``1(System.Action{`0,``0})">PostConfigure&lt;TDep&gt;(Action&lt;TOptions, TDep&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes a single additional dependency parameter.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__">Configure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; PostConfigure&lt;TDep&gt;(Action&lt;TOptions, TDep&gt; configureOptions)
+    where TDep : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep</span></td>
+        <td><p>The type of a dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__2_System_Action__0___0___1__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.PostConfigure%60%602(System.Action%7B%600%2C%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L230">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__2_System_Action__0___0___1__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure``2(System.Action{`0,``0,``1})">PostConfigure&lt;TDep1, TDep2&gt;(Action&lt;TOptions, TDep1, TDep2&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes two additional dependency parameters.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__">Configure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; PostConfigure&lt;TDep1, TDep2&gt;(Action&lt;TOptions, TDep1, TDep2&gt; configureOptions)
+    where TDep1 : class where TDep2 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__3_System_Action__0___0___1___2__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.PostConfigure%60%603(System.Action%7B%600%2C%60%600%2C%60%601%2C%60%602%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L250">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__3_System_Action__0___0___1___2__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure``3(System.Action{`0,``0,``1,``2})">PostConfigure&lt;TDep1, TDep2, TDep3&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes three additional dependency parameters.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__">Configure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; PostConfigure&lt;TDep1, TDep2, TDep3&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3&gt; configureOptions)
+    where TDep1 : class where TDep2 : class where TDep3 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2, TDep3&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep3</span></td>
+        <td><p>The type of the third dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__4_System_Action__0___0___1___2___3__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.PostConfigure%60%604(System.Action%7B%600%2C%60%600%2C%60%601%2C%60%602%2C%60%603%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L280">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__4_System_Action__0___0___1___2___3__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure``4(System.Action{`0,``0,``1,``2,``3})">PostConfigure&lt;TDep1, TDep2, TDep3, TDep4&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes four additional dependency parameters.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__">Configure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; PostConfigure&lt;TDep1, TDep2, TDep3, TDep4&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4&gt; configureOptions)
+    where TDep1 : class where TDep2 : class where TDep3 : class where TDep4 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2, TDep3, TDep4&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep3</span></td>
+        <td><p>The type of the third dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep4</span></td>
+        <td><p>The type of the fourth dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__5_System_Action__0___0___1___2___3___4__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601.PostConfigure%60%605(System.Action%7B%600%2C%60%600%2C%60%601%2C%60%602%2C%60%603%2C%60%604%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L313">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure_" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_AutofacOptionsBuilder_1_PostConfigure__5_System_Action__0___0___1___2___3___4__" data-uid="FGS.Autofac.Options.AutofacOptionsBuilder`1.PostConfigure``5(System.Action{`0,``0,``1,``2,``3,``4})">PostConfigure&lt;TDep1, TDep2, TDep3, TDep4, TDep5&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4, TDep5&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options, wherein the action takes five additional dependency parameters.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html#FGS_Autofac_Options_AutofacOptionsBuilder_1_Configure_System_Action__0__">Configure(Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AutofacOptionsBuilder&lt;TOptions&gt; PostConfigure&lt;TDep1, TDep2, TDep3, TDep4, TDep5&gt;(Action&lt;TOptions, TDep1, TDep2, TDep3, TDep4, TDep5&gt; configureOptions)
+    where TDep1 : class where TDep2 : class where TDep3 : class where TDep4 : class where TDep5 : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions, TDep1, TDep2, TDep3, TDep4, TDep5&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>Returns an <a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder&lt;TOptions&gt;</a>, so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDep1</span></td>
+        <td><p>The type of the first dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep2</span></td>
+        <td><p>The type of the second dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep3</span></td>
+        <td><p>The type of the third dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep4</span></td>
+        <td><p>The type of the fourth dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDep5</span></td>
+        <td><p>The type of the fifth dependency resolved and passed to <code data-dev-comment-type="paramref" class="paramref">configureOptions</code> when it is executed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FGS.Tests.Support.Extensions.EnumerableExtensions.html#FGS_Tests_Support_Extensions_EnumerableExtensions_Yield__1___0_">EnumerableExtensions.Yield&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_AutofacOptionsBuilder_1.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.AutofacOptionsBuilder%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/AutofacOptionsBuilder.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

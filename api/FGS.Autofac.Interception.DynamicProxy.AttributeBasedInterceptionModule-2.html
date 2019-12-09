@@ -1,0 +1,351 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AttributeBasedInterceptionModule&lt;TAttribute, TInterceptor&gt;
+   | FoxGuard Foundation Libraries </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AttributeBasedInterceptionModule&lt;TAttribute, TInterceptor&gt;
+   | FoxGuard Foundation Libraries ">
+    <meta name="generator" content="docfx 2.48.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2">
+  
+  
+  <h1 id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2" class="text-break">Class AttributeBasedInterceptionModule&lt;TAttribute, TInterceptor&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html">CustomInterceptionModuleBase</a></div>
+    <div class="level2"><span class="xref">AttributeBasedInterceptionModule&lt;TAttribute, TInterceptor&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_AttachToComponentRegistration_IComponentRegistry_IComponentRegistration_">CustomInterceptionModuleBase.AttachToComponentRegistration(IComponentRegistry, IComponentRegistration)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Autofac.Interception.DynamicProxy.html">FGS.Autofac.Interception.DynamicProxy</a></h6>
+  <h6><strong>Assembly</strong>: FGS.Autofac.Interception.DynamicProxy.dll</h6>
+  <h5 id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AttributeBasedInterceptionModule&lt;TAttribute, TInterceptor&gt; : CustomInterceptionModuleBase where TAttribute : Attribute where TInterceptor : IInterceptor</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TAttribute</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TInterceptor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_CreateProxyGenerationHook_System_Type_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule%602.CreateProxyGenerationHook(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Interception.DynamicProxy/AttributeBasedInterceptionModule.cs/#L22">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_CreateProxyGenerationHook_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook*"></a>
+  <h4 id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_CreateProxyGenerationHook_System_Type_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook(System.Type)">CreateProxyGenerationHook(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IProxyGenerationHook CreateProxyGenerationHook(Type originalImplementationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">originalImplementationType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IProxyGenerationHook</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_CreateProxyGenerationHook_System_Type_">CustomInterceptionModuleBase.CreateProxyGenerationHook(Type)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_DescribeInterceptorServices_System_Type_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule%602.DescribeInterceptorServices(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Interception.DynamicProxy/AttributeBasedInterceptionModule.cs/#L34">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_DescribeInterceptorServices_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices*"></a>
+  <h4 id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_DescribeInterceptorServices_System_Type_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices(System.Type)">DescribeInterceptorServices(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override IEnumerable&lt;Service&gt; DescribeInterceptorServices(Type originalImplementationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">originalImplementationType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Service</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_DescribeInterceptorServices_System_Type_">CustomInterceptionModuleBase.DescribeInterceptorServices(Type)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_Load_ContainerBuilder_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule%602.Load(ContainerBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Interception.DynamicProxy/AttributeBasedInterceptionModule.cs/#L27">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_Load_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.Load*"></a>
+  <h4 id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_Load_ContainerBuilder_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.Load(ContainerBuilder)">Load(ContainerBuilder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Load(ContainerBuilder builder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">builder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_ShouldInterceptType_System_Type_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule%602.ShouldInterceptType(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Interception.DynamicProxy/AttributeBasedInterceptionModule.cs/#L24">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_ShouldInterceptType_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType*"></a>
+  <h4 id="FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_ShouldInterceptType_System_Type_" data-uid="FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType(System.Type)">ShouldInterceptType(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ShouldInterceptType(Type originalImplementationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">originalImplementationType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_ShouldInterceptType_System_Type_">CustomInterceptionModuleBase.ShouldInterceptType(Type)</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FGS.Tests.Support.Extensions.EnumerableExtensions.html#FGS_Tests_Support_Extensions_EnumerableExtensions_Yield__1___0_">EnumerableExtensions.Yield&lt;T&gt;(T)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2.md&amp;value=---%0Auid%3A%20FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Interception.DynamicProxy/AttributeBasedInterceptionModule.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

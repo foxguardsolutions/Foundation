@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum Scope
+   | FoxGuard Foundation Libraries </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum Scope
+   | FoxGuard Foundation Libraries ">
+    <meta name="generator" content="docfx 2.48.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FGS.Autofac.DynamicScoping.Abstractions.Scope">
+  
+  
+  <h1 id="FGS_Autofac_DynamicScoping_Abstractions_Scope" data-uid="FGS.Autofac.DynamicScoping.Abstractions.Scope" class="text-break">Enum Scope
+  </h1>
+  <div class="markdown level0 summary"><p>Indicates the lifetime management semantics by which a component will be resolved.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Autofac.DynamicScoping.Abstractions.html">FGS.Autofac.DynamicScoping.Abstractions</a></h6>
+  <h6><strong>Assembly</strong>: FGS.Autofac.DynamicScoping.Abstractions.dll</h6>
+  <h5 id="FGS_Autofac_DynamicScoping_Abstractions_Scope_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public enum Scope</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="FGS_Autofac_DynamicScoping_Abstractions_Scope_PerDependency">PerDependency</td>
+        <td><p>Configure the component so that every dependent component or call to Resolve()
+gets a new, unique instance (default).</p>
+</td>
+      </tr>
+      <tr>
+        <td id="FGS_Autofac_DynamicScoping_Abstractions_Scope_PerLifetimeScope">PerLifetimeScope</td>
+        <td><p>Configure the component so that every dependent component or call to Resolve()
+within a single ILifetimeScope gets the same, shared instance. Dependent components in
+different lifetime scopes will get different instances.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="FGS_Autofac_DynamicScoping_Abstractions_Scope_Singleton">Singleton</td>
+        <td><p>Configure the component so that every dependent component or call to Resolve()
+gets the same, shared instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="FGS.Tests.Support.Extensions.EnumerableExtensions.html#FGS_Tests_Support_Extensions_EnumerableExtensions_Yield__1___0_">EnumerableExtensions.Yield&lt;Scope&gt;()</a>
+  </div>
+  <div>
+      <a class="xref" href="FGS.ComponentModel.DataAnnotations.Extensions.EnumExtensions.html#FGS_ComponentModel_DataAnnotations_Extensions_EnumExtensions_GetDisplayName_System_Enum_">EnumExtensions.GetDisplayName()</a>
+  </div>
+  <div>
+      <a class="xref" href="FGS.ComponentModel.DataAnnotations.Extensions.EnumExtensions.html#FGS_ComponentModel_DataAnnotations_Extensions_EnumExtensions_GetDescription_System_Enum_">EnumExtensions.GetDescription()</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_DynamicScoping_Abstractions_Scope.md&amp;value=---%0Auid%3A%20FGS.Autofac.DynamicScoping.Abstractions.Scope%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.DynamicScoping.Abstractions/Scope.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,994 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class OptionsContainerBuilderExtensions
+   | FoxGuard Foundation Libraries </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class OptionsContainerBuilderExtensions
+   | FoxGuard Foundation Libraries ">
+    <meta name="generator" content="docfx 2.48.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions">
+  
+  
+  <h1 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions" class="text-break">Class OptionsContainerBuilderExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for adding Options services to the Autofac-based DI container.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">OptionsContainerBuilderExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Autofac.Options.html">FGS.Autofac.Options</a></h6>
+  <h6><strong>Assembly</strong>: FGS.Autofac.Options.dll</h6>
+  <h5 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class OptionsContainerBuilderExtensions</code></pre>
+  </div>
+  <h5 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Taken and modified from: <a href="https://github.com/aspnet/Extensions/blob/e311a440d51cddd8f645160d9e27a574c77955a1/src/Options/Options/src/OptionsServiceCollectionExtensions.cs">https://github.com/aspnet/Extensions/blob/e311a440d51cddd8f645160d9e27a574c77955a1/src/Options/Options/src/OptionsServiceCollectionExtensions.cs</a>.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions_ContainerBuilder_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions(ContainerBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L26">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions_ContainerBuilder_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions(ContainerBuilder)">AddOptions(ContainerBuilder)</h4>
+  <div class="markdown level1 summary"><p>Adds services required for using Options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder AddOptions(this ContainerBuilder containerBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions__1_ContainerBuilder_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions%60%601(ContainerBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L206">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions__1_ContainerBuilder_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions``1(ContainerBuilder)">AddOptions&lt;TOptions&gt;(ContainerBuilder)</h4>
+  <div class="markdown level1 summary"><p>Gets an Options builder that forwards Configure calls for the same <code data-dev-comment-type="typeparamref" class="typeparamref">TOptions</code> to the underlying service collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AutofacOptionsBuilder&lt;TOptions&gt; AddOptions&lt;TOptions&gt;(this ContainerBuilder containerBuilder)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>The <see cref="!:OptionsBuilder&lt;TOptions>"></see> so that configure calls can be chained in it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions__1_ContainerBuilder_System_String_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions%60%601(ContainerBuilder%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L217">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_AddOptions__1_ContainerBuilder_System_String_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.AddOptions``1(ContainerBuilder,System.String)">AddOptions&lt;TOptions&gt;(ContainerBuilder, String)</h4>
+  <div class="markdown level1 summary"><p>Gets an Options builder that forwards Configure calls for the same named <code data-dev-comment-type="typeparamref" class="typeparamref">TOptions</code> to the underlying service collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AutofacOptionsBuilder&lt;TOptions&gt; AddOptions&lt;TOptions&gt;(this ContainerBuilder containerBuilder, string name)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the Options instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FGS.Autofac.Options.AutofacOptionsBuilder-1.html">AutofacOptionsBuilder</a>&lt;TOptions&gt;</td>
+        <td><p>The <see cref="!:OptionsBuilder&lt;TOptions>"></see> so that configure calls can be chained in it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_Action___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.Configure%60%601(ContainerBuilder%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L50">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_Action___0__" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.Configure``1(ContainerBuilder,System.Action{``0})">Configure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.OptionsContainerBuilderExtensions.html#FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure__1_ContainerBuilder_System_Action___0__">PostConfigure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder Configure&lt;TOptions&gt;(this ContainerBuilder containerBuilder, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_String_System_Action___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.Configure%60%601(ContainerBuilder%2CSystem.String%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L63">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.Configure*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_String_System_Action___0__" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.Configure``1(ContainerBuilder,System.String,System.Action{``0})">Configure&lt;TOptions&gt;(ContainerBuilder, String, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options.
+Note: These are run before all <a class="xref" href="FGS.Autofac.Options.OptionsContainerBuilderExtensions.html#FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure__1_ContainerBuilder_System_Action___0__">PostConfigure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder Configure&lt;TOptions&gt;(this ContainerBuilder containerBuilder, string name, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the Options instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureAll__1_ContainerBuilder_System_Action___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureAll%60%601(ContainerBuilder%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L82">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureAll_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureAll*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureAll__1_ContainerBuilder_System_Action___0__" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureAll``1(ContainerBuilder,System.Action{``0})">ConfigureAll&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure all instances of a particular type of Options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder ConfigureAll&lt;TOptions&gt;(this ContainerBuilder containerBuilder, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_ContainerBuilder_System_Object_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions(ContainerBuilder%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L187">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_ContainerBuilder_System_Object_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions(ContainerBuilder,System.Object)">ConfigureOptions(ContainerBuilder, Object)</h4>
+  <div class="markdown level1 summary"><p>Registers an object that will have all of its I[Post]ConfigureOptions registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder ConfigureOptions(this ContainerBuilder containerBuilder, object configureInstance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">configureInstance</span></td>
+        <td><p>The instance that will configure Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_ContainerBuilder_System_Type_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions(ContainerBuilder%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L168">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_ContainerBuilder_System_Type_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions(ContainerBuilder,System.Type)">ConfigureOptions(ContainerBuilder, Type)</h4>
+  <div class="markdown level1 summary"><p>Registers a type that will have all of its I[Post]ConfigureOptions registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder ConfigureOptions(this ContainerBuilder containerBuilder, Type configureType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">configureType</span></td>
+        <td><p>The type that will configure Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions__1_ContainerBuilder_.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions%60%601(ContainerBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L137">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_ConfigureOptions__1_ContainerBuilder_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.ConfigureOptions``1(ContainerBuilder)">ConfigureOptions&lt;TConfigureOptions&gt;(ContainerBuilder)</h4>
+  <div class="markdown level1 summary"><p>Registers a type that will have all of its I[Post]ConfigureOptions registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder ConfigureOptions&lt;TConfigureOptions&gt;(this ContainerBuilder containerBuilder)
+    where TConfigureOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfigureOptions</span></td>
+        <td><p>The type that will configure Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure__1_ContainerBuilder_System_Action___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigure%60%601(ContainerBuilder%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L94">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure__1_ContainerBuilder_System_Action___0__" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigure``1(ContainerBuilder,System.Action{``0})">PostConfigure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to initialize a particular type of Options.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.OptionsContainerBuilderExtensions.html#FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_Action___0__">Configure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder PostConfigure&lt;TOptions&gt;(this ContainerBuilder containerBuilder, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure__1_ContainerBuilder_System_String_System_Action___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigure%60%601(ContainerBuilder%2CSystem.String%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L107">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigure*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigure__1_ContainerBuilder_System_String_System_Action___0__" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigure``1(ContainerBuilder,System.String,System.Action{``0})">PostConfigure&lt;TOptions&gt;(ContainerBuilder, String, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to configure a particular type of Options.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.OptionsContainerBuilderExtensions.html#FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_Action___0__">Configure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder PostConfigure&lt;TOptions&gt;(this ContainerBuilder containerBuilder, string name, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the Options instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigureAll__1_ContainerBuilder_System_Action___0__.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigureAll%60%601(ContainerBuilder%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L127">View Source</a>
+  </span>
+  <a id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigureAll_" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigureAll*"></a>
+  <h4 id="FGS_Autofac_Options_OptionsContainerBuilderExtensions_PostConfigureAll__1_ContainerBuilder_System_Action___0__" data-uid="FGS.Autofac.Options.OptionsContainerBuilderExtensions.PostConfigureAll``1(ContainerBuilder,System.Action{``0})">PostConfigureAll&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers an action used to post configure all instances of a particular type of Options.
+Note: These are run after all <a class="xref" href="FGS.Autofac.Options.OptionsContainerBuilderExtensions.html#FGS_Autofac_Options_OptionsContainerBuilderExtensions_Configure__1_ContainerBuilder_System_Action___0__">Configure&lt;TOptions&gt;(ContainerBuilder, Action&lt;TOptions&gt;)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContainerBuilder PostConfigureAll&lt;TOptions&gt;(this ContainerBuilder containerBuilder, Action&lt;TOptions&gt; configureOptions)
+    where TOptions : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><span class="parametername">containerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> to add the services to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td><p>The action used to configure the Options.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ContainerBuilder</span></td>
+        <td><p>The <see cref="!:ContainerBuilder"></see> so that additional calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td><p>The Options type to be configured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/apiSpec/new?filename=FGS_Autofac_Options_OptionsContainerBuilderExtensions.md&amp;value=---%0Auid%3A%20FGS.Autofac.Options.OptionsContainerBuilderExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/bdfbf940aa281c1cf15aaf2ad40617a6652f5398/src/FGS.Autofac.Options/OptionsContainerBuilderExtensions.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

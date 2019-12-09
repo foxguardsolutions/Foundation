@@ -27,3 +27,5 @@ jobs:
       run: dotnet test ${{ env.sln_path }} --configuration Release
     - name: dotnet pack ${{ env.sln_path }}
       run: dotnet pack ${{ env.sln_path }} --configuration Release
+    - name: dotnet build docs
+      run: dotnet build docs

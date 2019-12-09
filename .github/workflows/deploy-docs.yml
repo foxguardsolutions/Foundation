@@ -1,0 +1,29 @@
+name: Deploy Docs
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-docs:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - uses: actions/checkout@v1
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.0.100
+    - name: dotnet build docs
+      run: dotnet build docs
+    - name: Deploy
+      uses: docker://peaceiris/gh-pages:v2.5.1
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./docs/_site
+      with:
+        emptyCommits: false

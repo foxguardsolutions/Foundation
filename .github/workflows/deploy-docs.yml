@@ -8,7 +8,7 @@ on:
 jobs:
   deploy-docs:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
 

@@ -4,8 +4,7 @@
       "src": [
         {
           "files": [
-            "**.csproj",
-            "**.sln"
+            "src/**.csproj"
           ],
           "exclude": [
             "Documentation/**"

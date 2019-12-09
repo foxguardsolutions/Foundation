@@ -14,8 +14,8 @@ All changes to `master` are continously delivered to the public NuGet feed under
 
 ## 📄 How to Use Them
 
-For now, the best documentation of the libraries are the published NuGet packages themselves. For each package, the package descriptions themselves are meant to be helpful, and the public APIs they expose are meant to be idiomatic for each respective problem-space.
+The APIs that our packages provide are meant to be idiomatic for their respective problem-spaces, and have [structural documentation](https://foxguardsolutions.github.io/Foundation/api/) meant to serve as guidance for such. If this isn't enough to get you going, file an issue for your question and we will try to help you if we can.
 
 ## 💡 Contributing
 
-If you have something to fix or add - be it code, documentation, or just a question - please feel free to file constructive issues or pull requests, as appropriate.
+If you have something to fix or add - be it code, documentation, a suggestion, or just a question - please feel free to file constructive issues or pull requests, as appropriate.

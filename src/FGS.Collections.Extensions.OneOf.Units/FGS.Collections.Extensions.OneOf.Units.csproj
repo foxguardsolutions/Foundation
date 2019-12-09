@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
     <Description>
-      Provides abstractions used as part of adding pagination support to LINQ.
+      Provides collection-query-related unit types to be used with discriminated unions.
     </Description>
-    <PackageTags>collections;linq;pagination;paging;pager;paged</PackageTags>
+    <PackageTags>OneOf;NoElements;MoreThanOneElement</PackageTags>
 
     <LangVersion>8.0</LangVersion>
     <Nullable>enable</Nullable>

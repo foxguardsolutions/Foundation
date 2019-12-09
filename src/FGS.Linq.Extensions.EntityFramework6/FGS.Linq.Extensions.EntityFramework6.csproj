@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);EF6</DefineConstants>
+
+    <Description>
+      Provides extension methods to materialize query results  - essentially a white-labelling of EF's `XAsync()` extension methods, albeit with names that explicitly convey the concept of materialization as the intent.
+
+      This package is for Entity Framework 6.x. For an identical API on Entity Framework Core, see `FGS.Linq.Extensions.EntityFrameworkCore`.
+    </Description>
+    <PackageTags>LINQ;EntityFramework;EF;EntityFramework6;EF6;materialize</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+    <PackageReference Include="EntityFramework" Version="[6.0.0, 6.3.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+    <PackageReference Include="EntityFramework" Version="[6.3.0, 6.5.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="EntityFramework" Version="[6.3.0, 6.5.0)" />
+  </ItemGroup>
+  
+  <Import Project="..\FGS.Linq.Extensions.EntityFramework.Shared\FGS.Linq.Extensions.EntityFramework.Shared.projitems" Label="Shared" />
+
+</Project>

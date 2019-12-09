@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -8,7 +8,10 @@
     <Description>
       Provides the ability to manipulate LINQ expression trees.
     </Description>
-    <PackageTags>LINQ;lambda;expressions;ParameterReplacer</PackageTags>
+    <PackageTags>LINQ;lambda;expressions;ParameterReplacer;CreateScalarQuery</PackageTags>
+
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
 </Project>

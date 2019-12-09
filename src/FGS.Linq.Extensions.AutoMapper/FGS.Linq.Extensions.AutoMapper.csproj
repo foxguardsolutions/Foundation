@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);PROJECTTO_IS_MEMBER</DefineConstants>
+
+    <Description>
+      Provides an extension method to project queries from one type to queries of another, using AutoMapper - essentially a white-labelling of AutoMapper's `ProjectTo` construct, albeit stable across AutoMapper versions.
+
+      This package is for AutoMapper versions 8-9. For an identical API on AutoMapper versions 6-7, see `FGS.Linq.Extensions.AutoMapper7`.
+    </Description>
+    <PackageTags>LINQ;lambda;expressions;AutoMapper;ProjectTo;Map</PackageTags>
+
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="[8.0.0, 9.0.0]" />
+  </ItemGroup>
+
+  <Import Project="..\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems" Label="Shared" />
+
+</Project>

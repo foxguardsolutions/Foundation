@@ -1,0 +1,84 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+
+- uid: OneOf.OneOf`1
+  commentId: T:OneOf.OneOf`1
+  fullName: OneOf.OneOf<T0>
+  name: OneOf<T0>
+  nameWithType: OneOf<T0>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`2
+  commentId: T:OneOf.OneOf`2
+  fullName: OneOf.OneOf<T0,T1>
+  name: OneOf<T0,T1>
+  nameWithType: OneOf<T0,T1>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`3
+  commentId: T:OneOf.OneOf`3
+  fullName: OneOf.OneOf<T0,T1,T2>
+  name: OneOf<T0,T1,T2>
+  nameWithType: OneOf<T0,T1,T2>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`4
+  commentId: T:OneOf.OneOf`4
+  fullName: OneOf.OneOf<T0,T1,T2,T3>
+  name: OneOf<T0,T1,T2,T3>
+  nameWithType: OneOf<T0,T1,T2,T3>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`5
+  commentId: T:OneOf.OneOf`5
+  fullName: OneOf.OneOf<T0,T1,T2,T3,T4>
+  name: OneOf<T0,T1,T2,T3,T4>
+  nameWithType: OneOf<T0,T1,T2,T3,T4>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`6
+  commentId: T:OneOf.OneOf`6
+  fullName: OneOf.OneOf<T0,T1,T2,T3,T4,T5>
+  name: OneOf<T0,T1,T2,T3,T4,T5>
+  nameWithType: OneOf<T0,T1,T2,T3,T4,T5>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`7
+  commentId: T:OneOf.OneOf`7
+  fullName: OneOf.OneOf<T0,T1,T2,T3,T4,T5,T6>
+  name: OneOf<T0,T1,T2,T3,T4,T5,T6>
+  nameWithType: OneOf<T0,T1,T2,T3,T4,T5,T6>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`8
+  commentId: T:OneOf.OneOf`8
+  fullName: OneOf.OneOf<T0,T1,T2,T3,T4,T5,T6,T7>
+  name: OneOf<T0,T1,T2,T3,T4,T5,T6,T7>
+  nameWithType: OneOf<T0,T1,T2,T3,T4,T5,T6,T7>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>
+
+- uid: OneOf.OneOf`9
+  commentId: T:OneOf.OneOf`9
+  fullName: OneOf.OneOf<T0,T1,T2,T3,T4,T5,T6,T7,T8>
+  name: OneOf<T0,T1,T2,T3,T4,T5,T6,T7,T8>
+  nameWithType: OneOf<T0,T1,T2,T3,T4,T5,T6,T7,T8>
+  href: https://github.com/mcintyre321/OneOf
+  summary: >
+    <p>An F#-style discriminated union, which holds a single value.</p>

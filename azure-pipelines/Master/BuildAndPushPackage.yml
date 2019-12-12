@@ -70,6 +70,7 @@ parameters:
     67: FGS.Collections.Extensions.OneOf.Units
     68: FGS.Linq.Extensions.OneOf.EntityFramework6
     69: FGS.Linq.Extensions.OneOf.EntityFrameworkCore
+    70: FGS.OneOf.Extensions
 
 stages:
 

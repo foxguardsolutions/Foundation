@@ -75,7 +75,8 @@
     "xref": [
       "./thirdPartyXref/autofac.yml",
       "./thirdPartyXref/moq.yml",
-      "./thirdPartyXref/oneof.yml"
+      "./thirdPartyXref/oneof.yml",
+      "./thirdPartyXref/rx.yml"
     ]
   }
 }

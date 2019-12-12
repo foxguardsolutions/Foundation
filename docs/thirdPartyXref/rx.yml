@@ -1,0 +1,21 @@
+### YamlMime:XRefMap
+sorted: false
+references:
+
+- uid: System.Reactive.Timestamped`1
+  commentId: T:System.Reactive.Timestamped`1
+  fullName: System.Reactive.Timestamped<T>
+  name: Timestamped<T>
+  nameWithType: Timestamped<T>
+  href: http://www.nudoq.org/#!/Packages/Rx-Linq/System.Reactive.Linq/Timestamped(T)
+  summary: >
+    <p>Represents value with a timestamp on it. The timestamp typically represents the time the value was received, using an IScheduler's clock to obtain the current time.</p>
+
+- uid: System.Reactive.Concurrency.IScheduler
+  commentId: T:System.Reactive.Concurrency.IScheduler
+  fullName: System.Reactive.Concurrency.IScheduler
+  name: IScheduler
+  nameWithType: IScheduler
+  href: http://www.nudoq.org/#!/Packages/Rx-Interfaces/System.Reactive.Interfaces/IScheduler
+  summary: >
+    <p>Represents an object that schedules units of work.</p>

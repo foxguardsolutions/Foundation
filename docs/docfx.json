@@ -73,7 +73,8 @@
       "https://xref.docs.microsoft.com/query?uid={uid}"
     ],
     "xref": [
-      "./thirdPartyXref/autofac.yml"
+      "./thirdPartyXref/autofac.yml",
+      "./thirdPartyXref/moq.yml"
     ]
   }
 }

@@ -1,0 +1,198 @@
+### YamlMime:XRefMap
+sorted: false
+references:
+
+- uid: Autofac
+  commentId: N:Autofac
+  fullName: Autofac
+  href: https://autofac.org/apidoc/html/8B9CDE3D.htm
+
+- uid: Autofac.ContainerBuilder
+  commentId: M:Autofac.ContainerBuilder
+  fullName: Autofac.ContainerBuilder
+  name: ContainerBuilder
+  nameWithType: ContainerBuilder
+  href: https://autofac.org/apidoc/html/717248.htm
+  summary: >
+    <p>Used to build an IContainer from component registrations.</p>
+
+- uid: Autofac.Builder
+  commentId: N:Autofac.Builder
+  fullName: Autofac.Builder
+  href: https://autofac.org/apidoc/html/4CEBBC9B.htm
+
+- uid: Autofac.Builder.IRegistrationBuilder`3
+  commentId: T:Autofac.Builder.IRegistrationBuilder`3
+  fullName: Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>
+  name: IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>
+  nameWithType: IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>
+  href: https://autofac.org/apidoc/html/AD021D47.htm
+  summary: >
+    <p>Data structure used to construct registrations.</p>
+
+- uid: Autofac.Builder.IRegistrationBuilder`3.InstancePerDependency
+  commentId: M:Autofac.Builder.IRegistrationBuilder`3.InstancePerDependency
+  fullName: Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>.InstancePerDependency
+  name: InstancePerDependency
+  nameWithType: IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>.InstancePerDependency
+  href: https://autofac.org/apidoc/html/B7A3F094.htm
+  summary: >
+    <p>Configure the component so that every dependent component or call to Resolve() gets a new, unique instance (default).</p>
+
+- uid: Autofac.Builder.IRegistrationBuilder`3.InstancePerLifetimeScope
+  commentId: M:Autofac.Builder.IRegistrationBuilder`3.InstancePerLifetimeScope
+  fullName: Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>.InstancePerLifetimeScope
+  name: InstancePerLifetimeScope
+  nameWithType: IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>.InstancePerLifetimeScope
+  href: https://autofac.org/apidoc/html/8804210E.htm
+  summary: >
+    <p>Configure the component so that every dependent component or call to Resolve() within a single ILifetimeScope gets the same, shared instance. Dependent components in different lifetime scopes will get different instances.</p>
+
+- uid: Autofac.Builder.IRegistrationBuilder`3.SingleInstance
+  commentId: M:Autofac.Builder.IRegistrationBuilder`3.SingleInstance
+  fullName: Autofac.Builder.IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>.SingleInstance
+  name: SingleInstance
+  nameWithType: IRegistrationBuilder<TLimit, TActivatorData, TRegistrationStyle>.SingleInstance
+  href: https://autofac.org/apidoc/html/49B17EDB.htm
+  summary: >
+    <p>Configure the component so that every dependent component or call to Resolve() gets the same, shared instance.</p>
+
+- uid: Autofac.Core
+  commentId: N:Autofac.Core
+  fullName: Autofac.Core
+  href: https://autofac.org/apidoc/html/D890DF6.htm
+
+- uid: Autofac.Core.IComponentRegistration
+  commentId: T:Autofac.Core.IComponentRegistration
+  fullName: Autofac.Core.IComponentRegistration
+  name: IComponentRegistration
+  nameWithType: IComponentRegistration
+  href: https://autofac.org/apidoc/html/39C18106.htm
+  summary: >
+    <p>Describes a logical component within the container.</p>
+
+- uid: Autofac.Core.IComponentRegistry
+  commentId: T:Autofac.Core.IComponentRegistry
+  fullName: Autofac.Core.IComponentRegistry
+  name: IComponentRegistry
+  nameWithType: IComponentRegistry
+  href: https://autofac.org/apidoc/html/D91152CD.htm
+  summary: >
+    <p>Provides component registrations according to the services they provide.</p>
+
+- uid: Autofac.Core.IModule
+  commentId: T:Autofac.Core.IModule
+  fullName: Autofac.Core.IModule
+  name: IModule
+  nameWithType: IModule
+  href: https://autofac.org/apidoc/html/11C538A3.htm
+  summary: >
+    <p>Represents a set of components and related functionality packaged together.</p>
+
+- uid: Autofac.Core.IModule.Configure(Autofac.Core.IComponentRegistry)
+  commentId: M:Autofac.Core.IModule.Configure(Autofac.Core.IComponentRegistry)
+  fullName: Autofac.Core.IModule.Configure(Autofac.Core.IComponentRegistry)
+  name: Configure(Autofac.Core.IComponentRegistry)
+  nameWithType: IModule.Configure(Autofac.Core.IComponentRegistry)
+  href: https://autofac.org/apidoc/html/6FD76F8B.htm
+  summary: >
+    <p>Apply the module to the component registry.</p>
+
+- uid: Autofac.Core.Service
+  commentId: T:Autofac.Core.Service
+  fullName: Autofac.Core.Service
+  name: Service
+  nameWithType: Service
+  href: https://autofac.org/apidoc/html/898E02E6.htm
+  summary: >
+    <p>Services are the lookup keys used to locate component instances.</p>
+
+- uid: Autofac.Features.Indexed.IIndex`2
+  commentId: T:Autofac.Features.Indexed.IIndex`2
+  fullName: Autofac.Features.Indexed.IIndex<TKey,TValue>
+  name: IIndex<TKey,TValue>
+  nameWithType: IIndex<TKey,TValue>
+  href: https://autofac.org/apidoc/html/8E58634B.htm
+  summary: >
+    <p>Provides components by lookup operations via an index (key) type.</p>
+
+- uid: Autofac.Module
+  commentId: T:Autofac.Module
+  fullName: Autofac.Module
+  name: Module
+  nameWithType: Module
+  href: https://autofac.org/apidoc/html/2A2437.htm
+  summary: >
+    <p>Base class for user-defined modules.</p>
+
+- uid: Autofac.Module.Load(Autofac.ContainerBuilder)
+  commentId: M:Autofac.Module.Load(Autofac.ContainerBuilder)
+  fullName: Autofac.Module.Load(Autofac.ContainerBuilder)
+  name: Load(Autofac.ContainerBuilder)
+  nameWithType: Module.Load(Autofac.ContainerBuilder)
+  href: https://autofac.org/apidoc/html/A4220791.htm
+  summary: >
+    <p>Override to add registrations to the container.</p>
+
+- uid: Autofac.Module.ThisAssembly
+  commentId: F:Autofac.Module.ThisAssembly
+  fullName: Autofac.Module.ThisAssembly
+  name: ThisAssembly
+  nameWithType: Module.ThisAssembly
+  href: https://autofac.org/apidoc/html/E657B0BB.htm
+  summary: >
+    <p>Gets the assembly in which the concrete module type is located. To avoid bugs whereby deriving from a module will change the target assembly, this property can only be used by modules that inherit directly from Module.</p>
+
+- uid: Autofac.Module.AttachToComponentRegistration(Autofac.Core.IComponentRegistry,Autofac.Core.IComponentRegistration)
+  commentId: M:Autofac.Module.AttachToComponentRegistration(Autofac.Core.IComponentRegistry,Autofac.Core.IComponentRegistration)
+  fullName: Autofac.Module.AttachToComponentRegistration(Autofac.Core.IComponentRegistry,Autofac.Core.IComponentRegistration)
+  name: AttachToComponentRegistration(Autofac.Core.IComponentRegistry,Autofac.Core.IComponentRegistration)
+  nameWithType: Module.AttachToComponentRegistration(Autofac.Core.IComponentRegistry,Autofac.Core.IComponentRegistration)
+  href: https://autofac.org/apidoc/html/DB09DDBB.htm
+  summary: >
+    <p>Override to attach module-specific functionality to a component registration.</p>
+
+- uid: Autofac.Module.AttachToRegistrationSource(Autofac.Core.IComponentRegistry,Autofac.Core.IRegistrationSource)
+  commentId: M:Autofac.Module.AttachToRegistrationSource(Autofac.Core.IComponentRegistry,Autofac.Core.IRegistrationSource)
+  fullName: Autofac.Module.AttachToRegistrationSource(Autofac.Core.IComponentRegistry,Autofac.Core.IRegistrationSource)
+  name: AttachToRegistrationSource(Autofac.Core.IComponentRegistry,Autofac.Core.IRegistrationSource)
+  nameWithType: Module.AttachToRegistrationSource(Autofac.Core.IComponentRegistry,Autofac.Core.IRegistrationSource)
+  href: https://autofac.org/apidoc/html/EA1B28AE.htm
+  summary: >
+    <p>Override to perform module-specific processing on a registration source.</p>
+
+- uid: Autofac.Module.Configure(Autofac.Core.IComponentRegistry)
+  commentId: M:Autofac.Module.Configure(Autofac.Core.IComponentRegistry)
+  fullName: Autofac.Module.Configure(Autofac.Core.IComponentRegistry)
+  name: Configure(Autofac.Core.IComponentRegistry)
+  nameWithType: Module.Configure(Autofac.Core.IComponentRegistry)
+  href: https://autofac.org/apidoc/html/11C538A3.htm
+  summary: >
+    <p>Apply the module to the component registry.</p>
+
+- uid: Autofac.IComponentContext
+  commentId: T:Autofac.IComponentContext
+  fullName: Autofac.IComponentContext
+  name: IComponentContext
+  nameWithType: IComponentContext
+  href: https://autofac.org/apidoc/html/D637B54C.htm
+  summary: >
+    <p>The context in which a service can be accessed or a component's dependencies resolved. Disposal of a context will dispose any owned components.</p>
+
+- uid: Autofac.Builder.SimpleActivatorData
+  commentId: T:Autofac.Builder.SimpleActivatorData
+  fullName: Autofac.Builder.SimpleActivatorData
+  name: SimpleActivatorData
+  nameWithType: SimpleActivatorData
+  href: https://autofac.org/apidoc/html/635A312A.htm
+  summary: >
+    <p>An activator builder with no parameters.</p>
+
+- uid: Autofac.Builder.SingleRegistrationStyle
+  commentId: T:Autofac.Builder.SingleRegistrationStyle
+  fullName: Autofac.Builder.SingleRegistrationStyle
+  name: SingleRegistrationStyle
+  nameWithType: SingleRegistrationStyle
+  href: https://autofac.org/apidoc/html/21851568.htm
+  summary: >
+    <p>Registration style for individual components.</p>

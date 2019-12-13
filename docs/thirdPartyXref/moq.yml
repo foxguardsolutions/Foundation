@@ -1,0 +1,12 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+
+- uid: Moq.Mock`1
+  commentId: T:Moq.Mock`1
+  fullName: Moq.Mock<T>
+  name: Mock<T>
+  nameWithType: Moq.Mock<T>
+  href: http://www.nudoq.org/#!/Packages/Moq/Moq/Mock(T)
+  summary: >
+    <p>Provides a mock implementation of T.</p>

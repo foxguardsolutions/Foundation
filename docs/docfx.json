@@ -68,6 +68,15 @@
     "noLangKeyword": false,
     "keepFileLink": false,
     "cleanupCacheHistory": false,
-    "disableGitFeatures": false
+    "disableGitFeatures": false,
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
+    "xref": [
+      "./thirdPartyXref/autofac.yml",
+      "./thirdPartyXref/moq.yml",
+      "./thirdPartyXref/oneof.yml",
+      "./thirdPartyXref/rx.yml"
+    ]
   }
 }

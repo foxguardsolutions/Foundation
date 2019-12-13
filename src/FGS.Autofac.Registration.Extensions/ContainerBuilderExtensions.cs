@@ -73,7 +73,7 @@ namespace FGS.Autofac.Registration.Extensions
         /// <typeparam name="TKey">The type of keys in the index being wrapped.</typeparam>
         /// <typeparam name="TService">The type of services (values) in the index being wrapped.</typeparam>
         /// <param name="builder">The <see cref="ContainerBuilder"/> to add registrations to.</param>
-        /// <returns>The <see cref="IRegistrationBuilder{Func{TKey, TService}, SimpleActivatorData, SingleRegistrationStyle}"/>, so that additional registration calls can be chained.</returns>
+        /// <returns>The <see cref="IRegistrationBuilder{TLimit, TActivationData, TRegistrationStyle}"/>, so that additional registration calls can be chained.</returns>
         public static IRegistrationBuilder<Func<TKey, TService>, SimpleActivatorData, SingleRegistrationStyle> RegisterFactoryFromIndexLookup<TKey, TService>(this ContainerBuilder builder)
         {
             return builder.Register(CreateFactoryFromIndexLookup<TKey, TService>);

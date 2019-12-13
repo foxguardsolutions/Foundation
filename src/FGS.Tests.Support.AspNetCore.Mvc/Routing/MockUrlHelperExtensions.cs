@@ -22,7 +22,7 @@ namespace FGS.Tests.Support.AspNetCore.Mvc.Routing
         /// </summary>
         /// <param name="mockUrlHelper">The mock to add the invocation setup to.</param>
         /// <param name="routeName">The name of the route that invocations must match.</param>
-        /// <returns>Returns an <see cref="ISetup{IUrlHelper, string}"/> so that additional configuration calls can be chained.</returns>
+        /// <returns>Returns an <see cref="ISetup{TMock,TResult}"/> so that additional configuration calls can be chained.</returns>
         public static ISetup<IUrlHelper, string> SetupRouteUrl(this Mock<IUrlHelper> mockUrlHelper, string routeName)
         {
             var urlRouteContextPredicateExpression = UrlRouteContextPredicateLambdaExpressionFactory.Create(routeName);
@@ -37,7 +37,7 @@ namespace FGS.Tests.Support.AspNetCore.Mvc.Routing
         /// <param name="mockUrlHelper">The mock to add the invocation setup to.</param>
         /// <param name="routeName">The name of the route that invocations must match.</param>
         /// <param name="routeValues">The route values that invocations must match.</param>
-        /// <returns>Returns an <see cref="ISetup{IUrlHelper, string}"/> so that additional configuration calls can be chained.</returns>
+        /// <returns>Returns an <see cref="ISetup{TMock,TResult}"/> so that additional configuration calls can be chained.</returns>
         public static ISetup<IUrlHelper, string> SetupRouteUrl<TRouteValues>(this Mock<IUrlHelper> mockUrlHelper, string routeName, TRouteValues routeValues)
         {
             var urlRouteContextPredicateExpression = UrlRouteContextPredicateLambdaExpressionFactory.Create(routeName, routeValues);

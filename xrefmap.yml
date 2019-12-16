@@ -4475,6 +4475,145 @@ references:
   fullName.vb: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate(Of T)(System.Linq.IQueryable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   nameWithType: PaginationQueryableExtensions.Paginate<T>(IQueryable<T>, PaginationSpecification)
   nameWithType.vb: PaginationQueryableExtensions.Paginate(Of T)(IQueryable(Of T), PaginationSpecification)
+- uid: FGS.OneOf.Extensions
+  name: FGS.OneOf.Extensions
+  href: api/FGS.OneOf.Extensions.html
+  commentId: N:FGS.OneOf.Extensions
+  fullName: FGS.OneOf.Extensions
+  nameWithType: FGS.OneOf.Extensions
+- uid: FGS.OneOf.Extensions.OneOfExtensions
+  name: OneOfExtensions
+  href: api/FGS.OneOf.Extensions.OneOfExtensions.html
+  commentId: T:FGS.OneOf.Extensions.OneOfExtensions
+  fullName: FGS.OneOf.Extensions.OneOfExtensions
+  nameWithType: OneOfExtensions
+- uid: FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith*
+  name: ContinueOnSuccessWith
+  href: api/FGS.OneOf.Extensions.OneOfExtensions.html#FGS_OneOf_Extensions_OneOfExtensions_ContinueOnSuccessWith_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith
+  nameWithType: OneOfExtensions.ContinueOnSuccessWith
+- uid: FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith``3(FGS.OneOf{``0,``1},System.Func{``0,FGS.OneOf{``2,``1}})
+  name: ContinueOnSuccessWith<TSuccessOriginal, TError, TSuccessNew>(OneOf<TSuccessOriginal, TError>, Func<TSuccessOriginal, OneOf<TSuccessNew, TError>>)
+  href: api/FGS.OneOf.Extensions.OneOfExtensions.html#FGS_OneOf_Extensions_OneOfExtensions_ContinueOnSuccessWith__3_FGS_OneOf___0___1__System_Func___0_FGS_OneOf___2___1___
+  commentId: M:FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith``3(FGS.OneOf{``0,``1},System.Func{``0,FGS.OneOf{``2,``1}})
+  name.vb: ContinueOnSuccessWith(Of TSuccessOriginal, TError, TSuccessNew)(OneOf(Of TSuccessOriginal, TError), Func(Of TSuccessOriginal, OneOf(Of TSuccessNew, TError)))
+  fullName: FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith<TSuccessOriginal, TError, TSuccessNew>(FGS.OneOf<TSuccessOriginal, TError>, System.Func<TSuccessOriginal, FGS.OneOf<TSuccessNew, TError>>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfExtensions.ContinueOnSuccessWith(Of TSuccessOriginal, TError, TSuccessNew)(FGS.OneOf(Of TSuccessOriginal, TError), System.Func(Of TSuccessOriginal, FGS.OneOf(Of TSuccessNew, TError)))
+  nameWithType: OneOfExtensions.ContinueOnSuccessWith<TSuccessOriginal, TError, TSuccessNew>(OneOf<TSuccessOriginal, TError>, Func<TSuccessOriginal, OneOf<TSuccessNew, TError>>)
+  nameWithType.vb: OneOfExtensions.ContinueOnSuccessWith(Of TSuccessOriginal, TError, TSuccessNew)(OneOf(Of TSuccessOriginal, TError), Func(Of TSuccessOriginal, OneOf(Of TSuccessNew, TError)))
+- uid: FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString*
+  name: SelectErrorString
+  href: api/FGS.OneOf.Extensions.OneOfExtensions.html#FGS_OneOf_Extensions_OneOfExtensions_SelectErrorString_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString
+  nameWithType: OneOfExtensions.SelectErrorString
+- uid: FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString``2(FGS.OneOf{``0,``1},System.Func{``1,System.String})
+  name: SelectErrorString<TSuccess, TErrorOriginal>(OneOf<TSuccess, TErrorOriginal>, Func<TErrorOriginal, String>)
+  href: api/FGS.OneOf.Extensions.OneOfExtensions.html#FGS_OneOf_Extensions_OneOfExtensions_SelectErrorString__2_FGS_OneOf___0___1__System_Func___1_System_String__
+  commentId: M:FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString``2(FGS.OneOf{``0,``1},System.Func{``1,System.String})
+  name.vb: SelectErrorString(Of TSuccess, TErrorOriginal)(OneOf(Of TSuccess, TErrorOriginal), Func(Of TErrorOriginal, String))
+  fullName: FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString<TSuccess, TErrorOriginal>(FGS.OneOf<TSuccess, TErrorOriginal>, System.Func<TErrorOriginal, System.String>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfExtensions.SelectErrorString(Of TSuccess, TErrorOriginal)(FGS.OneOf(Of TSuccess, TErrorOriginal), System.Func(Of TErrorOriginal, System.String))
+  nameWithType: OneOfExtensions.SelectErrorString<TSuccess, TErrorOriginal>(OneOf<TSuccess, TErrorOriginal>, Func<TErrorOriginal, String>)
+  nameWithType.vb: OneOfExtensions.SelectErrorString(Of TSuccess, TErrorOriginal)(OneOf(Of TSuccess, TErrorOriginal), Func(Of TErrorOriginal, String))
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions
+  name: OneOfQueryExpressionExtensions
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html
+  commentId: T:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions
+  nameWithType: OneOfQueryExpressionExtensions
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold*
+  name: Bifold
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_Bifold_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold
+  nameWithType: OneOfQueryExpressionExtensions.Bifold
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold``1(FGS.OneOf{``0,``0})
+  name: Bifold<T>(OneOf<T, T>)
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_Bifold__1_FGS_OneOf___0___0__
+  commentId: M:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold``1(FGS.OneOf{``0,``0})
+  name.vb: Bifold(Of T)(OneOf(Of T, T))
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold<T>(FGS.OneOf<T, T>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Bifold(Of T)(FGS.OneOf(Of T, T))
+  nameWithType: OneOfQueryExpressionExtensions.Bifold<T>(OneOf<T, T>)
+  nameWithType.vb: OneOfQueryExpressionExtensions.Bifold(Of T)(OneOf(Of T, T))
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten*
+  name: Flatten
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_Flatten_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten
+  nameWithType: OneOfQueryExpressionExtensions.Flatten
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten``2(FGS.OneOf{FGS.OneOf{``0,``1},``1})
+  name: Flatten<TSuccess, TError>(OneOf<OneOf<TSuccess, TError>, TError>)
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_Flatten__2_FGS_OneOf_FGS_OneOf___0___1____1__
+  commentId: M:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten``2(FGS.OneOf{FGS.OneOf{``0,``1},``1})
+  name.vb: Flatten(Of TSuccess, TError)(OneOf(Of OneOf(Of TSuccess, TError), TError))
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten<TSuccess, TError>(FGS.OneOf<FGS.OneOf<TSuccess, TError>, TError>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Flatten(Of TSuccess, TError)(FGS.OneOf(Of FGS.OneOf(Of TSuccess, TError), TError))
+  nameWithType: OneOfQueryExpressionExtensions.Flatten<TSuccess, TError>(OneOf<OneOf<TSuccess, TError>, TError>)
+  nameWithType.vb: OneOfQueryExpressionExtensions.Flatten(Of TSuccess, TError)(OneOf(Of OneOf(Of TSuccess, TError), TError))
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select*
+  name: Select
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_Select_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select
+  nameWithType: OneOfQueryExpressionExtensions.Select
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select``3(FGS.OneOf{``0,``2},System.Func{``0,``1})
+  name: Select<TSuccessOriginal, TSuccessNew, TError>(OneOf<TSuccessOriginal, TError>, Func<TSuccessOriginal, TSuccessNew>)
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_Select__3_FGS_OneOf___0___2__System_Func___0___1__
+  commentId: M:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select``3(FGS.OneOf{``0,``2},System.Func{``0,``1})
+  name.vb: Select(Of TSuccessOriginal, TSuccessNew, TError)(OneOf(Of TSuccessOriginal, TError), Func(Of TSuccessOriginal, TSuccessNew))
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select<TSuccessOriginal, TSuccessNew, TError>(FGS.OneOf<TSuccessOriginal, TError>, System.Func<TSuccessOriginal, TSuccessNew>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.Select(Of TSuccessOriginal, TSuccessNew, TError)(FGS.OneOf(Of TSuccessOriginal, TError), System.Func(Of TSuccessOriginal, TSuccessNew))
+  nameWithType: OneOfQueryExpressionExtensions.Select<TSuccessOriginal, TSuccessNew, TError>(OneOf<TSuccessOriginal, TError>, Func<TSuccessOriginal, TSuccessNew>)
+  nameWithType.vb: OneOfQueryExpressionExtensions.Select(Of TSuccessOriginal, TSuccessNew, TError)(OneOf(Of TSuccessOriginal, TError), Func(Of TSuccessOriginal, TSuccessNew))
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError*
+  name: SelectError
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_SelectError_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError
+  nameWithType: OneOfQueryExpressionExtensions.SelectError
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError``3(FGS.OneOf{``0,``1},System.Func{``1,``2})
+  name: SelectError<TSuccess, TErrorOriginal, TErrorNew>(OneOf<TSuccess, TErrorOriginal>, Func<TErrorOriginal, TErrorNew>)
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_SelectError__3_FGS_OneOf___0___1__System_Func___1___2__
+  commentId: M:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError``3(FGS.OneOf{``0,``1},System.Func{``1,``2})
+  name.vb: SelectError(Of TSuccess, TErrorOriginal, TErrorNew)(OneOf(Of TSuccess, TErrorOriginal), Func(Of TErrorOriginal, TErrorNew))
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError<TSuccess, TErrorOriginal, TErrorNew>(FGS.OneOf<TSuccess, TErrorOriginal>, System.Func<TErrorOriginal, TErrorNew>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectError(Of TSuccess, TErrorOriginal, TErrorNew)(FGS.OneOf(Of TSuccess, TErrorOriginal), System.Func(Of TErrorOriginal, TErrorNew))
+  nameWithType: OneOfQueryExpressionExtensions.SelectError<TSuccess, TErrorOriginal, TErrorNew>(OneOf<TSuccess, TErrorOriginal>, Func<TErrorOriginal, TErrorNew>)
+  nameWithType.vb: OneOfQueryExpressionExtensions.SelectError(Of TSuccess, TErrorOriginal, TErrorNew)(OneOf(Of TSuccess, TErrorOriginal), Func(Of TErrorOriginal, TErrorNew))
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany*
+  name: SelectMany
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_SelectMany_
+  commentId: Overload:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany
+  isSpec: "True"
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany
+  nameWithType: OneOfQueryExpressionExtensions.SelectMany
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany``4(FGS.OneOf{``0,``2},System.Func{``0,FGS.OneOf{``1,``2}},System.Func{``0,``1,``3})
+  name: SelectMany<TSuccess1, TSuccess2, TError, TResult>(OneOf<TSuccess1, TError>, Func<TSuccess1, OneOf<TSuccess2, TError>>, Func<TSuccess1, TSuccess2, TResult>)
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_SelectMany__4_FGS_OneOf___0___2__System_Func___0_FGS_OneOf___1___2___System_Func___0___1___3__
+  commentId: M:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany``4(FGS.OneOf{``0,``2},System.Func{``0,FGS.OneOf{``1,``2}},System.Func{``0,``1,``3})
+  name.vb: SelectMany(Of TSuccess1, TSuccess2, TError, TResult)(OneOf(Of TSuccess1, TError), Func(Of TSuccess1, OneOf(Of TSuccess2, TError)), Func(Of TSuccess1, TSuccess2, TResult))
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany<TSuccess1, TSuccess2, TError, TResult>(FGS.OneOf<TSuccess1, TError>, System.Func<TSuccess1, FGS.OneOf<TSuccess2, TError>>, System.Func<TSuccess1, TSuccess2, TResult>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany(Of TSuccess1, TSuccess2, TError, TResult)(FGS.OneOf(Of TSuccess1, TError), System.Func(Of TSuccess1, FGS.OneOf(Of TSuccess2, TError)), System.Func(Of TSuccess1, TSuccess2, TResult))
+  nameWithType: OneOfQueryExpressionExtensions.SelectMany<TSuccess1, TSuccess2, TError, TResult>(OneOf<TSuccess1, TError>, Func<TSuccess1, OneOf<TSuccess2, TError>>, Func<TSuccess1, TSuccess2, TResult>)
+  nameWithType.vb: OneOfQueryExpressionExtensions.SelectMany(Of TSuccess1, TSuccess2, TError, TResult)(OneOf(Of TSuccess1, TError), Func(Of TSuccess1, OneOf(Of TSuccess2, TError)), Func(Of TSuccess1, TSuccess2, TResult))
+- uid: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany``4(System.Collections.Generic.IEnumerable{``0},System.Func{``0,FGS.OneOf{``1,``2}},System.Func{``0,``1,``3})
+  name: SelectMany<TSource, TSuccess, TError, TResult>(IEnumerable<TSource>, Func<TSource, OneOf<TSuccess, TError>>, Func<TSource, TSuccess, TResult>)
+  href: api/FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.html#FGS_OneOf_Extensions_OneOfQueryExpressionExtensions_SelectMany__4_System_Collections_Generic_IEnumerable___0__System_Func___0_FGS_OneOf___1___2___System_Func___0___1___3__
+  commentId: M:FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany``4(System.Collections.Generic.IEnumerable{``0},System.Func{``0,FGS.OneOf{``1,``2}},System.Func{``0,``1,``3})
+  name.vb: SelectMany(Of TSource, TSuccess, TError, TResult)(IEnumerable(Of TSource), Func(Of TSource, OneOf(Of TSuccess, TError)), Func(Of TSource, TSuccess, TResult))
+  fullName: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany<TSource, TSuccess, TError, TResult>(System.Collections.Generic.IEnumerable<TSource>, System.Func<TSource, FGS.OneOf<TSuccess, TError>>, System.Func<TSource, TSuccess, TResult>)
+  fullName.vb: FGS.OneOf.Extensions.OneOfQueryExpressionExtensions.SelectMany(Of TSource, TSuccess, TError, TResult)(System.Collections.Generic.IEnumerable(Of TSource), System.Func(Of TSource, FGS.OneOf(Of TSuccess, TError)), System.Func(Of TSource, TSuccess, TResult))
+  nameWithType: OneOfQueryExpressionExtensions.SelectMany<TSource, TSuccess, TError, TResult>(IEnumerable<TSource>, Func<TSource, OneOf<TSuccess, TError>>, Func<TSource, TSuccess, TResult>)
+  nameWithType.vb: OneOfQueryExpressionExtensions.SelectMany(Of TSource, TSuccess, TError, TResult)(IEnumerable(Of TSource), Func(Of TSource, OneOf(Of TSuccess, TError)), Func(Of TSource, TSuccess, TResult))
 - uid: FGS.Primitives.Extensions
   name: FGS.Primitives.Extensions
   href: api/FGS.Primitives.Extensions.html

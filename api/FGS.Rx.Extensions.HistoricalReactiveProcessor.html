@@ -95,47 +95,23 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FGS.Rx.Extensions.Abstractions.IHistoricalReactiveProcessor.html">IHistoricalReactiveProcessor</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Rx.Extensions.html">FGS.Rx.Extensions</a></h6>
   <h6><strong>Assembly</strong>: FGS.Rx.Extensions.dll</h6>
   <h5 id="FGS_Rx_Extensions_HistoricalReactiveProcessor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HistoricalReactiveProcessor : IHistoricalReactiveProcessor</code></pre>
+    <pre><code class="lang-csharp hljs">public class HistoricalReactiveProcessor : object, IHistoricalReactiveProcessor</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_System_Func_HistoricalScheduler__.md&amp;value=---%0Auid%3A%20FGS.Rx.Extensions.HistoricalReactiveProcessor.%23ctor(System.Func%7BHistoricalScheduler%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_Func_HistoricalScheduler__.md&amp;value=---%0Auid%3A%20FGS.Rx.Extensions.HistoricalReactiveProcessor.%23ctor(Func%7BHistoricalScheduler%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Rx.Extensions/HistoricalReactiveProcessor.cs/#L24">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Rx.Extensions/HistoricalReactiveProcessor.cs/#L24">View Source</a>
   </span>
   <a id="FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_" data-uid="FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor*"></a>
-  <h4 id="FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_System_Func_HistoricalScheduler__" data-uid="FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor(System.Func{HistoricalScheduler})">HistoricalReactiveProcessor(Func&lt;HistoricalScheduler&gt;)</h4>
+  <h4 id="FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_Func_HistoricalScheduler__" data-uid="FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor(Func{HistoricalScheduler})">HistoricalReactiveProcessor(Func&lt;HistoricalScheduler&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FGS.Rx.Extensions.HistoricalReactiveProcessor.html">HistoricalReactiveProcessor</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -154,7 +130,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<span class="xref">HistoricalScheduler</span>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">HistoricalScheduler</span>&gt;</td>
         <td><span class="parametername">historicalSchedulerFactory</span></td>
         <td><p>A factory that creates or retrieves an instance of <see cref="!:HistoricalScheduler"></see> that is used to process the stream of events by ignoring the normal flow of time.</p>
 </td>
@@ -165,13 +141,13 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync__2_System_Collections_Generic_IEnumerable_Timestamped___0___System_Func_System_IObservable___0__IScheduler_System_IObservable___1___.md&amp;value=---%0Auid%3A%20FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync%60%602(System.Collections.Generic.IEnumerable%7BTimestamped%7B%60%600%7D%7D%2CSystem.Func%7BSystem.IObservable%7B%60%600%7D%2CIScheduler%2CSystem.IObservable%7B%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync__2_IEnumerable_Timestamped___0___Func_IObservable___0__IScheduler_IObservable___1___.md&amp;value=---%0Auid%3A%20FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync%60%602(IEnumerable%7BTimestamped%7B%60%600%7D%7D%2CFunc%7BIObservable%7B%60%600%7D%2CIScheduler%2CIObservable%7B%60%601%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Rx.Extensions/HistoricalReactiveProcessor.cs/#L30">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Rx.Extensions/HistoricalReactiveProcessor.cs/#L30">View Source</a>
   </span>
   <a id="FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync_" data-uid="FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync*"></a>
-  <h4 id="FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync__2_System_Collections_Generic_IEnumerable_Timestamped___0___System_Func_System_IObservable___0__IScheduler_System_IObservable___1___" data-uid="FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync``2(System.Collections.Generic.IEnumerable{Timestamped{``0}},System.Func{System.IObservable{``0},IScheduler,System.IObservable{``1}})">MapAsync&lt;TInput, TResult&gt;(IEnumerable&lt;Timestamped&lt;TInput&gt;&gt;, Func&lt;IObservable&lt;TInput&gt;, IScheduler, IObservable&lt;TResult&gt;&gt;)</h4>
+  <h4 id="FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync__2_IEnumerable_Timestamped___0___Func_IObservable___0__IScheduler_IObservable___1___" data-uid="FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync``2(IEnumerable{Timestamped{``0}},Func{IObservable{``0},IScheduler,IObservable{``1}})">MapAsync&lt;TInput, TResult&gt;(IEnumerable&lt;Timestamped&lt;TInput&gt;&gt;, Func&lt;IObservable&lt;TInput&gt;, IScheduler, IObservable&lt;TResult&gt;&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -189,12 +165,12 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Timestamped</span>&lt;TInput&gt;&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">Timestamped</span>&lt;TInput&gt;&gt;</td>
         <td><span class="parametername">inputs</span></td>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TInput&gt;, <span class="xref">IScheduler</span>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;TResult&gt;&gt;</td>
+        <td><span class="xref">Func</span>&lt;<span class="xref">IObservable</span>&lt;TInput&gt;, <span class="xref">IScheduler</span>, <span class="xref">IObservable</span>&lt;TResult&gt;&gt;</td>
         <td><span class="parametername">mapper</span></td>
         <td></td>
       </tr>
@@ -210,7 +186,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Timestamped</span>&lt;TResult&gt;&gt;&gt;</td>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">Timestamped</span>&lt;TResult&gt;&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -250,10 +226,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Rx_Extensions_HistoricalReactiveProcessor.md&amp;value=---%0Auid%3A%20FGS.Rx.Extensions.HistoricalReactiveProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Rx_Extensions_HistoricalReactiveProcessor.md&amp;value=---%0Auid%3A%20FGS.Rx.Extensions.HistoricalReactiveProcessor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Rx.Extensions/HistoricalReactiveProcessor.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Rx.Extensions/HistoricalReactiveProcessor.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

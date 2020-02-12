@@ -83,7 +83,7 @@
   
   <h1 id="FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate" data-uid="FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate" class="text-break">Class Win32ExceptionRetryPredicate
   </h1>
-  <div class="markdown level0 summary"><p>Indicates whether the given exception, or its inner exception, is a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.componentmodel.win32exception">Win32Exception</a>,
+  <div class="markdown level0 summary"><p>Indicates whether the given exception, or its inner exception, is a <see cref="!:Win32Exception"></see>,
 for which we want to attempt to retry the operation.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -96,49 +96,24 @@ for which we want to attempt to retry the operation.</p>
     <h5>Implements</h5>
     <div><a class="xref" href="FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate.html">IExceptionRetryPredicate</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FGS.FaultHandling.Predicates.Win32.html">FGS.FaultHandling.Predicates.Win32</a></h6>
   <h6><strong>Assembly</strong>: FGS.FaultHandling.Predicates.Win32.dll</h6>
   <h5 id="FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class Win32ExceptionRetryPredicate : IExceptionRetryPredicate</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class Win32ExceptionRetryPredicate : object, IExceptionRetryPredicate</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_System_Exception_.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_Exception_.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.FaultHandling.Predicates.Win32/Win32ExceptionRetryPredicate.cs/#L15">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.FaultHandling.Predicates.Win32/Win32ExceptionRetryPredicate.cs/#L15">View Source</a>
   </span>
   <a id="FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_" data-uid="FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry*"></a>
-  <h4 id="FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_System_Exception_" data-uid="FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(System.Exception)">ShouldRetry(Exception)</h4>
-  <div class="markdown level1 summary"><p>Determines whether or not an operation that failed from <code data-dev-comment-type="paramref" class="paramref">ex</code> should be retried.</p>
-</div>
+  <h4 id="FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_Exception_" data-uid="FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(Exception)">ShouldRetry(Exception)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -155,10 +130,9 @@ for which we want to attempt to retry the operation.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">ex</span></td>
-        <td><p>The <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a> that operation failed with.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -173,8 +147,7 @@ for which we want to attempt to retry the operation.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
-        <td><p><span class="xref">true</span> if the operation should be retried, <span class="xref">false</span> if it should not be retried.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -194,10 +167,10 @@ for which we want to attempt to retry the operation.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.FaultHandling.Predicates.Win32/Win32ExceptionRetryPredicate.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.FaultHandling.Predicates.Win32/Win32ExceptionRetryPredicate.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

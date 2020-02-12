@@ -83,8 +83,8 @@
   
   <h1 id="FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate" data-uid="FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate" class="text-break">Class SqlExceptionRetryPredicate
   </h1>
-  <div class="markdown level0 summary"><p>Indicates whether the given exception, or its inner exception, is a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlexception">SqlException</a> with a
-<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlerror">SqlError</a> for which we want to attempt to retry the operation.</p>
+  <div class="markdown level0 summary"><p>Indicates whether the given exception, or its inner exception, is a <see cref="!:SqlException"></see> with a
+<see cref="!:SqlError"></see> for which we want to attempt to retry the operation.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -96,35 +96,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate.html">IExceptionRetryPredicate</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FGS.FaultHandling.Predicates.Mssql.html">FGS.FaultHandling.Predicates.Mssql</a></h6>
   <h6><strong>Assembly</strong>: FGS.FaultHandling.Predicates.Mssql.dll</h6>
   <h5 id="FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SqlExceptionRetryPredicate : IExceptionRetryPredicate</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class SqlExceptionRetryPredicate : object, IExceptionRetryPredicate</code></pre>
   </div>
   <h5 id="FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>SqlErrors with a class greater than or equal to 17 indicate that a hardware or software error occurred.
@@ -137,13 +113,13 @@ See <a href="https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqle
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_System_Exception_.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_Exception_.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.FaultHandling.Predicates.Mssql/SqlExceptionRetryPredicate.cs/#L29">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.FaultHandling.Predicates.Mssql/SqlExceptionRetryPredicate.cs/#L29">View Source</a>
   </span>
   <a id="FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_" data-uid="FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry*"></a>
-  <h4 id="FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_System_Exception_" data-uid="FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(System.Exception)">ShouldRetry(Exception)</h4>
+  <h4 id="FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_Exception_" data-uid="FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(Exception)">ShouldRetry(Exception)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -161,7 +137,7 @@ See <a href="https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqle
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="xref">Exception</span></td>
         <td><span class="parametername">ex</span></td>
         <td></td>
       </tr>
@@ -198,10 +174,10 @@ See <a href="https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqle
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate.md&amp;value=---%0Auid%3A%20FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.FaultHandling.Predicates.Mssql/SqlExceptionRetryPredicate.cs/#L25" class="contribution-link">View Source</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.FaultHandling.Predicates.Mssql/SqlExceptionRetryPredicate.cs/#L25" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

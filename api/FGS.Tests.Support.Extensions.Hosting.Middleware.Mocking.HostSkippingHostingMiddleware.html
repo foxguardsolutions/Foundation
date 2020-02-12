@@ -95,142 +95,12 @@
     <h5>Implements</h5>
     <div><a class="xref" href="FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.html">IHostingMiddleware</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.html">FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking</a></h6>
   <h6><strong>Assembly</strong>: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.dll</h6>
   <h5 id="FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class HostSkippingHostingMiddleware : IHostingMiddleware</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class HostSkippingHostingMiddleware : object, IHostingMiddleware</code></pre>
   </div>
-  <h3 id="eii">Explicit Interface Implementations
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS%23Extensions%23Hosting%23Middleware%23Abstractions%23IHostingMiddleware%23StartAsync(System.Func%7BSystem.Threading.Tasks.Task%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking/HostSkippingHostingMiddleware.cs/#L13">View Source</a>
-  </span>
-  <a id="FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_" data-uid="FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync*"></a>
-  <h4 id="FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)">IHostingMiddleware.StartAsync(Func&lt;Task&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task IHostingMiddleware.StartAsync(Func&lt;Task&gt; next, CancellationToken cancellationToken)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
-        <td><span class="parametername">next</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS%23Extensions%23Hosting%23Middleware%23Abstractions%23IHostingMiddleware%23StopAsync(System.Func%7BSystem.Threading.Tasks.Task%7D%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking/HostSkippingHostingMiddleware.cs/#L16">View Source</a>
-  </span>
-  <a id="FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_" data-uid="FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync*"></a>
-  <h4 id="FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_" data-uid="FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)">IHostingMiddleware.StopAsync(Func&lt;Task&gt;, CancellationToken)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task IHostingMiddleware.StopAsync(Func&lt;Task&gt; next, CancellationToken cancellationToken)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
-        <td><span class="parametername">next</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationToken</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.html">IHostingMiddleware</a>
@@ -247,10 +117,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware.md&amp;value=---%0Auid%3A%20FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware.md&amp;value=---%0Auid%3A%20FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking/HostSkippingHostingMiddleware.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking/HostSkippingHostingMiddleware.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

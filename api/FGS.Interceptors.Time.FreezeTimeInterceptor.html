@@ -96,47 +96,23 @@ and then unfreeze after the invocation has been completed.</p>
     <h5>Implements</h5>
     <div><a class="xref" href="FGS.Interception.Abstractions.IInterceptor.html">IInterceptor</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="FGS.Interceptors.Time.html">FGS.Interceptors.Time</a></h6>
   <h6><strong>Assembly</strong>: FGS.Interceptors.Time.dll</h6>
   <h5 id="FGS_Interceptors_Time_FreezeTimeInterceptor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class FreezeTimeInterceptor : IInterceptor</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class FreezeTimeInterceptor : object, IInterceptor</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_System_Func_FGS_Primitives_Time_Abstractions_IFreezableClock__.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor.%23ctor(System.Func%7BFGS.Primitives.Time.Abstractions.IFreezableClock%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_Func_FGS_Primitives_Time_Abstractions_IFreezableClock__.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor.%23ctor(Func%7BFGS.Primitives.Time.Abstractions.IFreezableClock%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L21">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L21">View Source</a>
   </span>
   <a id="FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor*"></a>
-  <h4 id="FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_System_Func_FGS_Primitives_Time_Abstractions_IFreezableClock__" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor(System.Func{FGS.Primitives.Time.Abstractions.IFreezableClock})">FreezeTimeInterceptor(Func&lt;IFreezableClock&gt;)</h4>
+  <h4 id="FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_Func_FGS_Primitives_Time_Abstractions_IFreezableClock__" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor(Func{FGS.Primitives.Time.Abstractions.IFreezableClock})">FreezeTimeInterceptor(Func&lt;IFreezableClock&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="FGS.Interceptors.Time.FreezeTimeInterceptor.html">FreezeTimeInterceptor</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -155,7 +131,7 @@ and then unfreeze after the invocation has been completed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="FGS.Primitives.Time.Abstractions.IFreezableClock.html">IFreezableClock</a>&gt;</td>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="FGS.Primitives.Time.Abstractions.IFreezableClock.html">IFreezableClock</a>&gt;</td>
         <td><span class="parametername">freezableClockFactory</span></td>
         <td><p>The factory that creates or retrieves the <a class="xref" href="FGS.Primitives.Time.Abstractions.IFreezableClock.html">IFreezableClock</a> for which time will be manipulated.</p>
 </td>
@@ -166,10 +142,10 @@ and then unfreeze after the invocation has been completed.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor_Intercept_FGS_Interception_Abstractions_IInvocation_.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor.Intercept(FGS.Interception.Abstractions.IInvocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor_Intercept_FGS_Interception_Abstractions_IInvocation_.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor.Intercept(FGS.Interception.Abstractions.IInvocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L27">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L27">View Source</a>
   </span>
   <a id="FGS_Interceptors_Time_FreezeTimeInterceptor_Intercept_" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.Intercept*"></a>
   <h4 id="FGS_Interceptors_Time_FreezeTimeInterceptor_Intercept_FGS_Interception_Abstractions_IInvocation_" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.Intercept(FGS.Interception.Abstractions.IInvocation)">Intercept(IInvocation)</h4>
@@ -200,15 +176,14 @@ and then unfreeze after the invocation has been completed.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor_InterceptAsync_FGS_Interception_Abstractions_IAsyncInvocation_.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor.InterceptAsync(FGS.Interception.Abstractions.IAsyncInvocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor_InterceptAsync_FGS_Interception_Abstractions_IAsyncInvocation_.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor.InterceptAsync(FGS.Interception.Abstractions.IAsyncInvocation)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L36">View Source</a>
+    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L36">View Source</a>
   </span>
   <a id="FGS_Interceptors_Time_FreezeTimeInterceptor_InterceptAsync_" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.InterceptAsync*"></a>
   <h4 id="FGS_Interceptors_Time_FreezeTimeInterceptor_InterceptAsync_FGS_Interception_Abstractions_IAsyncInvocation_" data-uid="FGS.Interceptors.Time.FreezeTimeInterceptor.InterceptAsync(FGS.Interception.Abstractions.IAsyncInvocation)">InterceptAsync(IAsyncInvocation)</h4>
-  <div class="markdown level1 summary"><p>The implementation that is invoked to intercept a member with an asynchronous signature.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -227,8 +202,7 @@ and then unfreeze after the invocation has been completed.</p>
       <tr>
         <td><a class="xref" href="FGS.Interception.Abstractions.IAsyncInvocation.html">IAsyncInvocation</a></td>
         <td><span class="parametername">invocation</span></td>
-        <td><p>Represents an asynchronous method invocation that has been intercepted.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -242,9 +216,8 @@ and then unfreeze after the invocation has been completed.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that contains the continuation remaining from end of the intercepted invocation.</p>
-</td>
+        <td><span class="xref">Task</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -264,10 +237,10 @@ and then unfreeze after the invocation has been completed.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/new/99ce32f09739ecd4f4b97883214cde2b00b1a67e/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/new/52e394c44af94eced3677492ad47a98b91666e69/apiSpec/new?filename=FGS_Interceptors_Time_FreezeTimeInterceptor.md&amp;value=---%0Auid%3A%20FGS.Interceptors.Time.FreezeTimeInterceptor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/foxguardsolutions/Foundation/blob/99ce32f09739ecd4f4b97883214cde2b00b1a67e/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/foxguardsolutions/Foundation/blob/52e394c44af94eced3677492ad47a98b91666e69/src/FGS.Interceptors.Time/FreezeTimeInterceptor.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

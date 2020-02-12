@@ -20,13 +20,13 @@ references:
   isSpec: "True"
   fullName: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider
   nameWithType: AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider
-- uid: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider``1(IWebHostBuilder,System.Action{IModule},System.Action{ContainerBuilder})
+- uid: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider``1(IWebHostBuilder,Action{IModule},Action{ContainerBuilder})
   name: UseAutofacWithModulesProvider<TModulesProvider>(IWebHostBuilder, Action<IModule>, Action<ContainerBuilder>)
-  href: api/FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.html#FGS_AspNetCore_Hosting_Extensions_DependencyInjection_Autofac_AutofacWebHostBuilderExtensions_UseAutofacWithModulesProvider__1_IWebHostBuilder_System_Action_IModule__System_Action_ContainerBuilder__
-  commentId: M:FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider``1(IWebHostBuilder,System.Action{IModule},System.Action{ContainerBuilder})
+  href: api/FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.html#FGS_AspNetCore_Hosting_Extensions_DependencyInjection_Autofac_AutofacWebHostBuilderExtensions_UseAutofacWithModulesProvider__1_IWebHostBuilder_Action_IModule__Action_ContainerBuilder__
+  commentId: M:FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider``1(IWebHostBuilder,Action{IModule},Action{ContainerBuilder})
   name.vb: UseAutofacWithModulesProvider(Of TModulesProvider)(IWebHostBuilder, Action(Of IModule), Action(Of ContainerBuilder))
-  fullName: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider<TModulesProvider>(IWebHostBuilder, System.Action<IModule>, System.Action<ContainerBuilder>)
-  fullName.vb: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider(Of TModulesProvider)(IWebHostBuilder, System.Action(Of IModule), System.Action(Of ContainerBuilder))
+  fullName: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider<TModulesProvider>(IWebHostBuilder, Action<IModule>, Action<ContainerBuilder>)
+  fullName.vb: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider(Of TModulesProvider)(IWebHostBuilder, Action(Of IModule), Action(Of ContainerBuilder))
   nameWithType: AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider<TModulesProvider>(IWebHostBuilder, Action<IModule>, Action<ContainerBuilder>)
   nameWithType.vb: AutofacWebHostBuilderExtensions.UseAutofacWithModulesProvider(Of TModulesProvider)(IWebHostBuilder, Action(Of IModule), Action(Of ContainerBuilder))
 - uid: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
@@ -86,21 +86,21 @@ references:
   commentId: T:FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions
   fullName: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions
   nameWithType: SerilogWebHostBuilderExtensions
+- uid: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder,Action{WebHostBuilderContext,LoggerConfiguration},System.Boolean)
+  name: UseSerilog(IWebHostBuilder, Action<WebHostBuilderContext, LoggerConfiguration>, Boolean)
+  href: api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.html#FGS_AspNetCore_Hosting_Extensions_Logging_Serilog_SerilogWebHostBuilderExtensions_UseSerilog_IWebHostBuilder_Action_WebHostBuilderContext_LoggerConfiguration__System_Boolean_
+  commentId: M:FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder,Action{WebHostBuilderContext,LoggerConfiguration},System.Boolean)
+  name.vb: UseSerilog(IWebHostBuilder, Action(Of WebHostBuilderContext, LoggerConfiguration), Boolean)
+  fullName: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Action<WebHostBuilderContext, LoggerConfiguration>, System.Boolean)
+  fullName.vb: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Action(Of WebHostBuilderContext, LoggerConfiguration), System.Boolean)
+  nameWithType: SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Action<WebHostBuilderContext, LoggerConfiguration>, Boolean)
+  nameWithType.vb: SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Action(Of WebHostBuilderContext, LoggerConfiguration), Boolean)
 - uid: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder,Serilog.ILogger,System.Boolean)
   name: UseSerilog(IWebHostBuilder, Serilog.ILogger, Boolean)
   href: api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.html#FGS_AspNetCore_Hosting_Extensions_Logging_Serilog_SerilogWebHostBuilderExtensions_UseSerilog_IWebHostBuilder_Serilog_ILogger_System_Boolean_
   commentId: M:FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder,Serilog.ILogger,System.Boolean)
   fullName: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Serilog.ILogger, System.Boolean)
   nameWithType: SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Serilog.ILogger, Boolean)
-- uid: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder,System.Action{WebHostBuilderContext,LoggerConfiguration},System.Boolean)
-  name: UseSerilog(IWebHostBuilder, Action<WebHostBuilderContext, LoggerConfiguration>, Boolean)
-  href: api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.html#FGS_AspNetCore_Hosting_Extensions_Logging_Serilog_SerilogWebHostBuilderExtensions_UseSerilog_IWebHostBuilder_System_Action_WebHostBuilderContext_LoggerConfiguration__System_Boolean_
-  commentId: M:FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder,System.Action{WebHostBuilderContext,LoggerConfiguration},System.Boolean)
-  name.vb: UseSerilog(IWebHostBuilder, Action(Of WebHostBuilderContext, LoggerConfiguration), Boolean)
-  fullName: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, System.Action<WebHostBuilderContext, LoggerConfiguration>, System.Boolean)
-  fullName.vb: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, System.Action(Of WebHostBuilderContext, LoggerConfiguration), System.Boolean)
-  nameWithType: SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Action<WebHostBuilderContext, LoggerConfiguration>, Boolean)
-  nameWithType.vb: SerilogWebHostBuilderExtensions.UseSerilog(IWebHostBuilder, Action(Of WebHostBuilderContext, LoggerConfiguration), Boolean)
 - uid: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.UseSerilog*
   name: UseSerilog
   href: api/FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.SerilogWebHostBuilderExtensions.html#FGS_AspNetCore_Hosting_Extensions_Logging_Serilog_SerilogWebHostBuilderExtensions_UseSerilog_
@@ -291,11 +291,11 @@ references:
   commentId: T:FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder
   fullName: FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder
   nameWithType: ParseMethodInvokingModelBinder
-- uid: FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.#ctor(System.Reflection.MethodInfo)
+- uid: FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.#ctor(MethodInfo)
   name: ParseMethodInvokingModelBinder(MethodInfo)
-  href: api/FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.html#FGS_AspNetCore_Mvc_ModelBinding_ParseMethodInvokingModelBinder__ctor_System_Reflection_MethodInfo_
-  commentId: M:FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.#ctor(System.Reflection.MethodInfo)
-  fullName: FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.ParseMethodInvokingModelBinder(System.Reflection.MethodInfo)
+  href: api/FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.html#FGS_AspNetCore_Mvc_ModelBinding_ParseMethodInvokingModelBinder__ctor_MethodInfo_
+  commentId: M:FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.#ctor(MethodInfo)
+  fullName: FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.ParseMethodInvokingModelBinder(MethodInfo)
   nameWithType: ParseMethodInvokingModelBinder.ParseMethodInvokingModelBinder(MethodInfo)
 - uid: FGS.AspNetCore.Mvc.ModelBinding.ParseMethodInvokingModelBinder.#ctor*
   name: ParseMethodInvokingModelBinder
@@ -568,13 +568,13 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate
   nameWithType: ContainerBuilderExtensions.Populate
-- uid: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate``1(ContainerBuilder,System.Action{IModule})
+- uid: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate``1(ContainerBuilder,Action{IModule})
   name: Populate<TAutofacModulesProvider>(ContainerBuilder, Action<IModule>)
-  href: api/FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.html#FGS_Autofac_CompositionRoot_ContainerBuilderExtensions_Populate__1_ContainerBuilder_System_Action_IModule__
-  commentId: M:FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate``1(ContainerBuilder,System.Action{IModule})
+  href: api/FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.html#FGS_Autofac_CompositionRoot_ContainerBuilderExtensions_Populate__1_ContainerBuilder_Action_IModule__
+  commentId: M:FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate``1(ContainerBuilder,Action{IModule})
   name.vb: Populate(Of TAutofacModulesProvider)(ContainerBuilder, Action(Of IModule))
-  fullName: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate<TAutofacModulesProvider>(ContainerBuilder, System.Action<IModule>)
-  fullName.vb: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate(Of TAutofacModulesProvider)(ContainerBuilder, System.Action(Of IModule))
+  fullName: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate<TAutofacModulesProvider>(ContainerBuilder, Action<IModule>)
+  fullName.vb: FGS.Autofac.CompositionRoot.ContainerBuilderExtensions.Populate(Of TAutofacModulesProvider)(ContainerBuilder, Action(Of IModule))
   nameWithType: ContainerBuilderExtensions.Populate<TAutofacModulesProvider>(ContainerBuilder, Action<IModule>)
   nameWithType.vb: ContainerBuilderExtensions.Populate(Of TAutofacModulesProvider)(ContainerBuilder, Action(Of IModule))
 - uid: FGS.Autofac.DynamicScoping
@@ -697,12 +697,12 @@ references:
   fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor)
   nameWithType: AttributeBasedInterceptionModule<TAttribute, TInterceptor>
   nameWithType.vb: AttributeBasedInterceptionModule(Of TAttribute, TInterceptor)
-- uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook(System.Type)
+- uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook(Type)
   name: CreateProxyGenerationHook(Type)
-  href: api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html#FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_CreateProxyGenerationHook_System_Type_
-  commentId: M:FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook(System.Type)
-  fullName: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule<TAttribute, TInterceptor>.CreateProxyGenerationHook(System.Type)
-  fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).CreateProxyGenerationHook(System.Type)
+  href: api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html#FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_CreateProxyGenerationHook_Type_
+  commentId: M:FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook(Type)
+  fullName: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule<TAttribute, TInterceptor>.CreateProxyGenerationHook(Type)
+  fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).CreateProxyGenerationHook(Type)
   nameWithType: AttributeBasedInterceptionModule<TAttribute, TInterceptor>.CreateProxyGenerationHook(Type)
   nameWithType.vb: AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).CreateProxyGenerationHook(Type)
 - uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.CreateProxyGenerationHook*
@@ -714,12 +714,12 @@ references:
   fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).CreateProxyGenerationHook
   nameWithType: AttributeBasedInterceptionModule<TAttribute, TInterceptor>.CreateProxyGenerationHook
   nameWithType.vb: AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).CreateProxyGenerationHook
-- uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices(System.Type)
+- uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices(Type)
   name: DescribeInterceptorServices(Type)
-  href: api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html#FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_DescribeInterceptorServices_System_Type_
-  commentId: M:FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices(System.Type)
-  fullName: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule<TAttribute, TInterceptor>.DescribeInterceptorServices(System.Type)
-  fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).DescribeInterceptorServices(System.Type)
+  href: api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html#FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_DescribeInterceptorServices_Type_
+  commentId: M:FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices(Type)
+  fullName: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule<TAttribute, TInterceptor>.DescribeInterceptorServices(Type)
+  fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).DescribeInterceptorServices(Type)
   nameWithType: AttributeBasedInterceptionModule<TAttribute, TInterceptor>.DescribeInterceptorServices(Type)
   nameWithType.vb: AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).DescribeInterceptorServices(Type)
 - uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.DescribeInterceptorServices*
@@ -748,12 +748,12 @@ references:
   fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).Load
   nameWithType: AttributeBasedInterceptionModule<TAttribute, TInterceptor>.Load
   nameWithType.vb: AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).Load
-- uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType(System.Type)
+- uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType(Type)
   name: ShouldInterceptType(Type)
-  href: api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html#FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_ShouldInterceptType_System_Type_
-  commentId: M:FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType(System.Type)
-  fullName: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule<TAttribute, TInterceptor>.ShouldInterceptType(System.Type)
-  fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).ShouldInterceptType(System.Type)
+  href: api/FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule-2.html#FGS_Autofac_Interception_DynamicProxy_AttributeBasedInterceptionModule_2_ShouldInterceptType_Type_
+  commentId: M:FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType(Type)
+  fullName: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule<TAttribute, TInterceptor>.ShouldInterceptType(Type)
+  fullName.vb: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).ShouldInterceptType(Type)
   nameWithType: AttributeBasedInterceptionModule<TAttribute, TInterceptor>.ShouldInterceptType(Type)
   nameWithType.vb: AttributeBasedInterceptionModule(Of TAttribute, TInterceptor).ShouldInterceptType(Type)
 - uid: FGS.Autofac.Interception.DynamicProxy.AttributeBasedInterceptionModule`2.ShouldInterceptType*
@@ -784,11 +784,11 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.AttachToComponentRegistration
   nameWithType: CustomInterceptionModuleBase.AttachToComponentRegistration
-- uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook(System.Type)
+- uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook(Type)
   name: CreateProxyGenerationHook(Type)
-  href: api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_CreateProxyGenerationHook_System_Type_
-  commentId: M:FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook(System.Type)
-  fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook(System.Type)
+  href: api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_CreateProxyGenerationHook_Type_
+  commentId: M:FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook(Type)
+  fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook(Type)
   nameWithType: CustomInterceptionModuleBase.CreateProxyGenerationHook(Type)
 - uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook*
   name: CreateProxyGenerationHook
@@ -797,11 +797,11 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.CreateProxyGenerationHook
   nameWithType: CustomInterceptionModuleBase.CreateProxyGenerationHook
-- uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices(System.Type)
+- uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices(Type)
   name: DescribeInterceptorServices(Type)
-  href: api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_DescribeInterceptorServices_System_Type_
-  commentId: M:FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices(System.Type)
-  fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices(System.Type)
+  href: api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_DescribeInterceptorServices_Type_
+  commentId: M:FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices(Type)
+  fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices(Type)
   nameWithType: CustomInterceptionModuleBase.DescribeInterceptorServices(Type)
 - uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices*
   name: DescribeInterceptorServices
@@ -810,11 +810,11 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.DescribeInterceptorServices
   nameWithType: CustomInterceptionModuleBase.DescribeInterceptorServices
-- uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType(System.Type)
+- uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType(Type)
   name: ShouldInterceptType(Type)
-  href: api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_ShouldInterceptType_System_Type_
-  commentId: M:FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType(System.Type)
-  fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType(System.Type)
+  href: api/FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.html#FGS_Autofac_Interception_DynamicProxy_CustomInterceptionModuleBase_ShouldInterceptType_Type_
+  commentId: M:FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType(Type)
+  fullName: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType(Type)
   nameWithType: CustomInterceptionModuleBase.ShouldInterceptType(Type)
 - uid: FGS.Autofac.Interception.DynamicProxy.CustomInterceptionModuleBase.ShouldInterceptType*
   name: ShouldInterceptType
@@ -1382,13 +1382,13 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom
   nameWithType: RegistrationBuilderExtensions.WithParameterTypedFrom
-- uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom``4(IRegistrationBuilder{``0,``1,``2},System.Func{IComponentContext,``3})
+- uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom``4(IRegistrationBuilder{``0,``1,``2},Func{IComponentContext,``3})
   name: WithParameterTypedFrom<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, Func<IComponentContext, TParameter>)
-  href: api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html#FGS_Autofac_Registration_Extensions_RegistrationBuilderExtensions_WithParameterTypedFrom__4_IRegistrationBuilder___0___1___2__System_Func_IComponentContext___3__
-  commentId: M:FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom``4(IRegistrationBuilder{``0,``1,``2},System.Func{IComponentContext,``3})
+  href: api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html#FGS_Autofac_Registration_Extensions_RegistrationBuilderExtensions_WithParameterTypedFrom__4_IRegistrationBuilder___0___1___2__Func_IComponentContext___3__
+  commentId: M:FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom``4(IRegistrationBuilder{``0,``1,``2},Func{IComponentContext,``3})
   name.vb: WithParameterTypedFrom(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), Func(Of IComponentContext, TParameter))
-  fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, System.Func<IComponentContext, TParameter>)
-  fullName.vb: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), System.Func(Of IComponentContext, TParameter))
+  fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, Func<IComponentContext, TParameter>)
+  fullName.vb: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFrom(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), Func(Of IComponentContext, TParameter))
   nameWithType: RegistrationBuilderExtensions.WithParameterTypedFrom<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, Func<IComponentContext, TParameter>)
   nameWithType.vb: RegistrationBuilderExtensions.WithParameterTypedFrom(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), Func(Of IComponentContext, TParameter))
 - uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed*
@@ -1398,13 +1398,13 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed
   nameWithType: RegistrationBuilderExtensions.WithParameterTypedFromAndNamed
-- uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed``4(IRegistrationBuilder{``0,``1,``2},System.String,System.Func{IComponentContext,``3})
+- uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed``4(IRegistrationBuilder{``0,``1,``2},System.String,Func{IComponentContext,``3})
   name: WithParameterTypedFromAndNamed<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, String, Func<IComponentContext, TParameter>)
-  href: api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html#FGS_Autofac_Registration_Extensions_RegistrationBuilderExtensions_WithParameterTypedFromAndNamed__4_IRegistrationBuilder___0___1___2__System_String_System_Func_IComponentContext___3__
-  commentId: M:FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed``4(IRegistrationBuilder{``0,``1,``2},System.String,System.Func{IComponentContext,``3})
+  href: api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html#FGS_Autofac_Registration_Extensions_RegistrationBuilderExtensions_WithParameterTypedFromAndNamed__4_IRegistrationBuilder___0___1___2__System_String_Func_IComponentContext___3__
+  commentId: M:FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed``4(IRegistrationBuilder{``0,``1,``2},System.String,Func{IComponentContext,``3})
   name.vb: WithParameterTypedFromAndNamed(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), String, Func(Of IComponentContext, TParameter))
-  fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, System.String, System.Func<IComponentContext, TParameter>)
-  fullName.vb: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), System.String, System.Func(Of IComponentContext, TParameter))
+  fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, System.String, Func<IComponentContext, TParameter>)
+  fullName.vb: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithParameterTypedFromAndNamed(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), System.String, Func(Of IComponentContext, TParameter))
   nameWithType: RegistrationBuilderExtensions.WithParameterTypedFromAndNamed<TLimit, TReflectionActivatorData, TStyle, TParameter>(IRegistrationBuilder<TLimit, TReflectionActivatorData, TStyle>, String, Func<IComponentContext, TParameter>)
   nameWithType.vb: RegistrationBuilderExtensions.WithParameterTypedFromAndNamed(Of TLimit, TReflectionActivatorData, TStyle, TParameter)(IRegistrationBuilder(Of TLimit, TReflectionActivatorData, TStyle), String, Func(Of IComponentContext, TParameter))
 - uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty*
@@ -1414,13 +1414,13 @@ references:
   isSpec: "True"
   fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty
   nameWithType: RegistrationBuilderExtensions.WithProperty
-- uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty``4(IRegistrationBuilder{``0,``1,``2},System.String,System.Func{IComponentContext,``3})
+- uid: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty``4(IRegistrationBuilder{``0,``1,``2},System.String,Func{IComponentContext,``3})
   name: WithProperty<TLimit, TActivatorData, TStyle, TPropertyValue>(IRegistrationBuilder<TLimit, TActivatorData, TStyle>, String, Func<IComponentContext, TPropertyValue>)
-  href: api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html#FGS_Autofac_Registration_Extensions_RegistrationBuilderExtensions_WithProperty__4_IRegistrationBuilder___0___1___2__System_String_System_Func_IComponentContext___3__
-  commentId: M:FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty``4(IRegistrationBuilder{``0,``1,``2},System.String,System.Func{IComponentContext,``3})
+  href: api/FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.html#FGS_Autofac_Registration_Extensions_RegistrationBuilderExtensions_WithProperty__4_IRegistrationBuilder___0___1___2__System_String_Func_IComponentContext___3__
+  commentId: M:FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty``4(IRegistrationBuilder{``0,``1,``2},System.String,Func{IComponentContext,``3})
   name.vb: WithProperty(Of TLimit, TActivatorData, TStyle, TPropertyValue)(IRegistrationBuilder(Of TLimit, TActivatorData, TStyle), String, Func(Of IComponentContext, TPropertyValue))
-  fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty<TLimit, TActivatorData, TStyle, TPropertyValue>(IRegistrationBuilder<TLimit, TActivatorData, TStyle>, System.String, System.Func<IComponentContext, TPropertyValue>)
-  fullName.vb: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty(Of TLimit, TActivatorData, TStyle, TPropertyValue)(IRegistrationBuilder(Of TLimit, TActivatorData, TStyle), System.String, System.Func(Of IComponentContext, TPropertyValue))
+  fullName: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty<TLimit, TActivatorData, TStyle, TPropertyValue>(IRegistrationBuilder<TLimit, TActivatorData, TStyle>, System.String, Func<IComponentContext, TPropertyValue>)
+  fullName.vb: FGS.Autofac.Registration.Extensions.RegistrationBuilderExtensions.WithProperty(Of TLimit, TActivatorData, TStyle, TPropertyValue)(IRegistrationBuilder(Of TLimit, TActivatorData, TStyle), System.String, Func(Of IComponentContext, TPropertyValue))
   nameWithType: RegistrationBuilderExtensions.WithProperty<TLimit, TActivatorData, TStyle, TPropertyValue>(IRegistrationBuilder<TLimit, TActivatorData, TStyle>, String, Func<IComponentContext, TPropertyValue>)
   nameWithType.vb: RegistrationBuilderExtensions.WithProperty(Of TLimit, TActivatorData, TStyle, TPropertyValue)(IRegistrationBuilder(Of TLimit, TActivatorData, TStyle), String, Func(Of IComponentContext, TPropertyValue))
 - uid: FGS.Collections.Extensions
@@ -1804,13 +1804,13 @@ references:
   isSpec: "True"
   fullName: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate
   nameWithType: EnumerableExtensions.Paginate
-- uid: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate``1(System.Collections.Generic.IEnumerable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+- uid: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate``1(IEnumerable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   name: Paginate<T>(IEnumerable<T>, PaginationSpecification)
-  href: api/FGS.Collections.Extensions.Pagination.EnumerableExtensions.html#FGS_Collections_Extensions_Pagination_EnumerableExtensions_Paginate__1_System_Collections_Generic_IEnumerable___0__FGS_Collections_Extensions_Pagination_Abstractions_PaginationSpecification_
-  commentId: M:FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate``1(System.Collections.Generic.IEnumerable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+  href: api/FGS.Collections.Extensions.Pagination.EnumerableExtensions.html#FGS_Collections_Extensions_Pagination_EnumerableExtensions_Paginate__1_IEnumerable___0__FGS_Collections_Extensions_Pagination_Abstractions_PaginationSpecification_
+  commentId: M:FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate``1(IEnumerable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   name.vb: Paginate(Of T)(IEnumerable(Of T), PaginationSpecification)
-  fullName: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate<T>(System.Collections.Generic.IEnumerable<T>, FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
-  fullName.vb: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate(Of T)(System.Collections.Generic.IEnumerable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+  fullName: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate<T>(IEnumerable<T>, FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+  fullName.vb: FGS.Collections.Extensions.Pagination.EnumerableExtensions.Paginate(Of T)(IEnumerable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   nameWithType: EnumerableExtensions.Paginate<T>(IEnumerable<T>, PaginationSpecification)
   nameWithType.vb: EnumerableExtensions.Paginate(Of T)(IEnumerable(Of T), PaginationSpecification)
 - uid: FGS.ComponentModel.DataAnnotations
@@ -2374,13 +2374,13 @@ references:
   fullName.vb: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory(Of TModulesProvider)
   nameWithType: ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider>
   nameWithType.vb: ModulesProviderBasedAutofacServiceProviderFactory(Of TModulesProvider)
-- uid: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory`1.#ctor(System.Action{IModule},System.Action{ContainerBuilder})
+- uid: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory`1.#ctor(Action{IModule},Action{ContainerBuilder})
   name: ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule>, Action<ContainerBuilder>)
-  href: api/FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory-1.html#FGS_Extensions_DependencyInjection_Autofac_ModulesProviderBasedAutofacServiceProviderFactory_1__ctor_System_Action_IModule__System_Action_ContainerBuilder__
-  commentId: M:FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory`1.#ctor(System.Action{IModule},System.Action{ContainerBuilder})
+  href: api/FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory-1.html#FGS_Extensions_DependencyInjection_Autofac_ModulesProviderBasedAutofacServiceProviderFactory_1__ctor_Action_IModule__Action_ContainerBuilder__
+  commentId: M:FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory`1.#ctor(Action{IModule},Action{ContainerBuilder})
   name.vb: ModulesProviderBasedAutofacServiceProviderFactory(Action(Of IModule), Action(Of ContainerBuilder))
-  fullName: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider>.ModulesProviderBasedAutofacServiceProviderFactory(System.Action<IModule>, System.Action<ContainerBuilder>)
-  fullName.vb: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory(Of TModulesProvider).ModulesProviderBasedAutofacServiceProviderFactory(System.Action(Of IModule), System.Action(Of ContainerBuilder))
+  fullName: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider>.ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule>, Action<ContainerBuilder>)
+  fullName.vb: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory(Of TModulesProvider).ModulesProviderBasedAutofacServiceProviderFactory(Action(Of IModule), Action(Of ContainerBuilder))
   nameWithType: ModulesProviderBasedAutofacServiceProviderFactory<TModulesProvider>.ModulesProviderBasedAutofacServiceProviderFactory(Action<IModule>, Action<ContainerBuilder>)
   nameWithType.vb: ModulesProviderBasedAutofacServiceProviderFactory(Of TModulesProvider).ModulesProviderBasedAutofacServiceProviderFactory(Action(Of IModule), Action(Of ContainerBuilder))
 - uid: FGS.Extensions.DependencyInjection.Autofac.ModulesProviderBasedAutofacServiceProviderFactory`1.#ctor*
@@ -2439,13 +2439,13 @@ references:
   isSpec: "True"
   fullName: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider
   nameWithType: ServiceCollectionExtensions.AddAutofacWithModulesProvider
-- uid: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider``1(IServiceCollection,System.Action{IModule},System.Action{ContainerBuilder})
+- uid: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider``1(IServiceCollection,Action{IModule},Action{ContainerBuilder})
   name: AddAutofacWithModulesProvider<TModulesProvider>(IServiceCollection, Action<IModule>, Action<ContainerBuilder>)
-  href: api/FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.html#FGS_Extensions_DependencyInjection_Autofac_ServiceCollectionExtensions_AddAutofacWithModulesProvider__1_IServiceCollection_System_Action_IModule__System_Action_ContainerBuilder__
-  commentId: M:FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider``1(IServiceCollection,System.Action{IModule},System.Action{ContainerBuilder})
+  href: api/FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.html#FGS_Extensions_DependencyInjection_Autofac_ServiceCollectionExtensions_AddAutofacWithModulesProvider__1_IServiceCollection_Action_IModule__Action_ContainerBuilder__
+  commentId: M:FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider``1(IServiceCollection,Action{IModule},Action{ContainerBuilder})
   name.vb: AddAutofacWithModulesProvider(Of TModulesProvider)(IServiceCollection, Action(Of IModule), Action(Of ContainerBuilder))
-  fullName: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider<TModulesProvider>(IServiceCollection, System.Action<IModule>, System.Action<ContainerBuilder>)
-  fullName.vb: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider(Of TModulesProvider)(IServiceCollection, System.Action(Of IModule), System.Action(Of ContainerBuilder))
+  fullName: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider<TModulesProvider>(IServiceCollection, Action<IModule>, Action<ContainerBuilder>)
+  fullName.vb: FGS.Extensions.DependencyInjection.Autofac.ServiceCollectionExtensions.AddAutofacWithModulesProvider(Of TModulesProvider)(IServiceCollection, Action(Of IModule), Action(Of ContainerBuilder))
   nameWithType: ServiceCollectionExtensions.AddAutofacWithModulesProvider<TModulesProvider>(IServiceCollection, Action<IModule>, Action<ContainerBuilder>)
   nameWithType.vb: ServiceCollectionExtensions.AddAutofacWithModulesProvider(Of TModulesProvider)(IServiceCollection, Action(Of IModule), Action(Of ContainerBuilder))
 - uid: FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
@@ -2530,13 +2530,13 @@ references:
   isSpec: "True"
   fullName: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider
   nameWithType: AutofacHostBuilderExtensions.UseAutofacWithModulesProvider
-- uid: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider``1(IHostBuilder,System.Action{IModule},System.Action{ContainerBuilder})
+- uid: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider``1(IHostBuilder,Action{IModule},Action{ContainerBuilder})
   name: UseAutofacWithModulesProvider<TModulesProvider>(IHostBuilder, Action<IModule>, Action<ContainerBuilder>)
-  href: api/FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.html#FGS_Extensions_Hosting_DependencyInjection_Autofac_AutofacHostBuilderExtensions_UseAutofacWithModulesProvider__1_IHostBuilder_System_Action_IModule__System_Action_ContainerBuilder__
-  commentId: M:FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider``1(IHostBuilder,System.Action{IModule},System.Action{ContainerBuilder})
+  href: api/FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.html#FGS_Extensions_Hosting_DependencyInjection_Autofac_AutofacHostBuilderExtensions_UseAutofacWithModulesProvider__1_IHostBuilder_Action_IModule__Action_ContainerBuilder__
+  commentId: M:FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider``1(IHostBuilder,Action{IModule},Action{ContainerBuilder})
   name.vb: UseAutofacWithModulesProvider(Of TModulesProvider)(IHostBuilder, Action(Of IModule), Action(Of ContainerBuilder))
-  fullName: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider<TModulesProvider>(IHostBuilder, System.Action<IModule>, System.Action<ContainerBuilder>)
-  fullName.vb: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider(Of TModulesProvider)(IHostBuilder, System.Action(Of IModule), System.Action(Of ContainerBuilder))
+  fullName: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider<TModulesProvider>(IHostBuilder, Action<IModule>, Action<ContainerBuilder>)
+  fullName.vb: FGS.Extensions.Hosting.DependencyInjection.Autofac.AutofacHostBuilderExtensions.UseAutofacWithModulesProvider(Of TModulesProvider)(IHostBuilder, Action(Of IModule), Action(Of ContainerBuilder))
   nameWithType: AutofacHostBuilderExtensions.UseAutofacWithModulesProvider<TModulesProvider>(IHostBuilder, Action<IModule>, Action<ContainerBuilder>)
   nameWithType.vb: AutofacHostBuilderExtensions.UseAutofacWithModulesProvider(Of TModulesProvider)(IHostBuilder, Action(Of IModule), Action(Of ContainerBuilder))
 - uid: FGS.Extensions.Hosting.Logging.Serilog
@@ -2551,21 +2551,21 @@ references:
   commentId: T:FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions
   fullName: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions
   nameWithType: SerilogHostBuilderExtensions
+- uid: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder,Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
+  name: UseSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean)
+  href: api/FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.html#FGS_Extensions_Hosting_Logging_Serilog_SerilogHostBuilderExtensions_UseSerilog_IHostBuilder_Action_HostBuilderContext_LoggerConfiguration__System_Boolean_
+  commentId: M:FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder,Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
+  name.vb: UseSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean)
+  fullName: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, System.Boolean)
+  fullName.vb: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), System.Boolean)
+  nameWithType: SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean)
+  nameWithType.vb: SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean)
 - uid: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder,Serilog.ILogger,System.Boolean)
   name: UseSerilog(IHostBuilder, Serilog.ILogger, Boolean)
   href: api/FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.html#FGS_Extensions_Hosting_Logging_Serilog_SerilogHostBuilderExtensions_UseSerilog_IHostBuilder_Serilog_ILogger_System_Boolean_
   commentId: M:FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder,Serilog.ILogger,System.Boolean)
   fullName: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Serilog.ILogger, System.Boolean)
   nameWithType: SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Serilog.ILogger, Boolean)
-- uid: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
-  name: UseSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean)
-  href: api/FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.html#FGS_Extensions_Hosting_Logging_Serilog_SerilogHostBuilderExtensions_UseSerilog_IHostBuilder_System_Action_HostBuilderContext_LoggerConfiguration__System_Boolean_
-  commentId: M:FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder,System.Action{HostBuilderContext,LoggerConfiguration},System.Boolean)
-  name.vb: UseSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean)
-  fullName: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, System.Action<HostBuilderContext, LoggerConfiguration>, System.Boolean)
-  fullName.vb: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, System.Action(Of HostBuilderContext, LoggerConfiguration), System.Boolean)
-  nameWithType: SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action<HostBuilderContext, LoggerConfiguration>, Boolean)
-  nameWithType.vb: SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action(Of HostBuilderContext, LoggerConfiguration), Boolean)
 - uid: FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.UseSerilog*
   name: UseSerilog
   href: api/FGS.Extensions.Hosting.Logging.Serilog.SerilogHostBuilderExtensions.html#FGS_Extensions_Hosting_Logging_Serilog_SerilogHostBuilderExtensions_UseSerilog_
@@ -2693,11 +2693,11 @@ references:
   commentId: T:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions
   fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions
   nameWithType: DelayedStartHostBuilderExtensions
-- uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder,System.TimeSpan)
+- uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder,TimeSpan)
   name: WithDelayedStart(IHostBuilder, TimeSpan)
-  href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.html#FGS_Extensions_Hosting_Middleware_DelayedStart_DelayedStartHostBuilderExtensions_WithDelayedStart_IHostBuilder_System_TimeSpan_
-  commentId: M:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder,System.TimeSpan)
-  fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder, System.TimeSpan)
+  href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.html#FGS_Extensions_Hosting_Middleware_DelayedStart_DelayedStartHostBuilderExtensions_WithDelayedStart_IHostBuilder_TimeSpan_
+  commentId: M:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder,TimeSpan)
+  fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder, TimeSpan)
   nameWithType: DelayedStartHostBuilderExtensions.WithDelayedStart(IHostBuilder, TimeSpan)
 - uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostBuilderExtensions.WithDelayedStart*
   name: WithDelayedStart
@@ -2725,42 +2725,6 @@ references:
   isSpec: "True"
   fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.DelayedStartHostingMiddleware
   nameWithType: DelayedStartHostingMiddleware.DelayedStartHostingMiddleware
-- uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name: IHostingMiddleware.StartAsync(Func<Task>, CancellationToken)
-  href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.html#FGS_Extensions_Hosting_Middleware_DelayedStart_DelayedStartHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(Func(Of Task), CancellationToken)
-  fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: DelayedStartHostingMiddleware.IHostingMiddleware.StartAsync(Func<Task>, CancellationToken)
-  nameWithType.vb: DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(Func(Of Task), CancellationToken)
-- uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync*
-  name: IHostingMiddleware.StartAsync
-  href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.html#FGS_Extensions_Hosting_Middleware_DelayedStart_DelayedStartHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_
-  commentId: Overload:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync
-  isSpec: "True"
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-  fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-  nameWithType: DelayedStartHostingMiddleware.IHostingMiddleware.StartAsync
-  nameWithType.vb: DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-- uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name: IHostingMiddleware.StopAsync(Func<Task>, CancellationToken)
-  href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.html#FGS_Extensions_Hosting_Middleware_DelayedStart_DelayedStartHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(Func(Of Task), CancellationToken)
-  fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: DelayedStartHostingMiddleware.IHostingMiddleware.StopAsync(Func<Task>, CancellationToken)
-  nameWithType.vb: DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(Func(Of Task), CancellationToken)
-- uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync*
-  name: IHostingMiddleware.StopAsync
-  href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.html#FGS_Extensions_Hosting_Middleware_DelayedStart_DelayedStartHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_
-  commentId: Overload:FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync
-  isSpec: "True"
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
-  fullName: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
-  nameWithType: DelayedStartHostingMiddleware.IHostingMiddleware.StopAsync
-  nameWithType.vb: DelayedStartHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
 - uid: FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartOptions
   name: DelayedStartOptions
   href: api/FGS.Extensions.Hosting.Middleware.DelayedStart.DelayedStartOptions.html
@@ -2793,13 +2757,13 @@ references:
   isSpec: "True"
   fullName: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware
   nameWithType: HostBuilderExtensions.UseHostingMiddleware
-- uid: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware``1(IHostBuilder,System.Func{System.IServiceProvider,``0})
+- uid: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware``1(IHostBuilder,Func{IServiceProvider,``0})
   name: UseHostingMiddleware<THostingMiddleware>(IHostBuilder, Func<IServiceProvider, THostingMiddleware>)
-  href: api/FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.html#FGS_Extensions_Hosting_Middleware_HostBuilderExtensions_UseHostingMiddleware__1_IHostBuilder_System_Func_System_IServiceProvider___0__
-  commentId: M:FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware``1(IHostBuilder,System.Func{System.IServiceProvider,``0})
+  href: api/FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.html#FGS_Extensions_Hosting_Middleware_HostBuilderExtensions_UseHostingMiddleware__1_IHostBuilder_Func_IServiceProvider___0__
+  commentId: M:FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware``1(IHostBuilder,Func{IServiceProvider,``0})
   name.vb: UseHostingMiddleware(Of THostingMiddleware)(IHostBuilder, Func(Of IServiceProvider, THostingMiddleware))
-  fullName: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware<THostingMiddleware>(IHostBuilder, System.Func<System.IServiceProvider, THostingMiddleware>)
-  fullName.vb: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware(Of THostingMiddleware)(IHostBuilder, System.Func(Of System.IServiceProvider, THostingMiddleware))
+  fullName: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware<THostingMiddleware>(IHostBuilder, Func<IServiceProvider, THostingMiddleware>)
+  fullName.vb: FGS.Extensions.Hosting.Middleware.HostBuilderExtensions.UseHostingMiddleware(Of THostingMiddleware)(IHostBuilder, Func(Of IServiceProvider, THostingMiddleware))
   nameWithType: HostBuilderExtensions.UseHostingMiddleware<THostingMiddleware>(IHostBuilder, Func<IServiceProvider, THostingMiddleware>)
   nameWithType.vb: HostBuilderExtensions.UseHostingMiddleware(Of THostingMiddleware)(IHostBuilder, Func(Of IServiceProvider, THostingMiddleware))
 - uid: FGS.Extensions.Logging.Serilog
@@ -3108,11 +3072,11 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.PollyRetryPolicyAdapter
   nameWithType: PollyRetryPolicyAdapter.PollyRetryPolicyAdapter
-- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(System.Action)
+- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(Action)
   name: Execute(Action)
-  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_Execute_System_Action_
-  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(System.Action)
-  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(System.Action)
+  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_Execute_Action_
+  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(Action)
+  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(Action)
   nameWithType: PollyRetryPolicyAdapter.Execute(Action)
 - uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute*
   name: Execute
@@ -3121,22 +3085,22 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute
   nameWithType: PollyRetryPolicyAdapter.Execute
-- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute``1(System.Func{``0})
+- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute``1(Func{``0})
   name: Execute<TResult>(Func<TResult>)
-  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_Execute__1_System_Func___0__
-  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute``1(System.Func{``0})
+  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_Execute__1_Func___0__
+  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute``1(Func{``0})
   name.vb: Execute(Of TResult)(Func(Of TResult))
-  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute<TResult>(System.Func<TResult>)
-  fullName.vb: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(Of TResult)(System.Func(Of TResult))
+  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute<TResult>(Func<TResult>)
+  fullName.vb: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.Execute(Of TResult)(Func(Of TResult))
   nameWithType: PollyRetryPolicyAdapter.Execute<TResult>(Func<TResult>)
   nameWithType.vb: PollyRetryPolicyAdapter.Execute(Of TResult)(Func(Of TResult))
-- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(System.Func{System.Threading.Tasks.Task})
+- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(Func{Task})
   name: ExecuteAsync(Func<Task>)
-  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_ExecuteAsync_System_Func_System_Threading_Tasks_Task__
-  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(System.Func{System.Threading.Tasks.Task})
+  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_ExecuteAsync_Func_Task__
+  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(Func{Task})
   name.vb: ExecuteAsync(Func(Of Task))
-  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(System.Func<System.Threading.Tasks.Task>)
-  fullName.vb: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(System.Func(Of System.Threading.Tasks.Task))
+  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(Func<Task>)
+  fullName.vb: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(Func(Of Task))
   nameWithType: PollyRetryPolicyAdapter.ExecuteAsync(Func<Task>)
   nameWithType.vb: PollyRetryPolicyAdapter.ExecuteAsync(Func(Of Task))
 - uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync*
@@ -3146,13 +3110,13 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync
   nameWithType: PollyRetryPolicyAdapter.ExecuteAsync
-- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+- uid: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync``1(Func{Task{``0}})
   name: ExecuteAsync<TResult>(Func<Task<TResult>>)
-  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_ExecuteAsync__1_System_Func_System_Threading_Tasks_Task___0___
-  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  href: api/FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.html#FGS_FaultHandling_Polly_Retry_PollyRetryPolicyAdapter_ExecuteAsync__1_Func_Task___0___
+  commentId: M:FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync``1(Func{Task{``0}})
   name.vb: ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
-  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync<TResult>(System.Func<System.Threading.Tasks.Task<TResult>>)
-  fullName.vb: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(Of TResult)(System.Func(Of System.Threading.Tasks.Task(Of TResult)))
+  fullName: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync<TResult>(Func<Task<TResult>>)
+  fullName.vb: FGS.FaultHandling.Polly.Retry.PollyRetryPolicyAdapter.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
   nameWithType: PollyRetryPolicyAdapter.ExecuteAsync<TResult>(Func<Task<TResult>>)
   nameWithType.vb: PollyRetryPolicyAdapter.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
 - uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory
@@ -3161,13 +3125,13 @@ references:
   commentId: T:FGS.FaultHandling.Polly.Retry.RetryPolicyFactory
   fullName: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory
   nameWithType: RetryPolicyFactory
-- uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.#ctor(IOptionsSnapshot{FGS.FaultHandling.Abstractions.FaultHandlingConfiguration},FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator,System.Func{ISyncPolicy,IAsyncPolicy,FGS.FaultHandling.Abstractions.Retry.IRetryPolicy},ILogger{FGS.FaultHandling.Polly.Retry.RetryPolicyFactory})
+- uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.#ctor(IOptionsSnapshot{FGS.FaultHandling.Abstractions.FaultHandlingConfiguration},FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator,Func{ISyncPolicy,IAsyncPolicy,FGS.FaultHandling.Abstractions.Retry.IRetryPolicy},ILogger{FGS.FaultHandling.Polly.Retry.RetryPolicyFactory})
   name: RetryPolicyFactory(IOptionsSnapshot<FaultHandlingConfiguration>, IRetryBackoffCalculator, Func<ISyncPolicy, IAsyncPolicy, IRetryPolicy>, ILogger<RetryPolicyFactory>)
-  href: api/FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.html#FGS_FaultHandling_Polly_Retry_RetryPolicyFactory__ctor_IOptionsSnapshot_FGS_FaultHandling_Abstractions_FaultHandlingConfiguration__FGS_FaultHandling_Abstractions_Retry_IRetryBackoffCalculator_System_Func_ISyncPolicy_IAsyncPolicy_FGS_FaultHandling_Abstractions_Retry_IRetryPolicy__ILogger_FGS_FaultHandling_Polly_Retry_RetryPolicyFactory__
-  commentId: M:FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.#ctor(IOptionsSnapshot{FGS.FaultHandling.Abstractions.FaultHandlingConfiguration},FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator,System.Func{ISyncPolicy,IAsyncPolicy,FGS.FaultHandling.Abstractions.Retry.IRetryPolicy},ILogger{FGS.FaultHandling.Polly.Retry.RetryPolicyFactory})
+  href: api/FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.html#FGS_FaultHandling_Polly_Retry_RetryPolicyFactory__ctor_IOptionsSnapshot_FGS_FaultHandling_Abstractions_FaultHandlingConfiguration__FGS_FaultHandling_Abstractions_Retry_IRetryBackoffCalculator_Func_ISyncPolicy_IAsyncPolicy_FGS_FaultHandling_Abstractions_Retry_IRetryPolicy__ILogger_FGS_FaultHandling_Polly_Retry_RetryPolicyFactory__
+  commentId: M:FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.#ctor(IOptionsSnapshot{FGS.FaultHandling.Abstractions.FaultHandlingConfiguration},FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator,Func{ISyncPolicy,IAsyncPolicy,FGS.FaultHandling.Abstractions.Retry.IRetryPolicy},ILogger{FGS.FaultHandling.Polly.Retry.RetryPolicyFactory})
   name.vb: RetryPolicyFactory(IOptionsSnapshot(Of FaultHandlingConfiguration), IRetryBackoffCalculator, Func(Of ISyncPolicy, IAsyncPolicy, IRetryPolicy), ILogger(Of RetryPolicyFactory))
-  fullName: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.RetryPolicyFactory(IOptionsSnapshot<FGS.FaultHandling.Abstractions.FaultHandlingConfiguration>, FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator, System.Func<ISyncPolicy, IAsyncPolicy, FGS.FaultHandling.Abstractions.Retry.IRetryPolicy>, ILogger<FGS.FaultHandling.Polly.Retry.RetryPolicyFactory>)
-  fullName.vb: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.RetryPolicyFactory(IOptionsSnapshot(Of FGS.FaultHandling.Abstractions.FaultHandlingConfiguration), FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator, System.Func(Of ISyncPolicy, IAsyncPolicy, FGS.FaultHandling.Abstractions.Retry.IRetryPolicy), ILogger(Of FGS.FaultHandling.Polly.Retry.RetryPolicyFactory))
+  fullName: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.RetryPolicyFactory(IOptionsSnapshot<FGS.FaultHandling.Abstractions.FaultHandlingConfiguration>, FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator, Func<ISyncPolicy, IAsyncPolicy, FGS.FaultHandling.Abstractions.Retry.IRetryPolicy>, ILogger<FGS.FaultHandling.Polly.Retry.RetryPolicyFactory>)
+  fullName.vb: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.RetryPolicyFactory(IOptionsSnapshot(Of FGS.FaultHandling.Abstractions.FaultHandlingConfiguration), FGS.FaultHandling.Abstractions.Retry.IRetryBackoffCalculator, Func(Of ISyncPolicy, IAsyncPolicy, FGS.FaultHandling.Abstractions.Retry.IRetryPolicy), ILogger(Of FGS.FaultHandling.Polly.Retry.RetryPolicyFactory))
   nameWithType: RetryPolicyFactory.RetryPolicyFactory(IOptionsSnapshot<FaultHandlingConfiguration>, IRetryBackoffCalculator, Func<ISyncPolicy, IAsyncPolicy, IRetryPolicy>, ILogger<RetryPolicyFactory>)
   nameWithType.vb: RetryPolicyFactory.RetryPolicyFactory(IOptionsSnapshot(Of FaultHandlingConfiguration), IRetryBackoffCalculator, Func(Of ISyncPolicy, IAsyncPolicy, IRetryPolicy), ILogger(Of RetryPolicyFactory))
 - uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.#ctor*
@@ -3177,13 +3141,13 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.RetryPolicyFactory
   nameWithType: RetryPolicyFactory.RetryPolicyFactory
-- uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(System.Collections.Generic.IEnumerable{System.Func{System.Exception,System.Boolean}})
+- uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(IEnumerable{Func{Exception,System.Boolean}})
   name: Create(IEnumerable<Func<Exception, Boolean>>)
-  href: api/FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.html#FGS_FaultHandling_Polly_Retry_RetryPolicyFactory_Create_System_Collections_Generic_IEnumerable_System_Func_System_Exception_System_Boolean___
-  commentId: M:FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(System.Collections.Generic.IEnumerable{System.Func{System.Exception,System.Boolean}})
+  href: api/FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.html#FGS_FaultHandling_Polly_Retry_RetryPolicyFactory_Create_IEnumerable_Func_Exception_System_Boolean___
+  commentId: M:FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(IEnumerable{Func{Exception,System.Boolean}})
   name.vb: Create(IEnumerable(Of Func(Of Exception, Boolean)))
-  fullName: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(System.Collections.Generic.IEnumerable<System.Func<System.Exception, System.Boolean>>)
-  fullName.vb: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(System.Collections.Generic.IEnumerable(Of System.Func(Of System.Exception, System.Boolean)))
+  fullName: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(IEnumerable<Func<Exception, System.Boolean>>)
+  fullName.vb: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create(IEnumerable(Of Func(Of Exception, System.Boolean)))
   nameWithType: RetryPolicyFactory.Create(IEnumerable<Func<Exception, Boolean>>)
   nameWithType.vb: RetryPolicyFactory.Create(IEnumerable(Of Func(Of Exception, Boolean)))
 - uid: FGS.FaultHandling.Polly.Retry.RetryPolicyFactory.Create*
@@ -3205,11 +3169,11 @@ references:
   commentId: T:FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate
   fullName: FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate
   nameWithType: SqlExceptionRetryPredicate
-- uid: FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(System.Exception)
+- uid: FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(Exception)
   name: ShouldRetry(Exception)
-  href: api/FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.html#FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_System_Exception_
-  commentId: M:FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(System.Exception)
-  fullName: FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(System.Exception)
+  href: api/FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.html#FGS_FaultHandling_Predicates_Mssql_SqlExceptionRetryPredicate_ShouldRetry_Exception_
+  commentId: M:FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(Exception)
+  fullName: FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry(Exception)
   nameWithType: SqlExceptionRetryPredicate.ShouldRetry(Exception)
 - uid: FGS.FaultHandling.Predicates.Mssql.SqlExceptionRetryPredicate.ShouldRetry*
   name: ShouldRetry
@@ -3230,11 +3194,11 @@ references:
   commentId: T:FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate
   fullName: FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate
   nameWithType: Win32ExceptionRetryPredicate
-- uid: FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(System.Exception)
+- uid: FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(Exception)
   name: ShouldRetry(Exception)
-  href: api/FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.html#FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_System_Exception_
-  commentId: M:FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(System.Exception)
-  fullName: FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(System.Exception)
+  href: api/FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.html#FGS_FaultHandling_Predicates_Win32_Win32ExceptionRetryPredicate_ShouldRetry_Exception_
+  commentId: M:FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(Exception)
+  fullName: FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry(Exception)
   nameWithType: Win32ExceptionRetryPredicate.ShouldRetry(Exception)
 - uid: FGS.FaultHandling.Predicates.Win32.Win32ExceptionRetryPredicate.ShouldRetry*
   name: ShouldRetry
@@ -3274,11 +3238,11 @@ references:
   commentId: T:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy
   fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy
   nameWithType: NoOpRetryPolicy
-- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(System.Action)
+- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(Action)
   name: Execute(Action)
-  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_Execute_System_Action_
-  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(System.Action)
-  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(System.Action)
+  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_Execute_Action_
+  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(Action)
+  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(Action)
   nameWithType: NoOpRetryPolicy.Execute(Action)
 - uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute*
   name: Execute
@@ -3287,22 +3251,22 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute
   nameWithType: NoOpRetryPolicy.Execute
-- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute``1(System.Func{``0})
+- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute``1(Func{``0})
   name: Execute<TResult>(Func<TResult>)
-  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_Execute__1_System_Func___0__
-  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute``1(System.Func{``0})
+  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_Execute__1_Func___0__
+  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute``1(Func{``0})
   name.vb: Execute(Of TResult)(Func(Of TResult))
-  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute<TResult>(System.Func<TResult>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(Of TResult)(System.Func(Of TResult))
+  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute<TResult>(Func<TResult>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.Execute(Of TResult)(Func(Of TResult))
   nameWithType: NoOpRetryPolicy.Execute<TResult>(Func<TResult>)
   nameWithType.vb: NoOpRetryPolicy.Execute(Of TResult)(Func(Of TResult))
-- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(System.Func{System.Threading.Tasks.Task})
+- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(Func{Task})
   name: ExecuteAsync(Func<Task>)
-  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_ExecuteAsync_System_Func_System_Threading_Tasks_Task__
-  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(System.Func{System.Threading.Tasks.Task})
+  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_ExecuteAsync_Func_Task__
+  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(Func{Task})
   name.vb: ExecuteAsync(Func(Of Task))
-  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(System.Func<System.Threading.Tasks.Task>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(System.Func(Of System.Threading.Tasks.Task))
+  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(Func<Task>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(Func(Of Task))
   nameWithType: NoOpRetryPolicy.ExecuteAsync(Func<Task>)
   nameWithType.vb: NoOpRetryPolicy.ExecuteAsync(Func(Of Task))
 - uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync*
@@ -3312,13 +3276,13 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync
   nameWithType: NoOpRetryPolicy.ExecuteAsync
-- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+- uid: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync``1(Func{Task{``0}})
   name: ExecuteAsync<TResult>(Func<Task<TResult>>)
-  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_ExecuteAsync__1_System_Func_System_Threading_Tasks_Task___0___
-  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  href: api/FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.html#FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy_ExecuteAsync__1_Func_Task___0___
+  commentId: M:FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync``1(Func{Task{``0}})
   name.vb: ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
-  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync<TResult>(System.Func<System.Threading.Tasks.Task<TResult>>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(Of TResult)(System.Func(Of System.Threading.Tasks.Task(Of TResult)))
+  fullName: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync<TResult>(Func<Task<TResult>>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
   nameWithType: NoOpRetryPolicy.ExecuteAsync<TResult>(Func<Task<TResult>>)
   nameWithType.vb: NoOpRetryPolicy.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
 - uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator
@@ -3327,11 +3291,11 @@ references:
   commentId: T:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator
   fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator
   nameWithType: ObservableRetryPolicyDecorator
-- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicy,System.Action)
+- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicy,Action)
   name: ObservableRetryPolicyDecorator(IRetryPolicy, Action)
-  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator__ctor_FGS_FaultHandling_Abstractions_Retry_IRetryPolicy_System_Action_
-  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicy,System.Action)
-  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ObservableRetryPolicyDecorator(FGS.FaultHandling.Abstractions.Retry.IRetryPolicy, System.Action)
+  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator__ctor_FGS_FaultHandling_Abstractions_Retry_IRetryPolicy_Action_
+  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicy,Action)
+  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ObservableRetryPolicyDecorator(FGS.FaultHandling.Abstractions.Retry.IRetryPolicy, Action)
   nameWithType: ObservableRetryPolicyDecorator.ObservableRetryPolicyDecorator(IRetryPolicy, Action)
 - uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.#ctor*
   name: ObservableRetryPolicyDecorator
@@ -3340,11 +3304,11 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ObservableRetryPolicyDecorator
   nameWithType: ObservableRetryPolicyDecorator.ObservableRetryPolicyDecorator
-- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(System.Action)
+- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(Action)
   name: Execute(Action)
-  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_Execute_System_Action_
-  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(System.Action)
-  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(System.Action)
+  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_Execute_Action_
+  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(Action)
+  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(Action)
   nameWithType: ObservableRetryPolicyDecorator.Execute(Action)
 - uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute*
   name: Execute
@@ -3353,22 +3317,22 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute
   nameWithType: ObservableRetryPolicyDecorator.Execute
-- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute``1(System.Func{``0})
+- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute``1(Func{``0})
   name: Execute<TResult>(Func<TResult>)
-  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_Execute__1_System_Func___0__
-  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute``1(System.Func{``0})
+  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_Execute__1_Func___0__
+  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute``1(Func{``0})
   name.vb: Execute(Of TResult)(Func(Of TResult))
-  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute<TResult>(System.Func<TResult>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(Of TResult)(System.Func(Of TResult))
+  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute<TResult>(Func<TResult>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.Execute(Of TResult)(Func(Of TResult))
   nameWithType: ObservableRetryPolicyDecorator.Execute<TResult>(Func<TResult>)
   nameWithType.vb: ObservableRetryPolicyDecorator.Execute(Of TResult)(Func(Of TResult))
-- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(System.Func{System.Threading.Tasks.Task})
+- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(Func{Task})
   name: ExecuteAsync(Func<Task>)
-  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_ExecuteAsync_System_Func_System_Threading_Tasks_Task__
-  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(System.Func{System.Threading.Tasks.Task})
+  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_ExecuteAsync_Func_Task__
+  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(Func{Task})
   name.vb: ExecuteAsync(Func(Of Task))
-  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(System.Func<System.Threading.Tasks.Task>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(System.Func(Of System.Threading.Tasks.Task))
+  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(Func<Task>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(Func(Of Task))
   nameWithType: ObservableRetryPolicyDecorator.ExecuteAsync(Func<Task>)
   nameWithType.vb: ObservableRetryPolicyDecorator.ExecuteAsync(Func(Of Task))
 - uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync*
@@ -3378,13 +3342,13 @@ references:
   isSpec: "True"
   fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync
   nameWithType: ObservableRetryPolicyDecorator.ExecuteAsync
-- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+- uid: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync``1(Func{Task{``0}})
   name: ExecuteAsync<TResult>(Func<Task<TResult>>)
-  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_ExecuteAsync__1_System_Func_System_Threading_Tasks_Task___0___
-  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync``1(System.Func{System.Threading.Tasks.Task{``0}})
+  href: api/FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.html#FGS_FaultHandling_Primitives_Retry_ObservableRetryPolicyDecorator_ExecuteAsync__1_Func_Task___0___
+  commentId: M:FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync``1(Func{Task{``0}})
   name.vb: ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
-  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync<TResult>(System.Func<System.Threading.Tasks.Task<TResult>>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(Of TResult)(System.Func(Of System.Threading.Tasks.Task(Of TResult)))
+  fullName: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync<TResult>(Func<Task<TResult>>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.ObservableRetryPolicyDecorator.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
   nameWithType: ObservableRetryPolicyDecorator.ExecuteAsync<TResult>(Func<Task<TResult>>)
   nameWithType.vb: ObservableRetryPolicyDecorator.ExecuteAsync(Of TResult)(Func(Of Task(Of TResult)))
 - uid: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator
@@ -3393,13 +3357,13 @@ references:
   commentId: T:FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator
   fullName: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator
   nameWithType: RetryPolicyCoordinator
-- uid: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory,System.Func{FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy},System.Collections.Generic.IEnumerable{FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate})
+- uid: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory,Func{FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy},IEnumerable{FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate})
   name: RetryPolicyCoordinator(IRetryPolicyFactory, Func<NoOpRetryPolicy>, IEnumerable<IExceptionRetryPredicate>)
-  href: api/FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.html#FGS_FaultHandling_Primitives_Retry_RetryPolicyCoordinator__ctor_FGS_FaultHandling_Abstractions_Retry_IRetryPolicyFactory_System_Func_FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy__System_Collections_Generic_IEnumerable_FGS_FaultHandling_Abstractions_Retry_IExceptionRetryPredicate__
-  commentId: M:FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory,System.Func{FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy},System.Collections.Generic.IEnumerable{FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate})
+  href: api/FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.html#FGS_FaultHandling_Primitives_Retry_RetryPolicyCoordinator__ctor_FGS_FaultHandling_Abstractions_Retry_IRetryPolicyFactory_Func_FGS_FaultHandling_Primitives_Retry_NoOpRetryPolicy__IEnumerable_FGS_FaultHandling_Abstractions_Retry_IExceptionRetryPredicate__
+  commentId: M:FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.#ctor(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory,Func{FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy},IEnumerable{FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate})
   name.vb: RetryPolicyCoordinator(IRetryPolicyFactory, Func(Of NoOpRetryPolicy), IEnumerable(Of IExceptionRetryPredicate))
-  fullName: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.RetryPolicyCoordinator(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory, System.Func<FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy>, System.Collections.Generic.IEnumerable<FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate>)
-  fullName.vb: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.RetryPolicyCoordinator(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory, System.Func(Of FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy), System.Collections.Generic.IEnumerable(Of FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate))
+  fullName: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.RetryPolicyCoordinator(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory, Func<FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy>, IEnumerable<FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate>)
+  fullName.vb: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.RetryPolicyCoordinator(FGS.FaultHandling.Abstractions.Retry.IRetryPolicyFactory, Func(Of FGS.FaultHandling.Primitives.Retry.NoOpRetryPolicy), IEnumerable(Of FGS.FaultHandling.Abstractions.Retry.IExceptionRetryPredicate))
   nameWithType: RetryPolicyCoordinator.RetryPolicyCoordinator(IRetryPolicyFactory, Func<NoOpRetryPolicy>, IEnumerable<IExceptionRetryPredicate>)
   nameWithType.vb: RetryPolicyCoordinator.RetryPolicyCoordinator(IRetryPolicyFactory, Func(Of NoOpRetryPolicy), IEnumerable(Of IExceptionRetryPredicate))
 - uid: FGS.FaultHandling.Primitives.Retry.RetryPolicyCoordinator.#ctor*
@@ -3748,12 +3712,12 @@ references:
   fullName.vb: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook(Of TAttribute).MethodsInspected
   nameWithType: AttributeProxyGenerationHook<TAttribute>.MethodsInspected
   nameWithType.vb: AttributeProxyGenerationHook(Of TAttribute).MethodsInspected
-- uid: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.NonProxyableMemberNotification(System.Type,System.Reflection.MemberInfo)
+- uid: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.NonProxyableMemberNotification(Type,MemberInfo)
   name: NonProxyableMemberNotification(Type, MemberInfo)
-  href: api/FGS.Interception.DynamicProxy.AttributeProxyGenerationHook-1.html#FGS_Interception_DynamicProxy_AttributeProxyGenerationHook_1_NonProxyableMemberNotification_System_Type_System_Reflection_MemberInfo_
-  commentId: M:FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.NonProxyableMemberNotification(System.Type,System.Reflection.MemberInfo)
-  fullName: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook<TAttribute>.NonProxyableMemberNotification(System.Type, System.Reflection.MemberInfo)
-  fullName.vb: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook(Of TAttribute).NonProxyableMemberNotification(System.Type, System.Reflection.MemberInfo)
+  href: api/FGS.Interception.DynamicProxy.AttributeProxyGenerationHook-1.html#FGS_Interception_DynamicProxy_AttributeProxyGenerationHook_1_NonProxyableMemberNotification_Type_MemberInfo_
+  commentId: M:FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.NonProxyableMemberNotification(Type,MemberInfo)
+  fullName: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook<TAttribute>.NonProxyableMemberNotification(Type, MemberInfo)
+  fullName.vb: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook(Of TAttribute).NonProxyableMemberNotification(Type, MemberInfo)
   nameWithType: AttributeProxyGenerationHook<TAttribute>.NonProxyableMemberNotification(Type, MemberInfo)
   nameWithType.vb: AttributeProxyGenerationHook(Of TAttribute).NonProxyableMemberNotification(Type, MemberInfo)
 - uid: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.NonProxyableMemberNotification*
@@ -3765,12 +3729,12 @@ references:
   fullName.vb: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook(Of TAttribute).NonProxyableMemberNotification
   nameWithType: AttributeProxyGenerationHook<TAttribute>.NonProxyableMemberNotification
   nameWithType.vb: AttributeProxyGenerationHook(Of TAttribute).NonProxyableMemberNotification
-- uid: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.ShouldInterceptMethod(System.Type,System.Reflection.MethodInfo)
+- uid: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.ShouldInterceptMethod(Type,MethodInfo)
   name: ShouldInterceptMethod(Type, MethodInfo)
-  href: api/FGS.Interception.DynamicProxy.AttributeProxyGenerationHook-1.html#FGS_Interception_DynamicProxy_AttributeProxyGenerationHook_1_ShouldInterceptMethod_System_Type_System_Reflection_MethodInfo_
-  commentId: M:FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.ShouldInterceptMethod(System.Type,System.Reflection.MethodInfo)
-  fullName: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook<TAttribute>.ShouldInterceptMethod(System.Type, System.Reflection.MethodInfo)
-  fullName.vb: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook(Of TAttribute).ShouldInterceptMethod(System.Type, System.Reflection.MethodInfo)
+  href: api/FGS.Interception.DynamicProxy.AttributeProxyGenerationHook-1.html#FGS_Interception_DynamicProxy_AttributeProxyGenerationHook_1_ShouldInterceptMethod_Type_MethodInfo_
+  commentId: M:FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.ShouldInterceptMethod(Type,MethodInfo)
+  fullName: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook<TAttribute>.ShouldInterceptMethod(Type, MethodInfo)
+  fullName.vb: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook(Of TAttribute).ShouldInterceptMethod(Type, MethodInfo)
   nameWithType: AttributeProxyGenerationHook<TAttribute>.ShouldInterceptMethod(Type, MethodInfo)
   nameWithType.vb: AttributeProxyGenerationHook(Of TAttribute).ShouldInterceptMethod(Type, MethodInfo)
 - uid: FGS.Interception.DynamicProxy.AttributeProxyGenerationHook`1.ShouldInterceptMethod*
@@ -3791,13 +3755,13 @@ references:
   fullName.vb: FGS.Interception.DynamicProxy.InterceptorAdapter(Of TInterceptor, TInterceptorInstantiationData)
   nameWithType: InterceptorAdapter<TInterceptor, TInterceptorInstantiationData>
   nameWithType.vb: InterceptorAdapter(Of TInterceptor, TInterceptorInstantiationData)
-- uid: FGS.Interception.DynamicProxy.InterceptorAdapter`2.#ctor(System.Func{Castle.DynamicProxy.IInvocation,`1},System.Func{`1,`0},System.Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IInvocation},System.Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IAsyncInvocation})
+- uid: FGS.Interception.DynamicProxy.InterceptorAdapter`2.#ctor(Func{Castle.DynamicProxy.IInvocation,`1},Func{`1,`0},Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IInvocation},Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IAsyncInvocation})
   name: InterceptorAdapter(Func<Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData>, Func<TInterceptorInstantiationData, TInterceptor>, Func<Castle.DynamicProxy.IInvocation, IInvocation>, Func<Castle.DynamicProxy.IInvocation, IAsyncInvocation>)
-  href: api/FGS.Interception.DynamicProxy.InterceptorAdapter-2.html#FGS_Interception_DynamicProxy_InterceptorAdapter_2__ctor_System_Func_Castle_DynamicProxy_IInvocation__1__System_Func__1__0__System_Func_Castle_DynamicProxy_IInvocation_FGS_Interception_Abstractions_IInvocation__System_Func_Castle_DynamicProxy_IInvocation_FGS_Interception_Abstractions_IAsyncInvocation__
-  commentId: M:FGS.Interception.DynamicProxy.InterceptorAdapter`2.#ctor(System.Func{Castle.DynamicProxy.IInvocation,`1},System.Func{`1,`0},System.Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IInvocation},System.Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IAsyncInvocation})
+  href: api/FGS.Interception.DynamicProxy.InterceptorAdapter-2.html#FGS_Interception_DynamicProxy_InterceptorAdapter_2__ctor_Func_Castle_DynamicProxy_IInvocation__1__Func__1__0__Func_Castle_DynamicProxy_IInvocation_FGS_Interception_Abstractions_IInvocation__Func_Castle_DynamicProxy_IInvocation_FGS_Interception_Abstractions_IAsyncInvocation__
+  commentId: M:FGS.Interception.DynamicProxy.InterceptorAdapter`2.#ctor(Func{Castle.DynamicProxy.IInvocation,`1},Func{`1,`0},Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IInvocation},Func{Castle.DynamicProxy.IInvocation,FGS.Interception.Abstractions.IAsyncInvocation})
   name.vb: InterceptorAdapter(Func(Of Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData), Func(Of TInterceptorInstantiationData, TInterceptor), Func(Of Castle.DynamicProxy.IInvocation, IInvocation), Func(Of Castle.DynamicProxy.IInvocation, IAsyncInvocation))
-  fullName: FGS.Interception.DynamicProxy.InterceptorAdapter<TInterceptor, TInterceptorInstantiationData>.InterceptorAdapter(System.Func<Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData>, System.Func<TInterceptorInstantiationData, TInterceptor>, System.Func<Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IInvocation>, System.Func<Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IAsyncInvocation>)
-  fullName.vb: FGS.Interception.DynamicProxy.InterceptorAdapter(Of TInterceptor, TInterceptorInstantiationData).InterceptorAdapter(System.Func(Of Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData), System.Func(Of TInterceptorInstantiationData, TInterceptor), System.Func(Of Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IInvocation), System.Func(Of Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IAsyncInvocation))
+  fullName: FGS.Interception.DynamicProxy.InterceptorAdapter<TInterceptor, TInterceptorInstantiationData>.InterceptorAdapter(Func<Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData>, Func<TInterceptorInstantiationData, TInterceptor>, Func<Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IInvocation>, Func<Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IAsyncInvocation>)
+  fullName.vb: FGS.Interception.DynamicProxy.InterceptorAdapter(Of TInterceptor, TInterceptorInstantiationData).InterceptorAdapter(Func(Of Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData), Func(Of TInterceptorInstantiationData, TInterceptor), Func(Of Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IInvocation), Func(Of Castle.DynamicProxy.IInvocation, FGS.Interception.Abstractions.IAsyncInvocation))
   nameWithType: InterceptorAdapter<TInterceptor, TInterceptorInstantiationData>.InterceptorAdapter(Func<Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData>, Func<TInterceptorInstantiationData, TInterceptor>, Func<Castle.DynamicProxy.IInvocation, IInvocation>, Func<Castle.DynamicProxy.IInvocation, IAsyncInvocation>)
   nameWithType.vb: InterceptorAdapter(Of TInterceptor, TInterceptorInstantiationData).InterceptorAdapter(Func(Of Castle.DynamicProxy.IInvocation, TInterceptorInstantiationData), Func(Of TInterceptorInstantiationData, TInterceptor), Func(Of Castle.DynamicProxy.IInvocation, IInvocation), Func(Of Castle.DynamicProxy.IInvocation, IAsyncInvocation))
 - uid: FGS.Interception.DynamicProxy.InterceptorAdapter`2.#ctor*
@@ -4079,13 +4043,13 @@ references:
   commentId: T:FGS.Interceptors.Time.FreezeTimeInterceptor
   fullName: FGS.Interceptors.Time.FreezeTimeInterceptor
   nameWithType: FreezeTimeInterceptor
-- uid: FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor(System.Func{FGS.Primitives.Time.Abstractions.IFreezableClock})
+- uid: FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor(Func{FGS.Primitives.Time.Abstractions.IFreezableClock})
   name: FreezeTimeInterceptor(Func<IFreezableClock>)
-  href: api/FGS.Interceptors.Time.FreezeTimeInterceptor.html#FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_System_Func_FGS_Primitives_Time_Abstractions_IFreezableClock__
-  commentId: M:FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor(System.Func{FGS.Primitives.Time.Abstractions.IFreezableClock})
+  href: api/FGS.Interceptors.Time.FreezeTimeInterceptor.html#FGS_Interceptors_Time_FreezeTimeInterceptor__ctor_Func_FGS_Primitives_Time_Abstractions_IFreezableClock__
+  commentId: M:FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor(Func{FGS.Primitives.Time.Abstractions.IFreezableClock})
   name.vb: FreezeTimeInterceptor(Func(Of IFreezableClock))
-  fullName: FGS.Interceptors.Time.FreezeTimeInterceptor.FreezeTimeInterceptor(System.Func<FGS.Primitives.Time.Abstractions.IFreezableClock>)
-  fullName.vb: FGS.Interceptors.Time.FreezeTimeInterceptor.FreezeTimeInterceptor(System.Func(Of FGS.Primitives.Time.Abstractions.IFreezableClock))
+  fullName: FGS.Interceptors.Time.FreezeTimeInterceptor.FreezeTimeInterceptor(Func<FGS.Primitives.Time.Abstractions.IFreezableClock>)
+  fullName.vb: FGS.Interceptors.Time.FreezeTimeInterceptor.FreezeTimeInterceptor(Func(Of FGS.Primitives.Time.Abstractions.IFreezableClock))
   nameWithType: FreezeTimeInterceptor.FreezeTimeInterceptor(Func<IFreezableClock>)
   nameWithType.vb: FreezeTimeInterceptor.FreezeTimeInterceptor(Func(Of IFreezableClock))
 - uid: FGS.Interceptors.Time.FreezeTimeInterceptor.#ctor*
@@ -4356,13 +4320,13 @@ references:
   fullName.vb: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery(Of T)
   nameWithType: PageQuery<T>
   nameWithType.vb: PageQuery(Of T)
-- uid: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery`1.#ctor(System.Linq.IQueryable{`0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification,System.Linq.IQueryable{System.Boolean})
+- uid: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery`1.#ctor(IQueryable{`0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification,IQueryable{System.Boolean})
   name: PageQuery(IQueryable<T>, PaginationSpecification, IQueryable<Boolean>)
-  href: api/FGS.Linq.Extensions.Pagination.Abstractions.PageQuery-1.html#FGS_Linq_Extensions_Pagination_Abstractions_PageQuery_1__ctor_System_Linq_IQueryable__0__FGS_Collections_Extensions_Pagination_Abstractions_PaginationSpecification_System_Linq_IQueryable_System_Boolean__
-  commentId: M:FGS.Linq.Extensions.Pagination.Abstractions.PageQuery`1.#ctor(System.Linq.IQueryable{`0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification,System.Linq.IQueryable{System.Boolean})
+  href: api/FGS.Linq.Extensions.Pagination.Abstractions.PageQuery-1.html#FGS_Linq_Extensions_Pagination_Abstractions_PageQuery_1__ctor_IQueryable__0__FGS_Collections_Extensions_Pagination_Abstractions_PaginationSpecification_IQueryable_System_Boolean__
+  commentId: M:FGS.Linq.Extensions.Pagination.Abstractions.PageQuery`1.#ctor(IQueryable{`0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification,IQueryable{System.Boolean})
   name.vb: PageQuery(IQueryable(Of T), PaginationSpecification, IQueryable(Of Boolean))
-  fullName: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery<T>.PageQuery(System.Linq.IQueryable<T>, FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification, System.Linq.IQueryable<System.Boolean>)
-  fullName.vb: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery(Of T).PageQuery(System.Linq.IQueryable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification, System.Linq.IQueryable(Of System.Boolean))
+  fullName: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery<T>.PageQuery(IQueryable<T>, FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification, IQueryable<System.Boolean>)
+  fullName.vb: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery(Of T).PageQuery(IQueryable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification, IQueryable(Of System.Boolean))
   nameWithType: PageQuery<T>.PageQuery(IQueryable<T>, PaginationSpecification, IQueryable<Boolean>)
   nameWithType.vb: PageQuery(Of T).PageQuery(IQueryable(Of T), PaginationSpecification, IQueryable(Of Boolean))
 - uid: FGS.Linq.Extensions.Pagination.Abstractions.PageQuery`1.#ctor*
@@ -4466,13 +4430,13 @@ references:
   isSpec: "True"
   fullName: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate
   nameWithType: PaginationQueryableExtensions.Paginate
-- uid: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate``1(System.Linq.IQueryable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+- uid: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate``1(IQueryable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   name: Paginate<T>(IQueryable<T>, PaginationSpecification)
-  href: api/FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.html#FGS_Linq_Extensions_Pagination_PaginationQueryableExtensions_Paginate__1_System_Linq_IQueryable___0__FGS_Collections_Extensions_Pagination_Abstractions_PaginationSpecification_
-  commentId: M:FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate``1(System.Linq.IQueryable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+  href: api/FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.html#FGS_Linq_Extensions_Pagination_PaginationQueryableExtensions_Paginate__1_IQueryable___0__FGS_Collections_Extensions_Pagination_Abstractions_PaginationSpecification_
+  commentId: M:FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate``1(IQueryable{``0},FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   name.vb: Paginate(Of T)(IQueryable(Of T), PaginationSpecification)
-  fullName: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate<T>(System.Linq.IQueryable<T>, FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
-  fullName.vb: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate(Of T)(System.Linq.IQueryable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+  fullName: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate<T>(IQueryable<T>, FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
+  fullName.vb: FGS.Linq.Extensions.Pagination.PaginationQueryableExtensions.Paginate(Of T)(IQueryable(Of T), FGS.Collections.Extensions.Pagination.Abstractions.PaginationSpecification)
   nameWithType: PaginationQueryableExtensions.Paginate<T>(IQueryable<T>, PaginationSpecification)
   nameWithType.vb: PaginationQueryableExtensions.Paginate(Of T)(IQueryable(Of T), PaginationSpecification)
 - uid: FGS.OneOf.Extensions
@@ -5036,13 +5000,13 @@ references:
   commentId: T:FGS.Rx.Extensions.HistoricalReactiveProcessor
   fullName: FGS.Rx.Extensions.HistoricalReactiveProcessor
   nameWithType: HistoricalReactiveProcessor
-- uid: FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor(System.Func{HistoricalScheduler})
+- uid: FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor(Func{HistoricalScheduler})
   name: HistoricalReactiveProcessor(Func<HistoricalScheduler>)
-  href: api/FGS.Rx.Extensions.HistoricalReactiveProcessor.html#FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_System_Func_HistoricalScheduler__
-  commentId: M:FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor(System.Func{HistoricalScheduler})
+  href: api/FGS.Rx.Extensions.HistoricalReactiveProcessor.html#FGS_Rx_Extensions_HistoricalReactiveProcessor__ctor_Func_HistoricalScheduler__
+  commentId: M:FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor(Func{HistoricalScheduler})
   name.vb: HistoricalReactiveProcessor(Func(Of HistoricalScheduler))
-  fullName: FGS.Rx.Extensions.HistoricalReactiveProcessor.HistoricalReactiveProcessor(System.Func<HistoricalScheduler>)
-  fullName.vb: FGS.Rx.Extensions.HistoricalReactiveProcessor.HistoricalReactiveProcessor(System.Func(Of HistoricalScheduler))
+  fullName: FGS.Rx.Extensions.HistoricalReactiveProcessor.HistoricalReactiveProcessor(Func<HistoricalScheduler>)
+  fullName.vb: FGS.Rx.Extensions.HistoricalReactiveProcessor.HistoricalReactiveProcessor(Func(Of HistoricalScheduler))
   nameWithType: HistoricalReactiveProcessor.HistoricalReactiveProcessor(Func<HistoricalScheduler>)
   nameWithType.vb: HistoricalReactiveProcessor.HistoricalReactiveProcessor(Func(Of HistoricalScheduler))
 - uid: FGS.Rx.Extensions.HistoricalReactiveProcessor.#ctor*
@@ -5059,13 +5023,13 @@ references:
   isSpec: "True"
   fullName: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync
   nameWithType: HistoricalReactiveProcessor.MapAsync
-- uid: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync``2(System.Collections.Generic.IEnumerable{Timestamped{``0}},System.Func{System.IObservable{``0},IScheduler,System.IObservable{``1}})
+- uid: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync``2(IEnumerable{Timestamped{``0}},Func{IObservable{``0},IScheduler,IObservable{``1}})
   name: MapAsync<TInput, TResult>(IEnumerable<Timestamped<TInput>>, Func<IObservable<TInput>, IScheduler, IObservable<TResult>>)
-  href: api/FGS.Rx.Extensions.HistoricalReactiveProcessor.html#FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync__2_System_Collections_Generic_IEnumerable_Timestamped___0___System_Func_System_IObservable___0__IScheduler_System_IObservable___1___
-  commentId: M:FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync``2(System.Collections.Generic.IEnumerable{Timestamped{``0}},System.Func{System.IObservable{``0},IScheduler,System.IObservable{``1}})
+  href: api/FGS.Rx.Extensions.HistoricalReactiveProcessor.html#FGS_Rx_Extensions_HistoricalReactiveProcessor_MapAsync__2_IEnumerable_Timestamped___0___Func_IObservable___0__IScheduler_IObservable___1___
+  commentId: M:FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync``2(IEnumerable{Timestamped{``0}},Func{IObservable{``0},IScheduler,IObservable{``1}})
   name.vb: MapAsync(Of TInput, TResult)(IEnumerable(Of Timestamped(Of TInput)), Func(Of IObservable(Of TInput), IScheduler, IObservable(Of TResult)))
-  fullName: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync<TInput, TResult>(System.Collections.Generic.IEnumerable<Timestamped<TInput>>, System.Func<System.IObservable<TInput>, IScheduler, System.IObservable<TResult>>)
-  fullName.vb: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync(Of TInput, TResult)(System.Collections.Generic.IEnumerable(Of Timestamped(Of TInput)), System.Func(Of System.IObservable(Of TInput), IScheduler, System.IObservable(Of TResult)))
+  fullName: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync<TInput, TResult>(IEnumerable<Timestamped<TInput>>, Func<IObservable<TInput>, IScheduler, IObservable<TResult>>)
+  fullName.vb: FGS.Rx.Extensions.HistoricalReactiveProcessor.MapAsync(Of TInput, TResult)(IEnumerable(Of Timestamped(Of TInput)), Func(Of IObservable(Of TInput), IScheduler, IObservable(Of TResult)))
   nameWithType: HistoricalReactiveProcessor.MapAsync<TInput, TResult>(IEnumerable<Timestamped<TInput>>, Func<IObservable<TInput>, IScheduler, IObservable<TResult>>)
   nameWithType.vb: HistoricalReactiveProcessor.MapAsync(Of TInput, TResult)(IEnumerable(Of Timestamped(Of TInput)), Func(Of IObservable(Of TInput), IScheduler, IObservable(Of TResult)))
 - uid: FGS.Tests.Support
@@ -5093,13 +5057,13 @@ references:
   isSpec: "True"
   fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController
   nameWithType: AutoFixtureExtensions.BuildApiController
-- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController``1(Fixture,System.Action{Mock{HttpContext}})
+- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController``1(Fixture,Action{Mock{HttpContext}})
   name: BuildApiController<TApiController>(Fixture, Action<Mock<HttpContext>>)
-  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_BuildApiController__1_Fixture_System_Action_Mock_HttpContext___
-  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController``1(Fixture,System.Action{Mock{HttpContext}})
+  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_BuildApiController__1_Fixture_Action_Mock_HttpContext___
+  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController``1(Fixture,Action{Mock{HttpContext}})
   name.vb: BuildApiController(Of TApiController)(Fixture, Action(Of Mock(Of HttpContext)))
-  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController<TApiController>(Fixture, System.Action<Mock<HttpContext>>)
-  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController(Of TApiController)(Fixture, System.Action(Of Mock(Of HttpContext)))
+  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController<TApiController>(Fixture, Action<Mock<HttpContext>>)
+  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildApiController(Of TApiController)(Fixture, Action(Of Mock(Of HttpContext)))
   nameWithType: AutoFixtureExtensions.BuildApiController<TApiController>(Fixture, Action<Mock<HttpContext>>)
   nameWithType.vb: AutoFixtureExtensions.BuildApiController(Of TApiController)(Fixture, Action(Of Mock(Of HttpContext)))
 - uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController*
@@ -5109,13 +5073,13 @@ references:
   isSpec: "True"
   fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController
   nameWithType: AutoFixtureExtensions.BuildController
-- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController``1(Fixture,System.Action{Mock{HttpContext}})
+- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController``1(Fixture,Action{Mock{HttpContext}})
   name: BuildController<TController>(Fixture, Action<Mock<HttpContext>>)
-  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_BuildController__1_Fixture_System_Action_Mock_HttpContext___
-  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController``1(Fixture,System.Action{Mock{HttpContext}})
+  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_BuildController__1_Fixture_Action_Mock_HttpContext___
+  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController``1(Fixture,Action{Mock{HttpContext}})
   name.vb: BuildController(Of TController)(Fixture, Action(Of Mock(Of HttpContext)))
-  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController<TController>(Fixture, System.Action<Mock<HttpContext>>)
-  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController(Of TController)(Fixture, System.Action(Of Mock(Of HttpContext)))
+  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController<TController>(Fixture, Action<Mock<HttpContext>>)
+  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.BuildController(Of TController)(Fixture, Action(Of Mock(Of HttpContext)))
   nameWithType: AutoFixtureExtensions.BuildController<TController>(Fixture, Action<Mock<HttpContext>>)
   nameWithType.vb: AutoFixtureExtensions.BuildController(Of TController)(Fixture, Action(Of Mock(Of HttpContext)))
 - uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController*
@@ -5125,13 +5089,13 @@ references:
   isSpec: "True"
   fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController
   nameWithType: AutoFixtureExtensions.CreateApiController
-- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController``1(Fixture,System.Action{Mock{HttpContext}})
+- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController``1(Fixture,Action{Mock{HttpContext}})
   name: CreateApiController<TApiController>(Fixture, Action<Mock<HttpContext>>)
-  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_CreateApiController__1_Fixture_System_Action_Mock_HttpContext___
-  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController``1(Fixture,System.Action{Mock{HttpContext}})
+  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_CreateApiController__1_Fixture_Action_Mock_HttpContext___
+  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController``1(Fixture,Action{Mock{HttpContext}})
   name.vb: CreateApiController(Of TApiController)(Fixture, Action(Of Mock(Of HttpContext)))
-  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController<TApiController>(Fixture, System.Action<Mock<HttpContext>>)
-  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController(Of TApiController)(Fixture, System.Action(Of Mock(Of HttpContext)))
+  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController<TApiController>(Fixture, Action<Mock<HttpContext>>)
+  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateApiController(Of TApiController)(Fixture, Action(Of Mock(Of HttpContext)))
   nameWithType: AutoFixtureExtensions.CreateApiController<TApiController>(Fixture, Action<Mock<HttpContext>>)
   nameWithType.vb: AutoFixtureExtensions.CreateApiController(Of TApiController)(Fixture, Action(Of Mock(Of HttpContext)))
 - uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController*
@@ -5141,13 +5105,13 @@ references:
   isSpec: "True"
   fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController
   nameWithType: AutoFixtureExtensions.CreateController
-- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController``1(Fixture,System.Action{Mock{HttpContext}})
+- uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController``1(Fixture,Action{Mock{HttpContext}})
   name: CreateController<TController>(Fixture, Action<Mock<HttpContext>>)
-  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_CreateController__1_Fixture_System_Action_Mock_HttpContext___
-  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController``1(Fixture,System.Action{Mock{HttpContext}})
+  href: api/FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.html#FGS_Tests_Support_AspNetCore_Mvc_AutoFixtureExtensions_CreateController__1_Fixture_Action_Mock_HttpContext___
+  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController``1(Fixture,Action{Mock{HttpContext}})
   name.vb: CreateController(Of TController)(Fixture, Action(Of Mock(Of HttpContext)))
-  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController<TController>(Fixture, System.Action<Mock<HttpContext>>)
-  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController(Of TController)(Fixture, System.Action(Of Mock(Of HttpContext)))
+  fullName: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController<TController>(Fixture, Action<Mock<HttpContext>>)
+  fullName.vb: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.CreateController(Of TController)(Fixture, Action(Of Mock(Of HttpContext)))
   nameWithType: AutoFixtureExtensions.CreateController<TController>(Fixture, Action<Mock<HttpContext>>)
   nameWithType.vb: AutoFixtureExtensions.CreateController(Of TController)(Fixture, Action(Of Mock(Of HttpContext)))
 - uid: FGS.Tests.Support.AspNetCore.Mvc.AutoFixtureExtensions.MockUrlHelper(Fixture)
@@ -5263,23 +5227,6 @@ references:
   commentId: F:FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.Instance
   fullName: FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.Instance
   nameWithType: RouteValuesLooseEqualityComparer.Instance
-- uid: FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.System#Collections#Generic#IEqualityComparer{System#Object}#GetHashCode(System.Object)
-  name: IEqualityComparer<Object>.GetHashCode(Object)
-  href: api/FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.html#FGS_Tests_Support_AspNetCore_Mvc_Routing_RouteValuesLooseEqualityComparer_System_Collections_Generic_IEqualityComparer_System_Object__GetHashCode_System_Object_
-  commentId: M:FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.System#Collections#Generic#IEqualityComparer{System#Object}#GetHashCode(System.Object)
-  name.vb: System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode(Object)
-  fullName: FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode(System.Object)
-  nameWithType: RouteValuesLooseEqualityComparer.IEqualityComparer<Object>.GetHashCode(Object)
-  nameWithType.vb: RouteValuesLooseEqualityComparer.System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode(Object)
-- uid: FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.System#Collections#Generic#IEqualityComparer{System#Object}#GetHashCode*
-  name: IEqualityComparer<Object>.GetHashCode
-  href: api/FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.html#FGS_Tests_Support_AspNetCore_Mvc_Routing_RouteValuesLooseEqualityComparer_System_Collections_Generic_IEqualityComparer_System_Object__GetHashCode_
-  commentId: Overload:FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.System#Collections#Generic#IEqualityComparer{System#Object}#GetHashCode
-  isSpec: "True"
-  name.vb: System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode
-  fullName: FGS.Tests.Support.AspNetCore.Mvc.Routing.RouteValuesLooseEqualityComparer.System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode
-  nameWithType: RouteValuesLooseEqualityComparer.IEqualityComparer<Object>.GetHashCode
-  nameWithType.vb: RouteValuesLooseEqualityComparer.System.Collections.Generic.IEqualityComparer<System.Object>.GetHashCode
 - uid: FGS.Tests.Support.Autofac.Mocking
   name: FGS.Tests.Support.Autofac.Mocking
   href: api/FGS.Tests.Support.Autofac.Mocking.html
@@ -5333,11 +5280,11 @@ references:
   fullName.vb: FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterMock(Of T)(ContainerBuilder, FGS.Autofac.DynamicScoping.Abstractions.Scope)
   nameWithType: ContainerBuilderExtensions.RegisterMock<T>(ContainerBuilder, Scope)
   nameWithType.vb: ContainerBuilderExtensions.RegisterMock(Of T)(ContainerBuilder, Scope)
-- uid: FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder,System.Type,FGS.Autofac.DynamicScoping.Abstractions.Scope)
+- uid: FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder,Type,FGS.Autofac.DynamicScoping.Abstractions.Scope)
   name: RegisterUnboundMock(ContainerBuilder, Type, Scope)
-  href: api/FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.html#FGS_Tests_Support_Autofac_Mocking_ContainerBuilderExtensions_RegisterUnboundMock_ContainerBuilder_System_Type_FGS_Autofac_DynamicScoping_Abstractions_Scope_
-  commentId: M:FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder,System.Type,FGS.Autofac.DynamicScoping.Abstractions.Scope)
-  fullName: FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder, System.Type, FGS.Autofac.DynamicScoping.Abstractions.Scope)
+  href: api/FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.html#FGS_Tests_Support_Autofac_Mocking_ContainerBuilderExtensions_RegisterUnboundMock_ContainerBuilder_Type_FGS_Autofac_DynamicScoping_Abstractions_Scope_
+  commentId: M:FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder,Type,FGS.Autofac.DynamicScoping.Abstractions.Scope)
+  fullName: FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder, Type, FGS.Autofac.DynamicScoping.Abstractions.Scope)
   nameWithType: ContainerBuilderExtensions.RegisterUnboundMock(ContainerBuilder, Type, Scope)
 - uid: FGS.Tests.Support.Autofac.Mocking.ContainerBuilderExtensions.RegisterUnboundMock*
   name: RegisterUnboundMock
@@ -5399,13 +5346,13 @@ references:
   fullName.vb: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions(Of TOptions)(ContainerBuilder, TOptions)
   nameWithType: ContainerBuilderExtensions.RegisterMockOptions<TOptions>(ContainerBuilder, TOptions)
   nameWithType.vb: ContainerBuilderExtensions.RegisterMockOptions(Of TOptions)(ContainerBuilder, TOptions)
-- uid: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions``1(ContainerBuilder,System.Func{``0},FGS.Autofac.DynamicScoping.Abstractions.Scope)
+- uid: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions``1(ContainerBuilder,Func{``0},FGS.Autofac.DynamicScoping.Abstractions.Scope)
   name: RegisterMockOptions<TOptions>(ContainerBuilder, Func<TOptions>, Scope)
-  href: api/FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.html#FGS_Tests_Support_Autofac_Mocking_Options_ContainerBuilderExtensions_RegisterMockOptions__1_ContainerBuilder_System_Func___0__FGS_Autofac_DynamicScoping_Abstractions_Scope_
-  commentId: M:FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions``1(ContainerBuilder,System.Func{``0},FGS.Autofac.DynamicScoping.Abstractions.Scope)
+  href: api/FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.html#FGS_Tests_Support_Autofac_Mocking_Options_ContainerBuilderExtensions_RegisterMockOptions__1_ContainerBuilder_Func___0__FGS_Autofac_DynamicScoping_Abstractions_Scope_
+  commentId: M:FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions``1(ContainerBuilder,Func{``0},FGS.Autofac.DynamicScoping.Abstractions.Scope)
   name.vb: RegisterMockOptions(Of TOptions)(ContainerBuilder, Func(Of TOptions), Scope)
-  fullName: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions<TOptions>(ContainerBuilder, System.Func<TOptions>, FGS.Autofac.DynamicScoping.Abstractions.Scope)
-  fullName.vb: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions(Of TOptions)(ContainerBuilder, System.Func(Of TOptions), FGS.Autofac.DynamicScoping.Abstractions.Scope)
+  fullName: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions<TOptions>(ContainerBuilder, Func<TOptions>, FGS.Autofac.DynamicScoping.Abstractions.Scope)
+  fullName.vb: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterMockOptions(Of TOptions)(ContainerBuilder, Func(Of TOptions), FGS.Autofac.DynamicScoping.Abstractions.Scope)
   nameWithType: ContainerBuilderExtensions.RegisterMockOptions<TOptions>(ContainerBuilder, Func<TOptions>, Scope)
   nameWithType.vb: ContainerBuilderExtensions.RegisterMockOptions(Of TOptions)(ContainerBuilder, Func(Of TOptions), Scope)
 - uid: FGS.Tests.Support.Autofac.Mocking.Options.ContainerBuilderExtensions.RegisterNullOptions(ContainerBuilder,FGS.Autofac.DynamicScoping.Abstractions.Scope)
@@ -5529,13 +5476,13 @@ references:
   fullName.vb: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions(Of TOptions)(IFixture, TOptions)
   nameWithType: AutoFixtureExtensions.RegisterMockOptions<TOptions>(IFixture, TOptions)
   nameWithType.vb: AutoFixtureExtensions.RegisterMockOptions(Of TOptions)(IFixture, TOptions)
-- uid: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions``1(IFixture,System.Func{``0})
+- uid: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions``1(IFixture,Func{``0})
   name: RegisterMockOptions<TOptions>(IFixture, Func<TOptions>)
-  href: api/FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.html#FGS_Tests_Support_AutoFixture_Mocking_Options_AutoFixtureExtensions_RegisterMockOptions__1_IFixture_System_Func___0__
-  commentId: M:FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions``1(IFixture,System.Func{``0})
+  href: api/FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.html#FGS_Tests_Support_AutoFixture_Mocking_Options_AutoFixtureExtensions_RegisterMockOptions__1_IFixture_Func___0__
+  commentId: M:FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions``1(IFixture,Func{``0})
   name.vb: RegisterMockOptions(Of TOptions)(IFixture, Func(Of TOptions))
-  fullName: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions<TOptions>(IFixture, System.Func<TOptions>)
-  fullName.vb: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions(Of TOptions)(IFixture, System.Func(Of TOptions))
+  fullName: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions<TOptions>(IFixture, Func<TOptions>)
+  fullName.vb: FGS.Tests.Support.AutoFixture.Mocking.Options.AutoFixtureExtensions.RegisterMockOptions(Of TOptions)(IFixture, Func(Of TOptions))
   nameWithType: AutoFixtureExtensions.RegisterMockOptions<TOptions>(IFixture, Func<TOptions>)
   nameWithType.vb: AutoFixtureExtensions.RegisterMockOptions(Of TOptions)(IFixture, Func(Of TOptions))
 - uid: FGS.Tests.Support.AutoFixtureExtensions
@@ -5684,13 +5631,13 @@ references:
   commentId: T:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory
   fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory
   nameWithType: FakedServiceScopeHostBuilderFactory
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(System.Action{IServiceCollection})
+- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(Action{IServiceCollection})
   name: Create(Action<IServiceCollection>)
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_FakedServiceScopeHostBuilderFactory_Create_System_Action_IServiceCollection__
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(System.Action{IServiceCollection})
+  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_FakedServiceScopeHostBuilderFactory_Create_Action_IServiceCollection__
+  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(Action{IServiceCollection})
   name.vb: Create(Action(Of IServiceCollection))
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(System.Action<IServiceCollection>)
-  fullName.vb: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(System.Action(Of IServiceCollection))
+  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(Action<IServiceCollection>)
+  fullName.vb: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create(Action(Of IServiceCollection))
   nameWithType: FakedServiceScopeHostBuilderFactory.Create(Action<IServiceCollection>)
   nameWithType.vb: FakedServiceScopeHostBuilderFactory.Create(Action(Of IServiceCollection))
 - uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.FakedServiceScopeHostBuilderFactory.Create*
@@ -5706,95 +5653,23 @@ references:
   commentId: T:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware
   fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware
   nameWithType: HostCallingHostingMiddleware
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name: IHostingMiddleware.StartAsync(Func<Task>, CancellationToken)
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostCallingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(Func(Of Task), CancellationToken)
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: HostCallingHostingMiddleware.IHostingMiddleware.StartAsync(Func<Task>, CancellationToken)
-  nameWithType.vb: HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(Func(Of Task), CancellationToken)
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync*
-  name: IHostingMiddleware.StartAsync
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostCallingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_
-  commentId: Overload:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync
-  isSpec: "True"
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-  nameWithType: HostCallingHostingMiddleware.IHostingMiddleware.StartAsync
-  nameWithType.vb: HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name: IHostingMiddleware.StopAsync(Func<Task>, CancellationToken)
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostCallingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(Func(Of Task), CancellationToken)
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: HostCallingHostingMiddleware.IHostingMiddleware.StopAsync(Func<Task>, CancellationToken)
-  nameWithType.vb: HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(Func(Of Task), CancellationToken)
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync*
-  name: IHostingMiddleware.StopAsync
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostCallingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_
-  commentId: Overload:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync
-  isSpec: "True"
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
-  nameWithType: HostCallingHostingMiddleware.IHostingMiddleware.StopAsync
-  nameWithType.vb: HostCallingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
 - uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware
   name: HostSkippingHostingMiddleware
   href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.html
   commentId: T:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware
   fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware
   nameWithType: HostSkippingHostingMiddleware
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name: IHostingMiddleware.StartAsync(Func<Task>, CancellationToken)
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(Func(Of Task), CancellationToken)
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: HostSkippingHostingMiddleware.IHostingMiddleware.StartAsync(Func<Task>, CancellationToken)
-  nameWithType.vb: HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync(Func(Of Task), CancellationToken)
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync*
-  name: IHostingMiddleware.StartAsync
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StartAsync_
-  commentId: Overload:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StartAsync
-  isSpec: "True"
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-  nameWithType: HostSkippingHostingMiddleware.IHostingMiddleware.StartAsync
-  nameWithType.vb: HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StartAsync
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name: IHostingMiddleware.StopAsync(Func<Task>, CancellationToken)
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_System_Func_System_Threading_Tasks_Task__System_Threading_CancellationToken_
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(Func(Of Task), CancellationToken)
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(System.Func<System.Threading.Tasks.Task>, System.Threading.CancellationToken)
-  fullName.vb: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(System.Func(Of System.Threading.Tasks.Task), System.Threading.CancellationToken)
-  nameWithType: HostSkippingHostingMiddleware.IHostingMiddleware.StopAsync(Func<Task>, CancellationToken)
-  nameWithType.vb: HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync(Func(Of Task), CancellationToken)
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync*
-  name: IHostingMiddleware.StopAsync
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSkippingHostingMiddleware_FGS_Extensions_Hosting_Middleware_Abstractions_IHostingMiddleware_StopAsync_
-  commentId: Overload:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS#Extensions#Hosting#Middleware#Abstractions#IHostingMiddleware#StopAsync
-  isSpec: "True"
-  name.vb: FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
-  nameWithType: HostSkippingHostingMiddleware.IHostingMiddleware.StopAsync
-  nameWithType.vb: HostSkippingHostingMiddleware.FGS.Extensions.Hosting.Middleware.Abstractions.IHostingMiddleware.StopAsync
 - uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy
   name: HostSpy
   href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.html
   commentId: T:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy
   fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy
   nameWithType: HostSpy
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.#ctor(System.IServiceProvider)
+- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.#ctor(IServiceProvider)
   name: HostSpy(IServiceProvider)
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSpy__ctor_System_IServiceProvider_
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.#ctor(System.IServiceProvider)
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.HostSpy(System.IServiceProvider)
+  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSpy__ctor_IServiceProvider_
+  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.#ctor(IServiceProvider)
+  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.HostSpy(IServiceProvider)
   nameWithType: HostSpy.HostSpy(IServiceProvider)
 - uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.#ctor*
   name: HostSpy
@@ -5855,23 +5730,6 @@ references:
   isSpec: "True"
   fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.StopAsyncCallCount
   nameWithType: HostSpy.StopAsyncCallCount
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.System#IDisposable#Dispose
-  name: IDisposable.Dispose()
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSpy_System_IDisposable_Dispose
-  commentId: M:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.System#IDisposable#Dispose
-  name.vb: System.IDisposable.Dispose()
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.System.IDisposable.Dispose()
-  nameWithType: HostSpy.IDisposable.Dispose()
-  nameWithType.vb: HostSpy.System.IDisposable.Dispose()
-- uid: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.System#IDisposable#Dispose*
-  name: IDisposable.Dispose
-  href: api/FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.html#FGS_Tests_Support_Extensions_Hosting_Middleware_Mocking_HostSpy_System_IDisposable_Dispose_
-  commentId: Overload:FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.System#IDisposable#Dispose
-  isSpec: "True"
-  name.vb: System.IDisposable.Dispose
-  fullName: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking.HostSpy.System.IDisposable.Dispose
-  nameWithType: HostSpy.IDisposable.Dispose
-  nameWithType.vb: HostSpy.System.IDisposable.Dispose
 - uid: FGS.Tests.Support.TestCategories
   name: FGS.Tests.Support.TestCategories
   href: api/FGS.Tests.Support.TestCategories.html

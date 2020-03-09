@@ -3,10 +3,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
-    <DefineConstants>$(DefineConstants);AttachToComponentRegistration_Uses_ComponentRegistry</DefineConstants>
+    <DefineConstants>$(DefineConstants);AttachToComponentRegistration_Uses_ComponentRegistryBuilder;ComponentRegistration_Requires_AdapterSignaling</DefineConstants>
 
-    <AssemblyName>FGS.Autofac.Interception.DynamicProxy</AssemblyName>
-    <PackageId>FGS.Autofac4.Interception.DynamicProxy</PackageId>
     <Authors>Autofac Contributors;$(Authors)</Authors>
     <Description>
       Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes with
@@ -14,14 +12,14 @@
 
       An (Autofac-specific) alternative to (and combination of) both `Ninject.Extensions.Interception` and `Autofac.Extras.DynamicProxy`.
 
-      This package is for Autofac version 4. For an identical API on Autofac version 5, see `FGS.Autofac.Interception.DynamicProxy`.
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Autofac4.Interception.DynamicProxy`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop</PackageTags>
     <PackageLicenseExpression>MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Castle.Core" Version="[4.4.0, 5.0.0)" />
   </ItemGroup>
 

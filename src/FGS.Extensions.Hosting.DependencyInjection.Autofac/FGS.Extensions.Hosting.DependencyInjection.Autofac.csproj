@@ -1,32 +1,32 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
-    <AssemblyName>FGS.Extensions.Hosting.DependencyInjection.Autofac</AssemblyName>
-    <PackageId>FGS.Extensions.Hosting.DependencyInjection.Autofac4</PackageId>
     <Description>
       Provides fluent extensions of .NET Core's hosting mechanisms so that consumers can easily
       wire in large sets of Autofac configuration, without crowding their `Startup` classes.
 
       An alternative to `Autofac.Extensions.Hosting`.
 
-      This package is for Autofac version 4. For an identical API on Autofac version 5, see `FGS.Extensions.Hosting.DependencyInjection.Autofac`.
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Extensions.Hosting.DependencyInjection.Autofac4`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;aspnetcore;hosting</PackageTags>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <AssemblyName>FGS.Extensions.Hosting.DependencyInjection.Autofac</AssemblyName>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="[3.0.0, 4.0.0)" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="[3.0.0, 4.0.0)" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
-    <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac4\FGS.Extensions.DependencyInjection.Autofac4.csproj" />
+    <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj" />
   </ItemGroup>
-
-  <Import Project="..\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared.projitems" Label="Shared" />
 
 </Project>

@@ -4,22 +4,20 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
-    <AssemblyName>FGS.Extensions.DependencyInjection.Autofac</AssemblyName>
-    <PackageId>FGS.Extensions.DependencyInjection.Autofac4</PackageId>
     <Description>
       Provides fluent extensions of .NET Core's service registration mechanism so that consumers can easily
       wire in large sets of Autofac configuration, without crowding their `Startup` classes.
 
       An alternative to `Autofac.Extensions.DependencyInjection`.
 
-      This package is for Autofac version 4. For an identical API on Autofac version 5, see `FGS.Extensions.DependencyInjection.Autofac`.
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Extensions.DependencyInjection.Autofac4`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;hosting</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 6.0.0)" />
-    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="[4.4.0, 6.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="[6.0.0, 7.0.0)" />
   </ItemGroup>
 
   <ItemGroup>

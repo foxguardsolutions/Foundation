@@ -7,6 +7,7 @@ parameters:
     4: FGS.ComponentModel.DataAnnotations.Extensions
     5: FGS.Configuration.Abstractions
     6: FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv
+    7: FGS.Extensions.DependencyInjection.Autofac
     8: FGS.Extensions.Diagnostics.HealthChecks.EntityFramework
     9: FGS.Extensions.Logging.Serilog
     10: FGS.FaultHandling.Abstractions
@@ -29,8 +30,13 @@ parameters:
     27: FGS.Rx.Extensions.Abstractions
     28: FGS.Tests.Support
     29: FGS.Tests.Support.AspNetCore.Mvc
+    30: FGS.Tests.Support.Autofac.Mocking
+    31: FGS.Tests.Support.Autofac.Mocking.Configuration
+    32: FGS.Tests.Support.Autofac.Mocking.Logging
+    33: FGS.Tests.Support.Autofac.Mocking.Options
     34: FGS.Tests.Support.AutoFixture.Mocking
     35: FGS.Tests.Support.AutoFixture.Mocking.Options
+    36: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac
     37: FGS.AspNetCore.Hosting.Extensions.Logging.Serilog
     38: FGS.AspNetCore.Http.Extensions.AWS.ALB
     39: FGS.AspNetCore.Http.Extensions.RequestStopwatch
@@ -41,11 +47,15 @@ parameters:
     44: FGS.Autofac.CompositionRoot.Abstractions
     45: FGS.Autofac.DynamicScoping
     46: FGS.Autofac.DynamicScoping.Abstractions
+    47: FGS.Autofac.Interception.DynamicProxy
+    48: FGS.Autofac.Interceptors.FaultHandling
+    49: FGS.Autofac.Interceptors.Time
     50: FGS.Autofac.Options
     51: FGS.Autofac.Registration.Extensions
     52: FGS.Collections.Extensions
     53: FGS.Extensions.Hosting.Middleware.Abstractions
     54: FGS.Extensions.Hosting.Middleware
+    55: FGS.Extensions.Hosting.DependencyInjection.Autofac
     56: FGS.Extensions.Hosting.Logging.Serilog
     57: FGS.Tests.Support.Extensions.Hosting.Middleware.Mocking
     58: FGS.Extensions.Hosting.Middleware.DelayedStart

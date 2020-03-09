@@ -4,20 +4,18 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
-    <AssemblyName>FGS.Tests.Support.Autofac.Mocking</AssemblyName>
-    <PackageId>FGS.Tests.Support.Autofac4.Mocking</PackageId>
     <Authors>Autofac Contributors;$(Authors)</Authors>
     <Description>
       Provides functionality for registering Moq mocks with an Autofac container.
 
-      This package is for Autofac version 4. For an identical API on Autofac version 5, see `FGS.Tests.Support.Autofac.Mocking`.
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Tests.Support.Autofac4.Mocking`.
     </Description>
     <PackageTags>testing;autofac;di;ioc;dependencyinjection;mocking;moq;generic</PackageTags>
     <PackageLicenseExpression>MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 6.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Moq" Version="[4.11.0, 5.0.0)" />
   </ItemGroup>
 

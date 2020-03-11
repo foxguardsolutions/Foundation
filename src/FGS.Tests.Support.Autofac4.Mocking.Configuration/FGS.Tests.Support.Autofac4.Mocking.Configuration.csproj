@@ -4,6 +4,8 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
+    <AssemblyName>FGS.Tests.Support.Autofac.Mocking.Configuration</AssemblyName>
+    <PackageId>FGS.Tests.Support.Autofac4.Mocking.Configuration</PackageId>
     <Description>Extends Autofac with the ability to register empty ASP.NET Core configuration.</Description>
     <PackageTags>testing;autofac;di;ioc;dependencyinjection;configuration</PackageTags>
   </PropertyGroup>
@@ -30,7 +32,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
-    <ProjectReference Include="..\FGS.Tests.Support.Autofac.Mocking\FGS.Tests.Support.Autofac.Mocking.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support.Autofac4.Mocking\FGS.Tests.Support.Autofac4.Mocking.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared.projitems" Label="Shared" />
 
 </Project>

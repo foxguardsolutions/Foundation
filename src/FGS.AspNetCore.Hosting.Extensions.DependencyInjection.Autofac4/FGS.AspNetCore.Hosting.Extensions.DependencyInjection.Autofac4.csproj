@@ -4,6 +4,8 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
 
+    <AssemblyName>FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac</AssemblyName>
+    <PackageId>FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac4</PackageId>
     <Description>
       Provides fluent extensions of ASP.NET Core's hosting mechanisms so that consumers can easily
       wire in large sets of Autofac configuration, without crowding their `Startup` classes.
@@ -21,7 +23,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
-    <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj" />
+    <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac4\FGS.Extensions.DependencyInjection.Autofac4.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared.projitems" Label="Shared" />
 
 </Project>

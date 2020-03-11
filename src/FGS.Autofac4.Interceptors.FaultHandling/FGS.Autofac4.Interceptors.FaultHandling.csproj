@@ -4,6 +4,8 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
+    <AssemblyName>FGS.Autofac.Interceptors.FaultHandling</AssemblyName>
+    <PackageId>FGS.Autofac4.Interceptors.FaultHandling</PackageId>
     <Description>
       Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
       `RetryOnFaultAttribute` such that failed operations will be retried with a configurable exponential back-off.
@@ -32,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
+    <ProjectReference Include="..\FGS.Autofac4.Interception.DynamicProxy\FGS.Autofac4.Interception.DynamicProxy.csproj" />
     <ProjectReference Include="..\FGS.Autofac.Options\FGS.Autofac.Options.csproj" />
     <ProjectReference Include="..\FGS.Autofac.Registration.Extensions\FGS.Autofac.Registration.Extensions.csproj" />
     <ProjectReference Include="..\FGS.FaultHandling.Abstractions\FGS.FaultHandling.Abstractions.csproj" />
@@ -41,5 +43,7 @@
     <ProjectReference Include="..\FGS.Interception.Annotations.FaultHandling\FGS.Interception.Annotations.FaultHandling.csproj" />
     <ProjectReference Include="..\FGS.Interceptors.FaultHandling\FGS.Interceptors.FaultHandling.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Autofac.Interceptors.FaultHandling.Shared\FGS.Autofac.Interceptors.FaultHandling.Shared.projitems" Label="Shared" />
 
 </Project>

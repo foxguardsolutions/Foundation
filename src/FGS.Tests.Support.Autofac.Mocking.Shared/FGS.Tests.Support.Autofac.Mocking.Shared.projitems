@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b7f86a9c-2fe2-4856-93be-19dca3f96f8d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FGS.Tests.Support.Autofac.Mocking.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ContainerBuilderExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IUnboundGenericMockResolutionAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnboundGenericMockResolutionAdapter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UnboundMockRegistrationSource.cs" />
+  </ItemGroup>
+</Project>

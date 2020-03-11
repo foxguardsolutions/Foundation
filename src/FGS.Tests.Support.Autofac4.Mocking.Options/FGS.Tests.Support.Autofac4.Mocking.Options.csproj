@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
+    <AssemblyName>FGS.Tests.Support.Autofac.Mocking.Options</AssemblyName>
+    <PackageId>FGS.Tests.Support.Autofac4.Mocking.Options</PackageId>
     <Description>Extends Autofac with the ability to register mocked or null-patterned ASP.NET Core Options.</Description>
     <PackageTags>testing;autofac;di;ioc;dependencyinjection;aspnetcore;options;mocking;moq;generic</PackageTags>
   </PropertyGroup>
@@ -30,7 +32,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
-    <ProjectReference Include="..\FGS.Tests.Support.Autofac.Mocking.Logging\FGS.Tests.Support.Autofac.Mocking.Logging.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support.Autofac4.Mocking.Logging\FGS.Tests.Support.Autofac4.Mocking.Logging.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.projitems" Label="Shared" />
 
 </Project>

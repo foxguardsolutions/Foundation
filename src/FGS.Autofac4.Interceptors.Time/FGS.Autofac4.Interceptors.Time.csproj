@@ -4,6 +4,8 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
+    <AssemblyName>FGS.Autofac.Interceptors.Time</AssemblyName>
+    <PackageId>FGS.Autofac4.Interceptors.Time</PackageId>
     <Description>
       Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
       `FreezeTimeAttribute` such that resolved `IClock` instances will reflect a frozen instance in time time, throughout
@@ -16,12 +18,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
+    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac4.Interception.DynamicProxy\FGS.Autofac4.Interception.DynamicProxy.csproj" />
     <ProjectReference Include="..\FGS.Autofac.Registration.Extensions\FGS.Autofac.Registration.Extensions.csproj" />
     <ProjectReference Include="..\FGS.Interception.Annotations.Time\FGS.Interception.Annotations.Time.csproj" />
     <ProjectReference Include="..\FGS.Interceptors.Time\FGS.Interceptors.Time.csproj" />
     <ProjectReference Include="..\FGS.Primitives.Time.Abstractions\FGS.Primitives.Time.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Primitives.Time\FGS.Primitives.Time.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Autofac.Interceptors.Time.Shared\FGS.Autofac.Interceptors.Time.Shared.projitems" Label="Shared" />
 
 </Project>

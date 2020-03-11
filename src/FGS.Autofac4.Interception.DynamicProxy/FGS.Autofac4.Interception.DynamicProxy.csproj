@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
+    <AssemblyName>FGS.Autofac.Interception.DynamicProxy</AssemblyName>
+    <PackageId>FGS.Autofac4.Interception.DynamicProxy</PackageId>
     <Authors>Autofac Contributors;$(Authors)</Authors>
     <Description>
       Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes with
@@ -25,9 +27,6 @@
     <ProjectReference Include="..\FGS.Interception.DynamicProxy\FGS.Interception.DynamicProxy.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="README.md" />
-    <Content Include="README.md" Pack="true" PackagePath="." />
-  </ItemGroup>
+  <Import Project="..\FGS.Autofac.Interception.DynamicProxy.Shared\FGS.Autofac.Interception.DynamicProxy.Shared.projitems" Label="Shared" />
 
 </Project>

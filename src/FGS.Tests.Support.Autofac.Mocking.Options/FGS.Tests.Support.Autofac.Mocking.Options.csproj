@@ -4,12 +4,15 @@
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
 
-    <Description>Extends Autofac with the ability to register mocked or null-patterned ASP.NET Core Options.</Description>
+    <Description>
+      Extends Autofac with the ability to register mocked or null-patterned ASP.NET Core Options.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Tests.Support.Autofac4.Mocking.Options`.</Description>
     <PackageTags>testing;autofac;di;ioc;dependencyinjection;aspnetcore;options;mocking;moq;generic</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
   </ItemGroup>
 
   <ItemGroup Condition="$(TargetFramework) == 'net472' ">
@@ -32,5 +35,7 @@
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Tests.Support.Autofac.Mocking.Logging\FGS.Tests.Support.Autofac.Mocking.Logging.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.projitems" Label="Shared" />
 
 </Project>

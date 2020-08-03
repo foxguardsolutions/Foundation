@@ -7,13 +7,15 @@
     <Authors>Autofac Contributors;$(Authors)</Authors>
     <Description>
       Provides functionality for registering Moq mocks with an Autofac container.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Tests.Support.Autofac4.Mocking`.
     </Description>
     <PackageTags>testing;autofac;di;ioc;dependencyinjection;mocking;moq;generic</PackageTags>
     <PackageLicenseExpression>MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Moq" Version="[4.11.0, 5.0.0)" />
   </ItemGroup>
 
@@ -22,5 +24,7 @@
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping\FGS.Autofac.DynamicScoping.csproj" />
     <ProjectReference Include="..\FGS.Autofac.Registration.Extensions\FGS.Autofac.Registration.Extensions.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Tests.Support.Autofac.Mocking.Shared\FGS.Tests.Support.Autofac.Mocking.Shared.projitems" Label="Shared" />
 
 </Project>

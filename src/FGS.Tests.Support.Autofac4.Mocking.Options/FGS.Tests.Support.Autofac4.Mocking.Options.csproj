@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+
+    <AssemblyName>FGS.Tests.Support.Autofac.Mocking.Options</AssemblyName>
+    <PackageId>FGS.Tests.Support.Autofac4.Mocking.Options</PackageId>
+    <Description>
+      Extends Autofac with the ability to register mocked or null-patterned ASP.NET Core Options.
+
+      This package is for Autofac version 4. For an identical API on Autofac version 5, see `FGS.Tests.Support.Autofac.Mocking.Options`.
+    </Description>
+    <PackageTags>testing;autofac;di;ioc;dependencyinjection;aspnetcore;options;mocking;moq;generic</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="[4.9.1, 6.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'net472' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.0' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[2.2.0, 3.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netstandard2.1' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework) == 'netcoreapp3.0' ">
+    <PackageReference Include="Microsoft.Extensions.Options" Version="[3.0.0, 4.0.0)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
+    <ProjectReference Include="..\FGS.Tests.Support.Autofac4.Mocking.Logging\FGS.Tests.Support.Autofac4.Mocking.Logging.csproj" />
+  </ItemGroup>
+
+  <Import Project="..\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.projitems" Label="Shared" />
+
+</Project>

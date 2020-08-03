@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{355D7A68-1
 		test\Directory.Build.targets = test\Directory.Build.targets
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac", "src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.csproj", "{6D35876D-19F6-466F-A778-0D8483B452D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac4", "src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac4\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac4.csproj", "{6D35876D-19F6-466F-A778-0D8483B452D7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.Logging.Serilog", "src\FGS.AspNetCore.Hosting.Extensions.Logging.Serilog\FGS.AspNetCore.Hosting.Extensions.Logging.Serilog.csproj", "{9AB93140-4D97-4DF8-9BE7-A9F6AFC43CDE}"
 EndProject
@@ -37,11 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.DynamicScoping"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.DynamicScoping.Abstractions", "src\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj", "{B16FBC86-18DB-4F42-8ED3-0BEC12BD97A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interception.DynamicProxy", "src\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj", "{F9E47EC4-AA5E-4A17-9903-7508137C2952}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac4.Interception.DynamicProxy", "src\FGS.Autofac4.Interception.DynamicProxy\FGS.Autofac4.Interception.DynamicProxy.csproj", "{F9E47EC4-AA5E-4A17-9903-7508137C2952}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interceptors.FaultHandling", "src\FGS.Autofac.Interceptors.FaultHandling\FGS.Autofac.Interceptors.FaultHandling.csproj", "{51951E96-5F41-47EC-A5DE-21F8EC4BA534}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac4.Interceptors.FaultHandling", "src\FGS.Autofac4.Interceptors.FaultHandling\FGS.Autofac4.Interceptors.FaultHandling.csproj", "{51951E96-5F41-47EC-A5DE-21F8EC4BA534}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interceptors.Time", "src\FGS.Autofac.Interceptors.Time\FGS.Autofac.Interceptors.Time.csproj", "{802D565D-D78D-4F6B-BB7A-E209F267A41A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac4.Interceptors.Time", "src\FGS.Autofac4.Interceptors.Time\FGS.Autofac4.Interceptors.Time.csproj", "{802D565D-D78D-4F6B-BB7A-E209F267A41A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Options", "src\FGS.Autofac.Options\FGS.Autofac.Options.csproj", "{0E826BA6-E497-4B10-B7C5-13D8A9914471}"
 EndProject
@@ -61,7 +61,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Configuration.Abstracti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv", "src\FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv\FGS.Extensions.Configuration.AWS.ElasticBeanstalk.IisEnv.csproj", "{BBB44D48-953B-4E78-8E43-178ACDF2BBA7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.DependencyInjection.Autofac", "src\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj", "{6AE305D3-E28E-4268-AC63-A67187CABDDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.DependencyInjection.Autofac4", "src\FGS.Extensions.DependencyInjection.Autofac4\FGS.Extensions.DependencyInjection.Autofac4.csproj", "{6AE305D3-E28E-4268-AC63-A67187CABDDC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Diagnostics.HealthChecks.EntityFramework", "src\FGS.Extensions.Diagnostics.HealthChecks.EntityFramework\FGS.Extensions.Diagnostics.HealthChecks.EntityFramework.csproj", "{95EACE07-B346-4DF9-AADE-3CA0A19D71F8}"
 EndProject
@@ -107,13 +107,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support", "src\FG
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.AspNetCore.Mvc", "src\FGS.Tests.Support.AspNetCore.Mvc\FGS.Tests.Support.AspNetCore.Mvc.csproj", "{18135992-EB03-4A39-AE47-527C0DEF36B5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking", "src\FGS.Tests.Support.Autofac.Mocking\FGS.Tests.Support.Autofac.Mocking.csproj", "{7F116D33-D7DD-468C-AEE5-C20B02EFB779}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac4.Mocking", "src\FGS.Tests.Support.Autofac4.Mocking\FGS.Tests.Support.Autofac4.Mocking.csproj", "{7F116D33-D7DD-468C-AEE5-C20B02EFB779}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking.Configuration", "src\FGS.Tests.Support.Autofac.Mocking.Configuration\FGS.Tests.Support.Autofac.Mocking.Configuration.csproj", "{77AE8963-19C5-4B8F-89C6-4811C4741433}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac4.Mocking.Configuration", "src\FGS.Tests.Support.Autofac4.Mocking.Configuration\FGS.Tests.Support.Autofac4.Mocking.Configuration.csproj", "{77AE8963-19C5-4B8F-89C6-4811C4741433}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking.Logging", "src\FGS.Tests.Support.Autofac.Mocking.Logging\FGS.Tests.Support.Autofac.Mocking.Logging.csproj", "{73EE8F01-5715-4041-9AC4-2A259F305B62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac4.Mocking.Logging", "src\FGS.Tests.Support.Autofac4.Mocking.Logging\FGS.Tests.Support.Autofac4.Mocking.Logging.csproj", "{73EE8F01-5715-4041-9AC4-2A259F305B62}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking.Options", "src\FGS.Tests.Support.Autofac.Mocking.Options\FGS.Tests.Support.Autofac.Mocking.Options.csproj", "{45AC3B25-FC4F-4DCD-9414-F49856760330}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac4.Mocking.Options", "src\FGS.Tests.Support.Autofac4.Mocking.Options\FGS.Tests.Support.Autofac4.Mocking.Options.csproj", "{45AC3B25-FC4F-4DCD-9414-F49856760330}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.AutoFixture.Mocking", "src\FGS.Tests.Support.AutoFixture.Mocking\FGS.Tests.Support.AutoFixture.Mocking.csproj", "{EFD05CF6-741B-4C1B-9E9D-0C2B0979196A}"
 EndProject
@@ -141,7 +141,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Midd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Middleware.Tests", "test\FGS.Extensions.Hosting.Middleware.Tests\FGS.Extensions.Hosting.Middleware.Tests.csproj", "{4CCE9B2B-7857-45FC-ACBD-76A49ACDDA5B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac\FGS.Extensions.Hosting.DependencyInjection.Autofac.csproj", "{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac4", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac4\FGS.Extensions.Hosting.DependencyInjection.Autofac4.csproj", "{60FA3815-5EC8-4AF3-98F7-1CA1F5C581FC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.Logging.Serilog", "src\FGS.Extensions.Hosting.Logging.Serilog\FGS.Extensions.Hosting.Logging.Serilog.csproj", "{F59A1DDB-EFFB-4EBA-AE45-3DA59B25FA0D}"
 EndProject
@@ -181,14 +181,91 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Linq.Extensions.OneOf.E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Linq.Extensions.OneOf.EntityFrameworkCore", "src\FGS.Linq.Extensions.OneOf.EntityFrameworkCore\FGS.Linq.Extensions.OneOf.EntityFrameworkCore.csproj", "{19AC1E1D-73F5-4F74-8DC9-14E327933B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FGS.OneOf.Extensions", "src\FGS.OneOf.Extensions\FGS.OneOf.Extensions.csproj", "{F0853018-F497-4395-8A25-9EA6D1BEB16B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.OneOf.Extensions", "src\FGS.OneOf.Extensions\FGS.OneOf.Extensions.csproj", "{F0853018-F497-4395-8A25-9EA6D1BEB16B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Autofac.Interception.DynamicProxy.Shared", "src\FGS.Autofac.Interception.DynamicProxy.Shared\FGS.Autofac.Interception.DynamicProxy.Shared.shproj", "{B8938897-F915-44A6-A407-418BFC02F0BC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Autofac.Interceptors.FaultHandling.Shared", "src\FGS.Autofac.Interceptors.FaultHandling.Shared\FGS.Autofac.Interceptors.FaultHandling.Shared.shproj", "{DFC2C38B-B3EE-4D43-AB8D-CE62368DD50F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Autofac.Interceptors.Time.Shared", "src\FGS.Autofac.Interceptors.Time.Shared\FGS.Autofac.Interceptors.Time.Shared.shproj", "{0ECBA6AE-51FD-4CB0-8C71-682FE67156E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interception.DynamicProxy", "src\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj", "{5D81E19B-1BB3-42AC-B5B0-208D62D16FA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interceptors.FaultHandling", "src\FGS.Autofac.Interceptors.FaultHandling\FGS.Autofac.Interceptors.FaultHandling.csproj", "{E0D5BFFC-B270-4A5D-B2D9-42A00875AC13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Autofac.Interceptors.Time", "src\FGS.Autofac.Interceptors.Time\FGS.Autofac.Interceptors.Time.csproj", "{5E03D95C-B945-4F09-B04D-89A11AB48CA5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Tests.Support.Autofac.Mocking.Shared", "src\FGS.Tests.Support.Autofac.Mocking.Shared\FGS.Tests.Support.Autofac.Mocking.Shared.shproj", "{B7F86A9C-2FE2-4856-93BE-19DCA3F96F8D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Tests.Support.Autofac.Mocking.Configuration.Shared", "src\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared.shproj", "{60B082FD-024E-4253-9248-7E8C9F1628C0}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Tests.Support.Autofac.Mocking.Logging.Shared", "src\FGS.Tests.Support.Autofac.Mocking.Logging.Shared\FGS.Tests.Support.Autofac.Mocking.Logging.Shared.shproj", "{D97EAEE5-94AB-4096-8362-EE4805FE3BDC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Tests.Support.Autofac.Mocking.Options.Shared", "src\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.shproj", "{B098916C-FAB5-4023-8AC9-0D52C8957656}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Extensions.DependencyInjection.Autofac.Shared", "src\FGS.Extensions.DependencyInjection.Autofac.Shared\FGS.Extensions.DependencyInjection.Autofac.Shared.shproj", "{99802BFB-49D9-4EC1-B5EF-C9EF2D29A506}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared", "src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared.shproj", "{5C7782DB-10C7-4200-B6EE-60E3B7E2ED19}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared.shproj", "{3916DC5F-7A9F-4BF6-9084-8B26C228B0D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking", "src\FGS.Tests.Support.Autofac.Mocking\FGS.Tests.Support.Autofac.Mocking.csproj", "{76EA2A1B-761A-4FEA-86E9-A7AE6F3CA303}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking.Configuration", "src\FGS.Tests.Support.Autofac.Mocking.Configuration\FGS.Tests.Support.Autofac.Mocking.Configuration.csproj", "{B675CA65-6BDC-4D09-9445-ACC80506A9A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking.Logging", "src\FGS.Tests.Support.Autofac.Mocking.Logging\FGS.Tests.Support.Autofac.Mocking.Logging.csproj", "{7459727D-509D-4285-B10D-C165F42481CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Tests.Support.Autofac.Mocking.Options", "src\FGS.Tests.Support.Autofac.Mocking.Options\FGS.Tests.Support.Autofac.Mocking.Options.csproj", "{ABFA3A58-50D7-4FF2-AD62-410C5D274D7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac", "src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.csproj", "{70E3BA0F-CA9F-42CA-B70F-B9C0D5930B49}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.DependencyInjection.Autofac", "src\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj", "{46B44E6A-EDAC-41A4-B6B0-BC2A1452F892}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FGS.Extensions.Hosting.DependencyInjection.Autofac", "src\FGS.Extensions.Hosting.DependencyInjection.Autofac\FGS.Extensions.Hosting.DependencyInjection.Autofac.csproj", "{E8B2BD28-3BA8-4F6C-AEC1-FCE69D78231E}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\FGS.Linq.Extensions.OneOf.EntityFramework.Shared\FGS.Linq.Extensions.OneOf.EntityFramework.Shared.projitems*{037e878c-996e-4922-ac99-38db0644cb79}*SharedItemsImports = 5
+		src\FGS.Autofac.Interceptors.Time.Shared\FGS.Autofac.Interceptors.Time.Shared.projitems*{0ecba6ae-51fd-4cb0-8c71-682fe67156e4}*SharedItemsImports = 13
+		src\FGS.Linq.Extensions.OneOf.EntityFramework.Shared\FGS.Linq.Extensions.OneOf.EntityFramework.Shared.projitems*{19ac1e1d-73f5-4f74-8dc9-14e327933b3e}*SharedItemsImports = 5
 		src\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems*{293e1465-e2e0-40c1-a28d-1bbd23961b55}*SharedItemsImports = 13
+		src\FGS.Linq.Extensions.EntityFramework.Shared\FGS.Linq.Extensions.EntityFramework.Shared.projitems*{2e8de4ea-7e84-4d01-9a29-f03e69166566}*SharedItemsImports = 5
+		src\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems*{32407a8b-39e5-43c2-b63a-f490d2578272}*SharedItemsImports = 5
+		src\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared.projitems*{3916dc5f-7a9f-4bf6-9084-8b26c228b0d5}*SharedItemsImports = 13
+		src\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.projitems*{45ac3b25-fc4f-4dcd-9414-f49856760330}*SharedItemsImports = 5
+		src\FGS.Extensions.DependencyInjection.Autofac.Shared\FGS.Extensions.DependencyInjection.Autofac.Shared.projitems*{46b44e6a-edac-41a4-b6b0-bc2a1452f892}*SharedItemsImports = 5
+		src\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems*{4ff4041c-1809-4800-a378-a80560a05d03}*SharedItemsImports = 5
+		src\FGS.Autofac.Interceptors.FaultHandling.Shared\FGS.Autofac.Interceptors.FaultHandling.Shared.projitems*{51951e96-5f41-47ec-a5de-21f8ec4ba534}*SharedItemsImports = 5
+		src\FGS.Linq.Extensions.EntityFramework.Shared\FGS.Linq.Extensions.EntityFramework.Shared.projitems*{53495078-fcf8-4851-a07e-66ca3160eb3c}*SharedItemsImports = 5
+		src\FGS.Linq.Extensions.Pagination.EntityFramework.Shared\FGS.Linq.Extensions.Pagination.EntityFramework.Shared.projitems*{5b6e00e9-4217-45fb-93da-0e822dc6b42d}*SharedItemsImports = 5
+		src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared.projitems*{5c7782db-10c7-4200-b6ee-60e3b7e2ed19}*SharedItemsImports = 13
+		src\FGS.Autofac.Interception.DynamicProxy.Shared\FGS.Autofac.Interception.DynamicProxy.Shared.projitems*{5d81e19b-1bb3-42ac-b5b0-208d62d16fa2}*SharedItemsImports = 5
+		src\FGS.Autofac.Interceptors.Time.Shared\FGS.Autofac.Interceptors.Time.Shared.projitems*{5e03d95c-b945-4f09-b04d-89a11ab48ca5}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared.projitems*{60b082fd-024e-4253-9248-7e8c9f1628c0}*SharedItemsImports = 13
+		src\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared\FGS.Extensions.Hosting.DependencyInjection.Autofac.Shared.projitems*{60fa3815-5ec8-4af3-98f7-1ca1f5c581fc}*SharedItemsImports = 5
+		src\FGS.Extensions.DependencyInjection.Autofac.Shared\FGS.Extensions.DependencyInjection.Autofac.Shared.projitems*{6ae305d3-e28e-4268-ac63-a67187cabddc}*SharedItemsImports = 5
+		src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared.projitems*{6d35876d-19f6-466f-a778-0d8483b452d7}*SharedItemsImports = 5
+		src\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared.projitems*{70e3ba0f-ca9f-42ca-b70f-b9c0d5930b49}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Logging.Shared\FGS.Tests.Support.Autofac.Mocking.Logging.Shared.projitems*{73ee8f01-5715-4041-9ac4-2a259f305b62}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Logging.Shared\FGS.Tests.Support.Autofac.Mocking.Logging.Shared.projitems*{7459727d-509d-4285-b10d-c165f42481cd}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Shared\FGS.Tests.Support.Autofac.Mocking.Shared.projitems*{76ea2a1b-761a-4fea-86e9-a7ae6f3ca303}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared.projitems*{77ae8963-19c5-4b8f-89c6-4811c4741433}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Shared\FGS.Tests.Support.Autofac.Mocking.Shared.projitems*{7f116d33-d7dd-468c-aee5-c20b02efb779}*SharedItemsImports = 5
+		src\FGS.Autofac.Interceptors.Time.Shared\FGS.Autofac.Interceptors.Time.Shared.projitems*{802d565d-d78d-4f6b-bb7a-e209f267a41a}*SharedItemsImports = 5
 		src\FGS.Linq.Extensions.OneOf.EntityFramework.Shared\FGS.Linq.Extensions.OneOf.EntityFramework.Shared.projitems*{8a11571f-0de7-4e1f-8c1d-6a441f3eaa85}*SharedItemsImports = 13
+		src\FGS.Linq.Extensions.Pagination.EntityFramework.Shared\FGS.Linq.Extensions.Pagination.EntityFramework.Shared.projitems*{8a64a5c6-2b3c-4bb2-b9fc-7c30b3f2b3e2}*SharedItemsImports = 5
 		src\FGS.Linq.Extensions.Pagination.EntityFramework.Shared\FGS.Linq.Extensions.Pagination.EntityFramework.Shared.projitems*{96015fe6-1b5e-48f4-bcb3-464366c098f2}*SharedItemsImports = 13
+		src\FGS.Extensions.DependencyInjection.Autofac.Shared\FGS.Extensions.DependencyInjection.Autofac.Shared.projitems*{99802bfb-49d9-4ec1-b5ef-c9ef2d29a506}*SharedItemsImports = 13
 		src\FGS.Linq.Extensions.EntityFramework.Shared\FGS.Linq.Extensions.EntityFramework.Shared.projitems*{a3e025be-c165-4bc4-bf83-a9bf5dc512e2}*SharedItemsImports = 13
+		src\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.projitems*{abfa3a58-50d7-4ff2-ad62-410c5d274d7d}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Options.Shared\FGS.Tests.Support.Autofac.Mocking.Options.Shared.projitems*{b098916c-fab5-4023-8ac9-0d52c8957656}*SharedItemsImports = 13
+		src\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared\FGS.Tests.Support.Autofac.Mocking.Configuration.Shared.projitems*{b675ca65-6bdc-4d09-9445-acc80506a9a4}*SharedItemsImports = 5
+		src\FGS.Tests.Support.Autofac.Mocking.Shared\FGS.Tests.Support.Autofac.Mocking.Shared.projitems*{b7f86a9c-2fe2-4856-93be-19dca3f96f8d}*SharedItemsImports = 13
+		src\FGS.Autofac.Interception.DynamicProxy.Shared\FGS.Autofac.Interception.DynamicProxy.Shared.projitems*{b8938897-f915-44a6-a407-418bfc02f0bc}*SharedItemsImports = 13
+		src\FGS.Tests.Support.Autofac.Mocking.Logging.Shared\FGS.Tests.Support.Autofac.Mocking.Logging.Shared.projitems*{d97eaee5-94ab-4096-8362-ee4805fe3bdc}*SharedItemsImports = 13
+		src\FGS.Autofac.Interceptors.FaultHandling.Shared\FGS.Autofac.Interceptors.FaultHandling.Shared.projitems*{dfc2c38b-b3ee-4d43-ab8d-ce62368dd50f}*SharedItemsImports = 13
+		src\FGS.Autofac.Interceptors.FaultHandling.Shared\FGS.Autofac.Interceptors.FaultHandling.Shared.projitems*{e0d5bffc-b270-4a5d-b2d9-42a00875ac13}*SharedItemsImports = 5
+		src\FGS.Autofac.Interception.DynamicProxy.Shared\FGS.Autofac.Interception.DynamicProxy.Shared.projitems*{f9e47ec4-aa5e-4a17-9903-7508137c2952}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -515,6 +592,46 @@ Global
 		{F0853018-F497-4395-8A25-9EA6D1BEB16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0853018-F497-4395-8A25-9EA6D1BEB16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0853018-F497-4395-8A25-9EA6D1BEB16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D81E19B-1BB3-42AC-B5B0-208D62D16FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D81E19B-1BB3-42AC-B5B0-208D62D16FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D81E19B-1BB3-42AC-B5B0-208D62D16FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D81E19B-1BB3-42AC-B5B0-208D62D16FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D5BFFC-B270-4A5D-B2D9-42A00875AC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D5BFFC-B270-4A5D-B2D9-42A00875AC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D5BFFC-B270-4A5D-B2D9-42A00875AC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D5BFFC-B270-4A5D-B2D9-42A00875AC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E03D95C-B945-4F09-B04D-89A11AB48CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E03D95C-B945-4F09-B04D-89A11AB48CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E03D95C-B945-4F09-B04D-89A11AB48CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E03D95C-B945-4F09-B04D-89A11AB48CA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EA2A1B-761A-4FEA-86E9-A7AE6F3CA303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EA2A1B-761A-4FEA-86E9-A7AE6F3CA303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EA2A1B-761A-4FEA-86E9-A7AE6F3CA303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EA2A1B-761A-4FEA-86E9-A7AE6F3CA303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B675CA65-6BDC-4D09-9445-ACC80506A9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B675CA65-6BDC-4D09-9445-ACC80506A9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B675CA65-6BDC-4D09-9445-ACC80506A9A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B675CA65-6BDC-4D09-9445-ACC80506A9A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7459727D-509D-4285-B10D-C165F42481CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7459727D-509D-4285-B10D-C165F42481CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7459727D-509D-4285-B10D-C165F42481CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7459727D-509D-4285-B10D-C165F42481CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFA3A58-50D7-4FF2-AD62-410C5D274D7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFA3A58-50D7-4FF2-AD62-410C5D274D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFA3A58-50D7-4FF2-AD62-410C5D274D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFA3A58-50D7-4FF2-AD62-410C5D274D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E3BA0F-CA9F-42CA-B70F-B9C0D5930B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E3BA0F-CA9F-42CA-B70F-B9C0D5930B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E3BA0F-CA9F-42CA-B70F-B9C0D5930B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E3BA0F-CA9F-42CA-B70F-B9C0D5930B49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46B44E6A-EDAC-41A4-B6B0-BC2A1452F892}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46B44E6A-EDAC-41A4-B6B0-BC2A1452F892}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46B44E6A-EDAC-41A4-B6B0-BC2A1452F892}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46B44E6A-EDAC-41A4-B6B0-BC2A1452F892}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B2BD28-3BA8-4F6C-AEC1-FCE69D78231E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B2BD28-3BA8-4F6C-AEC1-FCE69D78231E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B2BD28-3BA8-4F6C-AEC1-FCE69D78231E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B2BD28-3BA8-4F6C-AEC1-FCE69D78231E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -604,6 +721,26 @@ Global
 		{037E878C-996E-4922-AC99-38DB0644CB79} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{19AC1E1D-73F5-4F74-8DC9-14E327933B3E} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 		{F0853018-F497-4395-8A25-9EA6D1BEB16B} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{B8938897-F915-44A6-A407-418BFC02F0BC} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{DFC2C38B-B3EE-4D43-AB8D-CE62368DD50F} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{0ECBA6AE-51FD-4CB0-8C71-682FE67156E4} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{5D81E19B-1BB3-42AC-B5B0-208D62D16FA2} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{E0D5BFFC-B270-4A5D-B2D9-42A00875AC13} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{5E03D95C-B945-4F09-B04D-89A11AB48CA5} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{B7F86A9C-2FE2-4856-93BE-19DCA3F96F8D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{60B082FD-024E-4253-9248-7E8C9F1628C0} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{D97EAEE5-94AB-4096-8362-EE4805FE3BDC} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{B098916C-FAB5-4023-8AC9-0D52C8957656} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{99802BFB-49D9-4EC1-B5EF-C9EF2D29A506} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{5C7782DB-10C7-4200-B6EE-60E3B7E2ED19} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{3916DC5F-7A9F-4BF6-9084-8B26C228B0D5} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{76EA2A1B-761A-4FEA-86E9-A7AE6F3CA303} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{B675CA65-6BDC-4D09-9445-ACC80506A9A4} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{7459727D-509D-4285-B10D-C165F42481CD} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{ABFA3A58-50D7-4FF2-AD62-410C5D274D7D} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{70E3BA0F-CA9F-42CA-B70F-B9C0D5930B49} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{46B44E6A-EDAC-41A4-B6B0-BC2A1452F892} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
+		{E8B2BD28-3BA8-4F6C-AEC1-FCE69D78231E} = {2FC8DF88-182F-4A79-9185-F242A6C12701}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9BE7FA6F-2D4E-4B5B-97B7-7D2DE8E3DB1E}

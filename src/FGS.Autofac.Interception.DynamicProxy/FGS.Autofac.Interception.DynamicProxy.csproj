@@ -1,8 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netstandard2.0;netstandard2.1;netcoreapp3.0</TargetFrameworks>
+    <DefineConstants>$(DefineConstants);AttachToComponentRegistration_Uses_ComponentRegistryBuilder;ComponentRegistration_Requires_AdapterSignaling</DefineConstants>
 
     <Authors>Autofac Contributors;$(Authors)</Authors>
     <Description>
@@ -10,13 +11,15 @@
       interceptors based on annotated attributes.
 
       An (Autofac-specific) alternative to (and combination of) both `Ninject.Extensions.Interception` and `Autofac.Extras.DynamicProxy`.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Autofac4.Interception.DynamicProxy`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop</PackageTags>
     <PackageLicenseExpression>MIT AND $(PackageLicenseExpression)</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Castle.Core" Version="[4.4.0, 5.0.0)" />
   </ItemGroup>
 
@@ -25,9 +28,6 @@
     <ProjectReference Include="..\FGS.Interception.DynamicProxy\FGS.Interception.DynamicProxy.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="README.md" />
-    <Content Include="README.md" Pack="true" PackagePath="." />
-  </ItemGroup>
+  <Import Project="..\FGS.Autofac.Interception.DynamicProxy.Shared\FGS.Autofac.Interception.DynamicProxy.Shared.projitems" Label="Shared" />
 
 </Project>

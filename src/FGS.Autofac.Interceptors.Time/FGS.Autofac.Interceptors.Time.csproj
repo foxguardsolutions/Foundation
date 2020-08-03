@@ -11,9 +11,15 @@
 
       This is useful for making sure timestamps are consistent across multiple accesses during a single business transaction,
       such as during compound persistence operations that independently consume the current time.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Autofac4.Interceptors.Time`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop;freeze;stop;clock;time;date;datetime;datetimeoffset</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FGS.Autofac.Interception.DynamicProxy\FGS.Autofac.Interception.DynamicProxy.csproj" />
@@ -23,5 +29,7 @@
     <ProjectReference Include="..\FGS.Primitives.Time.Abstractions\FGS.Primitives.Time.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Primitives.Time\FGS.Primitives.Time.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Autofac.Interceptors.Time.Shared\FGS.Autofac.Interceptors.Time.Shared.projitems" Label="Shared" />
 
 </Project>

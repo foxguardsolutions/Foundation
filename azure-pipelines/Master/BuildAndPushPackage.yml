@@ -71,6 +71,16 @@ parameters:
     68: FGS.Linq.Extensions.OneOf.EntityFramework6
     69: FGS.Linq.Extensions.OneOf.EntityFrameworkCore
     70: FGS.OneOf.Extensions
+    71: FGS.Autofac4.Interception.DynamicProxy
+    72: FGS.Autofac4.Interceptors.FaultHandling
+    73: FGS.Autofac4.Interceptors.Time
+    74: FGS.Tests.Support.Autofac4.Mocking
+    75: FGS.Tests.Support.Autofac4.Mocking.Configuration
+    76: FGS.Tests.Support.Autofac4.Mocking.Logging
+    77: FGS.Tests.Support.Autofac4.Mocking.Options
+    78: FGS.Extensions.DependencyInjection.Autofac4
+    79: FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac4
+    80: FGS.Extensions.Hosting.DependencyInjection.Autofac4
 
 stages:
 

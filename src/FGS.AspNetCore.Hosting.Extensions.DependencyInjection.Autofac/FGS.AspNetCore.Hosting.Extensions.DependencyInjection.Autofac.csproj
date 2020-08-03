@@ -9,12 +9,14 @@
       wire in large sets of Autofac configuration, without crowding their `Startup` classes.
 
       An alternative to `Autofac.Extensions.Hosting`.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac4`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;aspnet;aspnetcore;hosting</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="[2.2.0, 3.0.0)" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="[2.2.0, 3.0.0)" />
   </ItemGroup>
@@ -23,5 +25,7 @@
     <ProjectReference Include="..\FGS.Autofac.DynamicScoping.Abstractions\FGS.Autofac.DynamicScoping.Abstractions.csproj" />
     <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared\FGS.AspNetCore.Hosting.Extensions.DependencyInjection.Autofac.Shared.projitems" Label="Shared" />
 
 </Project>

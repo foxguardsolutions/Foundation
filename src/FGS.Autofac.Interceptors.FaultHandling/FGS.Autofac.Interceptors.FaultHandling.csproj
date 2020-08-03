@@ -7,12 +7,14 @@
     <Description>
       Provides the ability to configure Autofac with behavior that will dynamically intercept concrete classes marked with
       `RetryOnFaultAttribute` such that failed operations will be retried with a configurable exponential back-off.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Autofac4.Interceptors.FaultHandling`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;dynamicproxy;interception;aop;retry;retries;fault;exception;handling;polly</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
   </ItemGroup>
 
   <ItemGroup Condition="$(TargetFramework) == 'net472' ">
@@ -41,5 +43,7 @@
     <ProjectReference Include="..\FGS.Interception.Annotations.FaultHandling\FGS.Interception.Annotations.FaultHandling.csproj" />
     <ProjectReference Include="..\FGS.Interceptors.FaultHandling\FGS.Interceptors.FaultHandling.csproj" />
   </ItemGroup>
+
+  <Import Project="..\FGS.Autofac.Interceptors.FaultHandling.Shared\FGS.Autofac.Interceptors.FaultHandling.Shared.projitems" Label="Shared" />
 
 </Project>

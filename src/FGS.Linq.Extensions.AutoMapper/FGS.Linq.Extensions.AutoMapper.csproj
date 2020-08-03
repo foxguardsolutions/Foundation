@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="[8.0.0, 9.0.0]" />
+    <PackageReference Include="AutoMapper" Version="[8.0.0, 11.0.0)" />
   </ItemGroup>
 
   <Import Project="..\FGS.Linq.Extensions.AutoMapper.Shared\FGS.Linq.Extensions.AutoMapper.Shared.projitems" Label="Shared" />

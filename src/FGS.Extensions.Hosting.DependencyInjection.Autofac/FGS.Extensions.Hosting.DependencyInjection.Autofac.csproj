@@ -8,6 +8,8 @@
       wire in large sets of Autofac configuration, without crowding their `Startup` classes.
 
       An alternative to `Autofac.Extensions.Hosting`.
+
+      This package is for Autofac version 5. For an identical API on Autofac version 4, see `FGS.Extensions.Hosting.DependencyInjection.Autofac4`.
     </Description>
     <PackageTags>autofac;di;ioc;dependencyinjection;aspnetcore;hosting</PackageTags>
   </PropertyGroup>
@@ -17,7 +19,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Autofac" Version="[4.9.1, 5.0.0)" />
+    <PackageReference Include="Autofac" Version="[5.0.0, 6.0.0)" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="[3.0.0, 4.0.0)" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="[3.0.0, 4.0.0)" />
   </ItemGroup>

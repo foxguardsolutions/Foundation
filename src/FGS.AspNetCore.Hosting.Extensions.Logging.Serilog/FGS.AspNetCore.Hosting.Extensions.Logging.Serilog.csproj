@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FGS.Extensions.DependencyInjection.Autofac\FGS.Extensions.DependencyInjection.Autofac.csproj" />
+    <ProjectReference Include="..\FGS.Autofac.CompositionRoot\FGS.Autofac.CompositionRoot.csproj" />
     <ProjectReference Include="..\FGS.Extensions.Logging.Serilog\FGS.Extensions.Logging.Serilog.csproj" />
   </ItemGroup>
 

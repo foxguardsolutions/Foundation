@@ -26,7 +26,15 @@ namespace FGS.Autofac.Interception.DynamicProxy
         }
 
         /// <inheritdoc />
-        protected sealed override void AttachToComponentRegistration(IComponentRegistry componentRegistry, IComponentRegistration registration)
+        protected sealed override void AttachToComponentRegistration(
+#if AttachToComponentRegistration_Uses_ComponentRegistry
+            IComponentRegistry componentRegistry,
+#elif AttachToComponentRegistration_Uses_ComponentRegistryBuilder
+            IComponentRegistryBuilder componentRegistry,
+#else
+    #error Missing Implementation
+#endif
+            IComponentRegistration registration)
         {
             if (IsChildRegistration(registration) || !HasEligibleActivator(registration))
                 return;
@@ -86,7 +94,19 @@ namespace FGS.Autofac.Interception.DynamicProxy
                 Enumerable.Empty<Parameter>(),
                 Enumerable.Empty<Parameter>());
 
-            var newRegistration = new ComponentRegistration(Guid.NewGuid(), newActivator, registration.Lifetime, registration.Sharing, registration.Ownership, registration.Services, registration.Metadata, registration);
+            var newRegistration = new ComponentRegistration(
+                Guid.NewGuid(),
+                newActivator,
+                registration.Lifetime,
+                registration.Sharing,
+                registration.Ownership,
+                registration.Services,
+                registration.Metadata,
+                registration
+#if ComponentRegistration_Requires_AdapterSignaling
+                , isAdapterForIndividualComponents: false
+#endif
+                );
             newRegistration.Preparing += (sender, args) =>
             {
                 var proxyParameters = new List<Parameter>();
